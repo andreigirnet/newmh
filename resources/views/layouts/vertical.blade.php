@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{asset("css/admin/package.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/share.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
+    <script src="{{asset('js/cart.js')}}"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
@@ -36,16 +37,6 @@
 
         @include('layouts.shared/topbar')
         @include('layouts.shared/left-sidebar')
-        <a href="/cart">
-            <div class="mobileCartContainer">
-                <div class="mobileCartCounter">
-                    @if(Cart::getDetails()->items_count)
-                        <div class="mobileCartItemCounter">{{Cart::getDetails()->items_count}}</div>
-                    @endif
-                </div>
-                <img src="{{asset('images/icons/cartSingle.png')}}" alt="">
-            </div>
-        </a>
 
         <div class="content-page">
             @if (session('success'))
@@ -101,7 +92,7 @@
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script src="{{asset('js/hideAdminNav.js')}}"></script>
-    <script src="{{asset('js/prevent.js')}}"></script>
+{{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
 
     <script>
         tinymce.init({

@@ -116,6 +116,7 @@
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
     cursor: pointer;
+    margin-top: 20px;
 }
 .adminProductPrice{
     font-size: 28px; /* Set the font size */

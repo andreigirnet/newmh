@@ -69,7 +69,7 @@
             </td>
             <td align="right" style="width: 40%;">
                 <h3 style="margin-left: 50px">Ireland</h3>
-                <h3 style="margin-left: 40px">Ireland Safety Course</h3>
+                <h3 style="margin-left: 40px">Manual Handling Ireland</h3>
                 <pre>
                     www.manualhandlingireland.com
                     13 Kinahan StreetArbour HillStoneybatter
@@ -95,7 +95,7 @@
         <tbody>
         <tr style="font-size: 17px">
             <td style="width:65%">{{$order['product_name']}}</td>
-            <td>1</td>
+            <td>{{$order['quantity']}}</td>
             <td align="left">€ {{$order['paid']}}</td>
         </tr>
         </tbody>
@@ -113,7 +113,7 @@
     <table width="100%">
         <tr>
             <td align="left" style="width: 50%;">
-                &copy; {{ date('Y') }} Ireland Safety Course - All rights reserved.
+                &copy; {{ date('Y') }} Manual Handling Ireland - All rights reserved.
             </td>
         </tr>
     </table>
