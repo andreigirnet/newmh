@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/blog.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
+    <script src="js/bulkCalculator.js" defer></script>
+    <script src="js/bulkLightCalc.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -90,6 +92,19 @@
 <script>
     AOS.init();
 </script>
-<script src="{{asset('js/prevent.js')}}"></script>
+{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
+<div id="cookiePrompt" class="cookie-container">
+    <div class="cookie-content">
+        <div class="cookie-text">
+            <h4>&#127850 We protect your privacy</h4>
+            <p>We use cookies to enhance your experience. By clicking "Accept", you agree to our terms.</p>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn-decline" onclick="closeCookies()">Decline</button>
+            <button class="btn-accept" onclick="acceptCookies()">Accept</button>
+        </div>
+    </div>
+</div>
+<script src="{{asset('js/cookie.js')}}"></script>
 </body>
 </html>

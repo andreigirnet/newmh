@@ -14,7 +14,37 @@
                 At Manual Handling Ireland, we deliver scalable manual handling training in Ireland designed specifically for employers. Our 100% online system allows your staff to complete certified training at their own pace, ensuring workplace safety compliance without interrupting daily operations. Whether you are onboarding new hires or renewing certifications, our platform supports fast, flexible deployment across your organisation.
             </div>
         </div>
+        <div class="light-calc-wrapper">
+            <div class="slim-calc-card-light">
 
+                <div class="calc-section-light qty-picker">
+                    <div class="single-buyer-notice-light">
+                        Need just one? <a href="/checkout" class="blue-link">Get 1 Course</a>
+                    </div>
+                    <span class="mini-label-light">TOTAL COURSES</span>
+                    <div class="qty-focus-light">
+                        <span id="qtyValLight">10</span>
+                    </div>
+                    <input type="range" min="1" max="100" value="10" class="modern-slider-light" id="bulkSliderLight" oninput="calculateBulkLight()">
+                </div>
+
+                <div class="calc-section-light">
+                    <span class="mini-label-light">RETAIL PRICE</span>
+                    <span class="text-red-strike-light" id="oldTotalLight">€250.00</span>
+                </div>
+
+                <div class="calc-section-light">
+                    <span class="mini-label-light">BULK DISCOUNT (10% OFF)</span>
+                    <span class="text-green-success" id="newTotalLight">€225.00</span>
+                    <div class="save-tag-light"><span id="savingsAlertLight">€25.00 Saved!</span></div>
+                </div>
+
+                <div class="calc-section-light">
+                    <a href="/home"><button class="buy-button-light">Enroll Now</button></a>
+                </div>
+
+            </div>
+        </div>
         <div class="tmt-main-wrapper">
 
             <!-- BULK DISCOUNT -->

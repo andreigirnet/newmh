@@ -17,20 +17,34 @@
         </div>
     </div>
 
-    <div id="statsCounter">
-        <div id="counterWrap">
-            <div class="counterContent">
-                <div class="counterNumbers" id="customersCounter"></div>
-                <div class="counterDescription" >CUSTOMERS</div>
+    <div id="statsCounter" style="background-color: #0f172a; padding: 40px 0;">
+        <div class="slim-calc-card">
+
+            <div class="calc-section qty-picker">
+                <div class="label-flex">
+                    <span class="mini-label">COURSES</span>
+                </div>
+                <div class="qty-focus">
+                    <span id="qtyVal">1</span>
+                </div>
+                <input type="range" min="1" max="100" value="1" class="neon-slider" id="bulkSlider" oninput="calculateBulk()">
             </div>
-            <div class="counterContent">
-                <div class="counterNumbers" id="certificatesCounter"></div>
-                <div class="counterDescription" >CERTIFICATE'S ISSUED</div>
+
+            <div class="calc-section price-standard">
+                <span class="mini-label">RETAIL</span>
+                <span class="text-red-strike" id="oldTotal"></span>
             </div>
-            <div class="counterNumbers" class="counterContent">
-                <div id="instructorsCounter"></div>
-                <div class="counterDescription" >QUALIFIED INSTRUCTORS</div>
+
+            <div class="calc-section price-result">
+                <span class="mini-label">BULK RATE (10% OFF)</span>
+                <span class="text-green-glow" id="newTotal">€25.00</span>
+                <div class="save-tag">SAVE <span id="savingsAlert">€35.00</span></div>
             </div>
+
+            <div class="calc-section action-area">
+                <a href="/home" class="linkStyle"><button class="buy-button-slim">Buy Now</button></a>
+            </div>
+
         </div>
     </div>
 

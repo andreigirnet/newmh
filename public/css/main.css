@@ -11,7 +11,94 @@
 .logoradius{
     border-radius: 10px;
 }
+.cookie-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(15, 23, 42, 0.9); /* Your #0f172a with transparency */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    animation: slideUp 0.5s ease-out;
+}
 
+@keyframes slideUp {
+    from { bottom: -100px; opacity: 0; }
+    to { bottom: 20px; opacity: 1; }
+}
+
+.cookie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.cookie-text h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.cookie-text p {
+    margin: 5px 0 0;
+    color: #94a3b8; /* Slate color for readability */
+    font-size: 13px;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Decline Button */
+.btn-decline {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-decline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Accept Button (Brand Green) */
+.btn-accept {
+    background: #2ecc71; /* Matches your price green */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-accept:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
+}
+.slim-calc-card {
+    background: rgba(30, 41, 59, 0.6) !important; /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
 .language-picker {
     /*position: absolute;*/
     /*top: 72px;*/
@@ -189,6 +276,137 @@ a{
 .pagination__item:first-child,
 .pagination__item:last-child {
     min-width: auto;
+}
+/*#statsCounter {*/
+/*    background-color: #0f172a; !* Deep Midnight Navy *!*/
+/*    padding: 60px 0;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.slim-calc-card {
+    max-width: 1150px;
+    width: 95%;
+    margin: 0 auto;
+    background: #1e293b; /* Rich Carbon Gray */
+    border: 1px solid rgba(46, 204, 113, 0.25); /* Subtle Neon Emerald border */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;      /* VERTICAL CENTER FIX */
+    justify-content: space-between;
+    padding: 25px 50px;       /* Spacing for better flow */
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+.calc-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 2. Label Styling */
+.mini-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: #94a3b8; /* Muted Slate */
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* 3. Quantity / Slider Section */
+.qty-focus #qtyVal {
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.neon-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 250px;
+    height: 12px;
+
+    /* GRADIENT FIX:
+       A vibrant emerald-to-dark-teal gradient that glows against dark backgrounds.
+    */
+    background: linear-gradient(90deg, #f0ff00 0%, #10b981 100%);
+
+    border-radius: 20px;
+    outline: none;
+    margin-top: 15px;
+
+    /* This adds a subtle outer glow so the track doesn't blend into the dark bg */
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.2), inset 0 1px 3px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.neon-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #2ecc71; /* Emerald Green */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.6);
+    border: 3px solid #ffffff; /* White Ring for contrast */
+}
+
+/* 4. Price Strikethrough (Red) - IMPROVED VISIBILITY */
+.text-red-strike {
+    color: #ff5f5f; /* Lighter Neon Red for dark backgrounds */
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    opacity: 0.9;
+}
+
+/* 5. Result Price (Green) */
+.text-green-glow {
+    color: #2ecc71;
+    font-size: 42px;
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+    line-height: 1;
+}
+
+.save-tag {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    padding: 4px 12px;
+    border-radius: 100px; /* Pill shape */
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 8px;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+/* 6. Action Button */
+.buy-button-slim {
+    background: #2ecc71;
+    color: #0f172a;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(46, 204, 113, 0.2);
+}
+
+.buy-button-slim:hover {
+    background: #27ae60;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(46, 204, 113, 0.4);
 }
 
 #frontNav {
@@ -406,7 +624,7 @@ a .navItem{
 .nav-links a {
     color: var(--text-white);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.2rem;
     transition: color 0.3s ease;
     opacity: 0.85;
@@ -445,6 +663,14 @@ a .navItem{
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px){
+    .slim-calc-card {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .neon-slider { width: 100%; max-width: 300px; }
+    .calc-section { align-items: center; }
     .modern-nav{
         display: none;
     }
@@ -477,5 +703,8 @@ a .navItem{
     }
     #cpd, #rospa{
         display: none;
+    }
+    .cookie-container{
+        bottom: 80px;
     }
 }

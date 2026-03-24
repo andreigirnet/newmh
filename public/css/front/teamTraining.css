@@ -188,9 +188,183 @@
     color: #334155;
     white-space: pre-line; /* Preserves line breaks from Alpine.js data */
 }
+.light-calc-wrapper {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.slim-calc-card-light {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #f8fafc; /* Very soft blue-grey */
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Soft, subtle shadow */
+}
+
+/* Labels */
+.mini-label-light {
+    font-size: 11px;
+    font-weight: 800;
+    color: #64748b; /* Professional Slate Grey */
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* Single Notice */
+.single-buyer-notice-light {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.blue-link {
+    color: #2563eb !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Large Numbers */
+.qty-focus-light #qtyValLight {
+    font-size: 44px;
+    font-weight: 900;
+    color: #0f172a; /* Near Black */
+}
+
+/* Price Colors */
+.text-red-strike-light {
+    color: #dc2626; /* Deep Red */
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.text-green-success {
+    color: #10b981; /* Fresh Emerald */
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.save-tag-light {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Slider for Light Theme */
+.modern-slider-light {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+.modern-slider-light::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #10b981;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+/* Button */
+.buy-button-light {
+    background: #0f172a; /* Dark button on light bg looks very pro */
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buy-button-light:hover {
+    background: #1e293b;
+    transform: scale(1.02);
+}
 
 
 @media only screen and (max-width: 1400px) {
+    .light-calc-wrapper{padding: 0}
+    .slim-calc-card-light {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        gap: 35px !important; /* Space between slider, price, and button */
+        text-align: center !important;
+        width: 92% !important;
+        margin: 0 auto !important;
+    }
+
+    /* 2. Make each section take up the full width */
+    .calc-section-light {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the numbers and labels */
+        justify-content: center;
+    }
+
+    /* 3. Adjust the HUGE numbers so they don't break the screen */
+    .qty-focus-light #qtyValLight {
+        font-size: 48px !important;
+        margin-bottom: 10px;
+    }
+
+    .text-green-success {
+        font-size: 52px !important; /* Big, but fits a phone width */
+        line-height: 1.1;
+    }
+
+    .text-red-strike-light {
+        font-size: 26px !important;
+        margin-bottom: 5px;
+    }
+
+    /* 4. The Slider - Make it wide and easy to use with a thumb */
+    .modern-slider-light {
+        width: 100% !important;
+        max-width: 320px;
+        margin: 20px 0 !important;
+        height: 10px !important; /* Slightly thicker for touch */
+    }
+
+    /* 5. Center the "Need just one" notice */
+    .single-buyer-notice-light {
+        text-align: center !important;
+        margin-bottom: 20px;
+        font-size: 15px !important;
+    }
+
+    /* 6. The Button - Make it big and tappable */
+    .buy-button-light {
+        width: 100% !important;
+        max-width: 300px;
+        padding: 20px !important;
+        font-size: 18px !important;
+        margin-top: 10px;
+    }
+
+    /* 7. The Save Tag - Make it a clear pill shape */
+    .save-tag-light {
+        font-size: 16px !important;
+        padding: 8px 20px !important;
+        display: inline-block;
+        margin-top: 12px;
+    }
     .tmt-feature-row,
     .tmt-row-reverse {
         flex-direction: column !important;
