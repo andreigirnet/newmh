@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- Title --}}
-    <title>{{ config('app.name', 'Laravel') }} - Online Safety Courses from €25</title>
+    <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €25</title>
     {{-- Meta description --}}
-    <meta name="description" content="Get certified for only €25! Manual Handling Online Course Ireland. ⭐️ 1 Hour Duration ⭐️ Digital Certificate ⭐️ Unlimited Exam Attempts. Recognized in Ireland & UK.">
+    <meta name="description" content="Manual Handling Ireland - Manual Handling course online with instant certification. Get your Manual Handling training in 45 mins and get your certificate immediately.">
     <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
     {{-- Open Graph / Facebook --}}
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
-    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">are theu
     <meta name="format-detection" content="telephone=yes">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
