@@ -12,7 +12,7 @@
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
-    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">are theu
+    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
     <meta name="format-detection" content="telephone=yes">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
