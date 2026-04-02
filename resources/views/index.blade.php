@@ -36,7 +36,7 @@
             @foreach($products as $product)
                 @if($product->status == 0)
                     <div class="adminProductBack">
-                        <img src="{{ asset('images/lifting.png') }}" alt="Manual Handling Course">
+                        <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
                         <div class="adminProductBottomBack">
                             <div class="adminProductNameBack">{{$product->name}}</div>
                             @if (!in_array($product->id, [13, 14, 15, 16]))
