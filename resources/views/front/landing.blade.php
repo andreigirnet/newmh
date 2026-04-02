@@ -624,5 +624,4 @@
             </div>
         </div>
     </section>
-    <script src="{{asset("js/counter.js")}}"></script>
 @endsection
