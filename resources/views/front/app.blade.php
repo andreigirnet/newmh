@@ -27,28 +27,6 @@
     {{-- Css --}}
     <link rel = "icon" href ="{{asset('images/logo/flavicons.ico')}}" type = "image/x-icon">
     <link rel="stylesheet" href="{{asset("css/main.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-handling.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-online.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-training.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-dublin.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-certificate-page.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-refresher.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/qqi.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/manual-handling-ireland.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/safe-lifting.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/what-is-manual-handling.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/registerInclude.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/footer.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/brandSwiper.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/landing.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/products.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/product.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/teamTraining.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/faq.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/contact.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/blog.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
     <script src="js/bulkCalculator.js" defer></script>
     <script src="js/bulkLightCalc.js" defer></script>
@@ -92,7 +70,7 @@
 <script>
     AOS.init();
 </script>
-<script src="{{asset('js/prevent.js')}}"></script>
+{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
 <div id="cookiePrompt" class="cookie-container">
     <div class="cookie-content">
         <div class="cookie-text">

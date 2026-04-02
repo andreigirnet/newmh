@@ -1,7 +1,7 @@
 @extends('front.app')
 @section('content')
     <div id="mainBanner">
-        <img src="{{asset('images/banners/BackgroundIreland.png')}}" class="warehouse" alt="">
+        <img src="{{asset('images/banners/BackgroundIreland.webp')}}" class="warehouse" alt="">
 {{--        <video autoplay muted loop class="warehouse" >--}}
 {{--            <source src="video/bannerVideoBig.mp4" type="video/mp4">--}}
 {{--        </video>--}}
@@ -59,7 +59,7 @@
 
             <div class="course-image">
                 <!-- Replace with actual image -->
-             <img src="{{ asset('images/lifting.png') }}" alt="Manual Handling Course">
+             <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
             </div>
 
             <div class="course-content">
@@ -157,7 +157,7 @@
             </div>
 
             <div class="premium-visual-wing">
-                <img src="{{asset('images/landingBulk.png')}}" class="premium-promo-img" alt="Bulk Purchase Offer">
+                <img src="{{asset('images/landingBulk.webp')}}" class="premium-promo-img" alt="Bulk Purchase Offer">
             </div>
 
         </div>
@@ -166,7 +166,7 @@
     <div class="trustContainer">
         <div class="innerTrust">
             <div class="trustLeft">
-                <img src="{{asset('images/trust.png')}}" alt="">
+                <img src="{{asset('images/trust.webp')}}" alt="">
             </div>
             <div class="trustRight">
                 <div class="trustTitle" >QQI Acredited Manual Handling Training Dublin Ireland - You Can Trust</div>
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                     <div class="cpdRight">
-                        <img src="{{asset('images/certExample.png')}}" alt="">
+                        <img src="{{asset('images/certExample.webp')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-1.png')}}" alt="John Weasley">
+                            <img src="{{asset('images/avatars/av-1.webp')}}" alt="John Weasley">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
@@ -284,7 +284,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-2.png')}}" alt="Mary Andrews">
+                            <img src="{{asset('images/avatars/av-2.webp')}}" alt="Mary Andrews">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
@@ -313,7 +313,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-3.png')}}" alt="Choe Lee">
+                            <img src="{{asset('images/avatars/av-3.webp')}}" alt="Choe Lee">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
@@ -342,7 +342,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-4.png')}}" alt="Markus Low">
+                            <img src="{{asset('images/avatars/av-4.webp')}}" alt="Markus Low">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
@@ -371,7 +371,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-5.png')}}" alt="Vanessa Spills">
+                            <img src="{{asset('images/avatars/av-5.webp')}}" alt="Vanessa Spills">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
@@ -400,7 +400,7 @@
                 <div class="premium-review-top">
                     <div class="premium-review-header">
                         <div class="premium-avatar-container">
-                            <img src="{{asset('images/avatars/av-6.png')}}" alt="Angela Jedrynska">
+                            <img src="{{asset('images/avatars/av-6.webp')}}" alt="Angela Jedrynska">
                         </div>
                         <div class="premium-reviewer-identity">
                             <div class="premium-name-row">
