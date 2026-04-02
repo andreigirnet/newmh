@@ -1,6 +1,6 @@
 @extends('front.app')
 @section('content')
-
+    <script src="js/bulkLightCalc.js" defer></script>
     <div class="tmt-page-container">
 
         <!-- HERO SECTION -->
