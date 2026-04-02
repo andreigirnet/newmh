@@ -72,7 +72,7 @@
                                 $store.cart.addItem({
                                     id: 1,
                                     title: 'Manual Handling',
-                                    image: '{{ asset('images/lifting.png') }}',
+                                    image: '{{ asset('images/lifting.webp') }}',
                                     price: {{ config('global.course_price') }},
                                     quantity: 1
                                 });
@@ -142,7 +142,7 @@
 
                 <div class="course-image">
                     <!-- Replace with actual image -->
-                    <img src="{{ asset('images/lifting.png') }}" alt="Manual Handling Course">
+                    <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
                 </div>
 
                 <div class="course-content">
@@ -183,7 +183,7 @@
                                 $store.cart.addItem({
                                     id: 1,
                                     title: 'Manual Handling',
-                                    image: '{{ asset('images/lifting.png') }}',
+                                    image: '{{ asset('images/lifting.webp') }}',
                                     price: {{ config('global.course_price') }},
                                     quantity: 1
                                 });
