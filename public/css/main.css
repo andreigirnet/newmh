@@ -1681,7 +1681,6 @@ a .navItem{
     height: 700px;
     position: relative;
     display: flex;
-    background: url("../../images/banners/BackgroundIreland.jpg") center;
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
