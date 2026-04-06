@@ -102,6 +102,7 @@ const handleServerResponse = async (response) => {
             handleServerResponse(await serverResponse.json());
         }
     } else {
+        console.log('Payment completed')
         localStorage.removeItem('cart');
         if (window.Alpine && Alpine.store('cart')) {
             Alpine.store('cart').items = [];
