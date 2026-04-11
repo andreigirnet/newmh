@@ -28,6 +28,12 @@ use Spatie\Sitemap\Tags\Url;
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
 
     Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
+    Route::get('/manual-handling-cork', function(){return view("front.manual-handling-cork");})->name('front.manual.handling.cork');
+    Route::get('/manual-handling-galway', function(){return view("front.manual-handling-galway");})->name('front.manual.handling.galway');
+    Route::get('/manual-handling-limerick', function(){return view("front.manual-handling-limerick");})->name('front.manual.handling.limerick');
+    Route::get('/manual-handling-waterford', function(){return view("front.manual-handling-waterford");})->name('front.manual.handling.waterford');
+    Route::get('/manual-handling-kilkenny', function(){return view("front.manual-handling-kilkenny");})->name('front.manual.handling.kilkenny');
+    Route::get('/manual-handling-sligo', function(){return view("front.manual-handling-sligo");})->name('front.manual.handling.sligo');
     Route::get('/manual-handling-training', function(){return view("front.manual-handling-training");})->name('front.manual.training');
     Route::get('/manual-handling-online', function(){return view("front.manual-handling-online");})->name('front.manual.online');
     Route::get('/manual-handling-dublin', function(){return view("front.manual-handling-dublin");})->name('front.manual.dublin');
