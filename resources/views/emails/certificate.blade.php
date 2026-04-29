@@ -1,5 +1,5 @@
 <div style="width: 100%;">
-    <div style="color: #2d3748; font-weight: 600; font-size: 20px">manualhandlingireland.com</div>
+    <div style="color: #2d3748; font-weight: 600; font-size: 20px">manualhandling-ireland.com</div>
 </div>
 <div style="width: 100%; ">
     <div style="color: #2d3748; font-weight: 600;margin-top: 20px">Great job! You finished the Manual Handling Course successfully!🏆😊 </div>
