@@ -16,14 +16,172 @@
     --text-heading: #1e293b;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-.mh-leadership-page {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-body);
-    line-height: 1.9;
-    font-size: 20px;
-    -webkit-font-smoothing: antialiased;
+
+.mh-faq {
+    padding: 100px 20px;
+    background-color: #fdfdfd; /* Bright, clean base */
+    background-image:
+        radial-gradient(at 0% 0%, rgba(0, 138, 69, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 138, 69, 0.03) 0px, transparent 50%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.mh-faq-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Header & Badge */
+.mh-faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mh-faq-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ffffff;
+    border: 1px solid #008a45;
+    color: #008a45;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 138, 69, 0.1);
+}
+
+.mh-faq-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #111827;
+    margin: 0 0 30px 0;
+    letter-spacing: -1.5px;
+}
+
+/* Search Bar - "Glow" Effect */
+.mh-faq-search-group {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mh-faq-input {
+    width: 100%;
+    padding: 20px 28px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 18px;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mh-faq-input:focus {
+    border-color: #008a45;
+    box-shadow: 0 20px 40px -10px rgba(0, 138, 69, 0.15);
+    transform: translateY(-2px);
+}
+
+/* FAQ List */
+.mh-faq-list {
+    margin-top: 50px;
+}
+
+/* FAQ Cards - "Glass" Look */
+.mh-faq-item {
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mh-faq-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 138, 69, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* Trigger Button */
+.mh-faq-trigger {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.mh-faq-question {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    padding-right: 25px;
+    line-height: 1.4;
+}
+
+/* Content Area */
+.mh-faq-content {
+    padding: 0 30px 30px 30px;
+    background-color: #fcfdfc;
+}
+
+.mh-faq-text {
+    color: #4b5563;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 17px;
+}
+
+.mh-faq-text strong {
+    color: #008a45;
+    font-weight: 700;
+}
+
+/* Plus Icon Styling */
+.mh-faq-plus {
+    width: 44px; /* Larger hit area */
+    height: 44px;
+    background: #f0fdf4;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.mh-faq-plus::before,
+.mh-faq-plus::after {
+    content: '';
+    position: absolute;
+    background-color: #008a45;
+    border-radius: 10px;
+}
+
+/* Horizontal line */
+.mh-faq-plus::before {
+    width: 16px;
+    height: 2.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Vertical line */
+.mh-faq-plus::after {
+    width: 2.5px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mh-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .mh-container-content { max-width: 800px; margin: 20px auto; padding: 60px 24px; }
 
@@ -5675,6 +5833,25 @@ a .navItem{
         width: 100%;
         justify-content: center;
     }
+    .mh-faq {
+        padding: 40px 10px;
+    }
+
+    .mh-faq-title {
+        font-size: 26px;
+    }
+
+    .mh-faq-trigger {
+        padding: 15px; /* Tighter padding on very small screens */
+    }
+
+    .mh-faq-question {
+        font-size: 16px;
+    }
+
+    .mh-faq-text {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -5687,5 +5864,24 @@ a .navItem{
     }
     .mh-container-content h2 {
         font-size: 1.8rem;
+    }
+    .mh-faq {
+        padding: 40px 10px;
+    }
+
+    .mh-faq-title {
+        font-size: 26px;
+    }
+
+    .mh-faq-trigger {
+        padding: 15px;
+    }
+
+    .mh-faq-question {
+        font-size: 16px;
+    }
+
+    .mh-faq-text {
+        font-size: 14px;
     }
 }

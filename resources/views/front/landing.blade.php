@@ -624,4 +624,148 @@
             </div>
         </div>
     </section>
+    <section class="mh-faq" x-data="{ search: '' }">
+        <div class="mh-faq-wrapper">
+
+            <header class="mh-faq-header">
+                <span class="mh-faq-badge">HSA Compliance</span>
+                <h2 class="mh-faq-title">Manual Handling Ireland: Expert FAQs</h2>
+            </header>
+
+            <div class="mh-faq-list">
+
+                <!-- FAQ 1 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is manual handling training a legal requirement in ireland? hsa law'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Is Manual Handling training a legal requirement in Ireland?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Yes, under the <strong>Safety, Health and Welfare at Work (General Application) Regulations 2007</strong>, it is a strict legal requirement for Irish employers to provide manual handling training. The <strong>Health and Safety Authority (HSA)</strong> mandates that staff must be trained if they are required to move, lift, or support loads that pose a risk of back injury or other musculoskeletal disorders (MSDs). Failure to comply can result in HSA prosecutions and heavy fines for the business.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'how long is a manual handling certificate valid for ireland? expiry date'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">How long is a Manual Handling certificate valid for in Ireland?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            In the Irish workplace, the industry standard and <strong>HSA best practice guideline</strong> is that a Manual Handling certificate remains valid for <strong>3 years</strong>. However, some insurance companies and high-risk industries (like construction or patient handling) may require a refresher course every 2 years to stay compliant with <strong>Safe Pass</strong> standards and health and safety audits. Always check your company’s safety statement for specific internal requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can i do manual handling training online ireland? hsa compliant'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Can I complete my Manual Handling course fully online?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            To be 100% <strong>HSA compliant in Ireland</strong>, your training must include a practical assessment. We provide a "Blended Learning" solution where you complete the <strong>manual handling theory online</strong> and then perform a practical lifting demonstration. This is assessed by a <strong>QQI Level 6 Manual Handling Instructor</strong> either in-person or via a secure video link. A "theory-only" certificate is usually not sufficient for HSA workplace inspections.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what is the tile assessment framework? risk assessment'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">What is the TILE risk assessment framework?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            The <strong>TILE framework</strong> is a key risk assessment tool taught in our Irish training courses to prevent workplace injuries. It stands for <strong>Task, Individual, Load, and Environment</strong>. By evaluating the complexity of the task, the physical capability of the individual, the weight/shape of the load, and the surrounding environment (like floor surface or lighting), employees can make informed decisions to prevent <strong>back injuries</strong> and ensure safe lifting practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'who pays for manual handling training ireland? employer duties'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Who is responsible for the cost of manual handling training?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Under the <strong>Safety, Health and Welfare at Work Act 2005</strong>, the employer is legally responsible for providing and paying for all <strong>health and safety training</strong> for their employees. Employers must ensure that training is provided during paid working hours and at no financial cost to the staff member. This is a core duty of care to ensure a safe working environment and reduce the risk of workplace accidents in Ireland.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'do office workers need manual handling training? retailers hsa'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Do office and retail workers require a Manual Handling certificate?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Yes. A common misconception in Ireland is that only warehouse or construction workers need training. However, <strong>office staff and retail workers</strong> often lift heavy boxes of files, water bottles for coolers, or handle deliveries. If an employee is required to lift any load that could cause injury, the employer must provide a <strong>certified manual handling course</strong> to satisfy HSA requirements and prevent long-term back pain or strains.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what are the penalties for hsa non-compliance? fines lawsuit'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">What are the penalties for non-compliance with HSA training?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Failure to comply with <strong>Irish manual handling regulations</strong> can have severe consequences. Employers can face <strong>on-the-spot HSA fines</strong>, legal prosecution, and massive personal injury claims. Furthermore, if an accident occurs and the employee was not properly trained, your <strong>Employer Liability Insurance</strong> may be voided, leaving the business financially responsible for legal costs and compensation payouts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is there a maximum weight limit for lifting ireland? legal weight'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Is there a legal maximum weight limit for lifting at work?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Irish law does not specify a "one-size-fits-all" maximum weight limit in kilograms. Instead, <strong>manual handling legislation</strong> focuses on the <strong>risk assessment</strong>. What is safe for one person may be unsafe for another depending on the height of the lift, the distance, and the individual's physical capability. Our training teaches employees how to use the TILE method to determine if a load is too heavy and when to use <strong>mechanical aids</strong> like trolleys or hoists.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'manual handling vs people handling patient care'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">What is the difference between Manual Handling and People Handling?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            <strong>Manual Handling</strong> training focuses on the movement of inanimate objects like boxes, kegs, or equipment. <strong>People Handling</strong> (or Patient Handling) is a specialized healthcare course required for nurses, carers, and hospital staff. It involves the use of specialized equipment like slidesheets and hoists to move patients safely. While both follow the same <strong>HSA principles</strong>, the techniques and risks associated with moving a person are significantly different.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'are your certificates qqi recognized? instructor level 6'.includes(search.toLowerCase())">
+                    <button class="mh-faq-trigger" @click="open = !open">
+                        <span class="mh-faq-question">Are your Manual Handling certificates recognized by the HSA?</span>
+                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
+                    </button>
+                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                        <p class="mh-faq-text">
+                            Absolutely. All our <strong>manual handling certificates</strong> are issued following training delivered by <strong>QQI Level 6 Certified Instructors</strong>. Our course content strictly adheres to the <strong>Health and Safety Authority (HSA)</strong> guidelines and the 2007 General Application Regulations. This ensures your certification is recognized by employers, insurance companies, and safety inspectors across Ireland, including major construction sites and healthcare facilities.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
