@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{asset("css/main.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
     <script src="js/bulkCalculator.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+{{--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>--}}
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
