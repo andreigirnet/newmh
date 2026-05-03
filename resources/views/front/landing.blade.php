@@ -767,5 +767,54 @@
             </div>
         </div>
     </section>
+    <section class="mh-info-section" x-data="{ activeTab: 1 }">
+        <div class="mh-info-container">
 
+            <!-- Left Side: Educational Content (SEO Goldmine) -->
+            <div class="mh-info-content">
+                <span class="mh-info-badge">HSA Certified Provider</span>
+                <h2 class="mh-info-title">The Essential Guide to <strong>Manual Handling in Ireland</strong></h2>
+
+                <p class="mh-info-lead">
+                    If you are looking for a <strong>Manual Handling Certificate in Ireland</strong>, it is vital to understand the legal definitions and safety requirements set out by the Health and Safety Authority.
+                </p>
+
+                <div class="mh-info-text-block">
+                    <p><strong>Manual Handling Ireland</strong> regulations define this work as any physical activity involving the <i>lifting, putting down, pushing, pulling, carrying, or moving</i> of a load by hand or bodily force. Whether you are in Dublin, Cork, or Galway, the law remains the same: any task that poses a risk of back injury requires a valid <strong>Manual Handling Certificate</strong>.</p>
+
+                    <p>Under the <strong>Safety, Health and Welfare at Work Regulations 2007</strong>, every employer is legally obligated to provide <strong>manual handling training</strong> to staff. This training is the primary defense against <strong>Musculoskeletal Disorders (MSDs)</strong>, which account for a massive percentage of work-related illness in the Irish workforce. Obtaining your <strong>Manual Handling Certificate</strong> ensures you are compliant with <strong>HSA standards</strong> and equipped with safe lifting techniques.</p>
+                </div>
+
+                <div class="mh-info-stats">
+                    <div class="mh-info-stat-item">
+                        <strong>HSA Compliant</strong>
+                        <span>Recognized <strong>Manual Handling Training</strong> nationwide.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Interactive Modern Cards -->
+            <div class="mh-info-cards">
+
+                <div class="mh-info-card" :class="activeTab === 1 ? 'mh-info-card--active' : ''" @mouseenter="activeTab = 1">
+                    <div class="mh-info-card-icon">STEP 01</div>
+                    <h3>Get Certified</h3>
+                    <p>Earn your <strong>Manual Handling Certificate</strong> through our blended learning platform. Our <strong>online manual handling theory</strong> combined with practical assessment meets all Irish legal requirements.</p>
+                </div>
+
+                <div class="mh-info-card" :class="activeTab === 2 ? 'mh-info-card--active' : ''" @mouseenter="activeTab = 2">
+                    <div class="mh-info-card-icon">STEP 02</div>
+                    <h3>Employer Duties</h3>
+                    <p>In <strong>Manual Handling Ireland</strong> law, the employer must ensure a <strong>Safety Statement</strong> is in place. Providing <strong>certified training</strong> reduces liability and protects your insurance standing.</p>
+                </div>
+
+                <div class="mh-info-card" :class="activeTab === 3 ? 'mh-info-card--active' : ''" @mouseenter="activeTab = 3">
+                    <div class="mh-info-card-icon">STEP 03</div>
+                    <h3>Avoid Injuries</h3>
+                    <p>Prevent <strong>workplace injuries</strong> by learning the TILE method. A <strong>Manual Handling Certificate</strong> proves you understand how to assess the Task, Individual, Load, and Environment safely.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 @endsection
