@@ -5249,10 +5249,169 @@ a .navItem{
     background: #f1f5f9; padding: 24px; border-radius: 10px;
     font-weight: 600; border-left: 4px solid var(--corporate-teal);
 }
+.mh-steps, .mh-steps * {
+    box-sizing: border-box;
+}
 
+.mh-steps {
+    padding: 100px 20px;
+    background-color: #fcfdfe; /* Ultra light blue/white */
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mh-steps-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- Header Section --- */
+.mh-steps-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mh-steps-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #e6f4ea;
+    color: #008a45;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.mh-steps-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #0f172a;
+    margin: 0 0 20px 0;
+    letter-spacing: -1.5px;
+}
+
+.mh-steps-title strong {
+    color: #008a45;
+}
+
+.mh-steps-subtitle {
+    font-size: 19px;
+    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --- Grid & Cards --- */
+.mh-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mh-steps-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+/* Visual "Connecting Line" for Desktop */
+@media (min-width: 1025px) {
+    .mh-steps-card:not(:last-child)::after {
+        content: '→';
+        position: absolute;
+        right: -25px;
+        top: 45%;
+        font-size: 24px;
+        color: #e2e8f0;
+        font-weight: 300;
+    }
+}
+
+.mh-steps-card--active {
+    border-color: #008a45;
+    box-shadow: 0 25px 50px -12px rgba(0, 138, 69, 0.12);
+    transform: translateY(-10px);
+}
+
+.mh-steps-number {
+    width: 60px;
+    height: 60px;
+    background: #f0fdf4;
+    color: #008a45;
+    border-radius: 18px; /* Modern "Squircle" look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin: 0 auto 25px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.mh-steps-card--active .mh-steps-number {
+    background: #008a45;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.mh-steps-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.mh-steps-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+.mh-steps-card p strong {
+    color: #008a45;
+    font-weight: 700;
+}
+
+/* --- CTA Button --- */
+.mh-steps-action {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.mh-steps-btn {
+    display: inline-block;
+    padding: 22px 48px;
+    background: #008a45;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 19px;
+    box-shadow: 0 10px 25px rgba(0, 138, 69, 0.25);
+    transition: all 0.3s ease;
+}
+
+.mh-steps-btn:hover {
+    background: #007038;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 138, 69, 0.35);
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px){
+    .mh-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .mh-btn-row { flex-direction: column; width: 100%; }
     .btn-exclusive-ghost { margin-left: 0; }
     .mh-feature-list { grid-template-columns: 1fr; }
@@ -5989,6 +6148,22 @@ a .navItem{
     .mh-info-card--active {
         transform: translateY(-10px);
     }
+    .mh-steps {
+        padding: 60px 15px;
+    }
+
+    .mh-steps-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 20px;
+    }
+
+    .mh-steps-title {
+        font-size: 30px;
+    }
+
+    .mh-steps-card {
+        padding: 35px 25px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -6032,5 +6207,21 @@ a .navItem{
 
     .mh-faq-text {
         font-size: 14px;
+    }
+    .mh-steps {
+        padding: 60px 15px;
+    }
+
+    .mh-steps-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 20px;
+    }
+
+    .mh-steps-title {
+        font-size: 30px;
+    }
+
+    .mh-steps-card {
+        padding: 35px 25px;
     }
 }

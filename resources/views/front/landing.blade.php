@@ -817,4 +817,49 @@
             </div>
         </div>
     </section>
+
+    <section class="mh-steps" x-data="{ activeStep: 1 }">
+        <div class="mh-steps-wrapper">
+
+            <header class="mh-steps-header">
+                <span class="mh-steps-badge">Simple & Fast Process</span>
+                <h2 class="mh-steps-title">4 Steps to Your <strong>Manual Handling Certificate Ireland</strong></h2>
+                <p class="mh-steps-subtitle">Start your training today and receive your HSA-compliant certification in four easy steps.</p>
+            </header>
+
+            <div class="mh-steps-grid">
+                <!-- Step 1 -->
+                <div class="mh-steps-card" @mouseenter="activeStep = 1" :class="activeStep === 1 ? 'mh-steps-card--active' : ''">
+                    <div class="mh-steps-number">01</div>
+                    <h3>Register</h3>
+                    <p>Begin your journey by creating an account on our secure platform. It takes less than a minute to sign up for your <strong>Manual Handling Certificate Ireland</strong> and get instant access to your training dashboard.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="mh-steps-card" @mouseenter="activeStep = 2" :class="activeStep === 2 ? 'mh-steps-card--active' : ''">
+                    <div class="mh-steps-number">02</div>
+                    <h3>Online Training</h3>
+                    <p>Complete your <strong>Manual Handling Online Training</strong> through our high-definition video modules. Learn essential Irish safety legislation, the TILE framework, and spinal anatomy at your own pace.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="mh-steps-card" @mouseenter="activeStep = 3" :class="activeStep === 3 ? 'mh-steps-card--active' : ''">
+                    <div class="mh-steps-number">03</div>
+                    <h3>Submit Assessment</h3>
+                    <p>After finishing the theory, <strong>submit the assessment</strong> for review. Our QQI Level 6 instructors will evaluate your practical lifting technique via our secure video upload portal to ensure 100% compliance.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="mh-steps-card" @mouseenter="activeStep = 4" :class="activeStep === 4 ? 'mh-steps-card--active' : ''">
+                    <div class="mh-steps-number">04</div>
+                    <h3>Download Certificate</h3>
+                    <p>Once approved, you can instantly <strong>Download your Manual Handling Certificate</strong>. Our certificates are fully recognized by the <strong>HSA</strong>, insurance providers, and major employers across Ireland.</p>
+                </div>
+            </div>
+
+            <div class="mh-steps-action">
+                <a href="/register" class="mh-steps-btn">Register and Start Now</a>
+            </div>
+        </div>
+    </section>
 @endsection
