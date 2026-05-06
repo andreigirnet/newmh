@@ -1,98 +1,109 @@
 @extends('front.app')
 
 @section('content')
-    <div class="mh-long-page">
-        <header class="mh-premium-hero">
-            <div class="mh-container">
-                <span class="mh-kicker">Accredited Safety Training</span>
-                <h1 class="mh-main-title">Comprehensive Manual Handling Training Ireland</h1>
-                <p class="mh-lead">The definitive guide to workplace safety, HSA compliance, and professional manual handling certification Ireland.</p>
-                <div class="mh-hero-btns">
-                    <a href="{{route('home')}}" class="btn-main">Enrol Now</a>
-                    <a href="#legal-requirements" class="btn-secondary">Learn More</a>
+    <div class="mhc-wrapper">
+        <!-- Premium Hero Section -->
+        <header class="mhc-hero">
+            <div class="mhc-container">
+                <div class="mhc-hero-inner">
+                    <div class="mhc-badge">HSA Compliant Training 2026</div>
+                    <h1 class="mhc-display-title">Manual Handling Course <br><span class="mhc-highlight">Ireland Certification</span></h1>
+                    <p class="mhc-hero-lead">The gold standard in <strong>workplace safety training</strong>. Get certified with our <strong>QBS-aligned manual handling training Ireland</strong>, designed to reduce workplace injuries and ensure full legal compliance.</p>
+                    <div class="mhc-action-group">
+                        <a href="{{route('home')}}" class="mhc-btn mhc-btn-primary">Book Training Now</a>
+                        <a href="#compliance" class="mhc-btn mhc-btn-outline">View HSA Requirements</a>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <article class="mh-content-section">
-            <div class="mh-container-narrow">
-                <h2 id="legal-requirements">Manual Handling Compliance Ireland: The Legal Framework</h2>
-                <p>Manual handling remains one of the leading causes of workplace injuries across the country. Under the **Safety, Health and Welfare at Work Act 2005**, employers are legally mandated to provide adequate training to any staff member involved in the movement of loads. This is not just a safety recommendation; it is a critical component of **manual handling compliance Ireland**.</p>
+        <!-- SEO Content Section: Legal & Compliance -->
+        <section id="compliance" class="mhc-section">
+            <div class="mhc-container-sm">
+                <div class="mhc-section-tag">Regulatory Standards</div>
+                <h2 class="mhc-section-title">Manual Handling Legislation Ireland</h2>
+                <p>Every employer in the Republic of Ireland is governed by the <strong>Safety, Health and Welfare at Work (General Application) Regulations 2007</strong>. Our <strong>manual handling training course</strong> is specifically curated to fulfill the requirements set out by the <strong>Health and Safety Authority (HSA)</strong>.</p>
 
-                <p>Our **manual handling course Ireland** is specifically designed to meet the requirements of the Health and Safety Authority (HSA). Whether you are in construction, healthcare, or retail, understanding the physics of lifting and the ergonomics of movement is essential to preventing musculoskeletal disorders (MSDs).</p>
+                <p>Failure to provide adequate <strong>manual handling certification</strong> can lead to significant liability. We focus on the <strong>prevention of musculoskeletal disorders (MSDs)</strong> through rigorous risk assessment and ergonomic best practices.</p>
 
-
-
-                [Image of correct manual handling lifting technique]
-
-
-                <h3>Why Irish Manual Handling Certification is Mandatory</h3>
-                <p>In the Irish legal landscape, a "Manual Handling" activity includes any transporting or supporting of a load by one or more employees, including lifting, putting down, pushing, pulling, carrying, or moving. If these tasks involve a risk of injury, particularly to the back, the employer must take measures to avoid the need for manual handling or provide the necessary **manual handling training Ireland** to mitigate risks.</p>
-            </div>
-        </article>
-
-        <section class="mh-features-bg">
-            <div class="mh-container">
-                <div class="mh-section-header">
-                    <h2>What You Will Learn</h2>
-                    <p>A detailed breakdown of our **manual handling training online Ireland** and in-person modules.</p>
+                <div class="mhc-visual-callout">
+                    <p class="mhc-caption">Mastering the 8-point lifting technique for <strong>safe manual handling Ireland</strong>.</p>
                 </div>
-                <div class="mh-grid-3">
-                    <div class="mh-info-box">
-                        <span class="mh-step">01</span>
-                        <h4>Anatomy & Physiology</h4>
-                        <p>Understanding the spine and how improper lifting leads to long-term chronic pain.</p>
+            </div>
+        </section>
+
+        <!-- Keyword-Rich Feature Grid -->
+        <section class="mhc-section mhc-bg-light">
+            <div class="mhc-container">
+                <div class="mhc-header-center">
+                    <h2 class="mhc-section-title">Course Modules & Learning Outcomes</h2>
+                    <p>Comprehensive <strong>occupational health and safety</strong> modules for Irish businesses.</p>
+                </div>
+
+                <div class="mhc-grid">
+                    <div class="mhc-card">
+                        <div class="mhc-card-icon">01</div>
+                        <h3>Ergonomic Principles</h3>
+                        <p>Learn the <strong>mechanics of the spine</strong> and how to apply <strong>ergonomic lifting techniques</strong> to minimize the risk of back injury in the workplace.</p>
                     </div>
-                    <div class="mh-info-box">
-                        <span class="mh-step">02</span>
-                        <h4>Risk Assessment (T.I.L.E)</h4>
-                        <p>Learn to evaluate the Task, Individual, Load, and Environment before every lift.</p>
+                    <div class="mhc-card">
+                        <div class="mhc-card-icon">02</div>
+                        <h3>TILE Risk Assessment</h3>
+                        <p>Our <strong>manual handling online Ireland</strong> theory covers the TILE principle: Task, Individual, Load, and Environment—the industry standard for dynamic risk assessment.</p>
                     </div>
-                    <div class="mh-info-box">
-                        <span class="mh-step">03</span>
-                        <h4>Practical Lifting Techniques</h4>
-                        <p>Master the 8-point lifting technique that ensures maximum stability and minimal strain.</p>
+                    <div class="mhc-card">
+                        <div class="mhc-card-icon">03</div>
+                        <h3>Practical Assessment</h3>
+                        <p>Complete your <strong>manual handling practical assessment</strong> with an FETAC/QQI qualified instructor to validate your safe lifting techniques.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <article class="mh-content-section">
-            <div class="mh-container-narrow">
-                <h2>The TILE Principle in Manual Handling Training</h2>
-                <p>During our **manual handling course Ireland**, we emphasize the TILE principle. This is a recognized method for conducting dynamic risk assessments on the fly:</p>
-                <ul class="mh-styled-list">
-                    <li><strong>Task:</strong> Does the move involve twisting, stooping, or excessive travel?</li>
-                    <li><strong>Individual:</strong> Does the person have the physical capability or a pre-existing injury?</li>
-                    <li><strong>Load:</strong> Is it heavy, bulky, hot, or difficult to grasp?</li>
-                    <li><strong>Environment:</strong> Are there trip hazards, poor lighting, or restrictive spaces?</li>
-                </ul>
-                <p>By integrating these factors, our **manual handling training online Ireland** gives students the mental toolkit to prevent accidents before they happen.</p>
-            </div>
-        </article>
-
-        <section class="mh-cert-section">
-            <div class="mh-container">
-                <div class="mh-cert-card">
-                    <div class="mh-cert-text">
-                        <h2>Your Irish Manual Handling Certification</h2>
-                        <p>Upon successful completion of the theory and practical assessment, you will receive your **manual handling certification Ireland**. This certificate is typically valid for three years and is widely recognized by insurers and safety auditors across the Republic of Ireland.</p>
-                        <a href="{{route('home')}}" class="btn-main">Get Certified Today</a>
+        <!-- Industry Specific Section (High Keyword Value) -->
+        <section class="mhc-section">
+            <div class="mhc-container">
+                <h2 class="mhc-section-title" style="text-align:center;">Who Needs Manual Handling Training?</h2>
+                <div class="mhc-grid">
+                    <div class="mhc-industry-box">
+                        <h4>Healthcare & Nursing</h4>
+                        <p>Patient handling and ergonomics for <strong>healthcare assistants (HCA)</strong> and nursing staff across Ireland.</p>
+                    </div>
+                    <div class="mhc-industry-box">
+                        <h4>Construction & Trades</h4>
+                        <p>Essential <strong>site safety manual handling</strong> for construction workers, ensuring compliance with HSA site standards.</p>
+                    </div>
+                    <div class="mhc-industry-box">
+                        <h4>Retail & Warehousing</h4>
+                        <p>Safe movement of stock, pallet handling, and <strong>warehouse safety training</strong> for logistics professionals.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="mh-content-section">
-            <div class="mh-container-narrow">
-                <h2>Frequently Asked Questions</h2>
-                <div class="mh-faq-item">
-                    <h4>How long does a manual handling course take?</h4>
-                    <p>Typically, a full course takes 1 to 2 hours. Our blended learning options allow you to finish theory online and complete a 15-minute practical assessment in person.</p>
+        <!-- Detailed TILE List -->
+        <section class="mhc-section mhc-bg-dark-lite">
+            <div class="mhc-container-sm">
+                <h2 class="mhc-section-title">The TILE Safety Framework</h2>
+                <p>During our <strong>manual handling training Ireland</strong>, we break down the four critical factors of every lift:</p>
+                <div class="mhc-tile-list">
+                    <div class="mhc-tile-item"><strong>Task</strong><span>Does the job involve repetitive movements, strenuous effort, or vertical lifting?</span></div>
+                    <div class="mhc-tile-item"><strong>Individual</strong><span>Does the worker have the required strength, height, or specialized <strong>safety training</strong>?</span></div>
+                    <div class="mhc-tile-item"><strong>Load</strong><span>Is the load unstable, sharp, or too heavy for a single-person lift?</span></div>
+                    <div class="mhc-tile-item"><strong>Environment</strong><span>Are there floor level changes, slippery surfaces, or temperature extremes?</span></div>
                 </div>
-                <div class="mh-faq-item">
-                    <h4>Is online training enough for compliance?</h4>
-                    <p>To meet full **manual handling compliance Ireland** standards, a practical demonstration of lifting is required. We offer a hybrid model to facilitate this.</p>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="mhc-section">
+            <div class="mhc-container">
+                <div class="mhc-cta-banner">
+                    <div class="mhc-cta-content">
+                        <h2>Get Your Manual Handling Certificate</h2>
+                        <p>Recognized by major insurers and the <strong>Health and Safety Authority</strong>. Valid for 3 years from date of issue.</p>
+                    </div>
+                    <a href="{{route('home')}}" class="mhc-btn mhc-btn-white">Enroll in Course</a>
                 </div>
             </div>
         </section>
