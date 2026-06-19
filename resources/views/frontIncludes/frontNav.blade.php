@@ -31,4 +31,5 @@
             <a href="{{route('login')}}" class="cta-login" >LOGIN</a>
         </div>
     </div>
+    
 </nav>
