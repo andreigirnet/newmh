@@ -86,14 +86,15 @@
     <script>
         window.stripeKey = "{{ env('STRIPE_KEY') }}";
     </script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ asset('js/stripe.js') }}"></script>
     <script>
         window.replainSettings = { id: 'b5006bb6-d4d8-4b22-9e0c-9486aea3ca22' };
         (function(u){var s=document.createElement('script');s.async=true;s.src=u;
             var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
         })('https://widget.replain.cc/dist/client.js');
     </script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="{{ asset('js/stripe.js') }}"></script>
+
     <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
 
     @yield('modal')
