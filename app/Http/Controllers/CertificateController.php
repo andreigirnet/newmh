@@ -140,6 +140,7 @@ class CertificateController extends Controller
                 new CertificateMail($certificateUrl, storage_path("app/{$fileName}"))
             );
 
+
             // Update package
             Package::where('id', $packageId)->update([
                 'certificate_id' => $certificateCreated->id
