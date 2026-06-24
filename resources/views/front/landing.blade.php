@@ -17,32 +17,33 @@
         </div>
     </div>
 
-    <div id="statsCounter" style="background-color: #0f172a; padding: 40px 0;">
-        <div class="slim-calc-card">
+    <div class="metrics-wrapper bg-brand-deep py-12 px-6">
+        <div class="metrics-grid">
 
-            <div class="calc-section qty-picker">
-                <div class="label-flex">
-                    <span class="mini-label">COURSES</span>
-                </div>
-                <div class="qty-focus">
-                    <span id="qtyVal">1</span>
-                </div>
-                <input type="range" min="1" max="100" value="1" class="neon-slider" id="bulkSlider" oninput="calculateBulk()">
+            <div class="metric-card">
+            <span class="metric-value">
+                820,000<span class="metric-glyph-plus">+</span>
+            </span>
+                <span class="metric-caption">CERTIFIED LEARNERS</span>
             </div>
 
-            <div class="calc-section price-standard">
-                <span class="mini-label">RETAIL</span>
-                <span class="text-red-strike" id="oldTotal"></span>
+            <div class="metric-card">
+            <span class="metric-value">
+                4.9<span class="metric-glyph-star">★</span>
+            </span>
+                <span class="metric-caption">AVERAGE RATING</span>
             </div>
 
-            <div class="calc-section price-result">
-                <span class="mini-label">BULK RATE (10% OFF)</span>
-                <span class="text-green-glow" id="newTotal">€25.00</span>
-                <div class="save-tag">SAVE <span id="savingsAlert">€35.00</span></div>
+            <div class="metric-card">
+            <span class="metric-value">
+                98<span class="metric-glyph-percent">%</span>
+            </span>
+                <span class="metric-caption">PASS RATE</span>
             </div>
 
-            <div class="calc-section action-area">
-                <a href="/home" class="linkStyle"><button class="buy-button-slim">Buy Now</button></a>
+            <div class="metric-card">
+                <span class="metric-value">24/7</span>
+                <span class="metric-caption">COURSE ACCESS</span>
             </div>
 
         </div>
