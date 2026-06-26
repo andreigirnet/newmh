@@ -504,6 +504,9 @@
                             <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
                         </video>
                         <strong>Congratulations! You have passed the test successfully.</strong>
+                        <br><br>
+                        <strong>For the practical part you have to send a video on Whats Up +447405706852, with you lifting an object following Manual Handling techniques</strong>
+
                         Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
                         <br><br>
                         Remember, you can access our website anytime by using your personal password & email address and download the certificate or review the course content if you wish so.

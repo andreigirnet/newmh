@@ -16,7 +16,79 @@
     --text-heading: #1e293b;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.course-banner {
+    background: linear-gradient(90deg, #00764b 0%, #0fa366 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+}
 
+.banner-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge-pill {
+    background-color: #ffffff;
+    color: #00764b;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+.banner-text {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.banner-checkmark {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Accreditation Section Styles */
+.accreditation-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0; /* Optional divider line match */
+}
+
+.shield-icon {
+    color: #0fa366;
+    display: flex;
+    align-items: center;
+}
+
+.badges-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.acc-badge {
+    background-color: #f4f6f9;
+    color: #1a2a40;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+}
 .metrics-wrapper {
     background-color: #0f1e36;
     font-family: 'Inter', sans-serif;
@@ -3038,7 +3110,7 @@ a .navItem{
 }
 
 .course-title {
-    font-size: 34px;
+    font-size: 55px;
     font-weight: 700;
     margin-bottom: 35px;
     color: #222;
@@ -3107,13 +3179,13 @@ a .navItem{
 }
 
 .old-price {
-    font-size: 22px;
+    font-size: 30px;
     color: #999;
     text-decoration: line-through;
 }
 
 .new-price {
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 800;
     color: #146c43; /* premium green */
 }

@@ -55,52 +55,68 @@
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
     <div class="productSection">
-{{--        code for manual handling card--}}
+        {{-- code for manual handling card --}}
         <div class="course-card">
 
             <div class="course-image">
                 <!-- Replace with actual image -->
-             <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
+                <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
             </div>
 
             <div class="course-content">
-
+                <!-- Existing Content Below -->
                 <div class="price-wrapper">
                     <span class="old-price">€35</span>
                     <span class="new-price">€25</span>
                     <span class="discount-badge">30% OFF</span>
                 </div>
-
                 <h1 class="course-title">Manual Handling Course</h1>
+                <div class="accreditation-section">
+                <span class="shield-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </span>
+                    <div class="badges-wrapper">
+                        <span class="acc-badge">QQI</span>
+                        <span class="acc-badge">CPD</span>
+                        <span class="acc-badge">HSE</span>
+                    </div>
+                </div>
+                <!-- NEW: Top Green Feature Banner -->
+                <div class="course-banner">
+                    <div class="banner-left">
+                        <span class="badge-pill">2-IN-1</span>
+                        <span class="banner-text">Theory + Practical part included</span>
+                    </div>
+                    <div class="banner-checkmark">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                </div>
 
                 <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label">Validity</span>
-                            <span class="info-value">3 Years</span>
-                        </div>
-
-                        <div class="info-item">
-                            <span class="info-label">Duration</span>
-                            <span class="info-value">1 Hour</span>
-                        </div>
-
-                        <div class="info-item">
-                            <span class="info-label">Format</span>
-                            <span class="info-value">100% Online</span>
-                        </div>
-
-                        <div class="info-item">
-                            <span class="info-label">Certificate</span>
-                            <span class="info-value">Instant</span>
-                        </div>
+                    <div class="info-item">
+                        <span class="info-label">Validity</span>
+                        <span class="info-value">3 Years</span>
                     </div>
 
-                <a href="/home" class="linkStyle"><button class="course-btn">Buy Now</button></a>
+                    <div class="info-item">
+                        <span class="info-label">Duration</span>
+                        <span class="info-value">1 Hour</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Format</span>
+                        <span class="info-value">100% Online</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Certificate</span>
+                        <span class="info-value">Instant</span>
+                    </div>
                 </div>
+
+                <a href="/home" class="linkStyle"><button class="course-btn">Buy Now</button></a>
             </div>
-
         </div>
-
     </div>
 
     <div class="langTitle" data-aos="fade-up">
