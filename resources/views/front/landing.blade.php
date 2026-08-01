@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="metrics-wrapper bg-brand-deep py-12 px-6">
+    <div class="metrics-wrapper bg-brand-deep" style="padding: 30px 24px;">
         <div class="metrics-grid">
 
             <div class="metric-card">
@@ -100,7 +100,7 @@
 
                     <div class="info-item">
                         <span class="info-label">Duration</span>
-                        <span class="info-value">1 Hour</span>
+                        <span class="info-value">30 Minutes</span>
                     </div>
 
                     <div class="info-item">

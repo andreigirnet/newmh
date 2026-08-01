@@ -10,6 +10,138 @@
     --greenColor: #70bc40;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.mhi-unique-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.mhi-unique-shell {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    max-height: 92vh;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.mhi-unique-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20px 16px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    flex-shrink: 0;
+}
+
+.mhi-unique-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #0f172a;
+    color: #f8fafc;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.mhi-unique-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+.mhi-unique-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.mhi-unique-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #3b82f6;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.mhi-unique-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.mhi-unique-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #eff6ff;
+    color: #3b82f6;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.mhi-unique-footer {
+    padding: 16px 24px 24px;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.mhi-unique-btn.adminButtonModal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px -4px rgba(37, 99, 235, 0.4);
+    transition: all 0.2s ease;
+}
+
+.mhi-unique-btn.adminButtonModal:active {
+    transform: scale(0.98);
+}
 /* --- Brand Intro Card Stylistics --- */
 .exclusive-pagination {
     display: flex;
@@ -1133,6 +1265,24 @@ a{
         display: flex;
         flex-direction: column;
     }
+    .mhi-unique-overlay {
+        padding: 0;
+    }
+    .mhi-unique-shell {
+        max-height: 100vh;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+    .mhi-unique-body {
+        padding: 16px 16px;
+    }
+    .mhi-unique-header {
+        padding: 20px 16px 12px;
+    }
+    .mhi-unique-footer {
+        padding: 12px 16px 24px;
+    }
 }
 @media screen and (max-width: 767px) and (min-width: 250px){
     .homeManualProduct{
@@ -1254,5 +1404,23 @@ a{
         text-align: center;
         width: 100%;
         margin-top: 10px;
+    }
+    .mhi-unique-overlay {
+        padding: 0;
+    }
+    .mhi-unique-shell {
+        max-height: 100vh;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+    .mhi-unique-body {
+        padding: 16px 16px;
+    }
+    .mhi-unique-header {
+        padding: 20px 16px 12px;
+    }
+    .mhi-unique-footer {
+        padding: 12px 16px 24px;
     }
 }

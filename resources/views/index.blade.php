@@ -11,24 +11,59 @@
         <strong>Item</strong> added to the cart
     </div>
     @if (session('created'))
-        <div class="modalRegisterComplete" id="modalRegisterEmployer">
-            <div class="modalTitle">Hi there</div>
-            <p>Its <a href="{{route('home')}}">manualhandlingireland.com</a> Training Centre here.</p>
-            <div class="modalText">
-                <div class="modalInnerText">
-                    If you require any further assistance or information, please don't hesitate to reach out to us via the chat feature on our website.
-                    <br><br>
-                    To access the course, you can follow the steps outlined on our website once you're logged in, or return at any time later by using the email we've just sent you containing your login details (password & email). Do check your spam/junk folder, just in case.
-                    <br><br>
-                    Upon successful processing of your payment, you'll be able to choose the language for your training (English / Polish / Spanish / Russian / Romanian / Ukrainian).
-                    <br><br>
-                    Our customer support is available from 10 am to 7-8 pm every day, including weekends.
+        <div class="mhi-unique-overlay">
+            <div class="mhi-unique-shell modalRegisterComplete" id="modalRegisterEmployer">
+                <!-- Header -->
+                <div class="mhi-unique-header">
+                    <div class="mhi-unique-badge">Registration Complete</div>
+                    <h2 style="margin: 12px 0 4px; font-size: 1.35rem; font-weight: 800; color: #0f172a; text-align: center;">Hi there! 👋</h2>
+                    <p style="margin: 0; font-size: 0.9rem; color: #475569; text-align: center;">
+                        It's <a href="{{route('home')}}" style="color: #2563eb; text-decoration: none; font-weight: 600;" target="_blank">manualhandlingireland.ie</a> Training Centre here.
+                    </p>
+                </div>
+
+                <!-- Body Content -->
+                <div class="mhi-unique-body">
+                    <div style="font-size: 0.9rem; color: #334155; line-height: 1.4;">
+                        If you require any further assistance or information, please don't hesitate to reach out to us via the chat feature on our website.
+                    </div>
+
+                    <!-- Card 1: Course Access -->
+                    <div class="mhi-unique-card">
+                        <div class="mhi-unique-card-header">
+                            <div class="mhi-unique-icon">🔑</div>
+                            <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: #1e293b;">Accessing Your Course</h4>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem; color: #64748b; line-height: 1.4;">
+                            Follow the steps on our website once logged in, or use the email we sent you (check spam/junk just in case).
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Multi-Language -->
+                    <div class="mhi-unique-card" style="border-left-color: #10b981;">
+                        <div class="mhi-unique-card-header">
+                            <div class="mhi-unique-icon" style="background: #ecfdf5; color: #10b981;">🌍</div>
+                            <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: #1e293b;">Language Selection</h4>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem; color: #64748b; line-height: 1.4;">
+                            Choose language after payment: <strong>English, Polish, Spanish, Russian, Romanian, Ukrainian</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Support Info Note -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px 14px; border-radius: 10px; font-size: 0.85rem; color: #475569; text-align: center;">
+                        🕒 Support available from <strong>6 am to 10 pm</strong> every day, including weekends.
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="mhi-unique-footer">
+                    <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 8px; font-weight: 500;">Best regards</div>
+                    <button class="mhi-unique-btn adminButtonModal" id="understoodButton">
+                        UNDERSTOOD
+                    </button>
                 </div>
             </div>
-            <div class="modalText">
-                Best regards
-            </div>
-            <div class="adminButtonModal" style="display: flex; align-items: center; justify-content: center; margin-top: 20px; color: white" id="understoodButton">UNDERSTOOD</div>
         </div>
     @endif
 {{--        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">--}}
@@ -52,7 +87,7 @@
                                 @else
                                     <div class="product-icons-back">
                                         <img src="images/icons/back-in-time.png" alt="">
-                                        <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Duration: <span style="font-weight: 500">{{$product->durationTraining}} hours</span></div>
+                                        <div style="font-weight: 600; display: flex; align-items: center; column-gap: 5px">Duration: <span style="font-weight: 500">{{$product->durationTraining}} Minutes</span></div>
                                     </div>
                                 @endif
                                 <div class="product-icons-back">
