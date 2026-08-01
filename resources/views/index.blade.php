@@ -183,8 +183,8 @@
                 <div class="course-content">
 
                     <div class="price-wrapper">
-                        <span class="old-price">€35</span>
-                        <span class="new-price">€25</span>
+                        <span class="old-price">€43</span>
+                        <span class="new-price">€30</span>
                         <span class="discount-badge">30% OFF</span>
                     </div>
 
