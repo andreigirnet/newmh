@@ -8,7 +8,7 @@
         </button>
 
         <a href="{{route('frontHome')}}" class="brand">
-            <img src="{{asset('images/logo/logomain.png')}}" alt="Ireland Safety Course" class="logoradius">
+            <img src="{{asset('images/logo/logomain.webp')}}" alt="Ireland Safety Course" class="logoradius">
         </a>
 
         <div class="nav-links">

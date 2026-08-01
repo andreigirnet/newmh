@@ -38,7 +38,7 @@
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
                                     <div style="display: flex; justify-content: center">
-                                        <img src="/images/logo/logoLight.png" alt="logo" height="100">
+                                        <img src="/images/logo/logoLight.webp" alt="logo" height="100">
                                         {{--                                        <a href="" class="logo-dark">--}}
                                         {{--                                            <img src="/images/login/darkLoginLogo.png" alt="dark logo" height="70">--}}
                                         {{--                                        </a>--}}

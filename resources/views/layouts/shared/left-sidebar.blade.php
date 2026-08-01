@@ -4,7 +4,7 @@
     <!-- Brand Logo Light -->
     <a href="{{route('home')}}" class="logo logo-light">
         <span class="logo-lg">
-            <img src="/images/logo/logomain.png" alt="logo" style="height: 50px; border-radius: 10px">
+            <img src="/images/logo/logomain.webp" alt="logo" style="height: 50px; border-radius: 10px">
         </span>
         <span class="logo-sm">
             <img src="/images/logo/adminLogo.png" alt="small logo" style="height: 30px; border-radius: 10px">
