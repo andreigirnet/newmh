@@ -18,7 +18,11 @@ class GoogleController extends Controller
     public function handleGoogleCallback()
     {
         // Temporarily remove try-catch to see the exact error
-        $googleUser = Socialite::driver('google')->user();
+        try {
+            $googleUser = Socialite::driver('google')->user();
+        } catch (\Exception $e) {
+            return redirect('/login')->with('error', 'Google login failed or session expired. Please try again.');
+        }
 
         $user = User::where('google_id', $googleUser->id)->orWhere('email', $googleUser->email)->first();
 

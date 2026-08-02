@@ -46,7 +46,7 @@
     </script>
 
 </head>
-<body x-data="app()">
+<body x-data="app()" class="bodyApp">
 
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")

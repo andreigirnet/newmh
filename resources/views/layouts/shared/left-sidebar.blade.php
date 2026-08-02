@@ -7,7 +7,7 @@
             <img src="/images/logo/logomain.webp" alt="logo" style="height: 50px; border-radius: 10px">
         </span>
         <span class="logo-sm">
-            <img src="/images/logo/adminLogo.png" alt="small logo" style="height: 30px; border-radius: 10px">
+            <img src="/images/logo/smallLogo.webp" alt="small logo" style="height: 30px; border-radius: 10px">
         </span>
     </a>
 
@@ -17,7 +17,7 @@
             <img src="/images/logo/whiteLoginLogo.png" alt="dark logo"style="height: 50px">
         </span>
         <span class="logo-sm">
-            <img src="/images/login/smallLogo.png" alt="small logo" style="height: 30px">
+            <img src="/images/login/smallLogo.webp" alt="small logo" style="height: 30px">
         </span>
     </a>
 
