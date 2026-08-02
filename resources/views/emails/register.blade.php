@@ -1,16 +1,16 @@
 <x-mail::message>
-# Welcome to manualhandlingireland.com
+# Welcome to manualhandlingireland.ie
 
 Dear Customer,
 
 Welcome to our online training service and thank you for choosing our platform. This email is a confirmation that your registration has been successfully processed on our website:
 
-[manualhandlingireland.com](https://www.manualhandlingireland.com/)
+[manualhandlingireland.ie](https://www.manualhandlingireland.ie/)
 
 ### Getting Started
 You can access our website at any time to begin your training at your convenience. Simply log in using your email and password via the link below:
 
-[manualhandlingireland.com](https://www.manualhandlingireland.com/)
+[manualhandlingireland.ie](https://www.manualhandlingireland.ie/)
 
 ### Course Access & Certification
 * **Existing Users**: If you have already completed the course, you can still log in to review the course materials for free at any time.
@@ -23,11 +23,11 @@ If you are an employer looking to register a team or staff members, please visit
 ### Account Support
 If you have forgotten your password, please use the reset link below. You will receive an automated password via email instantly—please remember to check your spam or junk folders if it does not appear in your inbox.
 
-[Reset Password Here](https://www.manualhandlingireland.com/forgot-password)
+[Reset Password Here](https://www.manualhandlingireland.ie/forgot-password)
 
 ### Need Help?
 If you require any additional information or further assistance, please reach out to us:
-* **Email**: info@manualhandlingireland.com
+* **Email**: info@manualhandlingireland.ie
 * **Support**: Use the **Online Chat** on our website or contact us directly via our **WhatsApp Chat**.
 
 Kind regards,

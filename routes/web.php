@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\SitemapController;
 use App\Models\Blog;
@@ -19,7 +20,8 @@ use Spatie\Sitemap\Tags\Url;
 |
 */
 
-
+    Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+    Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
     //Front end routes, User experience
     Route::get('/', function(){
         $products = Product::orderBy('id', 'asc')->get();
