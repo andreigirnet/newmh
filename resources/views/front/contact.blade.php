@@ -24,6 +24,11 @@
 
                 <div class="ct-info-grid">
                     <div class="ct-detail-text">
+                        <strong>Company:</strong><br>
+                        PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED
+                    </div>
+
+                    <div class="ct-detail-text">
                         <strong>Operating Hours:</strong><br>
                         Monday to Friday: 10am – 7pm<br>
                         Weekends & Bank Holidays: 10am – 7pm
@@ -35,7 +40,7 @@
                     </div>
 
                     <div class="ct-address-box">
-                        13 Kinahan Street, Arbour Hill, Stoneybatter, Dublin 7, D07 E2N6, Ireland
+                        51 Bracken Road, Dublin, D18 CV48, Ireland
                     </div>
                 </div>
 
