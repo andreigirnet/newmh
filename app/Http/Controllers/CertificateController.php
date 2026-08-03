@@ -72,7 +72,8 @@ class CertificateController extends Controller
      */
     public function store(Request $request, $packageId)
     {
-        $userId = auth()->id(); // ✅ secure
+
+        $userId = $request->userId; // ✅ secure
         $lockKey = "certificate_{$userId}_{$packageId}";
 
         $lock = Cache::lock($lockKey, 30);
@@ -158,7 +159,7 @@ class CertificateController extends Controller
     {
         try {
             $certificate = Certificate::findOrFail($certificateId);
-            $user = auth()->user();
+            $user = User::findOrFail($certificate->user_id);
 
             $certificateUrl = config('app.url') . '/certificate/' . $certificate->id;
             $fileName = "certificates/{$user->id}_{$certificate->package_id}.pdf";
@@ -182,7 +183,7 @@ class CertificateController extends Controller
     }
 
 
-    
+
     //Downloand certificate
     public function certificateDownload($id)
     {
