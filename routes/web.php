@@ -91,7 +91,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('/certificate/create/{id}', [App\Http\Controllers\CertificateController::class, 'store'])->name('certificate.store');
     Route::get('/certificate/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownload'])->name('certificate.download');
     Route::get('/certificate/practice/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownloadPractice'])->name('certificate.download.practice');
-
+    
 
 
     Route::get('/controller/payment/management',[App\Http\Controllers\EmployeeController::class,'controller'])->name('controller.payment.management');
@@ -139,6 +139,9 @@ Route::group(['middleware'=>'auth'], function () {
         Route::put('/admin/update/user/{id}', [App\Http\Controllers\UserController::class,'update'])->name('user.update');
         Route::get('/search/user', [App\Http\Controllers\UserController::class,'searchUser'])->name('user.admin.search');
         Route::post('/admin/existing/employee', [App\Http\Controllers\UserController::class,'addExistingEmployee'])->name('user.admin.exist');
+        Route::post('/certificate/{certificate}/email', [CertificateController::class, 'emailCertificate'])
+            ->name('certificate.email');
+            
 
         Route::get('/admin/blogs', [App\Http\Controllers\BlogController::class,'adminIndex'])->name('admin.blogs.index');
         Route::delete('/admin/delete/blogs/{id}', [App\Http\Controllers\BlogController::class,'destroy'])->name('blog.delete');
