@@ -105,7 +105,7 @@ class CertificateController extends Controller
                 'expiration_date' => $expirationDate
             ]);
 
-            $holder = auth()->user();
+            $holder =  $user = User::findOrFail($request->userId);
             $certificateUrl = config('app.url') . '/certificate/' . $certificateCreated->id;
 
             // Generate PDF
