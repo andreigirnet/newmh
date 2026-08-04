@@ -17,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::post('/events', function (Request $request) {
+    $event = $request->json()->all();
+
+    if ($event['type'] === 'email.received') {
+        return response()->json($event);
+    }
+
+    return response()->json([]);
+});
