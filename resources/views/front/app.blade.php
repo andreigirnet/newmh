@@ -51,7 +51,7 @@
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
-{{--@include("frontIncludes/subNav")--}}
+@include("frontIncludes/subNav")
 {{--@include("frontIncludes/subNavMobile")--}}
 
 @yield('content')
@@ -77,7 +77,7 @@
 <script>
     AOS.init();
 </script>
-<script src="{{asset('js/prevent.js')}}"></script>
+{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
 <div id="cookiePrompt" class="cookie-container">
     <div class="cookie-content">
         <div class="cookie-text">

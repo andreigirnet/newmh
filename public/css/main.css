@@ -17,6 +17,100 @@
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.feedback-container {
+    display: none ;
+    width: 100% !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    padding: 10px 10px !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+}
+
+.feedback-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+}
+
+.feedback-brand {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+.google-logo {
+    width: 16px !important;
+    height: 16px !important;
+    display: block !important;
+}
+
+.feedback-window {
+    display: block !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+.feedback-track {
+    display: flex !important;
+    transition: transform 0.5s ease-in-out !important;
+    will-change: transform !important;
+}
+
+.feedback-card {
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    padding-right: 8px !important;
+}
+
+.feedback-inner {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: #f8fafc !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+    border: 1px solid #f1f5f9 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+.feedback-stars {
+    color: #fbbf24 !important;
+    font-size: 9px !important;
+    flex-shrink: 0 !important;
+    letter-spacing: 0.5px !important;
+}
+.mobilesafetynav-brand img.mobilesafetynav-logoradius {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.feedback-avatar {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 1px solid #bae6fd !important;
+    flex-shrink: 0 !important;
+}
+
+.feedback-comment {
+    color: #4b5563 !important;
+    font-style: italic !important;
+    font-size: 12px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    flex-grow: 1 !important;
+}
+
+
 .course-banner {
     background: linear-gradient(90deg, #00764b 0%, #0fa366 100%);
     color: #ffffff;
@@ -7004,6 +7098,9 @@ a .navItem{
     .mobile-menu-toggle {
         display: flex;
     }
+    .feedback-container{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -7104,5 +7201,8 @@ a .navItem{
     }
     .mobile-menu-toggle {
         display: flex;
+    }
+    .feedback-container{
+        display: block;
     }
 }
