@@ -40,7 +40,7 @@
     </script>
 </head>
 
-<body class="preload">
+<body>
     <!-- Begin page -->
     <div class="wrapper">
 
@@ -83,7 +83,11 @@
 
     </div>
     <!-- END wrapper -->
-
+{{--    <script>--}}
+{{--        window.stripeKey = "{{ env('STRIPE_KEY') }}";--}}
+{{--    </script>--}}
+{{--    <script src="https://js.stripe.com/v3/"></script>--}}
+{{--    <script src="{{ asset('js/stripe.js') }}"></script>--}}
 {{--    <script>--}}
 {{--        window.replainSettings = { id: 'b5006bb6-d4d8-4b22-9e0c-9486aea3ca22' };--}}
 {{--        (function(u){var s=document.createElement('script');s.async=true;s.src=u;--}}
@@ -101,7 +105,7 @@
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script src="{{asset('js/hideAdminNav.js')}}"></script>
-{{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
+    <script src="{{asset('js/prevent.js')}}"></script>
 
     <script>
         tinymce.init({
