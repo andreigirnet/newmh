@@ -23,6 +23,7 @@
                 <span>Share</span>
             </div>
         </div>
+
         @if (session('registered'))
             <div class="luxury-overlay">
                 <div class="luxury-card modal-popup">
@@ -33,8 +34,10 @@
                 </div>
             </div>
         @endif
+
         <div class="luxury-card jumbo-form-card">
-            <form action="{{route('register.employee.store')}}" method="POST" class="premium-form-stack">
+            <form action="{{route('register.employee.store')}}" method="POST" class="premium-form-stack"
+                  onsubmit="if(this.submitted) return false; this.submitted = true; var btn = document.getElementById('submitBtn'); btn.disabled = true; btn.innerText = 'Registering...'; btn.style.opacity = '0.6'; btn.style.cursor = 'not-allowed'; btn.style.pointerEvents = 'none';">
                 @csrf
                 <div class="input-grid-mobile">
                     <div class="input-wrapper">
@@ -53,10 +56,11 @@
                     <input type="text" name="phone" placeholder="+353 00 000 0000">
                 </div>
 
-                <button type="submit" class="glow-button jumbo-btn">
+                <button type="submit" id="submitBtn" class="glow-button jumbo-btn">
                     Register Employee
                 </button>
             </form>
+
             @if ($errors->any())
                 <div class="error-box">
                     @foreach ($errors->all() as $error)
@@ -66,9 +70,8 @@
             @endif
         </div>
     </div>
-
-</div>
 @endsection
+
 @section('script')
-     @vite(['resources/js/pages/dashboard.js'])
+    @vite(['resources/js/pages/dashboard.js'])
 @endsection

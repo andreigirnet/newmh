@@ -1,6 +1,7 @@
 @extends('layouts.vertical', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
 
 @section('content')
+
     <style>
         [x-cloak] { display: none !important; }
 
@@ -197,10 +198,17 @@
         }
     </script>
 
+
     <style>
         /* Custom Scrollbar for dark theme */
         .custom-scrollbar::-webkit-scrollbar { width: 5px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
     </style>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        window.stripeKey = "{{ env('STRIPE_KEY') }}";
+    </script>
+
+    <script src="{{ asset('js/stripe.js') }}"></script>
 @endsection
