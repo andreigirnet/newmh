@@ -40,7 +40,7 @@
     </script>
 </head>
 
-<body>
+<body class="preload">
     <!-- Begin page -->
     <div class="wrapper">
 
