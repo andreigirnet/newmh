@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://www.irish-manualhandling.com/'),
+    'url' => env('APP_URL', 'https://www.manualhandling-ireland.ie/'),
 
     'asset_url' => env('ASSET_URL'),
 

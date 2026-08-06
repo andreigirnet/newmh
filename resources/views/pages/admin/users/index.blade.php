@@ -65,6 +65,22 @@
                                                 <td>No record</td>
                                             @endif
                                             <td>{{$user->registeredBy}}</td>
+                                            <td>
+                                                @php
+                                                    $hasOrdered = \Illuminate\Support\Facades\DB::table('orders')->where('user_id', $user->id)->exists();
+                                                @endphp
+
+                                                @if(!$hasOrdered)
+                                                    <form action="{{ route('users.send-reminder', $user) }}" method="POST" style="display: inline;">
+                                                        @csrf
+                                                        <button type="submit" style="background-color: #2563eb; color: #ffffff; border: none; padding: 6px 12px; border-radius: 4px; font-size: 13px; cursor: pointer;">
+                                                            Send Course Reminder
+                                                        </button>
+                                                    </form>
+                                                @else
+                                                    <span style="color: #64748b; font-size: 13px;">Purchased</span>
+                                                @endif
+                                            </td>
                                         </tr>
                                     @endforeach
                                     </tbody>

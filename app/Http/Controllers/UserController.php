@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Mail\IncompleteCourseReminder;
 use App\Models\Ip;
 use App\Models\Product;
 use App\Models\User;
@@ -10,6 +11,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -30,6 +32,22 @@ class UserController extends Controller
             return redirect()->back()->with('success', 'No record has been found with this email');
         }
         return view('pages.admin.users.search')->with('users',$users);
+    }
+    public function sendReminder(User $user)
+    {
+        // Check using raw SQL on the orders table
+        $hasOrdered = DB::table('orders')
+            ->where('user_id', $user->id)
+            ->exists();
+
+        if ($hasOrdered) {
+            return back()->with('error', 'This user has already purchased a course.');
+        }
+
+        // Send the email immediately
+        Mail::to($user->email)->send(new IncompleteCourseReminder($user));
+
+        return back()->with('success', 'Reminder email sent to ' . $user->email);
     }
 
     public function search(Request $request)

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\UserController;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoutingController;
@@ -27,6 +28,8 @@ use Spatie\Sitemap\Tags\Url;
         $products = Product::orderBy('id', 'asc')->get();
         return view("front.landing", compact('products'));
     })->name('frontHome');
+Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
+    ->name('users.send-reminder');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
 
     Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
@@ -91,7 +94,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('/certificate/create/{id}', [App\Http\Controllers\CertificateController::class, 'store'])->name('certificate.store');
     Route::get('/certificate/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownload'])->name('certificate.download');
     Route::get('/certificate/practice/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownloadPractice'])->name('certificate.download.practice');
-    
+
 
 
     Route::get('/controller/payment/management',[App\Http\Controllers\EmployeeController::class,'controller'])->name('controller.payment.management');
@@ -141,7 +144,7 @@ Route::group(['middleware'=>'auth'], function () {
         Route::post('/admin/existing/employee', [App\Http\Controllers\UserController::class,'addExistingEmployee'])->name('user.admin.exist');
         Route::post('/certificate/{certificate}/email', [CertificateController::class, 'emailCertificate'])
             ->name('certificate.email');
-            
+
 
         Route::get('/admin/blogs', [App\Http\Controllers\BlogController::class,'adminIndex'])->name('admin.blogs.index');
         Route::delete('/admin/delete/blogs/{id}', [App\Http\Controllers\BlogController::class,'destroy'])->name('blog.delete');
