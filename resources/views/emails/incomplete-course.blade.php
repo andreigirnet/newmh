@@ -17,7 +17,7 @@
                 <!-- Header Banner / Logo Area -->
                 <tr>
                     <td align="center" style="background-color: #0f172a; padding: 30px 20px;">
-                        <h1 style="color: #ffffff; font-size: 22px; margin: 0; font-weight: 700; letter-spacing: 0.5px;">{{ config('app.name') }}</h1>
+                        <h1 style="color: #ffffff; font-size: 22px; margin: 0; font-weight: 700; letter-spacing: 0.5px;">Manual Handling Ireland</h1>
                     </td>
                 </tr>
 
@@ -39,7 +39,7 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td align="center" style="background-color: #2563eb; border-radius: 6px;">
-                                    <a href="{{ url('/home') }}" target="_blank" style="font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; border: 1px solid #2563eb; display: inline-block;">
+                                    <a href="https://www.manualhandling-ireland.ie/home" target="_blank" style="font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; border: 1px solid #2563eb; display: inline-block;">
                                         Complete My Enrollment &rarr;
                                     </a>
                                 </td>
@@ -86,18 +86,12 @@
                         </p>
                         <p style="color: #64748b; font-size: 14px; margin: 15px 0 0 0;">
                             Cheers,<br>
-                            <strong style="color: #1e293b;">The {{ config('app.name') }} Team</strong>
+                            <strong style="color: #1e293b;">The Manual Handling Ireland Team</strong>
                         </p>
                     </td>
                 </tr>
 
-                <!-- Footer -->
-                <tr>
-                    <td align="center" style="background-color: #f8fafc; padding: 20px; color: #94a3b8; font-size: 12px;">
-                        <p style="margin: 0;">&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
-                        <p style="margin: 5px 0 0 0;"><a href="{{ url('/unsubscribe') }}" style="color: #94a3b8; text-decoration: underline;">Unsubscribe</a> from these notifications.</p>
-                    </td>
-                </tr>
+
 
             </table>
         </td>
