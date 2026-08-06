@@ -39,7 +39,7 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td align="center" style="background-color: #2563eb; border-radius: 6px;">
-                                    <a href="https://www.manualhandling-ireland.ie/home" target="_blank" style="font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; border: 1px solid #2563eb; display: inline-block;">
+                                    <a href="https://www.manualhandling-ireland.ie" target="_blank" style="font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; border: 1px solid #2563eb; display: inline-block;">
                                         Complete My Enrollment &rarr;
                                     </a>
                                 </td>
