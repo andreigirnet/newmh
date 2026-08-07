@@ -6778,7 +6778,8 @@ a .navItem{
         row-gap: 20px;
     }
     .modern-glow-btn{
-        font-size: 19px;
+        font-size: 17px;
+        padding: 19px 5px;
     }
     #customersReviews{
         padding: 0;
@@ -6896,6 +6897,7 @@ a .navItem{
         align-items: center;
         justify-content: center;
         text-align: center;
+        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     }
     .mainBannerDescription{
         display: flex;
@@ -6915,8 +6917,9 @@ a .navItem{
         font-size: 34px;
     }
     .titleTextMain{
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 600;
+        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     }
     .benefitTitle{
         font-size: 17px;
@@ -6976,6 +6979,7 @@ a .navItem{
     }
     .mainBannerTitle{
         width: 300px;
+        font-size: 30px;
     }
     .mainBannerDescription{
         width: 300px;
