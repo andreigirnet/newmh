@@ -3747,12 +3747,14 @@ a .navItem{
     font-size: 30px;
     color: #999;
     text-decoration: line-through;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .new-price {
     font-size: 60px;
     font-weight: 800;
     color: #146c43; /* premium green */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .discount-badge {
