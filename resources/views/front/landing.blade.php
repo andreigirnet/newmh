@@ -9,6 +9,31 @@
         <div class="mainBannerContent">
             <div class="mainBannerRight">
                 <h1 class="mainBannerTitle">Manual Handling Course Ireland-<br> Online Training & Certificate</h1>
+                <div class="trust-badges-container">
+                    <div class="trust-badge">
+                        <span class="badge-icon">🛡️</span>
+                        <div class="badge-text">
+                            <strong>CPD, QQI Accredited</strong>
+                            <span>Recognized Standard</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge">
+                        <span class="badge-icon">💶</span>
+                        <div class="badge-text">
+                            <strong>€25</strong>
+                            <span>Instant Access</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge">
+                        <span class="badge-icon">⭐</span>
+                        <div class="badge-text">
+                            <strong>Fully Compliant</strong>
+                            <span>Ireland & UK Law</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="mainBannerDescription" >Our manual handling course is fully flexible and combines theory modules with a practical assessment. The training includes clear videos, helpful images, and straightforward text, making the content simple to follow and understand. It runs smoothly on mobile devices and PCs, allowing you to learn anytime and anywhere while meeting workplace safety standards in Ireland, the UK, and across Europe.</div>
                 <a href="{{route('register')}}" class="modern-glow-btn">
                     Register For Manual Handling Certification
@@ -50,7 +75,7 @@
     </div>
 
     <div class="title" data-aos="fade-up">
-        <div class="titleText" >Manual Handling Ireland Online Manual Handling Training for learners worldwide</div>
+        <div class="titleTextMain" >Manual Handling Ireland Online Manual Handling Training for learners worldwide</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>

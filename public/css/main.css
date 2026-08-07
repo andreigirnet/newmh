@@ -2821,6 +2821,64 @@ a .navItem{
     box-shadow: 0 2px 10px rgba(255, 94, 0, 0.4);
     transition: all 0.1s;
 }
+.trust-badges-container {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    width: 90%;
+    max-width: 380px;
+    margin: 12px auto;
+    font-family: inherit;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.75); /* Sleek dark navy tint */
+    backdrop-filter: blur(8px); /* Modern glass blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle crisp border */
+    padding: 10px 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.trust-badge:active {
+    transform: scale(0.98);
+}
+
+.badge-icon {
+    font-size: 18px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-text strong {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+}
+
+.badge-text span {
+    font-size: 11px;
+    color: #94a3b8; /* Soft muted gray for secondary text */
+    margin-top: 2px;
+}
 
 @-webkit-keyframes pulse {
     0% {
@@ -2906,6 +2964,11 @@ a .navItem{
     font-size: 45px;
     font-weight: 600;
 }
+.titleTextMain{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
 .borderTitle{
     width: 70px;
     border-bottom: 5px solid #f20c34;
@@ -2920,7 +2983,7 @@ a .navItem{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 84px 0;
+    padding: 45px 0;
 }
 .productWrapper {
     display: flex;
@@ -3560,7 +3623,7 @@ a .navItem{
 
 .course-card {
     width: 1150px;
-    max-width: 100%;
+    max-width: 90%;
     background: #ffffff;
     border-radius: 30px;
     display: flex;
@@ -6314,6 +6377,9 @@ a .navItem{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px){
+    .trust-badges-container{
+        display: flex;
+    }
     .mh-steps-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -6846,6 +6912,10 @@ a .navItem{
     .titleText{
         font-size: 34px;
     }
+    .titleTextMain{
+        font-size: 34px;
+        font-weight: 600;
+    }
     .benefitTitle{
         font-size: 17px;
         font-weight: 600;
@@ -6907,6 +6977,7 @@ a .navItem{
     }
     .mainBannerDescription{
         width: 300px;
+        display: none;
     }
     .benefitLeftRight{
         width: 307px;
@@ -7104,6 +7175,9 @@ a .navItem{
 }
 
 @media only screen and (max-width: 768px) {
+    .titleTextMain{
+        padding: 0 20px;
+    }
     .footer-column {
         flex: 1 1 30%;
     }
@@ -7205,4 +7279,12 @@ a .navItem{
     .feedback-container{
         display: block;
     }
+    .course-image{
+        flex:none;
+        height: 270px;
+    }
+    .trust-badges-container{
+        display: flex;
+    }
+
 }
