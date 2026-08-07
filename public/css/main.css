@@ -7286,5 +7286,8 @@ a .navItem{
     .trust-badges-container{
         display: flex;
     }
+    .exclusive-benefits-area{
+        padding: 0 20px;
+    }
 
 }

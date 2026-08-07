@@ -211,7 +211,7 @@
                 <img src="{{asset('images/trust.webp')}}" alt="">
             </div>
             <div class="trustRight">
-                <div class="trustTitle" >QQI Acredited Manual Handling Training Dublin Ireland - You Can Trust</div>
+                <div class="trustTitle sizeTextMobile" >QQI Acredited Manual Handling Training Dublin Ireland - You Can Trust</div>
                 <div class="trustContent">
                     <div >Manual Handling Ireland is a legally registered Irish company, fully compliant with national regulations. All our Manual Handling Training follows HSA standards, holds QQI accreditation, and aligns with European legislation.</div>
                     <br><br>
