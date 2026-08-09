@@ -29,7 +29,16 @@
     <style>
         [x-cloak] { display: none; }
     </style>
-
+    <!-- Event snippet for Achiziție (2) conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18160580545/pLwVCLmu594cEMHv0dND',
+            'value': 1.0,
+            'currency': 'EUR',
+            'transaction_id': ''
+            // 'new_customer': true /* calculate dynamically, populate with true/false */,
+        });
+    </script>
 </head>
 
 <body>
