@@ -110,6 +110,7 @@
                         <label class="mb-2" style="font-weight: 700; font-size: 13px; color: #334155; text-transform: uppercase; letter-spacing: 0.5px; display: block;">Credit or Debit Card</label>
                         <div id="card-element"></div>
                         <div id="card-errors" class="text-danger small mt-2" role="alert"></div>
+                        <div id="three-ds-container" class="mt-3"></div>
                     </div>
 
                     <div id="payment-message" class="hidden mt-3"></div>

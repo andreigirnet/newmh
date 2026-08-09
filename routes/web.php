@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\UserController;
 use App\Models\Blog;
@@ -100,11 +101,11 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('/controller/payment/management',[App\Http\Controllers\EmployeeController::class,'controller'])->name('controller.payment.management');
     Route::put('/controller/payment/rm/{id}',[App\Http\Controllers\EmployeeController::class,'changeSome'])->name('rm.us');
 
+    Route::post('/api/finalize-order', [CheckoutController::class, 'finalizeOrder']);
+
     Route::post('/payment', [App\Http\Controllers\CheckoutController::class,'setPayment']);
 
-     Route::get('/payment/success', function(){
-            return view('pages.back.payment');
-        })->name('success.payment');
+    Route::get('/payment/success', [CheckoutController::class, 'paymentSuccess'])->name('payment.success');
 
     Route::put('/password/update/{id}', [App\Http\Controllers\ProfileController::class,'update'])->name('password.dashboard.update');
     Route::get('/search/employees', [App\Http\Controllers\UserController::class,'searchEmployees'])->name('user.search.employees');

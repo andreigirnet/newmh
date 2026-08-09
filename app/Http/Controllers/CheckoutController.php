@@ -9,6 +9,7 @@ use App\Models\Basket;
 use App\Models\Certificate;
 use App\Models\Order;
 use App\Models\Package;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -17,6 +18,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Jackiedo\Cart\Cart;
+use Stripe\PaymentIntent;
 use Stripe\Stripe;
 
 
@@ -63,11 +65,21 @@ class CheckoutController extends Controller
         $json_str = file_get_contents('php://input');
         $json_obj = json_decode($json_str);
         $amountToInt = round($request->cartTotal * 100, 0, PHP_ROUND_HALF_UP);
+
         $intent = null;
 
         try {
-            // Step 1 & 2: Initial creation with payment method from client
-            if (isset($json_obj->payment_method_id)) {
+            // CASE A: If the frontend is posting back the payment_intent_id after finishing 3DS popup
+            if (isset($json_obj->payment_intent_id)) {
+                $intent = \Stripe\PaymentIntent::retrieve($json_obj->payment_intent_id);
+
+                // After 3DS popup finishes, manual confirmation requires one final confirm call to settle the charge
+                if ($intent->status == 'requires_confirmation' || $intent->status == 'requires_action') {
+                    $intent = $intent->confirm();
+                }
+            }
+            // CASE B: Initial payment submission with the payment_method_id from frontend
+            else if (isset($json_obj->payment_method_id)) {
                 $customer = \Stripe\Customer::create([
                     'email' => auth()->user()->email,
                     'description' => 'New customer',
@@ -75,29 +87,31 @@ class CheckoutController extends Controller
                         'name' => auth()->user()->name,
                     ],
                 ]);
-
+                $cartItemsJson = $request->cart_items; // Or encode your cart details here
                 $intent = \Stripe\PaymentIntent::create([
                     'payment_method' => $json_obj->payment_method_id,
                     'amount' => $amountToInt,
                     'currency' => 'eur',
-                    'confirmation_method' => 'manual',
                     'confirm' => true,
                     'customer' => $customer->id,
-                    'return_url' => url('/payment/success')
+                    'description' => 'Payment made by '. auth()->user()->email,
+                    'return_url' => url('/payment/success'),
+                    'metadata' => [
+                        'user_id' => auth()->id(),
+                        'cart_items' => $cartItemsJson,
+                        'cart_qty' => $request->cartQty,
+                        'address' => $request->address,
+                        'city' => $request->city,
+                        'county' => $request->county,
+                        'country' => $request->country,
+                    ]
                 ]);
             }
 
-            // Step 5 & 6: Handled after 3DS redirect returns the payment_intent_id
-            if (isset($json_obj->payment_intent_id)) {
-                $intent = \Stripe\PaymentIntent::retrieve($json_obj->payment_intent_id);
-
-                // As per Stripe documentation, explicitly re-confirm when it hits requires_confirmation
-                if ($intent->status == 'requires_confirmation' || $intent->status == 'requires_action') {
-                    $intent = \Stripe\PaymentIntent::update($json_obj->payment_intent_id, [
-                        'payment_method' => $intent->payment_method,
-                    ]);
-                    $intent = $intent->confirm();
-                }
+            if (!$intent) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Invalid payment request.']);
+                return;
             }
 
             $this->generateResponse($intent, $request);
@@ -111,60 +125,153 @@ class CheckoutController extends Controller
     }
 
     public function generateResponse($intent, Request $request) {
-        // Step 3 & 4: If 3DS is needed, output instructions for frontend to redirect
-        if ($intent->status == 'requires_action' &&
-            $intent->next_action->type == 'redirect_to_url') {
+        // 1. If 3DS action is required, tell frontend JS to open the verification popup
+        if ($intent->status == 'requires_action') {
             echo json_encode([
                 'requires_action' => true,
                 'payment_intent_client_secret' => $intent->client_secret,
-                'redirect_url' => $intent->next_action->redirect_to_url->url
+                'redirect_url' => $intent->next_action->redirect_to_url->url ?? null
             ]);
+            return;
         }
-        // Step 7 & 8: Final success state -> Create Laravel Order & Packages
-        else if ($intent->status == 'succeeded' || $intent->status == 'requires_capture' || $intent->status == 'processing') {
-            $cartItems = json_decode($request->cart_items, true);
 
-            $orderTitles = '';
-            foreach ($cartItems as $cartItem) {
-                $orderTitles .= $cartItem['title'] . ', ';
-            }
-            $orderTitles = rtrim($orderTitles, ', ');
+        // 2. If payment succeeds immediately or after confirmation
+        if ($intent->status == 'succeeded' || $intent->status == 'requires_capture' || $intent->status == 'processing') {
 
-            Order::create([
-                'user_id' => auth()->user()->id,
-                'product_name' => $orderTitles,
-                'quantity' => $request->cartQty,
-                'paid' => $request->cartTotal,
-                'charge_id' => $intent->id,
-                'invoice_id' => $intent->id,
-                'address' => $request->address,
-                'city' => $request->city,
-                'county' => $request->county,
-                'country' => $request->country,
-                'status' => 'paid',
-            ]);
+            $existingOrder = Order::where('charge_id', $intent->id)->first();
+            if (!$existingOrder) {
+                $cartItems = json_decode($request->cart_items, true);
 
-            foreach ($cartItems as $cartItem) {
-                for ($i = 0; $i < $cartItem['quantity']; $i++) {
-                    $package = new Package();
-                    $package->product_id = $cartItem['id'];
-                    $package->user_id = auth()->user()->id;
-                    $package->course_name = $cartItem['title'];
-                    $package->status = "purchased";
-                    $package->save();
+                $orderTitles = '';
+                if (!empty($cartItems)) {
+                    foreach ($cartItems as $cartItem) {
+                        $orderTitles .= ($cartItem['title'] ?? 'Course') . ', ';
+                    }
+                    $orderTitles = rtrim($orderTitles, ', ');
+                } else {
+                    $orderTitles = 'Course Purchase';
                 }
+
+                Order::create([
+                    'user_id' => auth()->user()->id,
+                    'product_name' => $orderTitles,
+                    'quantity' => $request->cartQty,
+                    'paid' => $request->cartTotal,
+                    'charge_id' => $intent->id,
+                    'invoice_id' => $intent->id,
+                    'address' => $request->address,
+                    'city' => $request->city,
+                    'county' => $request->county,
+                    'country' => $request->country,
+                    'status' => 'paid',
+                ]);
+
+                if (!empty($cartItems)) {
+                    foreach ($cartItems as $cartItem) {
+                        $qty = $cartItem['quantity'] ?? 1;
+                        for ($i = 0; $i < $qty; $i++) {
+                            $package = new Package();
+                            $package->product_id = $cartItem['id'] ?? 1;
+                            $package->user_id = auth()->user()->id;
+                            $package->course_name = $cartItem['title'] ?? 'Course';
+                            $package->status = "purchased";
+                            $package->save();
+                        }
+                    }
+                }
+
+                Mail::to(auth()->user()->email)->send(new ConfirmPaymentMail());
             }
 
-            Mail::to(auth()->user()->email)->send(new ConfirmPaymentMail());
+            if (session()->isStarted()) {
+                $request->session()->flash('success', 'Payment has been received successfully');
+            }
 
-            $request->session()->flash('success', 'Payment has been received successfully');
             echo json_encode([
                 "success" => true
             ]);
+            return;
         } else {
             http_response_code(500);
             echo json_encode(['error' => 'Invalid PaymentIntent status: ' . $intent->status]);
         }
+    }
+    public function paymentSuccess(Request $request)
+    {
+        $paymentIntentId = $request->query('payment_intent');
+
+        if ($paymentIntentId) {
+            Stripe::setApiKey(env('STRIPE_SECRET'));
+
+            try {
+                $intent = PaymentIntent::retrieve($paymentIntentId);
+                // Verify the payment actually succeeded after 3DS redirect
+                if ($intent->status == 'succeeded') {
+                    $existingOrder = Order::where('charge_id', $intent->id)->first();
+
+                    if (!$existingOrder) {
+                        $metadata = $intent->metadata;
+                        $userId = $metadata->user_id ?? auth()->id();
+                        $cartItems = json_decode($metadata->cart_items ?? '[]', true);
+                        $orderTitles = '';
+                        if (!empty($cartItems)) {
+                            foreach ($cartItems as $cartItem) {
+                                $orderTitles .= ($cartItem['title'] ?? 'Course') . ', ';
+                            }
+                            $orderTitles = rtrim($orderTitles, ', ');
+                        } else {
+                            $orderTitles = $metadata->product_name ?? 'Course Purchase';
+                        }
+
+                        // 1. Create the Order
+                        Order::create([
+                            'user_id' => $userId,
+                            'product_name' => $orderTitles,
+                            'quantity' => $metadata->cart_qty ?? 1,
+                            'paid' => $intent->amount / 100,
+                            'charge_id' => $intent->id,
+                            'invoice_id' => $intent->id,
+                            'address' => $metadata->address ?? null,
+                            'city' => $metadata->city ?? null,
+                            'county' => $metadata->county ?? null,
+                            'country' => $metadata->country ?? null,
+                            'status' => 'paid',
+                        ]);
+
+                        // 2. Create the Packages
+                        if (!empty($cartItems)) {
+                            foreach ($cartItems as $cartItem) {
+                                $qty = $cartItem['quantity'] ?? 1;
+
+                                for ($i = 0; $i < $qty; $i++) {
+                                    $package = new Package();
+                                    $package->product_id = $cartItem['id'] ?? 1;
+                                    $package->user_id = $userId;
+                                    $package->course_name = $cartItem['title'] ?? 'Course';
+                                    $package->status = "purchased";
+                                    $package->save();
+                                }
+                            }
+                        }
+                        // 3. Send Confirmation Email
+                        $user = User::find($userId);
+                        if ($user) {
+                            Mail::to($user->email)->send(new ConfirmPaymentMail());
+                        }
+                    }
+                }
+            } catch (\Stripe\Exception\ApiErrorException $e) {
+                // Handle Stripe API errors if retrieval fails
+                \Log::error('Stripe payment success retrieval error: ' . $e->getMessage());
+            }
+        }
+
+        // Flash session message for your view if needed
+        if (session()->isStarted()) {
+            session()->flash('success', 'Payment has been received successfully');
+        }
+
+        return view('pages.back.payment');
     }
 
     /**
