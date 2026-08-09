@@ -38,6 +38,8 @@
 
 
 </head>
+
+<body x-data="app()" class="bodyApp">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
 <script>
@@ -47,8 +49,6 @@
 
     gtag('config', 'G-ND836HRGN2');
 </script>
-<body x-data="app()" class="bodyApp">
-
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")

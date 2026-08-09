@@ -31,6 +31,8 @@
     </style>
 
 </head>
+
+<body>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
 <script>
@@ -40,7 +42,6 @@
 
     gtag('config', 'G-ND836HRGN2');
 </script>
-<body>
     <!-- Begin page -->
     <div class="wrapper">
 
