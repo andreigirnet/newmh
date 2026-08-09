@@ -76,13 +76,13 @@ const stripePaymentMethodHandler = async (result) => {
 }
 
 const handleServerResponse = async (response) => {
+    console.log(response)
     if (response.error) {
         const errorElement = document.getElementById('card-errors');
         errorElement.innerHTML = response.error;
         button.disabled = false;
         button.style.opacity = '1';
     } else if (response.requires_action) {
-        // Use Stripe.js to handle the required card action
         const { error: errorAction, paymentIntent } =
             await stripe.handleCardAction(response.payment_intent_client_secret);
 
@@ -92,8 +92,6 @@ const handleServerResponse = async (response) => {
             button.disabled = false;
             button.style.opacity = '1';
         } else {
-            // The card action has been handled
-            // The PaymentIntent can be confirmed again on the server
             const serverResponse = await fetch('/payment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

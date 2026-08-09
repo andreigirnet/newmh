@@ -64,9 +64,10 @@ class CheckoutController extends Controller
         $json_obj = json_decode($json_str);
         $amountToInt = round($request->cartTotal * 100, 0, PHP_ROUND_HALF_UP);
         $intent = null;
+
         try {
+            // Step 1 & 2: Initial creation with payment method from client
             if (isset($json_obj->payment_method_id)) {
-                # Create the PaymentIntent
                 $customer = \Stripe\Customer::create([
                     'email' => auth()->user()->email,
                     'description' => 'New customer',
@@ -74,51 +75,59 @@ class CheckoutController extends Controller
                         'name' => auth()->user()->name,
                     ],
                 ]);
+
                 $intent = \Stripe\PaymentIntent::create([
                     'payment_method' => $json_obj->payment_method_id,
                     'amount' => $amountToInt,
                     'currency' => 'eur',
                     'confirmation_method' => 'manual',
                     'confirm' => true,
-                    'statement_descriptor_suffix' => 'IrelandSafetyCourse',
-                    'customer'=> $customer->id,
-                    'description' => 'Payment made by '. auth()->user()->email,
+                    'customer' => $customer->id,
                     'return_url' => url('/payment/success')
                 ]);
             }
+
+            // Step 5 & 6: Handled after 3DS redirect returns the payment_intent_id
             if (isset($json_obj->payment_intent_id)) {
-                $intent = \Stripe\PaymentIntent::retrieve(
-                    $json_obj->payment_intent_id
-                );
-                $intent->confirm();
+                $intent = \Stripe\PaymentIntent::retrieve($json_obj->payment_intent_id);
+
+                // As per Stripe documentation, explicitly re-confirm when it hits requires_confirmation
+                if ($intent->status == 'requires_confirmation' || $intent->status == 'requires_action') {
+                    $intent = \Stripe\PaymentIntent::update($json_obj->payment_intent_id, [
+                        'payment_method' => $intent->payment_method,
+                    ]);
+                    $intent = $intent->confirm();
+                }
             }
+
             $this->generateResponse($intent, $request);
+
         } catch (\Stripe\Exception\ApiErrorException $e) {
-            # Display error on client
+            http_response_code(400);
             echo json_encode([
                 'error' => $e->getMessage()
             ]);
         }
-
     }
+
     public function generateResponse($intent, Request $request) {
-        # Note that if your API version is before 2019-02-11, 'requires_action'
-        # appears as 'requires_source_action'.
+        // Step 3 & 4: If 3DS is needed, output instructions for frontend to redirect
         if ($intent->status == 'requires_action' &&
             $intent->next_action->type == 'redirect_to_url') {
-            # Tell the client to handle the action
             echo json_encode([
                 'requires_action' => true,
-                'payment_intent_client_secret' => $intent->client_secret
+                'payment_intent_client_secret' => $intent->client_secret,
+                'redirect_url' => $intent->next_action->redirect_to_url->url
             ]);
-        } else if ($intent->status == 'succeeded') {
+        }
+        // Step 7 & 8: Final success state -> Create Laravel Order & Packages
+        else if ($intent->status == 'succeeded' || $intent->status == 'requires_capture' || $intent->status == 'processing') {
             $cartItems = json_decode($request->cart_items, true);
 
             $orderTitles = '';
             foreach ($cartItems as $cartItem) {
                 $orderTitles .= $cartItem['title'] . ', ';
             }
-
             $orderTitles = rtrim($orderTitles, ', ');
 
             Order::create([
@@ -135,23 +144,16 @@ class CheckoutController extends Controller
                 'status' => 'paid',
             ]);
 
-            $cartItems = json_decode($request->cart_items, true);
-
             foreach ($cartItems as $cartItem) {
-
                 for ($i = 0; $i < $cartItem['quantity']; $i++) {
-
                     $package = new Package();
                     $package->product_id = $cartItem['id'];
                     $package->user_id = auth()->user()->id;
                     $package->course_name = $cartItem['title'];
                     $package->status = "purchased";
                     $package->save();
-
                 }
-
             }
-//            $this->cart->clearItems();
 
             Mail::to(auth()->user()->email)->send(new ConfirmPaymentMail());
 
@@ -160,9 +162,8 @@ class CheckoutController extends Controller
                 "success" => true
             ]);
         } else {
-            # Invalid status
             http_response_code(500);
-            echo json_encode(['error' => 'Invalid PaymentIntent status']);
+            echo json_encode(['error' => 'Invalid PaymentIntent status: ' . $intent->status]);
         }
     }
 
