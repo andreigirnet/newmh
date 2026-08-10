@@ -40,8 +40,15 @@
 </head>
 
 <body x-data="app()" class="bodyApp">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-
+    gtag('config', 'G-ND836HRGN2');
+</script>
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
