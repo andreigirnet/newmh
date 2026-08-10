@@ -25,7 +25,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <!-- Event snippet for Achiziție (2) conversion page -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -33,6 +32,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-ND836HRGN2');
+        gtag('config', 'AW-18160580545');
 
         @if(request()->is('payment/success'))
         gtag('event', 'conversion', {
@@ -42,6 +42,7 @@
             'transaction_id': ''
         });
         @endif
+    </script>
     </script>
     <style>
         [x-cloak] { display: none; }
