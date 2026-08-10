@@ -1,11 +1,18 @@
 @extends('layouts.vertical', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
 
 @section('content')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ND836HRGN2');
+    </script>
     <!-- Event snippet for Achiziție (2) conversion page -->
     <script>
         gtag('event', 'conversion', {
             'send_to': 'AW-18160580545/pLwVCLmu594cEMHv0dND',
-            'value': 1.0,
+            'value': 25.0,
             'currency': 'EUR',
             'transaction_id': ''
             // 'new_customer': true /* calculate dynamically, populate with true/false */,
