@@ -25,7 +25,16 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-
+    <!-- Event snippet for Achiziție (2) conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18160580545/pLwVCLmu594cEMHv0dND',
+            'value': 1.0,
+            'currency': 'EUR',
+            'transaction_id': ''
+            // 'new_customer': true /* calculate dynamically, populate with true/false */,
+        });
+    </script>
     <style>
         [x-cloak] { display: none; }
     </style>
