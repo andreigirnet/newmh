@@ -34,13 +34,13 @@
 
 <body>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18160580545"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'AW-18160580545');
+    gtag('config', 'G-ND836HRGN2');
 </script>
     <!-- Begin page -->
     <div class="wrapper">

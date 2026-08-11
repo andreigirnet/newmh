@@ -4,7 +4,7 @@
     <script>
         gtag('event', 'conversion', {
             'send_to': 'AW-18160580545/YOUR_CONVERSION_LABEL',
-            'value': 1.0,
+            'value': 25.0,
             'currency': 'EUR'
         });
     </script>
