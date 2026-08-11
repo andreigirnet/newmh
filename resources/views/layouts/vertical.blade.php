@@ -25,25 +25,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-ND836HRGN2');
-        gtag('config', 'AW-18160580545');
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-ABCDEFGH');</script>
+    <!-- End Google Tag Manager -->
 
-        @if(request()->is('payment/success'))
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18160580545/pLwVCLmu594cEMHv0dND',
-            'value': 1.0,
-            'currency': 'EUR',
-            'transaction_id': ''
-        });
-        @endif
-    </script>
-    </script>
     <style>
         [x-cloak] { display: none; }
     </style>
