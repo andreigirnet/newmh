@@ -10,7 +10,7 @@
     >
         <strong>Item</strong> added to the cart
     </div>
-{{--    @if (session('created'))--}}
+    @if (session('created'))
     <div class="mhi-unique-overlay">
         <div class="mhi-unique-shell modalRegisterComplete" id="modalRegisterEmployer">
             <!-- Header -->
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-{{--    @endif--}}
+    @endif
 {{--        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">--}}
         <div class="adminProductsBack">
             @foreach($products as $product)
