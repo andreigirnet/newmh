@@ -10,7 +10,7 @@
     >
         <strong>Item</strong> added to the cart
     </div>
-    @if (session('created'))
+{{--    @if (session('created'))--}}
     <div class="mhi-unique-overlay">
         <div class="mhi-unique-shell modalRegisterComplete" id="modalRegisterEmployer">
             <!-- Header -->
@@ -35,7 +35,7 @@
                         <h4 style="margin: 0; font-size: 0.9rem; font-weight: 700; color: #1e293b;">Accessing Your Course</h4>
                     </div>
                     <p style="margin: 0; font-size: 0.8rem; color: #64748b; line-height: 1.3;">
-                        Follow steps on our website once logged in, or use our email (check spam/junk).
+                        After payment check courses section and press start
                     </p>
                 </div>
 
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    @endif
+{{--    @endif--}}
 {{--        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">--}}
         <div class="adminProductsBack">
             @foreach($products as $product)
