@@ -11,8 +11,8 @@
         }
         #id{
             position: absolute;
-            bottom: 28%;
-            left: 37%;
+            bottom: 27%;
+            left: 36%;
             font-weight: 600;
             font-size: 13px;
         }
