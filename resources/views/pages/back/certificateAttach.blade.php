@@ -18,14 +18,14 @@
         }
         #valid{
             position: absolute;
-            bottom: 33.5%;
+            bottom: 34%;
             left: 35.5%;
             font-weight: 600;
             font-size: 13px;
         }
         #expiration{
             position: absolute;
-            bottom: 30.5%;
+            bottom: 30%;
             left: 34.5%;
             font-weight: 600;
             font-size: 13px;
