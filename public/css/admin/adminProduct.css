@@ -35,11 +35,23 @@
 .adminProductBack{
     width: 310px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    box-shadow:
+        -10px 10px 24px -6px rgba(22, 155, 98, 0.40),
+        10px 10px 24px -6px rgba(255, 136, 62, 0.40),
+        0 2px 8px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.adminProductBack:hover{
+    box-shadow:
+        -14px 14px 30px -6px rgba(22, 155, 98, 0.38),
+        14px 14px 30px -6px rgba(255, 136, 62, 0.38),
+        0 2px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
 }
 .adminProductImage{
      width: 300px;
@@ -50,8 +62,8 @@
 .adminProductImageBack{
     width: 310px;
     height: 210px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 .adminProductBottom{
     padding: 15px;
@@ -79,25 +91,85 @@
     font-weight: bold;
 }
 .adminProductNameBack{
-    font-size: 15px;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 28px;
+    color: #1B2430;
     font-weight: bold;
     color: black;
 }
+.trustBadge{
+    display: none;
+    align-items: center;
+    column-gap: 10px;
+    background: #fff;
+    padding: 10px 18px 10px 14px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #169B62, #F2E6C9, #FF883E);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow:
+        -10px 10px 24px -6px rgba(22, 155, 98, 0.40),
+        10px 10px 24px -6px rgba(255, 136, 62, 0.40),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.trustBadge__icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #F0FBF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 25px;
+}
+.trustBadge__icon i{
+    font-size: 19px;
+    color: #0F7A4D;
+}
+
+.trustBadge__text{
+    line-height: 1.25;
+}
+.trustBadge__eyebrow{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #C6800A;
+}
+.trustBadge__label{
+    font-size: 15px;
+    font-weight: 700;
+    color: #046A38;
+}
 .elearning{
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+    background: #E9F7EE;
+    color: #0F7A4D;
+    border: 1px solid #BFE9D2;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 5px 14px;
+    margin-top: 5px;
 }
 .blackText{
     color: black;
 }
 .product-icons-back{
-    font-size: 14px;
+    font-size: 20px;
     color: black;
     display: flex;
     align-content: center;
     column-gap: 10px;
 }
 .product-icons-back img{
-    width: 25px;
+    width: 50px;
 
 }
 .buttonProductAdminAdd{
@@ -110,13 +182,33 @@
     cursor: pointer;
 }
 .buttonProductAdminAddBack{
-    background-color: #4CAF50; /* Green background color */
-    color: white; /* White text color */
-    padding: 10px 20px; /* Padding around the text */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
+    background: linear-gradient(135deg, #169B62, #0F7A4D);
+    color: #fff;
+    border: none;
+    padding: 13px 28px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    letter-spacing: 0.01em;
+    box-shadow: 0 6px 16px -4px rgba(22, 155, 98, 0.45);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.buttonProductAdminAddBack:hover{
+    background: linear-gradient(135deg, #1AAB6D, #128857);
+    box-shadow: 0 8px 20px -4px rgba(22, 155, 98, 0.55);
+    transform: translateY(-2px);
+}
+
+.buttonProductAdminAddBack:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 10px -4px rgba(22, 155, 98, 0.5);
 }
 .adminProductPrice{
     font-size: 28px; /* Set the font size */
@@ -125,6 +217,9 @@
 
 
 @media screen and (max-width: 1200px) and (min-width: 768px){
+    .trustBadge{
+        display: flex;
+    }
     .adminProductsBack{
         display: grid;
     }
@@ -209,5 +304,8 @@
     }
     #stripeLogo{
         display: none;
+    }
+    .trustBadge{
+        display: flex;
     }
 }

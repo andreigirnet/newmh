@@ -20,7 +20,7 @@
                         <img src="images/login/registerLogin.jpg" alt="dark logo">
                     </span>
                     <span class="logo-sm">
-                        <img src="{{asset('images/logo/smallLogo.webp')}}"  style="width: 50px; height: 40px" alt="small logo">
+                        <img src="{{asset('images/logo/smallLogo.webp')}}"  style="width: 50px; height: 50px" alt="small logo">
                     </span>
                 </span>
             </div>

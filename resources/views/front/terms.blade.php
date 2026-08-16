@@ -20,7 +20,7 @@
         <p>We provide accredited and licensed online manual handling training services. Our training services are available for individuals and businesses in Ireland, Dublin, and throughout Europe.</p>
 
         <h2 style="margin-top: 20px">Intellectual Property:</h2>
-        <p>The content, logo, and materials on this website are the intellectual property of Online Irish Manual Handling Training and are protected by applicable copyright and trademark law.</p>
+        <p>The content, logo, and materials on this website are the intellectual property of Online Manual Handling Ireland and are protected by applicable copyright and trademark law.</p>
 
         <h2 style="margin-top: 20px">Use License:</h2>
         <p>Permission is granted to temporarily download one copy of the materials for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.</p>

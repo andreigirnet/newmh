@@ -1,6 +1,8 @@
+document.documentElement.classList.remove('sidebar-enable');
 let hideNavSide = document.getElementById('hideNavSide')
 let showNavPanel = document.getElementById('showNavPanel')
 let menu = document.getElementsByClassName('leftside-menu')
+console.log('SIDEBAR:', document.documentElement.classList.contains('sidebar-enable'));
 showNavPanel.addEventListener('click', () =>{
     document.documentElement.classList.add('sidebar-enable');
     document.body.style.overflow = 'hidden';

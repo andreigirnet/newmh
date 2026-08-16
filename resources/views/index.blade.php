@@ -67,15 +67,24 @@
     </div>
     @endif
 {{--        <img src="{{asset("images/products/saleOver.png")}}" class="overImgDashBack" alt="">--}}
+    <div class="trustBadge">
+        <div class="trustBadge__icon">
+            🍀
+        </div>
+        <div class="trustBadge__text">
+            <div class="trustBadge__eyebrow">Nr.1 rated</div>
+            <div class="trustBadge__label">Irish Safety Provider</div>
+        </div>
+    </div>
         <div class="adminProductsBack">
             @foreach($products as $product)
                 @if($product->status == 0)
                     <div class="adminProductBack">
-                        <img src="{{ asset('images/lifting.webp') }}" alt="Manual Handling Course">
+                        <img src="{{ asset('images/lifting.webp') }}" class="adminProductImageBack" alt="Manual Handling Course">
                         <div class="adminProductBottomBack">
                             <div class="adminProductNameBack">{{$product->name}}</div>
                             @if (!in_array($product->id, [13, 14, 15, 16]))
-                                <div style="color: #397b21; font-weight: bold" class="elearning">e-Learning Course</div>
+                                <div style="color: #397b21; font-weight: bold" class="elearning">📹 Theory + Practice</div>
                             @endif
                             <hr style="border: 1px solid gray; opacity: 0.8">
                             <div class="product-info-icons">
@@ -96,7 +105,7 @@
                                 </div>
                                 <div class="product-icons-back">
                                     <img src="images/icons/money.png" alt="">
-                                    <div style="font-weight: bold"><del style="color: gray">{{round($product->price * 1.31)}} €</del> <span style="color: red; font-size: 20px">{{$product->price}} €</span></div>
+                                    <div style="font-weight: bold">Price: <del style="color: gray">{{round($product->price * 1.31)}} €</del> <span style="color: red; font-size: 30px">{{$product->price}} €</span></div>
                                 </div>
                             </div>
                             @if($product->status == 0)
