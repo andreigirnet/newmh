@@ -193,7 +193,7 @@
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/44.png')}}" alt="Support">
                         </div>
-                        <p class="premium-step-text" >For technical support, please contact us at info@manualhandling-ireland.com</p>
+                        <p class="premium-step-text" >For technical support, please contact us at info@manualhandling-ireland.ie</p>
                     </div>
                 </div>
             </div>
@@ -280,12 +280,12 @@
     </div>
 
     {{--    <div id="customersReviews">--}}
-    {{--        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>--}}
+    {{--        <script src="https://static.elfsight.ie/platform/platform.js" data-use-service-core defer></script>--}}
     {{--        <div class="elfsight-app-452ee68c-8e4c-4329-bf9d-d5f4175f5d0e"></div>--}}
     {{--    </div>--}}
     {{--    <div id="customerReviewsMob">--}}
     {{--        <div class="customerReviewsMobWrap">--}}
-    {{--            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>--}}
+    {{--            <script src="https://static.elfsight.ie/platform/platform.js" data-use-service-core defer></script>--}}
     {{--            <div class="elfsight-app-6a3ccd9b-896b-4195-946e-7cba27a27218"></div>--}}
     {{--        </div>--}}
     {{--    </div>--}}
@@ -487,7 +487,7 @@
             <div class="imh-content-grid">
                 <div class="imh-main-text">
                     <p class="imh-lead-para" >
-                        Welcome to manualhandling-ireland.com, your premier destination for top-notch online Manual Handling training in Ireland...
+                        Welcome to manualhandling-ireland.ie, your premier destination for top-notch online Manual Handling training in Ireland...
                     </p>
                     <p class="imh-body-para" >
                         At Manual Handling Ireland, we take immense pride in the integrity and excellence of our safety training services...
@@ -495,7 +495,7 @@
 
                     <div class="imh-contact-box">
                         <p >For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
-                        <a href="mailto:info@manualhandling-ireland.com" class="imh-email-link">info@manualhandling-ireland.com</a>
+                        <a href="mailto:info@manualhandling-ireland.ie" class="imh-email-link">info@manualhandling-ireland.ie</a>
                     </div>
                 </div>
 
@@ -607,7 +607,7 @@
     </section>
 
     <div class="title spaceTop" data-aos="fade-up" >
-        <div class="titleText sizeTextMobile" >Expert Online Manual Handling Training | manualhandling-ireland.com</div>
+        <div class="titleText sizeTextMobile" >Expert Online Manual Handling Training | manualhandling-ireland.ie</div>
         <div class="borderTitle"></div>
     </div>
 
@@ -616,16 +616,16 @@
 
             <div class="imh-expert-main-grid">
                 <div class="imh-expert-narrative">
-                    <p >At manualhandling-ireland.com, we understand the critical importance...</p>
+                    <p >At manualhandling-ireland.ie, we understand the critical importance...</p>
 
                     <div class="imh-expert-cta-card">
                         <h3 >Elevate your workplace safety standards...</h3>
-                        <a href="mailto:info@manualhandling-ireland.com" class="imh-expert-btn">Email Us Today</a>
+                        <a href="mailto:info@manualhandling-ireland.ie" class="imh-expert-btn">Email Us Today</a>
                     </div>
                 </div>
 
                 <div class="imh-expert-features">
-                    <h4 class="imh-feature-heading" >Why Choose manualhandling-ireland.com?</h4>
+                    <h4 class="imh-feature-heading" >Why Choose manualhandling-ireland.ie?</h4>
 
                     <div class="imh-feature-item">
                         <span class="imh-feature-icon">📋</span>
@@ -662,7 +662,7 @@
             </div>
 
             <div class="imh-expert-footer">
-                <p >Ensure your team's safety and efficiency—choose manualhandling-ireland.com today!</p>
+                <p >Ensure your team's safety and efficiency—choose manualhandling-ireland.ie today!</p>
             </div>
         </div>
     </section>

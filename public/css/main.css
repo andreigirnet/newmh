@@ -14,7 +14,7 @@
     --bg-light: #f8fafc;
     --text-main: #374151;
     --text-heading: #1e293b;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Outfit', 'Roboto', system-ui, -apple-system, sans-serif;
 }
 
 .feedback-container {
