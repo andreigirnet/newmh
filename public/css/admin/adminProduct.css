@@ -16,6 +16,8 @@
     column-gap: 50px;
     margin-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
+    justify-content: center;
 }
 .productButtons{
     display: flex;
@@ -23,7 +25,7 @@
     column-gap: 10px;
 }
 .adminProduct{
-    width: 300px;
+    width: 310px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
@@ -33,7 +35,7 @@
 
 }
 .adminProductBack{
-    width: 310px;
+    width: 90%;
     height: auto;
     border-radius: 18px;
     box-shadow:
@@ -60,7 +62,7 @@
      border-top-right-radius: 8px;
  }
 .adminProductImageBack{
-    width: 310px;
+    width: 100%;
     height: 210px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
@@ -169,7 +171,8 @@
     column-gap: 10px;
 }
 .product-icons-back img{
-    width: 50px;
+    width: 35px;
+    height: 35px;
 
 }
 .buttonProductAdminAdd{
@@ -221,7 +224,7 @@
         display: flex;
     }
     .adminProductsBack{
-        display: grid;
+        display: flex;
     }
     .side{
         display: none;
@@ -260,7 +263,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 250px){
     .adminProductsBack{
-        display: grid;
+        display: flex;
     }
     .errorPhoto a{
         display: flex;

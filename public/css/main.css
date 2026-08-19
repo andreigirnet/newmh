@@ -664,17 +664,16 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 500px;
-    background: rgba(15, 23, 42, 0.9); /* Your #0f172a with transparency */
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 20px;
+    width: 92%;
+    max-width: 440px;
+    background: rgba(15, 23, 42, 0.95); /* Slightly more opaque for better readability */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 18px;
     z-index: 9999;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    display: flex;
-    animation: slideUp 0.5s ease-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    animation: slideUp 0.4s ease-out;
 }
 
 @keyframes slideUp {
@@ -684,38 +683,42 @@
 
 .cookie-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack text and actions vertically on mobile */
     width: 100%;
-    gap: 20px;
+    gap: 16px;
 }
 
 .cookie-text h4 {
     margin: 0;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .cookie-text p {
-    margin: 5px 0 0;
-    color: #94a3b8; /* Slate color for readability */
-    font-size: 13px;
+    margin: 6px 0 0;
+    color: #94a3b8;
+    font-size: 12.5px;
+    line-height: 1.4;
 }
 
 .cookie-actions {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
 /* Decline Button */
 .btn-decline {
+    flex: 1; /* Makes both buttons share equal width */
     background: transparent;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px 15px;
+    padding: 10px 12px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 13px;
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -723,22 +726,24 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Accept Button (Brand Green) */
+/* Accept Button */
 .btn-accept {
-    background: #2ecc71; /* Matches your price green */
-    color: #000;
+    flex: 1; /* Makes both buttons share equal width */
+    background: #2ecc71;
+    color: #000000;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 12px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 700;
     font-size: 13px;
+    text-align: center;
     transition: 0.3s;
 }
 
 .btn-accept:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.4);
 }
 .slim-calc-card {
     background: rgba(30, 41, 59, 0.6) !important; /* Semi-transparent */
@@ -6377,9 +6382,57 @@ a .navItem{
     color: #ffffff;
 }
 .mhc-btn-white { background: #ffffff; color: #0f172a; }
-
+.sticky-bar {
+    display: none;
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px){
+    .sticky-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        padding: 12px 16px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9999;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .sticky-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sticky-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    .sticky-sub {
+        font-size: 14px;
+        color: #666666;
+    }
+    .sticky-btn {
+        background-color: #f97316; /* Vibrant orange matching your reference */
+        color: #ffffff;
+        padding: 10px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.2s;
+    }
+
+    .sticky-btn:hover {
+        background-color: #ea580c;
+    }
     .trust-badges-container{
         display: flex;
     }

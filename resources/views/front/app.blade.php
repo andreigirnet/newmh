@@ -93,7 +93,13 @@
     </div>
 </div>
 <script src="{{asset('js/cookie.js')}}"></script>
-
+<div id="sticky-cta-bar" class="sticky-bar">
+    <div class="sticky-content">
+        <span class="sticky-title">Manual Handling</span>
+        <span class="sticky-sub">€{{config('global.course_price')}} • Certificate included</span>
+    </div>
+    <a href="{{route('home')}}" class="sticky-btn">Start now →</a>
+</div>
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",

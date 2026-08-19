@@ -84,7 +84,9 @@
                         <div class="adminProductBottomBack">
                             <div class="adminProductNameBack">{{$product->name}}</div>
                             @if (!in_array($product->id, [13, 14, 15, 16]))
-                                <div style="color: #397b21; font-weight: bold" class="elearning">📹 Theory + Practice</div>
+                                <div style="color: #397b21; font-weight: bold" class="elearning">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Theory + Practice</div>
                             @endif
                             <hr style="border: 1px solid gray; opacity: 0.8">
                             <div class="product-info-icons">
@@ -105,7 +107,7 @@
                                 </div>
                                 <div class="product-icons-back">
                                     <img src="images/icons/money.png" alt="">
-                                    <div style="font-weight: bold">Price: <del style="color: gray">43€</del> <span style="color: red; font-size: 30px">{{$product->price}} €</span></div>
+                                    <div style="font-weight: bold">Price: <del style="color: gray">47€</del> <span style="color: red; font-size: 30px">{{$product->price}} €</span></div>
                                 </div>
                             </div>
                             @if($product->status == 0)
