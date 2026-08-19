@@ -78,7 +78,7 @@
     AOS.init();
 </script>
 
-<script src="{{asset('js/prevent.js')}}"></script>
+{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
 
 <div id="cookiePrompt" class="cookie-container">
     <div class="cookie-content">

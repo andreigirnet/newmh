@@ -21,7 +21,7 @@
                     <div class="trust-badge">
                         <span class="badge-icon">💶</span>
                         <div class="badge-text">
-                            <strong>€25</strong>
+                            <strong>€{{config('global.course_price')}}</strong>
                             <span>Instant Access</span>
                         </div>
                     </div>
