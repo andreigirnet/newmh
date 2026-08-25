@@ -1,159 +1,210 @@
-const stripe = Stripe(window.stripeKey);
-const elements = stripe.elements();
-
-// Set up Stripe.js and Elements to use in checkout form
-const style = {
-    base: {
-        color: "#32325d",
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-        fontSmoothing: "antialiased",
-        fontSize: "16px",
-        "::placeholder": {
-            color: "#aab7c4"
-        }
-    },
-    invalid: {
-        color: "#fa755a",
-        iconColor: "#fa755a"
-    },
-};
-
-const cardElement = elements.create('card', {
-    hidePostalCode: true, // Hide the postal code (zip) field
-    style,
-});
-
-cardElement.mount('#card-element');
-
-const expressCheckoutElement = elements.create('expressCheckout', {
-    buttonType: {
-        applePay: 'buy',
-        googlePay: 'buy'
-    },
-    buttonHeight: 50
-});
-
-expressCheckoutElement.mount('#express-checkout-element');
-
-
-const form = document.getElementById('payment-form');
-const button = document.getElementById('submit')
-button.disabled = false;
-form.addEventListener('submit', async (event) => {
-    // We don't want to let default form submission happen here,
-    // which would refresh the page.
-    event.preventDefault();
-    button.disabled = true;
-    button.style.opacity = '0.7';
-    const result = await stripe.createPaymentMethod({
-        type: 'card',
-        card: cardElement,
-        billing_details: {
-            // Include any additional collected billing details.
-            name: 'Jenny Rosen',
-        },
-    })
-
-    stripePaymentMethodHandler(result);
-});
-
-const stripePaymentMethodHandler = async (result) => {
-    if (result.error) {
-        // Show error in payment form
-        const errorElement = document.getElementById('card-errors');
-        errorElement.innerHTML = result.error.message;
-        button.disabled = false;
-        button.style.opacity = '1';
-    } else {
-        // Otherwise send paymentMethod.id to your server (see Step 4)
-        const res = await fetch('/payment', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                payment_method_id: result.paymentMethod.id,
-                address: document.getElementById('address').value,
-                county: document.getElementById('county').value,
-                city: document.getElementById('city').value,
-                country: document.getElementById('country').value,
-                cartTotal: document.getElementById('cartTotal').value,
-                cartQty: document.getElementById('cartQty').value,
-                cart_items: document.getElementById('cart_items').value,
-                userId: document.getElementById('userId').value
-            }),
-        })
-        const paymentResponse = await res.json();
-        // Handle server response (see Step 4)
-        handleServerResponse(paymentResponse);
-    }
-}
-
-const handleServerResponse = async (response) => {
-
-    if (response.error) {
-        document.getElementById('card-errors').textContent = response.error;
-        const button = document.getElementById('submit');
-        if (button) { button.disabled = false; button.style.opacity = '1'; }
-    }
-    else if (response.success) {
-        // 2. Clear local storage and redirect to Stripe's 3DS page
-        localStorage.removeItem('cart');
-        window.location.href = '/payment/success';
-    }
-    else if (response.requires_action && response.redirect_url) {
-        // 👉 Clears cart and redirects the entire browser window straight to Stripe's hosted 3DS flow
-        const cart = localStorage.getItem('cart');
-
-        const redirectUrl = new URL(response.redirect_url);
-        redirectUrl.searchParams.set('cart', cart);
-
-        localStorage.removeItem('cart');
-
-        window.location.href = redirectUrl.toString();
-    }
-};
-
-expressCheckoutElement.on('confirm', async (event) => {
-
-    const res = await fetch('/payment', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            wallet_payment: true,
-            address: document.getElementById('address').value,
-            county: document.getElementById('county').value,
-            city: document.getElementById('city').value,
-            country: document.getElementById('country').value,
-            cartTotal: document.getElementById('cartTotal').value,
-            cartQty: document.getElementById('cartQty').value,
-            cart_items: document.getElementById('cart_items').value,
-            userId: document.getElementById('userId').value
-        }),
-    });
-
-    const paymentResponse = await res.json();
-
-    if (paymentResponse.error) {
-        document.getElementById('card-errors').textContent =
-            paymentResponse.error;
+document.addEventListener('DOMContentLoaded', () => {
+    if (!window.stripeKey) {
+        console.error('Stripe key is missing.');
         return;
     }
 
-    if (paymentResponse.client_secret) {
+    const stripe = Stripe(window.stripeKey);
 
-        const result = await stripe.confirmPayment({
-            elements,
-            clientSecret: paymentResponse.client_secret,
-            confirmParams: {
-                return_url: window.location.origin + '/payment/success'
-            },
-            redirect: 'if_required'
-        });
-
-        if (result.error) {
-            document.getElementById('card-errors').textContent =
-                result.error.message;
+    // Helper to toggle loader screen
+    const toggleLoader = (show) => {
+        const loader = document.getElementById('payment-loader');
+        if (loader) {
+            loader.style.display = show ? 'flex' : 'none';
         }
+    };
+
+    // Grab dynamic amount from the hidden input
+    const cartTotalInput = document.getElementById('cartTotal');
+    const currentTotalValue = cartTotalInput ? parseFloat(cartTotalInput.value) || 25 : 25;
+    const amountInCents = Math.round(currentTotalValue * 100);
+
+    // 1. Initialize Elements instance cleanly
+    const elements = stripe.elements({
+        mode: 'payment',
+        amount: amountInCents,
+        currency: 'eur'
+    });
+
+    // 2. Mount Express Checkout (Google Pay, Apple Pay, Revolut Pay)
+    const expressContainer = document.getElementById('express-checkout-element');
+    let expressCheckoutElement = null;
+    if (expressContainer) {
+        expressCheckoutElement = elements.create('expressCheckout', {
+            buttonType: {
+                applePay: 'buy',
+                googlePay: 'buy'
+            },
+            buttonHeight: 50,
+            paymentMethods: {
+                applePay: 'always',
+                googlePay: 'always',
+                revolutPay: 'always',
+                link: 'never',
+                paypal: 'never',
+                klarna: 'never',
+                amazonPay: 'never'
+            }
+        });
+        expressCheckoutElement.mount('#express-checkout-element');
+    }
+
+    // 3. Mount Standard Payment Element with clean accordion layout
+    const paymentContainer = document.getElementById('payment-element');
+    if (paymentContainer) {
+        const paymentElement = elements.create('payment', {
+            layout: {
+                type: 'accordion',
+                defaultCollapsed: false,
+                radios: false,
+                spacedAccordionItems: false
+            }
+        });
+        paymentElement.mount('#payment-element');
+    }
+
+    const form = document.getElementById('payment-form');
+    const button = document.getElementById('submit');
+    if (button) {
+        button.style.display = 'block';
+        button.disabled = false;
+    }
+
+    const getCheckoutPayload = () => {
+        const liveTotal = document.getElementById('cartTotal')?.value || currentTotalValue;
+        return {
+            address: document.getElementById('address')?.value || '',
+            county: document.getElementById('county')?.value || '',
+            city: document.getElementById('city')?.value || '',
+            country: document.getElementById('country')?.value || '',
+            cartTotal: liveTotal,
+            cartQty: document.getElementById('cartQty')?.value || 0,
+            cart_items: document.getElementById('cart_items')?.value || '[]',
+            userId: document.getElementById('userId')?.value || ''
+        };
+    };
+
+    // Card Form Submission Handler
+    if (form) {
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            if (button) {
+                button.disabled = true;
+                button.style.opacity = '0.7';
+            }
+            const errorElement = document.getElementById('error-message');
+            if (errorElement) errorElement.textContent = '';
+
+            const { error: submitError } = await elements.submit();
+            if (submitError) {
+                if (errorElement) errorElement.textContent = submitError.message;
+                if (button) {
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                }
+                return;
+            }
+
+            // Show loading screen
+            toggleLoader(true);
+
+            try {
+                const res = await fetch('/payment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
+                    },
+                    body: JSON.stringify(getCheckoutPayload()),
+                });
+
+                const data = await res.json();
+
+                if (data.error) {
+                    toggleLoader(false);
+                    if (errorElement) errorElement.textContent = data.error;
+                    if (button) { button.disabled = false; button.style.opacity = '1'; }
+                    return;
+                }
+
+                const clientSecret = data.clientSecret || data.client_secret;
+                localStorage.removeItem('cart');
+
+                const { error } = await stripe.confirmPayment({
+                    elements,
+                    clientSecret: clientSecret,
+                    confirmParams: {
+                        return_url: window.location.origin + '/payment/success',
+                    },
+                });
+
+                if (error) {
+                    toggleLoader(false);
+                    if (errorElement) errorElement.textContent = error.message;
+                    if (button) {
+                        button.disabled = false;
+                        button.style.opacity = '1';
+                    }
+                }
+            } catch (err) {
+                console.error(err);
+                toggleLoader(false);
+                if (errorElement) errorElement.textContent = 'An unexpected network error occurred.';
+                if (button) { button.disabled = false; button.style.opacity = '1'; }
+            }
+        });
+    }
+
+    if (expressCheckoutElement) {
+        expressCheckoutElement.on('confirm', async (event) => {
+            const errorElement = document.getElementById('error-message');
+            if (errorElement) errorElement.textContent = '';
+
+            toggleLoader(true);
+
+            const res = await fetch('/payment', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
+                },
+                body: JSON.stringify({
+                    wallet_payment: true,
+                    ...getCheckoutPayload()
+                }),
+            });
+
+            const paymentResponse = await res.json();
+
+            if (paymentResponse.error) {
+                toggleLoader(false);
+                if (errorElement) errorElement.textContent = paymentResponse.error;
+                return;
+            }
+
+            const clientSecret = paymentResponse.clientSecret || paymentResponse.client_secret;
+
+            if (clientSecret) {
+                const result = await stripe.confirmPayment({
+                    elements,
+                    clientSecret: clientSecret,
+                    confirmParams: {
+                        return_url: window.location.origin + '/payment/success'
+                    },
+                    redirect: 'if_required'
+                });
+
+                if (result.error) {
+                    toggleLoader(false);
+                    if (errorElement) errorElement.textContent = result.error.message;
+                } else {
+                    localStorage.removeItem('cart');
+
+                    // FIX: Grab the Payment Intent ID and append it to the success URL
+                    const paymentIntentId = result.paymentIntent ? result.paymentIntent.id : '';
+                    window.location.href = window.location.origin + '/payment/success?payment_intent=' + paymentIntentId;
+                }
+            }
+        });
     }
 });

@@ -62,70 +62,63 @@ class CheckoutController extends Controller
     public function setPayment(Request $request)
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));
-        $json_str = file_get_contents('php://input');
-        $json_obj = json_decode($json_str);
-        $amountToInt = round($request->cartTotal * 100, 0, PHP_ROUND_HALF_UP);
 
-        $intent = null;
+        // Safely parse cart total amount
+        $cartTotal = $request->input('cartTotal', 0);
+        if (!$cartTotal) {
+            $json_payload = json_decode(file_get_contents('php://input'), true);
+            $cartTotal = $json_payload['cartTotal'] ?? 25;
+        }
+
+        $amountToInt = max(50, round(floatval($cartTotal) * 100, 0, PHP_ROUND_HALF_UP));
+        $user = auth()->user();
+
+        if (!$user) {
+            return response()->json(['error' => 'Unauthorized user.'], 401);
+        }
 
         try {
-            // CASE A: If the frontend is posting back the payment_intent_id after finishing 3DS popup
-            if (isset($json_obj->payment_intent_id)) {
-                $intent = \Stripe\PaymentIntent::retrieve($json_obj->payment_intent_id);
+            // Create a customer reference
+            $customer = \Stripe\Customer::create([
+                'email' => $user->email,
+                'description' => 'Checkout Customer',
+                'metadata' => ['name' => $user->name],
+            ]);
 
-                // After 3DS popup finishes, manual confirmation requires one final confirm call to settle the charge
-                if ($intent->status == 'requires_confirmation' || $intent->status == 'requires_action') {
-                    $intent = $intent->confirm();
-                }
-            }
-            // CASE B: Initial payment submission with the payment_method_id from frontend
-            else if (isset($json_obj->payment_method_id)) {
-                $customer = \Stripe\Customer::create([
-                    'email' => auth()->user()->email,
-                    'description' => 'New customer',
-                    'metadata' => [
-                        'name' => auth()->user()->name,
-                    ],
-                ]);
-                $cartItemsJson = $request->cart_items; // Or encode your cart details here
-                $intent = \Stripe\PaymentIntent::create([
-                    'payment_method' => $json_obj->payment_method_id,
-                    'amount' => $amountToInt,
-                    'currency' => 'eur',
-                    'confirm' => true,
-                    'customer' => $customer->id,
-                    'description' => 'Payment made by '. auth()->user()->email,
-                    'return_url' => url('/payment/success'),
-                    'metadata' => [
-                        'user_id' => auth()->id(),
-                        'cart_items' => $cartItemsJson,
-                        'cart_qty' => $request->cartQty,
-                        'address' => $request->address,
-                        'city' => $request->city,
-                        'county' => $request->county,
-                        'country' => $request->country,
-                    ]
-                ]);
-            }
+            // Create the PaymentIntent using automatic methods (supports Payment Element & Wallets)
+            // NOTE: We do NOT set 'confirm' => true here. We let the client handle confirmation via clientSecret.
+            $paymentIntent = \Stripe\PaymentIntent::create([
+                'amount' => $amountToInt,
+                'currency' => 'eur',
+                'customer' => $customer->id,
+                'automatic_payment_methods' => [
+                    'enabled' => true,
+                ],
+                'metadata' => [
+                    'user_id' => $user->id,
+                    'cart_items' => $request->input('cart_items') ?? ($json_payload['cart_items'] ?? '[]'),
+                    'cart_qty' => $request->input('cartQty') ?? ($json_payload['cartQty'] ?? 1),
+                    'address' => $request->input('address') ?? ($json_payload['address'] ?? ''),
+                    'city' => $request->input('city') ?? ($json_payload['city'] ?? ''),
+                    'county' => $request->input('county') ?? ($json_payload['county'] ?? ''),
+                    'country' => $request->input('country') ?? ($json_payload['country'] ?? ''),
+                ]
+            ]);
 
-            if (!$intent) {
-                http_response_code(400);
-                echo json_encode(['error' => 'Invalid payment request.']);
-                return;
-            }
-
-            $this->generateResponse($intent, $request);
+            // Return the client_secret directly to your frontend JS
+            return response()->json([
+                'clientSecret' => $paymentIntent->client_secret
+            ]);
 
         } catch (\Stripe\Exception\ApiErrorException $e) {
-            http_response_code(400);
-            echo json_encode([
+            return response()->json([
                 'error' => $e->getMessage()
-            ]);
+            ], 400);
         }
     }
 
     public function generateResponse($intent, Request $request) {
-        // 1. If 3DS action is required, tell frontend JS to open the verification popup
+
         if ($intent->status == 'requires_action') {
             echo json_encode([
                 'requires_action' => true,
@@ -135,7 +128,7 @@ class CheckoutController extends Controller
             return;
         }
 
-        // 2. If payment succeeds immediately or after confirmation
+
         if ($intent->status == 'succeeded' || $intent->status == 'requires_capture' || $intent->status == 'processing') {
 
             $existingOrder = Order::where('charge_id', $intent->id)->first();
@@ -180,7 +173,7 @@ class CheckoutController extends Controller
                     }
                 }
 
-                Mail::to(auth()->user()->email)->send(new ConfirmPaymentMail());
+//                Mail::to(auth()->user()->email)->send(new ConfirmPaymentMail());
             }
 
             if (session()->isStarted()) {
@@ -256,7 +249,7 @@ class CheckoutController extends Controller
                         // 3. Send Confirmation Email
                         $user = User::find($userId);
                         if ($user) {
-                            Mail::to($user->email)->send(new ConfirmPaymentMail());
+//                            Mail::to($user->email)->send(new ConfirmPaymentMail());
                         }
                     }
                 }

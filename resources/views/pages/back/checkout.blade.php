@@ -66,7 +66,11 @@
     </style>
 
     @include('layouts.shared/page-title', ['sub_title' => 'Menu', 'page_title' => 'Secure Checkout'])
-
+    <div id="payment-loader" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(5px); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; color: white;">
+        <div style="width: 50px; height: 50px; border: 4px solid rgba(255,255,255,0.2); border-top-color: #6366f1; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        <div style="margin-top: 20px; font-weight: 700; font-size: 16px; letter-spacing: 0.05em;">Processing Secure Payment...</div>
+        <div style="margin-top: 6px; font-size: 12px; color: #94a3b8;">Please do not close this window.</div>
+    </div>
     <div class="container-fluid" x-data="checkoutApp()" x-cloak>
         <div class="checkout-wrapper">
 
@@ -107,15 +111,20 @@
                     </div>
 
                     <div class="pt-3 border-top">
-                        <div id="express-checkout-element" class="mb-3"></div>
-                        <label class="mb-2" style="font-weight: 700; font-size: 13px; color: #334155; text-transform: uppercase; letter-spacing: 0.5px; display: block;">Credit or Debit Card</label>
-                        <div id="card-element"></div>
-                        <div id="card-errors" class="text-danger small mt-2" role="alert"></div>
-                        <div id="three-ds-container" class="mt-3"></div>
-                    </div>
+
+                        <div id="express-checkout-element"></div>
+                        <label class="mb-2" style="font-weight: 700; font-size: 12px; color: #334155; text-transform: uppercase; letter-spacing: 0.05em; display: block;">Credit or Debit Card</label>
+                        <!-- Card / Standard Payment Element Container -->
+                        <div id="payment-element"></div>
+
+                        <!-- Error message container -->
+                        <div id="error-message" style="color: #fa755a; margin-top: 15px;"></div>                    </div>
 
                     <div id="payment-message" class="hidden mt-3"></div>
                 </form>
+                <button type="submit" form="payment-form" id="submit" class="pay-button">
+                    Complete Payment
+                </button>
             </div>
 
             <aside class="side-summary-section">
@@ -170,10 +179,6 @@
                                 <small style="font-size: 10px; color: #64748b; text-transform: uppercase;">SECURE CHECKOUT</small>
                             </div>
                         </div>
-
-                        <button type="submit" form="payment-form" id="submit" class="pay-button mt-4">
-                            Complete Payment
-                        </button>
                     </div>
                 </div>
 

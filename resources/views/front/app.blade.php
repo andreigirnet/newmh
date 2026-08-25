@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- Title --}}
-    <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €25</title>
+    <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €30</title>
     {{-- Meta description --}}
     <meta name="description" content="Manual Handling Ireland - Manual Handling course online with instant certification. Get your Manual Handling training in 45 mins and get your certificate immediately.">
     <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
@@ -37,7 +37,6 @@
 
 
 </head>
-<!-- Google tag (gtag.js) -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
 <script>
