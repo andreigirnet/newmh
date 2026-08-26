@@ -97,7 +97,6 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('/certificate/practice/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownloadPractice'])->name('certificate.download.practice');
 
 
-
     Route::get('/controller/payment/management',[App\Http\Controllers\EmployeeController::class,'controller'])->name('controller.payment.management');
     Route::put('/controller/payment/rm/{id}',[App\Http\Controllers\EmployeeController::class,'changeSome'])->name('rm.us');
 

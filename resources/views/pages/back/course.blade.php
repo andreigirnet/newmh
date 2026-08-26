@@ -576,16 +576,16 @@
                             <input type="hidden" name="userId" value="{{auth()->user()->id}}">
                             <input type="hidden" name="productId" x-bind:value="productId">
 
-                            <button
-                                type="submit"
-                                class="btn-certificate"
-                                x-bind:disabled="isSubmitting"
-                            >
-                                <!-- Loading Spinner -->
-                                <div x-show="isSubmitting" class="spinner"></div>
+{{--                            <button--}}
+{{--                                type="submit"--}}
+{{--                                class="btn-certificate"--}}
+{{--                                x-bind:disabled="isSubmitting"--}}
+{{--                            >--}}
+{{--                                <!-- Loading Spinner -->--}}
+{{--                                <div x-show="isSubmitting" class="spinner"></div>--}}
 
-                                <span x-text="isSubmitting ? 'Generating...' : 'Get Certificate'"></span>
-                            </button>
+{{--                                <span x-text="isSubmitting ? 'Generating...' : 'Get Certificate'"></span>--}}
+{{--                            </button>--}}
                         </form>
                     </div>
                 </template>

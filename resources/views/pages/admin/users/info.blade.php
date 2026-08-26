@@ -73,6 +73,7 @@
                 <th class="hiddenRows">Expiration Date</th>
                 <th>Generate Certificate</th>
                 <th>Send Email</th>
+                <th>Watch Video</th>
             </tr>
             </thead>
             <tbody>
@@ -152,6 +153,17 @@
                         @else
                             <td>Course not completed</td>
                         @endif
+                        <td>
+                            @if(!empty($package->video_path))
+                                <a href="{{ asset('storage/' . $package->video_path) }}"
+                                   target="_blank"
+                                   class="btn btn-sm btn-primary">
+                                    Watch Video
+                                </a>
+                            @else
+                                <span class="text-muted">No video</span>
+                            @endif
+                        </td>
                     </tr>
                 @endforeach
             @else
