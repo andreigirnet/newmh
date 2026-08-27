@@ -50,7 +50,7 @@
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
-@include("frontIncludes/subNav")
+{{--@include("frontIncludes/subNav")--}}
 {{--@include("frontIncludes/subNavMobile")--}}
 
 @yield('content')

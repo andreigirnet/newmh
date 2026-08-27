@@ -471,12 +471,12 @@
                 <div class="langItem" @click="setLanguage('romanian')"><img src="{{asset('/images/flags/ro.png')}}" alt=""></div>
                 <div class="langItem" @click="setLanguage('russian')"><img src="{{asset('/images/flags/ru.png')}}" alt=""></div>
                 <div class="langItem" @click="setLanguage('spanish')"><img src="{{asset('/images/flags/sp.png')}}" alt=""></div>
-{{--                <div>|</div>--}}
-{{--                <div class="langText" id="hideNav">Hide nav bar</div>--}}
-{{--                <label class="switch" id="showHideNav">--}}
-{{--                    <input type="checkbox">--}}
-{{--                    <span class="slider round"></span>--}}
-{{--                </label>--}}
+                {{--                <div>|</div>--}}
+                {{--                <div class="langText" id="hideNav">Hide nav bar</div>--}}
+                {{--                <label class="switch" id="showHideNav">--}}
+                {{--                    <input type="checkbox">--}}
+                {{--                    <span class="slider round"></span>--}}
+                {{--                </label>--}}
             </div>
 
             <div class="progressBar" x-show="showProgressBar === 'freeze'">
@@ -542,28 +542,28 @@
                                 <em>*Move load from floor to surface and back. Need help? Our team responds promptly during business hours.</em>
                             </div>
                         </div>
-{{--                        <div class="completion-card">--}}
-{{--                            <div class="icon-header">--}}
-{{--                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00a86b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">--}}
-{{--                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>--}}
-{{--                                    <polyline points="7 10 12 15 17 10"></polyline>--}}
-{{--                                    <line x1="12" y1="15" x2="12" y2="3"></line>--}}
-{{--                                </svg>--}}
-{{--                                <h4>Ready to Download?</h4>--}}
-{{--                            </div>--}}
+                        {{--                        <div class="completion-card">--}}
+                        {{--                            <div class="icon-header">--}}
+                        {{--                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00a86b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">--}}
+                        {{--                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>--}}
+                        {{--                                    <polyline points="7 10 12 15 17 10"></polyline>--}}
+                        {{--                                    <line x1="12" y1="15" x2="12" y2="3"></line>--}}
+                        {{--                                </svg>--}}
+                        {{--                                <h4>Ready to Download?</h4>--}}
+                        {{--                            </div>--}}
 
-{{--                            <button class="download-btn">Download Certificate</button>--}}
+                        {{--                            <button class="download-btn">Download Certificate</button>--}}
 
-{{--                            <p class="helper-text">--}}
-{{--                                Check your <strong>spam or junk folder</strong> if you don't see it in your inbox immediately.--}}
-{{--                            </p>--}}
+                        {{--                            <p class="helper-text">--}}
+                        {{--                                Check your <strong>spam or junk folder</strong> if you don't see it in your inbox immediately.--}}
+                        {{--                            </p>--}}
 
-{{--                            <div class="footer-note">--}}
-{{--                                <p>Access your training portal anytime using your email and password to review course content or download files again.</p>--}}
-{{--                                <hr>--}}
-{{--                                <p>Need help? <strong>Please get in touch!</strong></p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                            <div class="footer-note">--}}
+                        {{--                                <p>Access your training portal anytime using your email and password to review course content or download files again.</p>--}}
+                        {{--                                <hr>--}}
+                        {{--                                <p>Need help? <strong>Please get in touch!</strong></p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
                         <form
                             x-data="{ isSubmitting: false }"
                             x-bind:action="`/certificate/create/${packageId}`"
@@ -576,16 +576,16 @@
                             <input type="hidden" name="userId" value="{{auth()->user()->id}}">
                             <input type="hidden" name="productId" x-bind:value="productId">
 
-{{--                            <button--}}
-{{--                                type="submit"--}}
-{{--                                class="btn-certificate"--}}
-{{--                                x-bind:disabled="isSubmitting"--}}
-{{--                            >--}}
-{{--                                <!-- Loading Spinner -->--}}
-{{--                                <div x-show="isSubmitting" class="spinner"></div>--}}
+                            {{--                            <button--}}
+                            {{--                                type="submit"--}}
+                            {{--                                class="btn-certificate"--}}
+                            {{--                                x-bind:disabled="isSubmitting"--}}
+                            {{--                            >--}}
+                            {{--                                <!-- Loading Spinner -->--}}
+                            {{--                                <div x-show="isSubmitting" class="spinner"></div>--}}
 
-{{--                                <span x-text="isSubmitting ? 'Generating...' : 'Get Certificate'"></span>--}}
-{{--                            </button>--}}
+                            {{--                                <span x-text="isSubmitting ? 'Generating...' : 'Get Certificate'"></span>--}}
+                            {{--                            </button>--}}
                         </form>
                     </div>
                 </template>
