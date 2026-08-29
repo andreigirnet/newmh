@@ -1,36 +1,161 @@
 @extends('front.app')
+
 @section('content')
-<div class="title" data-aos="fade-up">
-    <div class="titleText">Terms & Conditions</div>
-    <div class="borderTitle"></div>
-</div>
-<div class="infoWrap">
-    <div class="infoText">
-        <h1>Terms and Conditions</h1>
+    <style>
+        .terms-wrapper {
+            background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+            min-height: 100vh;
+            padding: 4rem 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .terms-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .terms-header {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 3rem 2.5rem;
+            position: relative;
+        }
+        .terms-header h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.2;
+        }
+        .terms-header p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .terms-body {
+            padding: 2.5rem;
+        }
+        .terms-section {
+            margin-bottom: 2.5rem;
+        }
+        .terms-section h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .terms-section h2::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: #3b82f6;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+        .terms-section h1.main-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        .terms-text {
+            color: #475569;
+            line-height: 1.7;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+        .terms-text a {
+            color: #2563eb;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .terms-text a:hover {
+            color: #1d4ed8;
+        }
+        .terms-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .terms-wrapper {
+                padding: 1.5rem 0.5rem;
+            }
+            .terms-header {
+                padding: 2rem 1.5rem;
+            }
+            .terms-header h1 {
+                font-size: 1.75rem;
+            }
+            .terms-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 
-        <p>Welcome to Online Ireland Safety Training ! These terms and conditions outline the rules and regulations for the
-            use of our website, <a href="https://www.manualhandling-ireland.com/" style="color: blue" target="_blank">https://www.manualhandling-ireland.com/</a> (hereafter referred to as "the Site"). By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use our website if you do not accept all of the terms and conditions stated on this page.</p>
+    <div class="terms-wrapper" data-aos="fade-up">
+        <div class="terms-container">
 
-        <h2 style="margin-top: 20px">Company Information:</h2>
-        <p>Online Irish Manual Handling Training<br>
-            Email: <a href="mailto:info@manualhandling-ireland.com" style="color: blue">info@manualhandling-ireland.com</a><br>
-            Registered and licensed company.</p>
+            <div class="terms-header">
+                <h1>Terms & Conditions</h1>
+                <p>{{ config('global.business_name') }}</p>
+            </div>
 
-        <h2 style="margin-top: 20px">Services:</h2>
-        <p>We provide accredited and licensed online manual handling training services. Our training services are available for individuals and businesses in Ireland, Dublin, and throughout Europe.</p>
+            <div class="terms-body">
+                <div class="terms-section" style="margin-bottom: 0;">
 
-        <h2 style="margin-top: 20px">Intellectual Property:</h2>
-        <p>The content, logo, and materials on this website are the intellectual property of Online Manual Handling Ireland and are protected by applicable copyright and trademark law.</p>
+                    <h1 class="main-title">Terms and Conditions</h1>
 
-        <h2 style="margin-top: 20px">Use License:</h2>
-        <p>Permission is granted to temporarily download one copy of the materials for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.</p>
+                    <p class="terms-text">
+                        Welcome to Online Ireland Safety Training! These terms and conditions outline the rules and regulations for using our website at
+                        <a href="https://www.manualhandling-ireland.ie/" target="_blank">https://www.manualhandling-ireland.ie/</a>.
+                        By accessing this platform, you agree to comply with these terms. If you do not agree with any part of these terms, please discontinue use of our website immediately.
+                    </p>
 
-        <!-- Add more sections as needed -->
+                    <div class="terms-card" style="margin-top: 1.5rem;">
+                        <h2 style="margin-top: 0;">Company Information:</h2>
+                        <p class="terms-text" style="margin-bottom: 0;">
+                            <strong>Online Irish Manual Handling Training</strong><br>
+                            Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a><br>
+                            Registered and licensed training provider.
+                        </p>
+                    </div>
 
-        <h2 style="margin-top: 20px">Contact Us:</h2>
-        <p>If you have any questions regarding these terms and conditions, please contact us using the information provided above.</p>
+                    <h2>Services & Access:</h2>
+                    <p class="terms-text">
+                        We provide professional, industry-compliant online manual handling training modules designed for individuals and businesses across Ireland and Europe. Purchasing a course grants you personal access to complete your training online through our secure browser platform.
+                    </p>
 
+                    <h2>Intellectual Property & Content Protection:</h2>
+                    <p class="terms-text">
+                        All course content, training videos, graphics, text, and logos hosted on this website are the exclusive intellectual property of {{ config('global.business_name') }}. None of our training materials, videos, or course contents may be copied, redistributed, resold, or shared publicly under any circumstances.
+                    </p>
+
+                    <h2>User Responsibilities:</h2>
+                    <p class="terms-text">
+                        Users agree to provide accurate information during registration and to complete their training courses individually. Account sharing or allowing unauthorized individuals to access training modules under another user's profile is strictly prohibited.
+                    </p>
+
+                    <h2>Contact Us:</h2>
+                    <p class="terms-text" style="margin-bottom: 0;">
+                        If you have any questions or require support regarding these terms and conditions, please reach out to our team at
+                        <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a>.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
-</div>
 @endsection

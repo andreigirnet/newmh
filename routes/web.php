@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\UserController;
 use App\Models\Blog;
@@ -29,11 +30,17 @@ use Spatie\Sitemap\Tags\Url;
         $products = Product::orderBy('id', 'asc')->get();
         return view("front.landing", compact('products'));
     })->name('frontHome');
-Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
+    Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
     ->name('users.send-reminder');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
+     Route::get('/accreditations', function(){return view("front.accreditation");})->name('front.accreditation');
+    Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
+    Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
+    Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
 
-    Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
+
+
+Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
     Route::get('/manual-handling-cork', function(){return view("front.manual-handling-cork");})->name('front.manual.handling.cork');
     Route::get('/manual-handling-galway', function(){return view("front.manual-handling-galway");})->name('front.manual.handling.galway');
     Route::get('/manual-handling-limerick', function(){return view("front.manual-handling-limerick");})->name('front.manual.handling.limerick');
