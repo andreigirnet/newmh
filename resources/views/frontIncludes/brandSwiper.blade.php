@@ -32,6 +32,6 @@
 </div>
 <div class="copyright">
     <p style="color: white; font-size: 18px">
-        Copyright © 2010-2026 manualhandlingireland.com | manualhandlingireland Ltd | Email: info@manualhandlingireland.com
+        Copyright © 2026 Manual Handling Ireland | Operated by: PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301 Ltd | Address: 51 Bracken Road, D18 CV48, Ireland | Email: info@manualhandling-ireland.ie
     </p>
 </div>
