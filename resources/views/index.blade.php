@@ -107,7 +107,9 @@
                                 </div>
                                 <div class="product-icons-back">
                                     <img src="images/icons/money.png" alt="">
-                                    <div style="font-weight: bold">Price: <del style="color: gray">47€</del> <span style="color: red; font-size: 30px">{{$product->price}} €</span></div>
+                                    <div style="font-weight: bold">Price:
+{{--                                        <del style="color: gray">47€</del> --}}
+                                        <span style="color: red; font-size: 30px">{{$product->price}} €</span></div>
                                 </div>
                             </div>
                             @if($product->status == 0)
@@ -194,9 +196,9 @@
                 <div class="course-content">
 
                     <div class="price-wrapper">
-                        <span class="old-price">€43</span>
+{{--                        <span class="old-price">€43</span>--}}
                         <span class="new-price">€{{config('global.course_price')}}</span>
-                        <span class="discount-badge">30% OFF</span>
+{{--                        <span class="discount-badge">30% OFF</span>--}}
                     </div>
 
                     <h1 class="course-title">Manual Handling Course</h1>
