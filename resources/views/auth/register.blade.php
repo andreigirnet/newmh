@@ -86,15 +86,15 @@
                                                 <input id="password-confirm" placeholder="Password Confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 
                                             </div>
+
+
                                             <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                        id="checkbox-signup">
-                                                    <label class="form-check-label" for="checkbox-signup">I accept <a
-                                                            href="{{route('terms')}}" class="text-muted">Terms and
-                                                            Conditions</a></label>
-                                                </div>
+                                                <label class="form-check-label text-secondary ms-1" style="font-size: 12px;">
+                                                    By submitting this form, you acknowledge our
+                                                    <a href="{{ route('front.privacy') }}">Privacy Policy</a>.
+                                                </label>
                                             </div>
+
                                             <div class="mb-0 d-grid text-center">
                                                 <button class="btn btn-primary fw-semibold" type="submit">SignUp</button>
                                             </div>
