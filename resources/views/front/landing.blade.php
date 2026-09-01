@@ -13,7 +13,7 @@
                     <div class="trust-badge">
                         <span class="badge-icon">🛡️</span>
                         <div class="badge-text">
-                            <strong>CPD, QQI Accredited</strong>
+                            <strong>CPD, QQI</strong>
                             <span>Recognized Standard</span>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
     </div>
 
     <div class="langTitle" data-aos="fade-up">
-        <div class="languageText"  >At Manual Handling Ireland, our QQI accredited Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training meets HSA and HSE requirements, complies with EU legislation, and provides a recognised Manual Handling Certificate accepted across Ireland, including Dublin, as well as the UK and Europe. We also provide Manual Handling Refresher courses for individuals who need to renew or update their knowledge.</div>
+        <div class="languageText"  >At Manual Handling Ireland, our QQI compliant Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training meets HSA and HSE requirements, complies with EU legislation, and provides a recognised Manual Handling Certificate accepted across Ireland, including Dublin, as well as the UK and Europe. We also provide Manual Handling Refresher courses for individuals who need to renew or update their knowledge.</div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
             <img src="{{asset('images/flags/pl.png')}}" alt="">
@@ -205,21 +205,7 @@
         </div>
     </section>
 
-    <div class="trustContainer">
-        <div class="innerTrust">
-            <div class="trustLeft">
-                <img src="{{asset('images/trust.webp')}}" alt="">
-            </div>
-            <div class="trustRight">
-                <div class="trustTitle sizeTextMobile" >QQI Acredited Manual Handling Training Dublin Ireland - You Can Trust</div>
-                <div class="trustContent">
-                    <div >Manual Handling Ireland is a legally registered Irish company, fully compliant with national regulations. All our Manual Handling Training follows HSA standards, holds QQI accreditation, and aligns with European legislation.</div>
-                    <br><br>
-                    <div >Our Manual Handling Courses are independently recognised by leading professional organisations, providing recognised, high-quality training trusted by employers across Ireland, the UK, and Europe. Choose your Manual Handling Certificate with complete confidence.</div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="cpdContainer">
         <div class="cpdInner">
@@ -234,7 +220,7 @@
                                 </div>
                                 <div class="cpdContent">
                                     <div class="cpdItemTitle"  >QQI, HSA, Rospa Approved</div>
-                                    <div class="cpdItemContent"  >Accredited Course to obtain your Official Manual Handling Certificate!</div>
+                                    <div class="cpdItemContent"  >Compliant Course to obtain your Official Manual Handling Certificate!</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -243,7 +229,7 @@
                                 </div>
                                 <div class="cpdContent">
                                     <div class="cpdItemTitle"  >Certify Your Skills</div>
-                                    <div class="cpdItemContent"  >An Irish Manual Handling Diploma/Certificate, accredited by CPD and ROSPA, validates the skills you have acquired.</div>
+                                    <div class="cpdItemContent"  >An Irish Manual Handling Diploma/Certificate, Compliant by CPD and ROSPA, validates the skills you have acquired.</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -646,7 +632,7 @@
                     <div class="imh-feature-item">
                         <span class="imh-feature-icon">🏅</span>
                         <div>
-                            <strong>Accredited Certification</strong>
+                            <strong>Instant Certification</strong>
                             <p>Showcase compliance with recognized safety regulations.</p>
                         </div>
                     </div>
