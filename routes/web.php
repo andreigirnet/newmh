@@ -76,7 +76,7 @@ Route::get('/manual-handling-course', function(){return view("front.manual-handl
 
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
-    Route::get('/home', [\App\Http\Controllers\AdminDashboardController::class,'simpleUserIndex'])->name('home');
+    Route::get('/dashboard', [\App\Http\Controllers\AdminDashboardController::class,'simpleUserIndex'])->name('home');
 
 
     Route::get('/profile',[App\Http\Controllers\ProfileController::class,'show'])->name('admin.en.profile');
