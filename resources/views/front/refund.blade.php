@@ -146,7 +146,7 @@
                     <div class="refund-card" style="margin-top: 1.5rem;">
                         <h2 style="margin-top: 0;">Support Contact for Refunds:</h2>
                         <p class="refund-text" style="margin-bottom: 0;">
-                            <strong>Online Irish Manual Handling Training</strong><br>
+                            <strong>Online Manual Handling Ireland Training</strong><br>
                             Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a>
                         </p>
                     </div>

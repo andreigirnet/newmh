@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="cns-body-text">
-                    Our team excels in forensic accident investigation and root-cause analysis, ensuring robust preventive strategies and Irish manual handling certification standards are integrated to stop recurring issues.
+                    Our team excels in forensic accident investigation and root-cause analysis, ensuring robust preventive strategies and Manual Handling Ireland certification standards are integrated to stop recurring issues.
                 </div>
             </div>
 
@@ -116,7 +116,7 @@
             <!-- CONTACT -->
             <div class="cns-contact-banner" data-aos="fade-up">
                 <div class="cns-body-text">
-                    For more information on our advisory solutions or to clarify regulatory requirements, including Irish manual handling certification, please connect with our specialists through the Online Chat.
+                    For more information on our advisory solutions or to clarify regulatory requirements, including Manual Handling Ireland certification, please connect with our specialists through the Online Chat.
                 </div>
             </div>
 

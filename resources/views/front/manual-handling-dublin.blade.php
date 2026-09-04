@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Training Dublin</h1>
                     <p class="mh-lead-text">
                         The premium choice for **Manual Handling Compliance Dublin**.
-                        Fast-track your **Irish manual handling certification** with HSA-compliant training for individuals and teams across the capital.
+                        Fast-track your **Manual Handling Ireland certification** with HSA-compliant training for individuals and teams across the capital.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('home')}}" class="btn-exclusive-teal">Start Online Now — €{{ config('global.course_price') }}</a>
@@ -42,7 +42,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">⏱️</div>
                         <h4>45-Min Certification</h4>
-                        <p>Get certified in under an hour. Our streamlined platform is the fastest path to **Irish manual handling certification**.</p>
+                        <p>Get certified in under an hour. Our streamlined platform is the fastest path to **Manual Handling Ireland certification**.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🏗️</div>
@@ -81,7 +81,7 @@
             <h2>Why 50,000+ Students Chose Our Online Training</h2>
             <p>For Dublin HR managers and business owners, the logistics of traditional training are a nightmare. Our **Manual Handling Online** platform removes the cost of travel, venue hire, and lost productivity. With 24/7 access on smartphones and tablets, your team can get certified whenever it suits the work schedule.</p>
 
-            <p>Upon completion, your **Irish manual handling certification** is available for instant download as a PDF. Join the thousands of Dublin professionals who have moved to a faster, safer, and more compliant training model.</p>
+            <p>Upon completion, your **Manual Handling Ireland certification** is available for instant download as a PDF. Join the thousands of Dublin professionals who have moved to a faster, safer, and more compliant training model.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('home')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>

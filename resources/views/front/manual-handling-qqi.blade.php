@@ -22,7 +22,7 @@
             <h2>Manual Handling QQI Standards: The Legal Framework</h2>
             <p>In the Republic of Ireland, workplace safety is governed by a rigorous set of legislative requirements. Under the **Safety, Health and Welfare at Work Act 2005**, employers are legally mandated to provide appropriate training to any employee involved in manual handling activities. The **General Application Regulations 2007** (Chapter 4) further define **Manual Handling Online** training as an acceptable medium for delivering the theoretical and biomechanical knowledge required for compliance.</p>
 
-            <p>Our **Manual Handling Course Ireland** is developed in strict alignment with QQI Level 6 instructional standards. While QQI (Quality and Qualifications Ireland) provides the framework for education, the HSA (Health and Safety Authority) provides the framework for compliance. By choosing our platform, you ensure that your **Irish Manual Handling Certification** is not just a document, but a verified record of professional competence.</p>
+            <p>Our **Manual Handling Course Ireland** is developed in strict alignment with QQI Level 6 instructional standards. While QQI (Quality and Qualifications Ireland) provides the framework for education, the HSA (Health and Safety Authority) provides the framework for compliance. By choosing our platform, you ensure that your **Manual Handling Ireland Certification** is not just a document, but a verified record of professional competence.</p>
 
             <div class="mh-feature-list">
                 <li><strong>Verified Authority:</strong> Content curated by QQI Level 6 Safety Instructors.</li>
@@ -80,7 +80,7 @@
             <h2>The Advantage of Online QQI Level Alignment</h2>
             <p>For modern Irish businesses, the transition to **Manual Handling Training Online Ireland** has provided unprecedented flexibility. Traditional classroom settings often suffer from varying instructor quality and high logistical costs. By contrast, our digital platform delivers a consistent, high-fidelity curriculum to every employee, regardless of their location in Dublin or beyond.</p>
 
-            <p>Upon passing the final assessment—which features unlimited retries to ensure total concept mastery—students receive their **Irish Manual Handling Certification** instantly. This certificate is valid for 3 years and is stored in our secure cloud, allowing HR managers to manage compliance across large teams with ease.</p>
+            <p>Upon passing the final assessment—which features unlimited retries to ensure total concept mastery—students receive their **Manual Handling Ireland Certification** instantly. This certificate is valid for 3 years and is stored in our secure cloud, allowing HR managers to manage compliance across large teams with ease.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('home')}}" class="btn-gold">Get QQI Aligned Certification — €{{ config('global.course_price') }}</a>

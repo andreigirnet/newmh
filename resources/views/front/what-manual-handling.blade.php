@@ -78,10 +78,10 @@
         </article>
 
         <article class="mh-container-content">
-            <h2>Achieving Irish Manual Handling Certification</h2>
+            <h2>Achieving Manual Handling Ireland Certification</h2>
             <p>Because the risks are so high, the HSA requires that all staff receive appropriate training. Our **Manual Handling Training Online Ireland** platform provides the most efficient route to compliance. Our 45-minute curriculum covers the 8 Principles of Safe Lifting, legal duties, and ergonomic best practices.</p>
 
-            <p>Upon completion, you receive an accredited **Irish manual handling certification** valid for 3 years. This document proves to employers and inspectors that you understand the definition of manual handling and possess the skills to perform it without risk to yourself or others.</p>
+            <p>Upon completion, you receive an accredited **Manual Handling Ireland certification** valid for 3 years. This document proves to employers and inspectors that you understand the definition of manual handling and possess the skills to perform it without risk to yourself or others.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('home')}}" class="btn-gold">Start Your Training Today — €{{ config('global.course_price') }}</a>

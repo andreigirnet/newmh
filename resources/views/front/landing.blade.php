@@ -229,7 +229,7 @@
                                 </div>
                                 <div class="cpdContent">
                                     <div class="cpdItemTitle"  >Certify Your Skills</div>
-                                    <div class="cpdItemContent"  >An Irish Manual Handling Diploma/Certificate, Compliant by CPD and ROSPA, validates the skills you have acquired.</div>
+                                    <div class="cpdItemContent"  >An Manual Handling Ireland Diploma/Certificate, Compliant by CPD and ROSPA, validates the skills you have acquired.</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -299,7 +299,7 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
 {{--                    <div class="premium-review-body">--}}
-{{--                        "The online Manual Handling training provided by Irish-ManualHandling was comprehensive yet easy to follow. The certification process was smooth, and the practical tips were immensely helpful."--}}
+{{--                        "The online Manual Handling training provided by Manual Handling Ireland was comprehensive yet easy to follow. The certification process was smooth, and the practical tips were immensely helpful."--}}
 {{--                    </div>--}}
 {{--                </div>--}}
 {{--                <div class="premium-review-footer">--}}
@@ -328,7 +328,7 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
 {{--                    <div class="premium-review-body">--}}
-{{--                        "I found the course from Irish Manual Handling to be informative and well-structured. The convenience of online learning coupled with their engaging content made the whole experience worthwhile."--}}
+{{--                        "I found the course from Manual Handling Ireland to be informative and well-structured. The convenience of online learning coupled with their engaging content made the whole experience worthwhile."--}}
 {{--                    </div>--}}
 {{--                </div>--}}
 {{--                <div class="premium-review-footer">--}}
@@ -748,7 +748,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
                         <p class="mh-faq-text">
-                            Failure to comply with <strong>Irish manual handling regulations</strong> can have severe consequences. Employers can face <strong>on-the-spot HSA fines</strong>, legal prosecution, and massive personal injury claims. Furthermore, if an accident occurs and the employee was not properly trained, your <strong>Employer Liability Insurance</strong> may be voided, leaving the business financially responsible for legal costs and compensation payouts.
+                            Failure to comply with <strong>Manual Handling Ireland regulations</strong> can have severe consequences. Employers can face <strong>on-the-spot HSA fines</strong>, legal prosecution, and massive personal injury claims. Furthermore, if an accident occurs and the employee was not properly trained, your <strong>Employer Liability Insurance</strong> may be voided, leaving the business financially responsible for legal costs and compensation payouts.
                         </p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
                 <span class="mh-top-badge">Accredited Verification Portal</span>
                 <h1>Manual Handling <br>Certificate Ireland</h1>
                 <p class="mh-lead-text">
-                    Instant, HSA-compliant **Irish manual handling certification**.
+                    Instant, HSA-compliant **Manual Handling Ireland certification**.
                     Our digital certificates are recognized nationwide, valid for 3 years, and include unique verification IDs for total **Manual Handling Compliance Ireland**.
                 </p>
                 <div class="mh-btn-row">
@@ -47,7 +47,7 @@
                 <div class="pillar-card">
                     <div class="pillar-icon">📱</div>
                     <h4>Digital Wallet</h4>
-                    <p>Access your **Irish manual handling certification** anytime, anywhere on your smartphone or tablet.</p>
+                    <p>Access your **Manual Handling Ireland certification** anytime, anywhere on your smartphone or tablet.</p>
                 </div>
                 <div class="pillar-card">
                     <div class="pillar-icon">💰</div>
@@ -79,7 +79,7 @@
         <h2>Enterprise Certificate Management</h2>
         <p>For Dublin HR managers and nationwide enterprises, our platform provides a dedicated Employer Dashboard. This allows for the bulk purchase of **manual handling training online Ireland** licenses, real-time progress tracking, and centralized certificate storage.</p>
 
-        <p>Ensure your company remains HSA-audit ready at all times. Our system automatically alerts you when an employee's **Irish manual handling certification** is nearing its 3-year expiry, allowing for seamless refresher training and continuous safety compliance.</p>
+        <p>Ensure your company remains HSA-audit ready at all times. Our system automatically alerts you when an employee's **Manual Handling Ireland certification** is nearing its 3-year expiry, allowing for seamless refresher training and continuous safety compliance.</p>
 
         <div style="text-align: center; margin-top: 40px;">
             <a href="{{route('home')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>

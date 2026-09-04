@@ -27,7 +27,7 @@
                         </button>
 
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Irish manual handling certification is available for immediate download once you complete the course successfully.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Manual Handling Ireland certification is available for immediate download once you complete the course successfully.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After finishing the theory modules of your manual handling training online Ireland, you can schedule a short virtual practical assessment with a qualified assessor.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total fee of €35 covers the full manual handling course Ireland, final assessment, and certification — no hidden charges.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is available 24/7 online, allowing you to complete your manual handling training Ireland at your own pace.</span></div>
@@ -67,7 +67,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Your certificate will be emailed and stored in your account for easy access and printing — part of your Irish manual handling certification.
+                            Your certificate will be emailed and stored in your account for easy access and printing — part of your Manual Handling Ireland certification.
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, all instructors hold recognized Irish manual handling certification and deliver training in line with manual handling compliance Ireland.
+                            Yes, all instructors hold recognized Manual Handling Ireland certification and deliver training in line with manual handling compliance Ireland.
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, you will continue to have access to your manual handling training Ireland materials and Irish manual handling certification.
+                            Yes, you will continue to have access to your manual handling training Ireland materials and Manual Handling Ireland certification.
                         </div>
                     </div>
 
@@ -289,7 +289,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            After passing the assessment, your Irish manual handling certification is available in your dashboard for download or printing.
+                            After passing the assessment, your Manual Handling Ireland certification is available in your dashboard for download or printing.
                         </div>
                     </div>
 
@@ -311,7 +311,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, you receive an official Irish manual handling certification that meets workplace compliance Ireland requirements.
+                            Yes, you receive an official Manual Handling Ireland certification that meets workplace compliance Ireland requirements.
                         </div>
                     </div>
 
@@ -331,7 +331,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Your Irish manual handling certification is valid for 3 years from the date of issue.
+                            Your Manual Handling Ireland certification is valid for 3 years from the date of issue.
                         </div>
                     </div>
 

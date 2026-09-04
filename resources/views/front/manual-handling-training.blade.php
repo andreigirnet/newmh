@@ -28,8 +28,8 @@
                 [Image of correct manual handling lifting technique]
 
 
-                <h3>Securing Your Irish Manual Handling Certification</h3>
-                <p>While basic <strong>Irish manual handling certification</strong> is the legal minimum, our training goes deeper into the mechanics of force and leverage. This ensures that once your team receives their <strong>manual handling course Ireland</strong> credentials, they possess the actual skill set to prevent chronic musculoskeletal fatigue.</p>
+                <h3>Securing Your Manual Handling Ireland Certification</h3>
+                <p>While basic <strong>Manual Handling Ireland certification</strong> is the legal minimum, our training goes deeper into the mechanics of force and leverage. This ensures that once your team receives their <strong>manual handling course Ireland</strong> credentials, they possess the actual skill set to prevent chronic musculoskeletal fatigue.</p>
             </div>
         </article>
 

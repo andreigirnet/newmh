@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Ireland</h1>
                     <p class="mh-lead-text">
                         The definitive resource for **Manual Handling Compliance Ireland**.
-                        Over 349,500 professionals have secured their **Irish manual handling certification** through our HSA-compliant digital ecosystem.
+                        Over 349,500 professionals have secured their **Manual Handling Ireland certification** through our HSA-compliant digital ecosystem.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('home')}}" class="btn-exclusive-teal">Start Online Course — €{{ config('global.course_price') }}</a>
@@ -81,7 +81,7 @@
             <h2>Why Join 50,000+ Students Certified Online?</h2>
             <p>For HR and Safety Managers across Ireland, the logistics of classroom training represent a significant operational hurdle. Our **Manual Handling Online** platform eliminates the need for travel, venue hire, and scheduling conflicts. By providing 24/7 access on any device, we ensure that your team gets certified on their terms, without compromising on quality or legal standing.</p>
 
-            <p>Upon completion of the theory and assessment, your **Irish manual handling certification** is instantly generated for download as a PDF. Join the modern workforce and move toward a safer, more efficient, and fully compliant future.</p>
+            <p>Upon completion of the theory and assessment, your **Manual Handling Ireland certification** is instantly generated for download as a PDF. Join the modern workforce and move toward a safer, more efficient, and fully compliant future.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('home')}}" class="btn-gold">Start Your Certification — €{{ config('global.course_price') }}</a>

@@ -8,7 +8,7 @@
                     <span class="mh-top-badge">Compliance Renewal Hub</span>
                     <h1>Manual Handling <br>Refresher Training</h1>
                     <p class="mh-lead-text">
-                        Renew your **Irish manual handling certification** in just 45 minutes.
+                        Renew your **Manual Handling Ireland certification** in just 45 minutes.
                         Stay aligned with **Manual Handling Compliance Ireland** through our 2026 updated curriculum. Instant certificate download upon completion.
                     </p>
                     <div class="mh-btn-row">
@@ -77,7 +77,7 @@
 
         <article class="mh-container-content">
             <h2>Enterprise-Grade Renewal Systems</h2>
-            <p>Managing the expiry dates of an entire workforce's **Irish manual handling certification** is a logistical challenge. Our platform offers automated expiry alerts and a centralized dashboard for HR managers to track **Manual Handling Compliance Ireland** across multiple sites.</p>
+            <p>Managing the expiry dates of an entire workforce's **Manual Handling Ireland certification** is a logistical challenge. Our platform offers automated expiry alerts and a centralized dashboard for HR managers to track **Manual Handling Compliance Ireland** across multiple sites.</p>
 
             <p>Ensure that your team's certification never lapses. With our bulk licensing options, you can renew dozens of employees simultaneously, providing them with instant access to the **manual handling training online Ireland** portal and ensuring total continuity of safety.</p>
 

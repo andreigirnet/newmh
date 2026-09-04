@@ -126,7 +126,7 @@
                     <div class="terms-card" style="margin-top: 1.5rem;">
                         <h2 style="margin-top: 0;">Company Information:</h2>
                         <p class="terms-text" style="margin-bottom: 0;">
-                            <strong>Online Irish Manual Handling Training</strong><br>
+                            <strong>Online Manual Handling Ireland Training</strong><br>
                             Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a><br>
                             Registered and licensed training provider.
                         </p>
