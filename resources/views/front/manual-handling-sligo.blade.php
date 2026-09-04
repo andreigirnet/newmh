@@ -12,8 +12,8 @@
                         Whether you are in healthcare, retail, or hospitality, our training helps you meet Irish safety requirements quickly and efficiently.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Sligo Staff Training</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Sligo Staff Training</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <p>Join workers across Sligo who are choosing a simpler and more flexible way to complete their manual handling training.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

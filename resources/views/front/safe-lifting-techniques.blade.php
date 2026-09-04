@@ -11,7 +11,7 @@
                         Master the biomechanics of movement. Our guide to **Safe Lifting Techniques** ensures total **Manual Handling Compliance Ireland** while protecting your long-term musculoskeletal health.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Get Certified — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Get Certified — €{{ config('global.course_price') }}</a>
                         <a href="/" class="btn-exclusive-ghost">Start Now</a>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
             <p>Understanding **Safe Lifting Techniques** is a life-long skill that extends beyond the workplace. Whether you are at home or on-site, these principles protect your mobility and quality of life. By completing our accredited **Manual Handling Course Ireland**, you secure an **Manual Handling Ireland certification** that proves your competence to any employer or HSA inspector.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Enrol Now & Get Certified — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Enrol Now & Get Certified — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

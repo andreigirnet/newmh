@@ -12,8 +12,8 @@
                         Stay aligned with **Manual Handling Compliance Ireland** through our 2026 updated curriculum. Instant certificate download upon completion.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Renew Now — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Corporate Bulk Renewals</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Renew Now — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Corporate Bulk Renewals</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <p>Ensure that your team's certification never lapses. With our bulk licensing options, you can renew dozens of employees simultaneously, providing them with instant access to the **manual handling training online Ireland** portal and ensuring total continuity of safety.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Renew Your Certificate — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Renew Your Certificate — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

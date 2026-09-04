@@ -11,8 +11,8 @@
                         The highest standard of **Manual Handling Compliance Ireland**. Our **Manual Handling Course Ireland** is designed by QQI Level 6 instructors to ensure your workforce meets every HSA legal requirement.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start QQI Aligned Training — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Corporate Team Rates</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start QQI Aligned Training — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Corporate Team Rates</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             <p>Upon passing the final assessment—which features unlimited retries to ensure total concept mastery—students receive their **Manual Handling Ireland Certification** instantly. This certificate is valid for 3 years and is stored in our secure cloud, allowing HR managers to manage compliance across large teams with ease.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Get QQI Aligned Certification — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Get QQI Aligned Certification — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

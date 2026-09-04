@@ -12,8 +12,8 @@
                         Accredited **Manual Handling Ireland certification** designed for risk mitigation and workforce longevity.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Enrol Your Team — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Download Legal Whitepaper</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Enrol Your Team — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Download Legal Whitepaper</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <p>Learners can access the portal 24/7 on any device—smartphone, tablet, or desktop. This flexibility is particularly vital for shift workers or remote teams who cannot attend traditional 9-to-5 sessions. Furthermore, our platform allows for unlimited retries on the final assessment, ensuring that the **manual handling certification Ireland** is only issued when the student has truly mastered the material.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Get Your Corporate Quote Today</a>
+                <a href="{{route('register')}}" class="btn-gold">Get Your Corporate Quote Today</a>
             </div>
         </article>
     </div>

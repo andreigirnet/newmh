@@ -12,8 +12,8 @@
                         Fast-track your **Manual Handling Ireland certification** with HSA-compliant training for individuals and teams across the capital.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Online Now — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Dublin Team Training</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Online Now — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Dublin Team Training</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <p>Upon completion, your **Manual Handling Ireland certification** is available for instant download as a PDF. Join the thousands of Dublin professionals who have moved to a faster, safer, and more compliant training model.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

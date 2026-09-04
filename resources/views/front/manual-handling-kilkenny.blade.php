@@ -12,8 +12,8 @@
                         Ideal for retail, hospitality, and local businesses, our training helps you stay compliant while working around your daily routine.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Kilkenny Business Training</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Kilkenny Business Training</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <p>Join individuals and businesses across Kilkenny who are choosing a more efficient way to complete their manual handling training.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Start Your Certification — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Start Your Certification — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

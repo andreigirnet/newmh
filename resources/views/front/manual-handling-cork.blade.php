@@ -13,8 +13,8 @@
                         Designed for busy professionals, our platform delivers fast, flexible, and fully accredited training across Cork and beyond.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Corporate Training Cork</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Corporate Training Cork</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <p>Join thousands of workers and companies across Cork who trust our platform for reliable, fast, and professional manual handling training.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

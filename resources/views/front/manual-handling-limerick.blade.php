@@ -12,8 +12,8 @@
                         Built for workers across manufacturing, warehousing, and logistics, our online course delivers fast, practical training that meets Irish safety requirements.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Limerick Team Training</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Limerick Team Training</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <p>Join companies and workers across Limerick who rely on a faster, more practical approach to manual handling training.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Start Your Training — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Start Your Training — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

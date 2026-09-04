@@ -12,8 +12,8 @@
                     Our digital certificates are recognized nationwide, valid for 3 years, and include unique verification IDs for total **Manual Handling Compliance Ireland**.
                 </p>
                 <div class="mh-btn-row">
-                    <a href="{{route('home')}}" class="btn-exclusive-teal">Get Your Certificate — €{{ config('global.course_price') }}</a>
-                    <a href="{{route('home')}}" class="btn-exclusive-ghost">Verify a Certificate</a>
+                    <a href="{{route('register')}}" class="btn-exclusive-teal">Get Your Certificate — €{{ config('global.course_price') }}</a>
+                    <a href="{{route('register')}}" class="btn-exclusive-ghost">Verify a Certificate</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
         <p>Ensure your company remains HSA-audit ready at all times. Our system automatically alerts you when an employee's **Manual Handling Ireland certification** is nearing its 3-year expiry, allowing for seamless refresher training and continuous safety compliance.</p>
 
         <div style="text-align: center; margin-top: 40px;">
-            <a href="{{route('home')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
+            <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
         </div>
     </article>
 </div>

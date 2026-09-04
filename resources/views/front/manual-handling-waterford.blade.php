@@ -12,8 +12,8 @@
                         Designed for workers across retail, manufacturing, and logistics, our training helps you stay compliant while fitting around your daily routine.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Waterford Staff Training</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Waterford Staff Training</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <p>Join workers and businesses across Waterford who are choosing a faster, simpler approach to manual handling certification.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

@@ -11,7 +11,7 @@
                         An in-depth guide to the legal definitions, physical mechanics, and safety standards of **Manual Handling Compliance Ireland**. Get certified today and protect your career.
                     </p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Start Online Training — €{{ config('global.course_price') }}</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Online Training — €{{ config('global.course_price') }}</a>
                         <a href="/" class="btn-exclusive-ghost">More Details</a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
             <p>Upon completion, you receive an accredited **Manual Handling Ireland certification** valid for 3 years. This document proves to employers and inspectors that you understand the definition of manual handling and possess the skills to perform it without risk to yourself or others.</p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('home')}}" class="btn-gold">Start Your Training Today — €{{ config('global.course_price') }}</a>
+                <a href="{{route('register')}}" class="btn-gold">Start Your Training Today — €{{ config('global.course_price') }}</a>
             </div>
         </article>
     </div>

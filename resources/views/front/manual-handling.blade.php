@@ -10,7 +10,7 @@
                     <h1 class="mhc-display-title">Manual Handling Course <br><span class="mhc-highlight">Ireland Certification</span></h1>
                     <p class="mhc-hero-lead">The gold standard in <strong>workplace safety training</strong>. Get certified with our <strong>QBS-aligned manual handling training Ireland</strong>, designed to reduce workplace injuries and ensure full legal compliance.</p>
                     <div class="mhc-action-group">
-                        <a href="{{route('home')}}" class="mhc-btn mhc-btn-primary">Book Training Now</a>
+                        <a href="{{route('register')}}" class="mhc-btn mhc-btn-primary">Book Training Now</a>
                         <a href="#compliance" class="mhc-btn mhc-btn-outline">View HSA Requirements</a>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <h2>Get Your Manual Handling Certificate</h2>
                         <p>Recognized by major insurers and the <strong>Health and Safety Authority</strong>. Valid for 3 years from date of issue.</p>
                     </div>
-                    <a href="{{route('home')}}" class="mhc-btn mhc-btn-white">Enroll in Course</a>
+                    <a href="{{route('register')}}" class="mhc-btn mhc-btn-white">Enroll in Course</a>
                 </div>
             </div>
         </section>

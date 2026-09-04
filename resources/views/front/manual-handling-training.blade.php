@@ -9,8 +9,8 @@
                     <h1>Manual Handling Training Ireland</h1>
                     <p class="mh-lead-text">Reducing liability through expert-led <strong>manual handling compliance Ireland</strong>. We transform workplace safety into a competitive advantage for Irish enterprises.</p>
                     <div class="mh-btn-row">
-                        <a href="{{route('home')}}" class="btn-exclusive-teal">Corporate Inquiry</a>
-                        <a href="{{route('home')}}" class="btn-exclusive-ghost">Download Safety Whitepaper</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-teal">Corporate Inquiry</a>
+                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Download Safety Whitepaper</a>
                     </div>
                 </div>
             </div>
