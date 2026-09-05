@@ -112,8 +112,8 @@
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">02</div>
-                            <h4>Video Modules</h4>
-                            <p>Learn at your own pace through structured instructional videos optimized for all devices 24/7.</p>
+                            <h4>Interactive Modules</h4>
+                            <p>Learn at your own pace through structured instructional course optimized for all devices 24/7.</p>
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">03</div>
