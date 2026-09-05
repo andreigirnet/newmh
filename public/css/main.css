@@ -16,7 +16,14 @@
     --text-heading: #1e293b;
     font-family: 'Outfit', 'Roboto', system-ui, -apple-system, sans-serif;
 }
-
+.brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
 .feedback-container {
     display: none ;
     width: 100% !important;
@@ -87,7 +94,7 @@
     letter-spacing: 0.5px !important;
 }
 .mobilesafetynav-brand img.mobilesafetynav-logoradius {
-    height: 45px;
+    height: 60px;
     width: auto;
     display: block;
 }
@@ -1194,7 +1201,7 @@ a .navItem{
 }
 
 .mobilesafetynav-brand img.mobilesafetynav-logoradius {
-    height: 45px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -1573,7 +1580,7 @@ a .navItem{
 }
 
 .nav-wrapper {
-    max-width: 1280px;
+    max-width: 1425px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
@@ -1583,7 +1590,7 @@ a .navItem{
 }
 
 .brand img.logoradius {
-    height: 45px;
+    height: 62px;
     width: auto;
     display: block;
 }
@@ -6047,6 +6054,7 @@ a .navItem{
         color: #e2e8f0;
         font-weight: 300;
     }
+
 }
 
 .mh-steps-card--active {
@@ -7349,5 +7357,30 @@ a .navItem{
     .exclusive-benefits-area{
         padding: 0 20px;
     }
-
+    .brand div{
+        display: none;
+    }
+    .brand img.logoradius{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Adjust spacing between icon and text if needed */
+    }
+    .mobilesafetynav-brand div{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+    .mobilesafetynav-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

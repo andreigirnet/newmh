@@ -73,7 +73,7 @@
         </div>
         <div class="trustBadge__text">
             <div class="trustBadge__eyebrow">Nr.1 rated</div>
-            <div class="trustBadge__label">Irish Safety Provider</div>
+            <div class="trustBadge__label">Manual Handling Ireland</div>
         </div>
     </div>
         <div class="adminProductsBack">
