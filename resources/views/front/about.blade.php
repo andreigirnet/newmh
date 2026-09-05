@@ -101,7 +101,7 @@
                     </div>
                     <h3 class="bento-title">The Complete Digital Learning & Certification Pathway</h3>
                     <p class="bento-desc">
-                        Our automated portal delivers a frictionless pathway from initial enrollment to instant certification download.
+                        Our automated portal delivers a frictionless pathway from initial enrollment to instant certification download.  The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
                     </p>
 
                     <div class="modern-steps-grid">
