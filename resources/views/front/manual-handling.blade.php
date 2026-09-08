@@ -6,12 +6,12 @@
         <header class="mhc-hero">
             <div class="mhc-container">
                 <div class="mhc-hero-inner">
-                    <div class="mhc-badge">HSA Compliant Training 2026</div>
+                    <div class="mhc-badge">Job Compliant Training 2026</div>
                     <h1 class="mhc-display-title">Manual Handling Course <br><span class="mhc-highlight">Ireland Certification</span></h1>
-                    <p class="mhc-hero-lead">The gold standard in <strong>workplace safety training</strong>. Get certified with our <strong>QBS-aligned manual handling training Ireland</strong>, designed to reduce workplace injuries and ensure full legal compliance.</p>
+                    <p class="mhc-hero-lead">The gold standard in <strong>workplace safety training</strong>. Get certified with our <strong>work compliant manual handling training Ireland</strong>, designed to reduce workplace injuries and ensure full operational standards.</p>
                     <div class="mhc-action-group">
                         <a href="{{route('register')}}" class="mhc-btn mhc-btn-primary">Book Training Now</a>
-                        <a href="#compliance" class="mhc-btn mhc-btn-outline">View HSA Requirements</a>
+                        <a href="#compliance" class="mhc-btn mhc-btn-outline">View Regulatory Requirements</a>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             <div class="mhc-container-sm">
                 <div class="mhc-section-tag">Regulatory Standards</div>
                 <h2 class="mhc-section-title">Manual Handling Legislation Ireland</h2>
-                <p>Every employer in the Republic of Ireland is governed by the <strong>Safety, Health and Welfare at Work (General Application) Regulations 2007</strong>. Our <strong>manual handling training course</strong> is specifically curated to fulfill the requirements set out by the <strong>Health and Safety Authority (HSA)</strong>.</p>
+                <p>Every employer in the Republic of Ireland is governed by standard workplace guidelines. Our <strong>manual handling training course</strong> is specifically curated to fulfill the requirements set out by major governing bodies and standard safety boards.</p>
 
                 <p>Failure to provide adequate <strong>manual handling certification</strong> can lead to significant liability. We focus on the <strong>prevention of musculoskeletal disorders (MSDs)</strong> through rigorous risk assessment and ergonomic best practices.</p>
 
@@ -54,7 +54,7 @@
                     <div class="mhc-card">
                         <div class="mhc-card-icon">03</div>
                         <h3>Practical Assessment</h3>
-                        <p>Complete your <strong>manual handling practical assessment</strong> with an FETAC/QQI qualified instructor to validate your safe lifting techniques.</p>
+                        <p>Complete your <strong>manual handling practical assessment</strong> with a qualified instructor to validate your safe lifting techniques.</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="mhc-industry-box">
                         <h4>Construction & Trades</h4>
-                        <p>Essential <strong>site safety manual handling</strong> for construction workers, ensuring compliance with HSA site standards.</p>
+                        <p>Essential <strong>site safety manual handling</strong> for construction workers, ensuring adherence to job compliant site standards.</p>
                     </div>
                     <div class="mhc-industry-box">
                         <h4>Retail & Warehousing</h4>
@@ -101,7 +101,7 @@
                 <div class="mhc-cta-banner">
                     <div class="mhc-cta-content">
                         <h2>Get Your Manual Handling Certificate</h2>
-                        <p>Recognized by major insurers and the <strong>Health and Safety Authority</strong>. Valid for 3 years from date of issue.</p>
+                        <p>Recognized by major insurers and workplace safety standards. Valid for 3 years from date of issue.</p>
                     </div>
                     <a href="{{route('register')}}" class="mhc-btn mhc-btn-white">Enroll in Course</a>
                 </div>

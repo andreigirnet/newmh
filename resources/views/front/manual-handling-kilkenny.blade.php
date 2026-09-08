@@ -23,7 +23,7 @@
             <h2>Manual Handling Training for Kilkenny Workplaces</h2>
             <p>Kilkenny’s economy is built on a strong mix of retail, hospitality, tourism, and small to medium-sized businesses. From busy cafés and hotels to stockrooms and local shops, **manual handling** plays a key role in everyday work.</p>
 
-            <p>Under the **Safety, Health and Welfare at Work Act 2005**, employers must ensure that staff are properly trained in safe handling techniques. This applies to both full-time employees and part-time or seasonal workers across Kilkenny.</p>
+            <p>Under standard workplace guidelines, employers must ensure that staff are properly trained in safe handling techniques. This applies to both full-time employees and part-time or seasonal workers across Kilkenny.</p>
 
             <p>Our **Manual Handling Course Kilkenny** provides an easy way to meet these requirements. Delivered fully online, it allows you to complete training at your own pace without attending in-person sessions.</p>
 
@@ -88,7 +88,7 @@
 
             <p>Whether you are starting a new job, updating your certification, or training staff, this course provides a convenient and reliable solution.</p>
 
-            <p>Employers benefit from a simple way to ensure compliance, while workers gain a recognised qualification that can support opportunities across retail, hospitality, and other sectors.</p>
+            <p>Employers benefit from a simple way to ensure work compliance, while workers gain a recognised qualification that can support opportunities across retail, hospitality, and other sectors.</p>
 
             <p>Your certificate is issued instantly upon completion, so you are ready for work without delays.</p>
 

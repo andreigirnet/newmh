@@ -173,7 +173,7 @@
 
             <!-- Header -->
             <div class="compliance-header">
-                <h1>Accreditation & Compliance Standards</h1>
+                <h1>Course Quality & Compliance Standards</h1>
                 <p>{{ config('global.business_name') }}</p>
             </div>
 

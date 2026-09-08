@@ -10,7 +10,7 @@
                     <p class="mh-lead-text">
                         Stay compliant and job-ready with professional **Manual Handling Certification Galway**.
                         Our fully online course is designed for Galway workers and businesses who need fast, reliable,
-                        and HSA-aligned **manual handling training in Ireland** without disrupting their schedule.
+                        and job compliant **manual handling training in Ireland** without disrupting their schedule.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
@@ -22,11 +22,11 @@
 
         <article class="mh-container-content">
             <h2>Manual Handling Certification Galway: Workplace Compliance Made Simple</h2>
-            <p>In Galway’s diverse economy—ranging from tourism and hospitality to medical technology and logistics—safe manual handling is a critical part of daily operations. Irish law requires employers to provide appropriate training under the **Safety, Health and Welfare at Work Act 2005**.</p>
+            <p>In Galway’s diverse economy—ranging from tourism and hospitality to medical technology and logistics—safe manual handling is a critical part of daily operations. Standard regulations require employers to provide appropriate training under standard workplace safety laws.</p>
 
-            <p>The **General Application Regulations 2007** apply across all industries, ensuring that workers are properly trained to reduce risk and prevent injury. Our **Manual Handling Course Galway** meets these requirements through a flexible online format that fits around your work and lifestyle.</p>
+            <p>Industry-standard guidelines apply across all sectors, ensuring that workers are properly trained to reduce risk and prevent injury. Our **Manual Handling Course Galway** meets these requirements through a flexible online format that fits around your work and lifestyle.</p>
 
-            <p>Whether you are working in a busy Galway city centre business, a warehouse on the outskirts, or a healthcare setting, this course provides the knowledge needed to meet legal obligations and maintain a safe working environment.</p>
+            <p>Whether you are working in a busy Galway city centre business, a warehouse on the outskirts, or a healthcare setting, this course provides the knowledge needed to meet operational obligations and maintain a safe working environment.</p>
 
             <div class="mh-feature-list">
                 <li><strong>Accepted Across Ireland:</strong> Recognised certification for all workplaces.</li>

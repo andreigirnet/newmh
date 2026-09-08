@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Training Online Ireland</h1>
                     <p class="mh-lead-text">
                         Establish total **Manual Handling Compliance Ireland** with our 2026 enterprise solution.
-                        Accredited **Manual Handling Ireland certification** designed for risk mitigation and workforce longevity.
+                         **Manual Handling Ireland certification** designed for risk mitigation and workforce longevity.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Enrol Your Team — €{{ config('global.course_price') }}</a>

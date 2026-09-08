@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Training Limerick</h1>
                     <p class="mh-lead-text">
                         Stay compliant and job-ready with **Manual Handling Certification Limerick**.
-                        Built for workers across manufacturing, warehousing, and logistics, our online course delivers fast, practical training that meets Irish safety requirements.
+                        Built for workers across manufacturing, warehousing, and logistics, our online course delivers fast, practical training that meets job compliant safety requirements.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
@@ -23,9 +23,9 @@
             <h2>Manual Handling Training in Limerick Work Environments</h2>
             <p>Limerick is a key hub for manufacturing, distribution, and industrial operations in Ireland. Many roles involve physical tasks such as lifting, carrying, and moving goods, making **manual handling training** essential for both safety and compliance.</p>
 
-            <p>Under the **Safety, Health and Welfare at Work Act 2005**, employers are required to provide appropriate training for staff engaged in manual handling activities. This applies across factories, warehouses, construction sites, and service roles throughout Limerick.</p>
+            <p>Under standard workplace guidelines, employers are required to provide appropriate training for staff engaged in manual handling activities. This applies across factories, warehouses, construction sites, and service roles throughout Limerick.</p>
 
-            <p>Our **Manual Handling Course Limerick** provides a simple, effective way to meet these legal requirements. Delivered fully online, it allows workers and employers to complete certification without downtime or travel.</p>
+            <p>Our **Manual Handling Course Limerick** provides a simple, effective way to meet these operational requirements. Delivered fully online, it allows workers and employers to complete certification without downtime or travel.</p>
 
             <div class="mh-feature-list">
                 <li><strong>Workplace Ready:</strong> Designed for real industrial and warehouse environments.</li>
@@ -88,7 +88,7 @@
 
             <p>Employees can complete their **manual handling course online Ireland** individually, without interrupting daily operations. This flexibility makes it ideal for shift-based work environments common in Limerick.</p>
 
-            <p>For employers, it means consistent training, easy record keeping, and full compliance with Irish safety regulations. For workers, it means faster certification and improved job prospects.</p>
+            <p>For employers, it means consistent training, easy record keeping, and full work compliance. For workers, it means faster certification and improved job prospects.</p>
 
             <p>Certificates are issued instantly upon completion, ensuring you always have proof of training when needed.</p>
 

@@ -23,7 +23,7 @@
             <h2>Manual Handling Training Across Waterford Workplaces</h2>
             <p>Waterford has a strong mix of industries, including retail, pharmaceutical production, manufacturing, and port-related logistics. Many of these roles involve regular lifting and moving of goods, making **manual handling training** essential for safe daily operations.</p>
 
-            <p>Irish legislation, including the **Safety, Health and Welfare at Work Act 2005**, requires employers to provide proper training for staff engaged in manual handling tasks. This ensures both legal compliance and a safer working environment.</p>
+            <p>Standard workplace safety guidelines require employers to provide proper training for staff engaged in manual handling tasks. This ensures both operational compliance and a safer working environment.</p>
 
             <p>Our **Manual Handling Course Waterford** provides a simple solution. Delivered entirely online, it allows individuals and businesses to complete training without travel, delays, or disruption to work schedules.</p>
 

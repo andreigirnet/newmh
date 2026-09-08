@@ -18,7 +18,7 @@
             <ul class="footer-links">
                 <li><a href="{{ route('terms') }}">Terms and Conditions</a></li>
                 <li><a href="{{ route('front.cookies') }}">Cookies Policy</a></li>
-                <li><a href="{{ route('front.accreditation') }}">Accreditations</a></li>
+                <li><a href="{{ route('front.compliance') }}">Compliance Standards</a></li>
                 <li><a href="{{ route('front.privacy') }}">Privacy Policy</a></li>
                 <li><a href="{{ route('front.refund') }}">Refund Policy</a></li>
                 <li><a href="{{ route('front.legal') }}">Legal</a></li>
@@ -74,6 +74,7 @@
                 <p class="footer-contact mb-0" style="font-size: 0.85rem; color: #94a3b8;">
                     Support: <a href="mailto:info@manualhandlning-ireland.ie" style="color: #60a5fa; text-decoration: none;">info@manualhandlning-ireland.ie</a>
                 </p>
+                <p class="footer-address mb-2" style="font-size: 0.85rem; color: #94a3b8; line-height: 1.4;">+353899735295</p>
             </div>
         </div>
 

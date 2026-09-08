@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
+@extends('layouts.horizontal', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
 
 @section('content')
     <div class="profile-dashboard">
@@ -67,7 +67,7 @@
                 <div class="empty-icon">🛒</div>
                 <h3>No Orders Yet</h3>
                 <p>Your transaction history will appear here once you make a purchase.</p>
-                <a href="/home" class="glow-button small-width">Start Shopping</a>
+                <a href="/dashboard" class="glow-button small-width">Start Shopping</a>
             </div>
         @endif
     </div>

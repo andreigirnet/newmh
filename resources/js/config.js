@@ -1,8 +1,8 @@
 /**
-* Theme: Velonic - Responsive Bootstrap 5 Admin Dashboard
-* Author: Techzaa
-* Module/App: Theme Config Js
-*/
+ * Theme: Velonic - Responsive Bootstrap 5 Admin Dashboard
+ * Author: Techzaa
+ * Module/App: Theme Config Js
+ */
 
 (function () {
     var savedConfig = sessionStorage.getItem("__CONFIG__");
@@ -26,7 +26,7 @@
         },
 
         menu: {
-            color: "dark",
+            color: "light",
         },
 
         // This option for only vertical (left Sidebar) layout

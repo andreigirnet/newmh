@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-layout="topnav" data-menu-color="{{ $menuColor ?? 'light' }}" data-topbar-color="{{ $topbarColor ?? 'light' }}">
+<html lang="en" data-layout="topnav" data-menu-color="light" data-topbar-color="{{ $topbarColor ?? 'light' }}">
 
 <head>
     @include('layouts.shared/title-meta', ['title' => $title])
@@ -19,11 +19,28 @@
     <link rel="stylesheet" href="{{asset("css/admin/checkout.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/package.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/share.css")}}">
+    <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
+    <link rel="stylesheet" href="{{asset("css/main.css")}}">
+    <script src="{{asset('js/cart.js')}}"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
-
+    <style>
+        [x-cloak] { display: none; }
+    </style>
 </head>
 
 <body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ND836HRGN2');
+</script>
     <!-- Begin page -->
     <div class="wrapper">
 
@@ -31,6 +48,25 @@
         @include('layouts.shared/horizontal-nav')
 
         <div class="content-page">
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @if ($message = Session::get('error'))
+                <div class="alert alert-danger">
+                    <strong>{{ $message }}</strong>
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="content">
 
                 <!-- Start Content-->
@@ -56,7 +92,26 @@
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
 
+{{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
 
+<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
+<script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: ['anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount'
+        ],
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography uploadcare | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ],
+        ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+        uploadcare_public_key: '532672c6d11822cd9a7e',
+    });
+</script>
 
 </body>
 

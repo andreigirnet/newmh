@@ -38,6 +38,10 @@
                         <strong>Email Us:</strong><br>
                         <a href="mailto:info@manualhandlingireland.ie" style="color: #2563eb; text-decoration: none;">info@manualhandlingireland.ie</a>
                     </div>
+                    <div class="ct-detail-text">
+                        <strong>Call Us:</strong><br>
+                        <p style="color: #2563eb; text-decoration: none;">+353899735295</p>
+                    </div>
 
                     <div class="ct-address-box">
                         51 Bracken Road, Dublin, D18 CV48, Ireland

@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
+@extends('layouts.horizontal', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
 
 @section('content')
     <div class="profile-dashboard"> <div class="dashboard-header-flex">
@@ -67,7 +67,7 @@
                 <div class="empty-icon">📂</div>
                 <h3>No Courses Found</h3>
                 <p>Ready to level up your skills?</p>
-                <a href="/home" class="glow-button small-width">Browse Catalog</a>
+                <a href="/dashboard" class="glow-button small-width">Browse Catalog</a>
             </div>
         @endif
     </div>

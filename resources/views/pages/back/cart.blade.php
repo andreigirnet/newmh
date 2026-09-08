@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
+@extends('layouts.horizontal', ['title' => 'Dashboard', 'mode' => $mode ?? '', 'demo' => $demo ?? ''])
 
 @section('content')
     <style>
@@ -187,7 +187,7 @@
                 </div>
                 <h1 style="font-weight: 800; color: #1e293b;">Your basket is empty</h1>
                 <p style="color: #64748b; margin-bottom: 32px;">Start adding courses to build your career!</p>
-                <a href="/home" class="btn btn-dark px-4 py-2 rounded-pill">Find Courses</a>
+                <a href="/dashboard" class="btn btn-dark px-4 py-2 rounded-pill">Find Courses</a>
             </div>
         </template>
 

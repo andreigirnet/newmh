@@ -8,7 +8,7 @@
                     <span class="mh-top-badge">Practical Safety Guide</span>
                     <h1>Safe Lifting <br>Techniques & Principles</h1>
                     <p class="mh-lead-text">
-                        Master the biomechanics of movement. Our guide to **Safe Lifting Techniques** ensures total **Manual Handling Compliance Ireland** while protecting your long-term musculoskeletal health.
+                        Master the biomechanics of movement. Our guide to **Safe Lifting Techniques** ensures total **work compliance standards** while protecting your long-term musculoskeletal health.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Get Certified — €{{ config('global.course_price') }}</a>
@@ -22,7 +22,7 @@
             <h2>The Physics of a Safe Lift</h2>
             <p>Before executing any manual handling task, it is vital to understand the "Lever Effect" on the human body. When you lift a load, your back acts as a lever with the fulcrum at the base of the spine. If a load is held just a few inches away from the body, the pressure on your lower lumbar region (L5/S1 vertebrae) can be ten times the weight of the actual object.</p>
 
-
+            https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
 
             <p>Our **Manual Handling Online** course teaches you to keep the load as close to your center of gravity as possible. This minimizes "torque" on the spine and ensures that the compression forces are distributed evenly across the intervertebral discs, preventing the acute herniations that lead to chronic back pain.</p>
         </article>
@@ -57,9 +57,7 @@
 
         <article class="mh-container-content">
             <h2>Risk Assessment: The TILE Principle</h2>
-            <p>A safe lift starts before you touch the load. In Ireland, the HSA mandates that every worker performs a dynamic risk assessment using the TILE principle. This mental checklist is a cornerstone of **Manual Handling Compliance Ireland**.</p>
-
-
+            <p>A safe lift starts before you touch the load. Regulatory guidelines mandate that every worker performs a dynamic risk assessment using the TILE principle. This mental checklist is a cornerstone of **work compliance**.</p>
 
             <ul class="mh-feature-list">
                 <li><strong>Task:</strong> Does the lift involve repetitive movement or twisting?</li>
@@ -71,7 +69,7 @@
 
         <article class="mh-container-content">
             <h2>Common Mistakes & The Danger Zone</h2>
-            <p>Many workplace injuries occur during "Static Loading" or "Asymmetrical Lifting". Static loading happens when you hold a heavy object for an extended period without moving, causing muscle fatigue and reduced blood flow to the spinal tissues. Asymmetrical lifting—or twisting while holding a weight—is the leading cause of "shear force" injuries in the Dublin logistics sector.</p>
+            <p>Many workplace injuries occur during "Static Loading" or "Asymmetrical Lifting". Static loading happens when you hold a heavy object for an extended period without moving, causing muscle fatigue and reduced blood flow to the spinal tissues. Asymmetrical lifting—or twisting while holding a weight—is the leading cause of "shear force" injuries in commercial logistics.</p>
 
             <p>Our **Manual Handling Training Online Ireland** demonstrates these hazards through HD video, showing you exactly how to pivot with your feet instead of twisting your torso. This simple adjustment is the difference between a safe workday and a debilitating spinal injury.</p>
 
@@ -83,7 +81,7 @@
 
         <article class="mh-container-content">
             <h2>Certified Mastery: Start Your Training Today</h2>
-            <p>Understanding **Safe Lifting Techniques** is a life-long skill that extends beyond the workplace. Whether you are at home or on-site, these principles protect your mobility and quality of life. By completing our accredited **Manual Handling Course Ireland**, you secure an **Manual Handling Ireland certification** that proves your competence to any employer or HSA inspector.</p>
+            <p>Understanding **Safe Lifting Techniques** is a life-long skill that extends beyond the workplace. Whether you are at home or on-site, these principles protect your mobility and quality of life. By completing our accredited **Manual Handling Course Ireland**, you secure an **Manual Handling Ireland certification** that proves your competence to any employer or safety inspector.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Now & Get Certified — €{{ config('global.course_price') }}</a>

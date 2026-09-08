@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Training Sligo</h1>
                     <p class="mh-lead-text">
                         Complete your **Manual Handling Certification Sligo** with a flexible online course designed for local workers and businesses.
-                        Whether you are in healthcare, retail, or hospitality, our training helps you meet Irish safety requirements quickly and efficiently.
+                        Whether you are in healthcare, retail, or hospitality, our training helps you meet job compliant safety requirements quickly and efficiently.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
@@ -23,7 +23,7 @@
             <h2>Manual Handling Training for Sligo Workplaces</h2>
             <p>Sligo’s workforce includes a mix of healthcare services, retail businesses, tourism, and small enterprises. Many of these roles involve daily lifting, carrying, and moving items, making **manual handling training** essential for safety and compliance.</p>
 
-            <p>Under the **Safety, Health and Welfare at Work Act 2005**, employers must ensure that employees are properly trained to handle loads safely. This applies across hospitals, shops, hotels, and workplaces throughout Sligo.</p>
+            <p>Under standard workplace safety regulations, employers must ensure that employees are properly trained to handle loads safely. This applies across hospitals, shops, hotels, and workplaces throughout Sligo.</p>
 
             <p>Our **Manual Handling Course Sligo** offers a practical solution. Delivered entirely online, it allows individuals and businesses to complete training without needing to travel or attend scheduled sessions.</p>
 

@@ -55,7 +55,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            This manual handling training in Ireland follows NFQ Level 6 standards and meets workplace safety compliance Ireland requirements.
+                            This manual handling training in Ireland follows structured standards and meets work compliant safety requirements.
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Business accounts allow employers to assign manual handling training Ireland courses, monitor employee progress, and store certifications in one dashboard, ensuring compliance in Ireland.
+                            Business accounts allow employers to assign manual handling training Ireland courses, monitor employee progress, and store certifications in one dashboard, ensuring a job compliant workforce.
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, all instructors hold recognized Manual Handling Ireland certification and deliver training in line with manual handling compliance Ireland.
+                            Yes, all instructors hold recognized Manual Handling Ireland certification and deliver training in line with work compliant standards.
                         </div>
                     </div>
 
@@ -165,7 +165,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, the manual handling training online Ireland is accessible globally, though it meets Irish workplace compliance standards.
+                            Yes, the manual handling training online Ireland is accessible globally, while meeting job compliant standards.
                         </div>
                     </div>
 
@@ -217,7 +217,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Add multiple licenses to your cart and assign courses to employees for full compliance.
+                            Add multiple licenses to your cart and assign courses to employees for complete operational standards.
                         </div>
                     </div>
 
@@ -237,7 +237,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Automatic discounts apply for larger orders to support company-wide manual handling training Ireland compliance.
+                            Automatic discounts apply for larger orders to support company-wide manual handling training Ireland goals.
                         </div>
                     </div>
 
@@ -311,7 +311,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, you receive an official Manual Handling Ireland certification that meets workplace compliance Ireland requirements.
+                            Yes, you receive an official Manual Handling Ireland certification that meets job compliant requirements.
                         </div>
                     </div>
 

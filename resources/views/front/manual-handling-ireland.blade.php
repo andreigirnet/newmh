@@ -5,11 +5,11 @@
         <header class="mh-hero-corporate">
             <div class="mh-container">
                 <div class="mh-hero-content">
-                    <span class="mh-top-badge">Accredited Nationwide Safety</span>
+                    <span class="mh-top-badge">Work Compliant Safety Standards</span>
                     <h1>Manual Handling <br>Ireland</h1>
                     <p class="mh-lead-text">
-                        The definitive resource for **Manual Handling Compliance Ireland**.
-                        Over 349,500 professionals have secured their **Manual Handling Ireland certification** through our HSA-compliant digital ecosystem.
+                        The definitive resource for **work compliance standards in Ireland**.
+                        Over 349,500 professionals have secured their **Manual Handling Ireland certification** through our job compliant digital ecosystem.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Online Course — €{{ config('global.course_price') }}</a>
@@ -20,13 +20,13 @@
         </header>
 
         <article class="mh-container-content">
-            <h2>Manual Handling Compliance Ireland: The Legal Framework</h2>
-            <p>In the Republic of Ireland, the safety of employees engaged in the movement of loads is governed by the **Safety, Health and Welfare at Work Act 2005**. This legislation places a strict "Duty of Care" on employers to identify, evaluate, and mitigate risks associated with manual handling tasks.</p>
+            <h2>Work Compliance Standards Ireland: The Legal Framework</h2>
+            <p>In the Republic of Ireland, the safety of employees engaged in the movement of loads is governed by established workplace safety regulations. This legislation places a strict duty of care on employers to identify, evaluate, and mitigate risks associated with manual handling tasks.</p>
 
-            <p>Under the **General Application Regulations 2007** (Chapter 4), **Manual Handling Online** training is recognized as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our **manual handling course Ireland** is meticulously updated for 2026, ensuring that every student receives the latest Health and Safety Authority (HSA) guidance.</p>
+            <p>Under standard safety regulations, **Manual Handling Online** training is recognized as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our **manual handling course Ireland** is meticulously updated for 2026, ensuring that every student receives the latest safety guidance and operational standards.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Nationwide Accreditation:</strong> Recognized by all major Irish insurers and the HSA.</li>
+                <li><strong>Nationwide Recognition:</strong> Recognized by major insurers and workplace safety standards.</li>
                 <li><strong>Digital Verification:</strong> Every certificate includes a unique ID for instant safety audits.</li>
             </div>
         </article>
@@ -36,8 +36,8 @@
                 <div class="mh-pillar-grid">
                     <div class="pillar-card">
                         <div class="pillar-icon">🏛️</div>
-                        <h4>HSA Compliant</h4>
-                        <p>Our curriculum meets every standard set out by the Health and Safety Authority for **manual handling training Ireland**.</p>
+                        <h4>Fully Compliant</h4>
+                        <p>Our curriculum meets every standard set out by workplace regulators for **manual handling training Ireland**.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">📈</div>
@@ -47,7 +47,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">🛡️</div>
                         <h4>MSD Prevention</h4>
-                        <p>Targeted training to reduce Musculoskeletal Disorders, which account for 33% of Irish work-related illness.</p>
+                        <p>Targeted training to reduce Musculoskeletal Disorders, which account for a major share of work-related illness.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">💻</div>
@@ -62,9 +62,9 @@
             <h2>The Science of Safety: Biomechanics of the Spine</h2>
             <p>A professional **manual handling course Ireland** must prioritize the anatomical safety of the individual. The human spine, specifically the intervertebral discs, acts as a complex shock-absorption system. When a load is lifted away from the center of gravity, the compression forces on the lumbar vertebrae (L5/S1) increase exponentially, often leading to acute or chronic injury.</p>
 
+            https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
 
-
-            <p>Our training focuses on the **8 Principles of Safe Lifting**. We utilize high-fidelity video demonstrations to teach students how to maintain a neutral spine, secure a firm base of support, and utilize the powerful muscles of the legs to drive the lift. This educational rigor is essential for achieving true **manual handling compliance Ireland**.</p>
+            <p>Our training focuses on the **8 Principles of Safe Lifting**. We utilize high-fidelity video demonstrations to teach students how to maintain a neutral spine, secure a firm base of support, and utilize the powerful muscles of the legs to drive the lift. This educational rigor is essential for achieving true **work compliance**.</p>
 
             <h3>Dynamic Risk Assessment (TILE)</h3>
             <p>Before any physical task is performed, we train workers to apply the TILE assessment methodology. This is the industry-standard tool for identifying hazards in real-time:</p>

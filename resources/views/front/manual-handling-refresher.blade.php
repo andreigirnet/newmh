@@ -9,7 +9,7 @@
                     <h1>Manual Handling <br>Refresher Training</h1>
                     <p class="mh-lead-text">
                         Renew your **Manual Handling Ireland certification** in just 45 minutes.
-                        Stay aligned with **Manual Handling Compliance Ireland** through our 2026 updated curriculum. Instant certificate download upon completion.
+                        Stay aligned with **work compliance standards** through our 2026 updated curriculum. Instant certificate download upon completion.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Renew Now — €{{ config('global.course_price') }}</a>
@@ -21,13 +21,13 @@
 
         <article class="mh-container-content">
             <h2>Is a Manual Handling Refresher Legally Required?</h2>
-            <p>Under the **Safety, Health and Welfare at Work Act 2005**, training is not a "once-off" event. The Health and Safety Authority (HSA) guidelines suggest that **Manual Handling Training Ireland** should be refreshed at least every three years, or sooner if workplace tasks change significantly.</p>
+            <p>Under workplace safety legislation, training is not a "once-off" event. Standard guidelines suggest that **Manual Handling Training Ireland** should be refreshed at least every three years, or sooner if workplace tasks change significantly.</p>
 
-            <p>A **Manual Handling Refresher** ensures that employees maintain a high level of competency and are aware of any updates to the **General Application Regulations 2007**. Our **Manual Handling Online** refresher course provides a focused review of safe lifting principles, dynamic risk assessment, and the latest ergonomic best practices.</p>
+            <p>A **Manual Handling Refresher** ensures that employees maintain a high level of competency and are aware of any updates to general safety regulations. Our **Manual Handling Online** refresher course provides a focused review of safe lifting principles, dynamic risk assessment, and the latest ergonomic best practices.</p>
 
             <div class="mh-feature-list">
                 <li><strong>Fast-Track Learning:</strong> Optimized for those who have previously held certification.</li>
-                <li><strong>Up-to-Date Content:</strong> Reflects the latest 2026 HSA safety standards.</li>
+                <li><strong>Up-to-Date Content:</strong> Reflects the latest 2026 safety standards.</li>
             </div>
         </article>
 
@@ -47,7 +47,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">📑</div>
                         <h4>Audit Continuity</h4>
-                        <p>Maintain an uninterrupted paper trail of **Manual Handling Compliance Ireland** for HSA inspectors.</p>
+                        <p>Maintain an uninterrupted paper trail of **work compliance standards** for safety inspectors.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🌍</div>
@@ -62,9 +62,7 @@
             <h2>The Physics of Prevention: A Scientific Review</h2>
             <p>The goal of a **manual handling course Ireland** is to minimize the mechanical stress placed on the musculoskeletal system. During refresher training, we revisit the critical concept of the "Center of Gravity" and the "Lever Effect". Even a minor lapse in posture can lead to acute spinal compression.</p>
 
-
-
-            <p>Our refresher curriculum emphasizes the TILE method to ensure risk assessment becomes second nature for every Dublin professional. By evaluating the Task, Individual, Load, and Environment, workers can effectively mitigate the hazards that lead to back pain and long-term disability.</p>
+            <p>Our refresher curriculum emphasizes the TILE method to ensure risk assessment becomes second nature for every professional. By evaluating the Task, Individual, Load, and Environment, workers can effectively mitigate the hazards that lead to back pain and long-term disability.</p>
 
             <h3>Refresher Learning Outcomes:</h3>
             <ul class="mh-feature-list">
@@ -77,7 +75,7 @@
 
         <article class="mh-container-content">
             <h2>Enterprise-Grade Renewal Systems</h2>
-            <p>Managing the expiry dates of an entire workforce's **Manual Handling Ireland certification** is a logistical challenge. Our platform offers automated expiry alerts and a centralized dashboard for HR managers to track **Manual Handling Compliance Ireland** across multiple sites.</p>
+            <p>Managing the expiry dates of an entire workforce's **Manual Handling Ireland certification** is a logistical challenge. Our platform offers automated expiry alerts and a centralized dashboard for HR managers to track **work compliance** across multiple sites.</p>
 
             <p>Ensure that your team's certification never lapses. With our bulk licensing options, you can renew dozens of employees simultaneously, providing them with instant access to the **manual handling training online Ireland** portal and ensuring total continuity of safety.</p>
 

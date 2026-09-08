@@ -13,7 +13,7 @@
             <!-- INTRO LEAD -->
             <div class="cns-info-block" data-aos="fade-up">
                 <div class="cns-text-lead">
-                    Our depth of industry experience establishes us as authorities in modern corporate safety protocols, including manual handling training and compliance in Ireland, focused on incident reduction.
+                    Our depth of industry experience establishes us as authorities in modern corporate safety protocols, including manual handling training and job compliant standards in Ireland, focused on incident reduction.
                 </div>
             </div>
 
@@ -22,11 +22,11 @@
                 <div class="cns-highlight-box">
                     <h4>Professional Safety Consulting & Manual Handling Course Ireland in Dublin</h4>
                     <div class="cns-body-text">
-                        We provide specialized Health & Safety consultancy across the Dublin region, deploying experts to offer tailored guidance for diverse business sectors, including manual handling training online Ireland.
+                        We provide specialized Health & Safety consultancy across the Dublin region, deploying experts to offer tailored guidance for diverse business sectors, including work compliant training online Ireland.
                     </div>
                 </div>
                 <div class="cns-body-text">
-                    Our team excels in forensic accident investigation and root-cause analysis, ensuring robust preventive strategies and Manual Handling Ireland certification standards are integrated to stop recurring issues.
+                    Our team excels in forensic accident investigation and root-cause analysis, ensuring robust preventive strategies and work compliant certification standards are integrated to stop recurring issues.
                 </div>
             </div>
 
@@ -89,7 +89,7 @@
                     </div>
                     <div class="cns-service-item">
                         <img src="{{asset('images/icons/right-arrow.png')}}" class="cns-icon-arrow" alt="arrow">
-                        <div class="cns-service-label">Manual handling compliance Ireland assessments</div>
+                        <div class="cns-service-label">Job compliant manual handling assessments</div>
                     </div>
                 </div>
             </div>
@@ -103,20 +103,20 @@
                 <h2 class="cns-section-label" style="margin-top: 40px;">Our Approach:</h2>
 
                 <div class="cns-body-text">
-                    We support businesses looking for external expertise to meet regulatory safety targets, whether for long-term management or specific high-stakes projects, including manual handling certification Ireland.
+                    We support businesses looking for external expertise to meet work compliant targets, whether for long-term management or specific high-stakes projects, including manual handling certification Ireland.
                 </div>
                 <div class="cns-body-text">
-                    Through a strategic discovery phase, we align our consultancy with your specific goals to ensure our safety benchmarks mirror your vision of success, including compliance with manual handling course Ireland standards.
+                    Through a strategic discovery phase, we align our consultancy with your specific goals to ensure our safety benchmarks mirror your vision of success, including adherence to job compliant course standards.
                 </div>
                 <div class="cns-body-text">
-                    At Ireland Safety Course, we integrate with organizations to maintain active safety programs, including manual handling training online Ireland. This includes regular auditing, hazard-specific procedural development, and complete outsourced safety leadership.
+                    At Ireland Safety Course, we integrate with organizations to maintain active safety programs, including work compliant training online Ireland. This includes regular auditing, hazard-specific procedural development, and complete outsourced safety leadership.
                 </div>
             </div>
 
             <!-- CONTACT -->
             <div class="cns-contact-banner" data-aos="fade-up">
                 <div class="cns-body-text">
-                    For more information on our advisory solutions or to clarify regulatory requirements, including Manual Handling Ireland certification, please connect with our specialists through the Online Chat.
+                    For more information on our advisory solutions or to clarify job compliant requirements, including Manual Handling Ireland certification, please connect with our specialists through the Online Chat.
                 </div>
             </div>
 

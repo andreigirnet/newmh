@@ -7,7 +7,7 @@
                 <div class="mh-hero-content">
                     <span class="mh-top-badge">Strategic Safety Solutions</span>
                     <h1>Manual Handling Training Ireland</h1>
-                    <p class="mh-lead-text">Reducing liability through expert-led <strong>manual handling compliance Ireland</strong>. We transform workplace safety into a competitive advantage for Irish enterprises.</p>
+                    <p class="mh-lead-text">Reducing liability through expert-led <strong>work compliance standards in Ireland</strong>. We transform workplace safety into a competitive advantage for Irish enterprises.</p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Corporate Inquiry</a>
                         <a href="{{route('register')}}" class="btn-exclusive-ghost">Download Safety Whitepaper</a>
@@ -21,12 +21,9 @@
                 <h2>The Strategic Importance of Manual Handling Training Ireland</h2>
                 <p>For large-scale operations, <strong>manual handling training Ireland</strong> is more than a checklist item; it is a critical pillar of operational risk management. Improper movement techniques are the primary driver of high insurance premiums and long-term disability claims in the Irish industrial sector.</p>
 
-                <p>Our approach focuses on **manual handling compliance Ireland** through the lens of ergonomics and behavioral change. By training staff to recognize hazards before a lift occurs, we help organizations move from a reactive "accident response" culture to a proactive "prevention-first" mindset.</p>
+                <p>Our approach focuses on <strong>work compliance</strong> through the lens of ergonomics and behavioral change. By training staff to recognize hazards before a lift occurs, we help organizations move from a reactive "accident response" culture to a proactive "prevention-first" mindset.</p>
 
-
-
-                [Image of correct manual handling lifting technique]
-
+                https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
 
                 <h3>Securing Your Manual Handling Ireland Certification</h3>
                 <p>While basic <strong>Manual Handling Ireland certification</strong> is the legal minimum, our training goes deeper into the mechanics of force and leverage. This ensures that once your team receives their <strong>manual handling course Ireland</strong> credentials, they possess the actual skill set to prevent chronic musculoskeletal fatigue.</p>
@@ -39,7 +36,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">⚖️</div>
                         <h4>Regulatory Shield</h4>
-                        <p>Ensure 100% <strong>manual handling compliance Ireland</strong> with HSA-aligned training documentation.</p>
+                        <p>Ensure 100% <strong>work compliance standards</strong> with fully aligned training documentation.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">📉</div>
@@ -64,8 +61,6 @@
             <div class="mh-container-content">
                 <h2>Deep Dive: The Biomechanics of Injury</h2>
                 <p>The human spine is a masterpiece of engineering, but it is highly susceptible to "cumulative strain". During our <strong>manual handling course Ireland</strong>, we provide a detailed analysis of disc pressure.</p>
-
-
 
                 <p>A simple act like lifting a 20kg box incorrectly can place up to 500kg of pressure on the L5/S1 vertebrae. Our <strong>manual handling training online Ireland</strong> utilizes high-definition video analysis to show employees exactly how their posture dictates the internal forces within their bodies.</p>
 

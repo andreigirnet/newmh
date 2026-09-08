@@ -10,6 +10,10 @@
     --greenColor: #70bc40;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.homeManualProduct{
+    display: flex;
+    justify-content: center;
+}
 .mhi-unique-overlay {
     position: fixed;
     top: 0;

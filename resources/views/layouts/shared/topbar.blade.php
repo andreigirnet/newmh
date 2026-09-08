@@ -7,7 +7,7 @@
                 <!-- Logo light -->
                 <span  class="logo-light">
                     <span class="logo-lg">
-                        <img src="{{asset('images/login/registerLogin.jpg')}}" alt="logo">
+                        <img src="{{asset('images/logo/smallLogo.webp')}}" alt="logo">
                     </span>
                     <span class="logo-sm">
                         <img src="{{asset('images/logo/smallLogo.webp')}}" style="width: 80px" alt="small logo">
@@ -17,7 +17,7 @@
                 <!-- Logo Dark -->
                 <span class="logo-dark" id="showNavPanel" style="display:flex;">
                     <span class="logo-lg" >
-                        <img src="images/login/registerLogin.jpg" alt="dark logo">
+                        <img src="{{asset('images/logo/smallLogo.webp')}}" style="width: 60px; height: 60px" alt="dark logo">
                     </span>
                     <span class="logo-sm">
                         <img src="{{asset('images/logo/smallLogo.webp')}}"  style="width: 50px; height: 50px" alt="small logo">
@@ -27,9 +27,9 @@
 
             <!-- Sidebar Menu Toggle Button -->
             <button class="button-toggle-menu" style="display: flex; width: auto; align-items: center; column-gap: 5px">
-                <i class="ri-arrow-left-circle-fill desktopShowNav"></i>
-                <i class="ri-menu-unfold-fill mobileHideNav"></i>
-                <span id="hideText"> Hide the Taskbar</span>
+                {{--                <i class="ri-arrow-left-circle-fill desktopShowNav"></i>--}}
+                {{--                <i class="ri-menu-unfold-fill mobileHideNav"></i>--}}
+                <span id="hideText" style="font-size: 22px; font-weight: 600"> Manual Handling Ireland</span>
             </button>
 
 

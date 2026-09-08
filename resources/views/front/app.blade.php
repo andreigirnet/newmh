@@ -7,7 +7,7 @@
     <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €30</title>
     {{-- Meta description --}}
     <meta name="description" content="Manual Handling Ireland - Manual Handling course online with instant certification. Get your Manual Handling training in 45 mins and get your certificate immediately.">
-    <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
+    <meta name="keywords" content="Manual Handling Courses Online, Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
     {{-- Open Graph / Facebook --}}
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
@@ -16,10 +16,10 @@
     <meta name="format-detection" content="telephone=yes">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Online Safety Courses Ireland | CPD Certified - {{ config('app.name') }}">
-    <meta property="og:description" content="Get certified in 1 hour with our fully online safety courses. Recognized in Ireland, UK, and Europe. Unlimited exam attempts included.">
-    <meta property="og:image:alt" content="Ireland Safety Course - Accredited Online Training">
-    <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">
+    <meta property="og:title" content="Online Safety Courses Ireland | Instant Certificate - {{ config('app.name') }}">
+    <meta property="og:description" content="Complete your online safety modules in 1 hour. Includes theory, practical alignment, and an independent certificate of completion.">
+    <meta property="og:image:alt" content="Manual Handling Ireland - Safety Online Training">
+    <meta property="og:image" content="https://www.manualhandling-ireland/images/metaImage.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

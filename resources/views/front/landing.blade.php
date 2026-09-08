@@ -1,23 +1,15 @@
 @extends('front.app')
 @section('content')
-    <div id="mainBanner">
+    <div id="mainHero">
         <img src="{{asset('images/banners/BackgroundIreland.webp')}}" class="warehouse" alt="">
 {{--        <video autoplay muted loop class="warehouse" >--}}
 {{--            <source src="video/bannerVideoBig.mp4" type="video/mp4">--}}
 {{--        </video>--}}
-        <div class="opacityLayer"></div>
-        <div class="mainBannerContent">
+        <div class="opacityComponent"></div>
+        <div class="heroContent">
             <div class="mainBannerRight">
                 <h1 class="mainBannerTitle">Manual Handling Course Ireland-<br> Online Training & Certificate</h1>
                 <div class="trust-badges-container">
-                    <div class="trust-badge">
-                        <span class="badge-icon">🛡️</span>
-                        <div class="badge-text">
-                            <strong>CPD, QQI</strong>
-                            <span>Recognized Standard</span>
-                        </div>
-                    </div>
-
                     <div class="trust-badge">
                         <span class="badge-icon">💶</span>
                         <div class="badge-text">
@@ -25,12 +17,18 @@
                             <span>Instant Access</span>
                         </div>
                     </div>
-
+                    <div class="trust-badge">
+                        <span class="badge-icon">🛡️</span>
+                        <div class="badge-text">
+                            <strong>100% Refund</strong>
+                            <span>Guarantee</span>
+                        </div>
+                    </div>
                     <div class="trust-badge">
                         <span class="badge-icon">⭐</span>
                         <div class="badge-text">
-                            <strong>Fully Compliant</strong>
-                            <span>Ireland & UK Law</span>
+                            <strong>Unlimited test</strong>
+                            <span>Attempts</span>
                         </div>
                     </div>
                 </div>
@@ -46,24 +44,18 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-            <span class="metric-value">
-                820,000<span class="metric-glyph-plus">+</span>
-            </span>
-                <span class="metric-caption">CERTIFIED LEARNERS</span>
+                <span class="metric-value">100%</span>
+                <span class="metric-caption">ONLINE LEARNING</span>
             </div>
 
             <div class="metric-card">
-            <span class="metric-value">
-                4.9<span class="metric-glyph-star">★</span>
-            </span>
-                <span class="metric-caption">AVERAGE RATING</span>
+                <span class="metric-value">4.9<span class="metric-glyph-star">★</span></span>
+                <span class="metric-caption">LEARNER RATING</span>
             </div>
 
             <div class="metric-card">
-            <span class="metric-value">
-                98<span class="metric-glyph-percent">%</span>
-            </span>
-                <span class="metric-caption">PASS RATE</span>
+                <span class="metric-value">98<span class="metric-glyph-percent">%</span></span>
+                <span class="metric-caption">FIRST-TIME PASS RATE</span>
             </div>
 
             <div class="metric-card">
@@ -101,9 +93,9 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 </span>
                     <div class="badges-wrapper">
-                        <span class="acc-badge">QQI</span>
-                        <span class="acc-badge">CPD</span>
-                        <span class="acc-badge">HSE</span>
+                        <span class="acc-badge">Fast</span>
+                        <span class="acc-badge">Secure</span>
+                        <span class="acc-badge">Instant</span>
                     </div>
                 </div>
                 <!-- NEW: Top Green Feature Banner -->
@@ -139,13 +131,15 @@
                     </div>
                 </div>
 
-                <a href="/home" class="linkStyle"><button class="course-btn">Buy Now</button></a>
+                <a href="/register" class="linkStyle"><button class="course-btn">Buy Now</button></a>
             </div>
         </div>
     </div>
 
     <div class="langTitle" data-aos="fade-up">
-        <div class="languageText"  >At Manual Handling Ireland, our QQI compliant Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training meets HSA and HSE requirements, complies with EU legislation, and provides a recognised Manual Handling Certificate accepted across Ireland, including Dublin, as well as the UK and Europe. We also provide Manual Handling Refresher courses for individuals who need to renew or update their knowledge.</div>
+        <div class="languageText">
+            At Manual Handling Ireland, our Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training is designed to align with workplace safety concepts and provides an independent Certificate of Completion issued by Progressive Velocity Fast Solutions Limited to document your instructional hours. We also provide Manual Handling Refresher materials for individuals who need to renew or update their internal workplace knowledge.
+        </div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
             <img src="{{asset('images/flags/pl.png')}}" alt="">
@@ -219,8 +213,8 @@
                                     <img src="{{asset('images/icons/1.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  >QQI, Rospa Compliant</div>
-                                    <div class="cpdItemContent"  >Compliant Course to obtain your Official Manual Handling Certificate!</div>
+                                    <div class="cpdItemTitle"  >Compliant Training</div>
+                                    <div class="cpdItemContent"  >Compliant Course to obtain your  Manual Handling Training!</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -228,8 +222,8 @@
                                     <img src="{{asset('images/icons/2.png')}}" alt="">
                                 </div>
                                 <div class="cpdContent">
-                                    <div class="cpdItemTitle"  >Certify Your Skills</div>
-                                    <div class="cpdItemContent"  >An Manual Handling Ireland Diploma/Certificate, Compliant by CPD and ROSPA, validates the skills you have acquired.</div>
+                                    <div class="cpdItemTitle"  >Get your certificate</div>
+                                    <div class="cpdItemContent"  >An Manual Handling Ireland Training, validates the skills you have acquired.</div>
                                 </div>
                             </div>
                             <div class="cpdItem">
@@ -489,15 +483,15 @@
                     <div class="imh-badge-item">
                         <div class="imh-icon">🌍</div>
                         <div>
-                            <strong>EU & UK Recognized</strong>
-                            <p>Fully compliant certifications across borders.</p>
+                            <strong>Working Compliant</strong>
+                            <p>Fully compliant certifications for you job.</p>
                         </div>
                     </div>
                     <div class="imh-badge-item">
                         <div class="imh-icon">🎓</div>
                         <div>
-                            <strong>CMIOSH Instructors</strong>
-                            <p>IOSH certified at NFQ Level 6 expertise.</p>
+                            <strong>Expertized Instructors</strong>
+                            <p>Vaslty experienced instructors</p>
                         </div>
                     </div>
                     <div class="imh-badge-item">
@@ -656,14 +650,14 @@
         <div class="mh-faq-wrapper">
 
             <header class="mh-faq-header">
-                <span class="mh-faq-badge">HSA Compliance</span>
+                <span class="mh-faq-badge">Training Compliance</span>
                 <h2 class="mh-faq-title">Manual Handling Ireland: Expert FAQs</h2>
             </header>
 
             <div class="mh-faq-list">
 
                 <!-- FAQ 1 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is manual handling training a legal requirement in ireland? hsa law'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is manual handling training a legal requirement in ireland?  law'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
                         <span class="mh-faq-question">Is Manual Handling training a legal requirement in Ireland?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
@@ -689,14 +683,14 @@
                 </div>
 
                 <!-- FAQ 3 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can i do manual handling training online ireland? hsa compliant'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can i do manual handling training online ireland?  compliant'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
                         <span class="mh-faq-question">Can I complete my Manual Handling course fully online?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
                     <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
                         <p class="mh-faq-text">
-                            To be 100% compliant in Ireland, your training must include a practical assessment. We provide a "Blended Learning" solution where you complete the <strong>manual handling theory online</strong> and then perform a practical lifting demonstration. This is assessed by a <strong>QQI Level 6 Compliant Manual Handling Instructor</strong> either in-person or via a secure video link. A "theory-only" certificate is usually not sufficient for workplace inspections.
+                            To be 100% compliant in Ireland, your training must include a practical assessment. We provide a "Blended Learning" solution where you complete the <strong>manual handling theory online</strong> and then perform a practical lifting demonstration. This is assessed by a <strong> Manual Handling Instructor</strong> either in-person or via a secure video link. A "theory-only" certificate is usually not sufficient for workplace inspections.
                         </p>
                     </div>
                 </div>
@@ -728,7 +722,7 @@
                 </div>
 
                 <!-- FAQ 6 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'do office workers need manual handling training? retailers hsa'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'do office workers need manual handling training? retailers '.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
                         <span class="mh-faq-question">Do office and retail workers require a Manual Handling certificate?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
@@ -741,7 +735,7 @@
                 </div>
 
                 <!-- FAQ 7 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what are the penalties for hsa non-compliance? fines lawsuit'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what are the penalties for  non-compliance? fines lawsuit'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
                         <span class="mh-faq-question">What are the penalties for non-compliance with safety training?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
@@ -780,14 +774,14 @@
                 </div>
 
                 <!-- FAQ 10 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'are your certificates qqi recognized? instructor level 6'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'are your certificates  recognized? instructor level 6'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
                         <span class="mh-faq-question">Are your Manual Handling certificates recognized across Ireland?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
                     <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
                         <p class="mh-faq-text">
-                            Absolutely. All our <strong>manual handling certificates</strong> are issued following training delivered by <strong>QQI Level 6 Compliant Instructors</strong>. Our course content strictly adheres to national regulatory guidelines and the 2007 General Application Regulations. This ensures your certification is recognized by employers, insurance companies, and safety inspectors across Ireland, including major construction sites and healthcare facilities.
+                            Absolutely. All our <strong>manual handling certificates</strong> are issued following training delivered by <strong>a experienced Instructor</strong>. Our course content strictly adheres to national regulatory guidelines and the 2007 General Application Regulations. This ensures your certification is recognized by employers, insurance companies, and safety inspectors across Ireland, including major construction sites and healthcare facilities.
                         </p>
                     </div>
                 </div>
@@ -800,7 +794,7 @@
 
             <!-- Left Side: Educational Content (SEO Goldmine) -->
             <div class="mh-info-content">
-                <span class="mh-info-badge">HSA Certified Provider</span>
+                <span class="mh-info-badge">Top Safety Provider</span>
                 <h2 class="mh-info-title">The Essential Guide to <strong>Manual Handling in Ireland</strong></h2>
 
                 <p class="mh-info-lead">
@@ -810,12 +804,12 @@
                 <div class="mh-info-text-block">
                     <p><strong>Manual Handling Ireland</strong> regulations define this work as any physical activity involving the <i>lifting, putting down, pushing, pulling, carrying, or moving</i> of a load by hand or bodily force. Whether you are in Dublin, Cork, or Galway, the law remains the same: any task that poses a risk of back injury requires a valid <strong>Manual Handling Certificate</strong>.</p>
 
-                    <p>Under the <strong>Safety, Health and Welfare at Work Regulations 2007</strong>, every employer is legally obligated to provide <strong>manual handling training</strong> to staff. This training is the primary defense against <strong>Musculoskeletal Disorders (MSDs)</strong>, which account for a massive percentage of work-related illness in the Irish workforce. Obtaining your <strong>Manual Handling Certificate</strong> ensures you are compliant with <strong>HSA standards</strong> and equipped with safe lifting techniques.</p>
+                    <p>Under the <strong>Safety, Health and Welfare at Work Regulations 2007</strong>, every employer is legally obligated to provide <strong>manual handling training</strong> to staff. This training is the primary defense against <strong>Musculoskeletal Disorders (MSDs)</strong>, which account for a massive percentage of work-related illness in the Irish workforce. Obtaining your <strong>Manual Handling Certificate</strong> ensures you are compliant with <strong> working stantards</strong> and equipped with safe lifting techniques.</p>
                 </div>
 
                 <div class="mh-info-stats">
                     <div class="mh-info-stat-item">
-                        <strong>HSA Compliant</strong>
+                        <strong>Compliant</strong>
                         <span>Recognized <strong>Manual Handling Training</strong> nationwide.</span>
                     </div>
                 </div>
@@ -852,7 +846,7 @@
             <header class="mh-steps-header">
                 <span class="mh-steps-badge">Simple & Fast Process</span>
                 <h2 class="mh-steps-title">4 Steps to Your <strong>Manual Handling Certificate Ireland</strong></h2>
-                <p class="mh-steps-subtitle">Start your training today and receive your HSA-compliant certification in four easy steps.</p>
+                <p class="mh-steps-subtitle">Start your training today and receive your compliant certification in four easy steps.</p>
             </header>
 
             <div class="mh-steps-grid">
@@ -874,14 +868,14 @@
                 <div class="mh-steps-card" @mouseenter="activeStep = 3" :class="activeStep === 3 ? 'mh-steps-card--active' : ''">
                     <div class="mh-steps-number">03</div>
                     <h3>Submit Assessment</h3>
-                    <p>After finishing the theory, <strong>submit the assessment</strong> for review. Our QQI Level 6 instructors will evaluate your practical lifting technique via our secure video upload portal to ensure 100% compliance.</p>
+                    <p>After finishing the theory, <strong>submit the assessment</strong> for review. Our instructors will evaluate your practical lifting technique via our secure video upload portal to ensure 100% compliance.</p>
                 </div>
 
                 <!-- Step 4 -->
                 <div class="mh-steps-card" @mouseenter="activeStep = 4" :class="activeStep === 4 ? 'mh-steps-card--active' : ''">
                     <div class="mh-steps-number">04</div>
                     <h3>Download Certificate</h3>
-                    <p>Once approved, you can instantly <strong>Download your Manual Handling Certificate</strong>. Our certificates are fully recognized by the <strong>HSA</strong>, insurance providers, and major employers across Ireland.</p>
+                    <p>Once approved, you can instantly <strong>Download your Manual Handling Certificate</strong>. Our certificates are fully compliant by the work requirments , and major employers across Ireland.</p>
                 </div>
             </div>
 
