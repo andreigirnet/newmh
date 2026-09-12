@@ -50,13 +50,15 @@
             <!-- BULK DISCOUNT -->
             <div class="tmt-feature-row">
                 <div class="tmt-column-text">
-                    <h2 class="tmt-section-title">Volume Licensing for Employers</h2>
+                    <h2 class="tmt-section-title">Volume Certification for Employers</h2>
                     <div class="tmt-section-description">
                         Reduce costs while maintaining full work compliance in Ireland. Discounts apply automatically to bulk and mixed-course orders, with no expiration date on licenses. Save 10% on 10+ courses. For enterprise-level requirements (500+ staff), we offer tailored solutions including a dedicated account manager, licence reallocation for staff turnover, and detailed reporting through your corporate management dashboard. Contact our team via Online Chat to discuss custom pricing.
                     </div>
                 </div>
                 <div class="tmt-column-image">
-                    <img src="{{asset('images/training/tr-img-1.png')}}" class="tmt-feature-img" alt="Training Support">
+                    <div class="tmt-img-container">
+                        <img src="{{asset('images/training/tr-img-1.png')}}" class="tmt-feature-img" alt="Training Support">
+                    </div>
                 </div>
             </div>
 
@@ -65,11 +67,13 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">Corporate Invoicing & 30-Day Terms</h2>
                     <div class="tmt-section-description">
-                        We support B2B invoicing for companies requiring structured payment processes. Benefits include 30-day payment terms, PO number integration, and immediate access to online training modules*. This allows your team to begin their manual handling certification without delay. *Certificates are released once payment has been confirmed.
+                        We support B2B invoicing for companies requiring structured payment processes. Benefits include 30-day payment terms, PO number integration, and immediate access to online training modules*. This allows your team to begin their manual handling certification without delay. <span class="tmt-footnote">*Certificates are released once payment has been confirmed.</span>
                     </div>
                 </div>
                 <div class="tmt-column-image">
-                    <img src="{{asset('images/training/tr-img-2.png')}}" class="tmt-feature-img" alt="Invoice Payment">
+                    <div class="tmt-img-container">
+                        <img src="{{asset('images/training/tr-img-2.png')}}" class="tmt-feature-img" alt="Invoice Payment">
+                    </div>
                 </div>
             </div>
 
@@ -82,7 +86,9 @@
                     </div>
                 </div>
                 <div class="tmt-column-image">
-                    <img src="{{asset('images/training/tr-img-3.png')}}" class="tmt-feature-img" alt="Urgent Training">
+                    <div class="tmt-img-container">
+                        <img src="{{asset('images/training/tr-img-3.png')}}" class="tmt-feature-img" alt="Urgent Training">
+                    </div>
                 </div>
             </div>
 
@@ -95,7 +101,9 @@
                     </div>
                 </div>
                 <div class="tmt-column-image">
-                    <img src="{{asset('images/training/tr-img-4.png')}}" class="tmt-feature-img" alt="Efficient Learning">
+                    <div class="tmt-img-container">
+                        <img src="{{asset('images/training/tr-img-4.png')}}" class="tmt-feature-img" alt="Efficient Learning">
+                    </div>
                 </div>
             </div>
 

@@ -62,7 +62,6 @@
 {{--        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);--}}
 {{--    })('https://widget.replain.cc/dist/client.js');--}}
 {{--</script>--}}
-@include("frontIncludes/registerInclude")
 @include("frontIncludes/footer")
 @include("frontIncludes/brandSwiper")
 <script src="{{asset("js/hamburgerAction.js")}}"></script>
@@ -77,7 +76,7 @@
     AOS.init();
 </script>
 
-{{--<script src="{{asset('js/prevent.js')}}"></script>--}}
+<script src="{{asset('js/prevent.js')}}"></script>
 
 <div id="cookiePrompt" class="cookie-container">
     <div class="cookie-content">

@@ -22,13 +22,13 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle arrow-none" href="{{route('admin.en.profile')}}" id="topnav-apps" role="button"
                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ri-team-fill"></i>For Employers <div class="arrow-down"></div>
+                            <i class="ri-team-fill"></i>For Companies <div class="arrow-down"></div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="topnav-apps">
                             <div class="dropdown">
                                 <a class="dropdown-item arrow-none" href="{{route('dashboard.employer')}}" id="topnav-auth"
                                    role="button">
-                                    Employer Dashboard
+                                    Company Dashboard
                                 </a>
                             </div>
                             <div class="dropdown">
@@ -42,7 +42,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ri-money-euro-circle-fill"></i>Billing <div class="arrow-down"></div>
+                            <i class="ri-money-euro-circle-fill"></i>Payments <div class="arrow-down"></div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="topnav-components">
                             <div class="dropdown">

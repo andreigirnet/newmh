@@ -44,12 +44,7 @@
             <div class="col-xxl-9 col-lg-11">
                 <div class="card auth-card overflow-hidden">
                     <div class="row g-0">
-                        <!-- Left Image Panel with No Opacity Overlay -->
-                        <div class="col-lg-6 d-none d-lg-block position-relative bg-white">
-                            <img src="/images/login/registerLogin.jpg" alt="Authentication Visual" class="img-fluid h-100 w-100 object-fit-cover">
-                        </div>
-
-                        <!-- Right Form Panel -->
+                        <!-- Left Form Panel -->
                         <div class="col-lg-6 bg-white p-4 p-sm-5 d-flex flex-column justify-content-between">
 
                             <div>
@@ -111,6 +106,12 @@
                             </div>
 
                         </div>
+
+                        <!-- Right Image Panel with No Opacity Overlay -->
+                        <div class="col-lg-6 d-none d-lg-block position-relative bg-white">
+                            <img src="/images/login/registerLogin.jpg" alt="Authentication Visual" class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+
                     </div>
                 </div>
             </div>

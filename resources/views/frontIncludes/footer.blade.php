@@ -1,5 +1,15 @@
 <footer class="main-footer">
     <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="footer-heading">MANUAL HANDLING</h3>
+            <ul class="footer-links">
+                <li><a href="{{ route('front.manual.handling') }}">Manual Handling Course</a></li>
+                <li><a href="{{ route('front.manual.training') }}">Manual Handling Training</a></li>
+                <li><a href="{{ route('front.manual.certificate') }}">Manual Handling Certificate</a></li>
+                <li><a href="{{ route('front.manual.online') }}">Manual Handling Online</a></li>
+                <li><a href="{{ route('front.safe.lifting') }}">Manual Handling Techniques</a></li>
+            </ul>
+        </div>
 
         <!-- COLUMN 1: CUSTOMER SUPPORT -->
         <div class="footer-column">
@@ -25,17 +35,6 @@
             </ul>
         </div>
 
-        <!-- COLUMN 3: MANUAL HANDLING (PRIMARY SERVICES) -->
-        <div class="footer-column">
-            <h3 class="footer-heading">MANUAL HANDLING</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('front.manual.handling') }}">Manual Handling Course</a></li>
-                <li><a href="{{ route('front.manual.training') }}">Manual Handling Training</a></li>
-                <li><a href="{{ route('front.manual.certificate') }}">Manual Handling Certificate</a></li>
-                <li><a href="{{ route('front.manual.online') }}">Manual Handling Online</a></li>
-                <li><a href="{{ route('front.safe.lifting') }}">Manual Handling Techniques</a></li>
-            </ul>
-        </div>
 
         <!-- COLUMN 4: LOCATIONS -->
         <div class="footer-column">

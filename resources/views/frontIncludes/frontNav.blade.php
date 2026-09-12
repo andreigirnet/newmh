@@ -14,8 +14,8 @@
 
         <div class="nav-links">
             <a href="/">HOME</a>
-            <a href="{{route('front.faq')}}">MANUAL HANDLING FAQ's</a>
-            <a href="{{route('front.team')}}">TEAM TRAINING</a>
+            <a href="{{route('front.team')}}">CORPORATE TRAINING</a>
+            <a href="{{route('front.faq')}}">FAQ's</a>
             <a href="{{route('front.about')}}">ABOUT US</a>
             {{--            <a href="{{route('front.blog')}}"></a>--}}
             <a href="{{route('front.contact')}}">CONTACT</a>

@@ -72,7 +72,7 @@ class CertificateController extends Controller
      */
     public function store(Request $request, $packageId)
     {
-        $userId = $request->userId; // ✅ secure
+        $userId = $request->userId;  // ✅ secure
         $lockKey = "certificate_{$userId}_{$packageId}";
 
         $lock = Cache::lock($lockKey, 30);
@@ -82,13 +82,6 @@ class CertificateController extends Controller
         }
 
         try {
-            // ✅ Validate the incoming video file (plus your other inputs)
-            $request->validate([
-                'video'     => 'required|mimes:mp4,mov,ogg,qt|max:100000', // max ~100MB
-                'userId'    => 'required|exists:users,id',
-                'productId' => 'required',
-            ]);
-
             // ✅ Check if certificate already exists
             $existingCertificate = Certificate::where('user_id', $userId)
                 ->where('package_id', $packageId)
@@ -99,41 +92,36 @@ class CertificateController extends Controller
                     ->with('success', 'Certificate already generated.');
             }
 
-            // ✅ 1. Store the uploaded video in storage/app/public/videos
-            $videoPath = $request->file('video')->store('videos', 'public');
-
             // ✅ Better unique ID
             $uniqueCertificateId = 'CERT-' . Str::upper(Str::random(8));
-
             $expirationDate = now()->addYears(3)->format('Y-m-d');
 
-            // ✅ 2. Create Certificate record (including the video path)
             $certificateCreated = Certificate::create([
                 'user_id'         => $userId,
                 'package_id'      => $packageId,
                 'unique_id'       => $uniqueCertificateId,
-                'expiration_date' => $expirationDate,
+                'expiration_date' => $expirationDate
             ]);
 
-            $holder = User::findOrFail($request->userId);
+            $holder =  $user = User::findOrFail($request->userId);
             $certificateUrl = config('app.url') . '/certificate/' . $certificateCreated->id;
 
-            // Generate PDF (Your exact original logic)
+            // Generate PDF
             $options = new \Dompdf\Options();
             $options->set('isRemoteEnabled', true);
 
             $dompdf = new \Dompdf\Dompdf($options);
             $dompdf->setPaper('letter', 'landscape');
 
+            // Optimized data fetching (relying on raw join data)
             $certificate = DB::select("
-            SELECT *, certificates.created_at as valid_from
+            SELECT certificates.*, certificates.created_at as valid_from, packages.product_id
             FROM certificates
             JOIN packages ON certificates.package_id = packages.id
             WHERE certificates.id = ?
         ", [$certificateCreated->id]);
 
-            $package = Package::find($certificate[0]->package_id);
-            $image = $package->product_id;
+            $image = $certificate[0]->product_id ?? null;
 
             $dompdf->loadHtml(
                 view('pages.back.certificateAttach', compact('certificate', 'holder', 'image'))->render()
@@ -142,23 +130,23 @@ class CertificateController extends Controller
             $dompdf->render();
             $output = $dompdf->output();
 
-            // ✅ Save PDF to storage
+            // ✅ Save file to storage
             $fileName = "certificates/{$userId}_{$packageId}.pdf";
             Storage::put($fileName, $output);
 
-            // Send email (Your original commented logic)
-            // Mail::to($holder->email)->send(
-            //     new CertificateMail($certificateUrl, storage_path("app/{$fileName}"))
-            // );
+            // Send email
+//            Mail::to($holder->email)->send(
+//                new CertificateMail($certificateUrl, storage_path("app/{$fileName}"))
+//            );
+
+            // ✅ Removed accidental dd($packageId);
 
             // Update package
             Package::where('id', $packageId)->update([
-                'certificate_id' => $certificateCreated->id,
-                'status'         => 'practice',
-                'video_path'     => $videoPath
+                'certificate_id' => $certificateCreated->id
             ]);
 
-            return redirect()->route('certificate.index')->with('success', 'Video uploaded and Certificate Generated');
+            return redirect()->route('certificate.index')->with('success', 'Certificate Generated');
 
         } finally {
             $lock->release(); // 🔓 always release

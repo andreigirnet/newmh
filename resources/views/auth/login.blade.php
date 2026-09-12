@@ -80,17 +80,7 @@
             <div class="col-xxl-9 col-lg-11">
                 <div class="card auth-card overflow-hidden">
                     <div class="row g-0">
-                        <!-- Left Image Panel with Overlay Branding -->
-                        <div class="col-lg-6 d-none d-lg-block position-relative bg-dark">
-                            <img src="/images/login/registerLogin.jpg" alt="Authentication Visual" class="img-fluid h-100 w-100 object-fit-cover">
-                            <div class="position-absolute bottom-0 start-0 p-4 text-white">
-                                <div class="badge bg-white text-dark mb-2 px-2 py-1 fw-semibold fs-11 rounded-pill">Secure Access</div>
-                                <h5 class="text-white mb-1">Welcome back.</h5>
-                                <p class="text-white-50 fs-13 mb-0">Log in to manage your account and trainings.</p>
-                            </div>
-                        </div>
-
-                        <!-- Right Form Panel -->
+                        <!-- Left Form Panel -->
                         <div class="col-lg-6 bg-white p-4 p-sm-5 d-flex flex-column justify-content-between">
 
                             <div>
@@ -169,6 +159,17 @@
                             </div>
 
                         </div>
+
+                        <!-- Right Image Panel with Overlay Branding -->
+                        <div class="col-lg-6 d-none d-lg-block position-relative bg-dark">
+                            <img src="/images/login/registerLogin.jpg" alt="Authentication Visual" class="img-fluid h-100 w-100 object-fit-cover">
+                            <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                                <div class="badge bg-white text-dark mb-2 px-2 py-1 fw-semibold fs-11 rounded-pill">Secure Access</div>
+                                <h5 class="text-white mb-1">Welcome back.</h5>
+                                <p class="text-white-50 fs-13 mb-0">Log in to manage your account and trainings.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

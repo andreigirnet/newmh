@@ -1,14 +1,15 @@
 @extends('front.app')
 @section('content')
     <div id="mainHero">
-        <img src="{{asset('images/banners/BackgroundIreland.webp')}}" class="warehouse" alt="">
+{{--        <img src="{{asset('images/banners/BackgroundIreland.webp')}}" class="warehouse" alt="">--}}
+{{--        <img src="{{asset('images/banners/BackgroundIrelandMobile.webp')}}" class="warehouseImgMobile" alt="">--}}
 {{--        <video autoplay muted loop class="warehouse" >--}}
 {{--            <source src="video/bannerVideoBig.mp4" type="video/mp4">--}}
 {{--        </video>--}}
         <div class="opacityComponent"></div>
         <div class="heroContent">
             <div class="mainBannerRight">
-                <h1 class="mainBannerTitle">Manual Handling Course Ireland-<br> Online Training & Certificate</h1>
+                <h1 class="mainBannerTitle">Manual Handling Ireland-<br> Online Training & Certificate Provider</h1>
                 <div class="trust-badges-container">
                     <div class="trust-badge">
                         <span class="badge-icon">💶</span>
@@ -32,42 +33,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="mainBannerDescription" >Our manual handling course is fully flexible and combines theory modules with a practical assessment. The training includes clear videos, helpful images, and straightforward text, making the content simple to follow and understand. It runs smoothly on mobile devices and PCs, allowing you to learn anytime and anywhere while meeting workplace safety standards in Ireland, the UK, and across Europe.</div>
+                <div class="mainBannerDescription" >Complete our online manual handling training at your own pace with clear lessons, practical guidance and a digital certificate on successful completion.</div>
                 <a href="{{route('register')}}" class="modern-glow-btn">
-                    Register For Manual Handling Certification
+                    Start Now
                 </a>
             </div>
         </div>
-    </div>
+        <div class="metrics-wrapper bg-brand-deep">
+            <div class="metrics-grid">
 
-    <div class="metrics-wrapper bg-brand-deep" style="padding: 30px 24px;">
-        <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">100%</span>
+                    <span class="metric-caption">ONLINE LEARNING</span>
+                </div>
 
-            <div class="metric-card">
-                <span class="metric-value">100%</span>
-                <span class="metric-caption">ONLINE LEARNING</span>
+                <div class="metric-card">
+                    <span class="metric-value">€{{config('global.course_price')}}</span>
+                    <span class="metric-caption">Course & certificate</span>
+                </div>
+
+                {{--            <div class="metric-card">--}}
+                {{--                <span class="metric-value">30</span></span>--}}
+                {{--                <span class="metric-caption">Minutes Course</span>--}}
+                {{--            </div>--}}
+
+                <div class="metric-card">
+                    <span class="metric-value">24/7</span>
+                    <span class="metric-caption">Train at your own pace</span>
+                </div>
+
             </div>
-
-            <div class="metric-card">
-                <span class="metric-value">4.9<span class="metric-glyph-star">★</span></span>
-                <span class="metric-caption">LEARNER RATING</span>
-            </div>
-
-            <div class="metric-card">
-                <span class="metric-value">98<span class="metric-glyph-percent">%</span></span>
-                <span class="metric-caption">FIRST-TIME PASS RATE</span>
-            </div>
-
-            <div class="metric-card">
-                <span class="metric-value">24/7</span>
-                <span class="metric-caption">COURSE ACCESS</span>
-            </div>
-
         </div>
+
     </div>
+
+
 
     <div class="title" data-aos="fade-up">
-        <div class="titleTextMain" >Manual Handling Ireland Online Manual Handling Training for learners worldwide</div>
+        <div class="titleTextMain" >Manual Handling Ireland Online Manual Handling Training for employees</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
@@ -253,208 +256,6 @@
             </div>
         </div>
     </div>
-
-    <div class="title" data-aos="fade-up" style="margin-bottom: 25px;">
-        <div class="titleText sizeTextMobile" >Manual Handling Course Reviews - What Our Learners Say</div>
-        <div class="borderTitle"></div>
-    </div>
-
-    {{--    <div id="customersReviews">--}}
-    {{--        <script src="https://static.elfsight.ie/platform/platform.js" data-use-service-core defer></script>--}}
-    {{--        <div class="elfsight-app-452ee68c-8e4c-4329-bf9d-d5f4175f5d0e"></div>--}}
-    {{--    </div>--}}
-    {{--    <div id="customerReviewsMob">--}}
-    {{--        <div class="customerReviewsMobWrap">--}}
-    {{--            <script src="https://static.elfsight.ie/platform/platform.js" data-use-service-core defer></script>--}}
-    {{--            <div class="elfsight-app-6a3ccd9b-896b-4195-946e-7cba27a27218"></div>--}}
-    {{--        </div>--}}
-    {{--    </div>--}}
-
-{{--    <div id="customersReviews">--}}
-{{--        <div id="customerReviewWrap">--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-1.webp')}}" alt="John Weasley">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">John Weasley</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">24 minutes ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "The online Manual Handling training provided by Manual Handling Ireland was comprehensive yet easy to follow. The certification process was smooth, and the practical tips were immensely helpful."--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="100">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-2.webp')}}" alt="Mary Andrews">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">Mary Andrews</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">2 hours ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "I found the course from Manual Handling Ireland to be informative and well-structured. The convenience of online learning coupled with their engaging content made the whole experience worthwhile."--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="200">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-3.webp')}}" alt="Choe Lee">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">Choe Lee</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">7 hours ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "The Manual Handling training exceeded my expectations. The modules were clear and concise, and the quizzes helped reinforce key concepts. Highly recommended for anyone seeking certification!"--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="300">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-4.webp')}}" alt="Markus Low">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">Markus Low</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">10 hours ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "I appreciated the flexibility of being able to complete the training at my own pace. The material was presented in a way that was easy to understand for our entire team."--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="400">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-5.webp')}}" alt="Vanessa Spills">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">Vanessa Spills</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">15 hours ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "Obtaining my Manual Handling certificate was a breeze. The course content was relevant and the assessments were fair. Very pleased with the overall experience."--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="premium-review-card" data-aos="fade-up" data-aos-delay="100">--}}
-{{--                <div class="premium-review-top">--}}
-{{--                    <div class="premium-review-header">--}}
-{{--                        <div class="premium-avatar-container">--}}
-{{--                            <img src="{{asset('images/avatars/av-6.webp')}}" alt="Angela Jedrynska">--}}
-{{--                        </div>--}}
-{{--                        <div class="premium-reviewer-identity">--}}
-{{--                            <div class="premium-name-row">--}}
-{{--                                <span class="premium-reviewer-name">Angela Jedrynska</span>--}}
-{{--                                <div class="premium-verified-badge"><img src="{{asset('images/icons/check.png')}}" alt="Verified"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="premium-rating-line">--}}
-{{--                                <div class="premium-stars-group">--}}
-{{--                                    <img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}"><img src="{{asset('images/icons/star.png')}}">--}}
-{{--                                </div>--}}
-{{--                                <span class="premium-timestamp">1 day ago</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="premium-review-body">--}}
-{{--                        "The online platform made it convenient for me to access the training from anywhere. The practical demonstrations were beneficial and highly professional."--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="premium-review-footer">--}}
-{{--                    <span class="premium-posted-label">Verified Review</span>--}}
-{{--                    <img src="{{asset('images/logo/google.png')}}" class="premium-google-logo" alt="Google">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--        </div>--}}
-{{--    </div>--}}
-
-
-{{--    <div class="title" data-aos="fade-up">--}}
-{{--        <div class="titleText sizeTextMobile" >About Us</div>--}}
-{{--        <div class="borderTitle"></div>--}}
-{{--    </div>--}}
 
     <section class="imh-about-section" data-aos="fade-up">
         <div class="imh-container">
