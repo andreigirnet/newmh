@@ -536,14 +536,14 @@
                 </div>
 
                 <!-- FAQ 7 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what are the penalties for  non-compliance? fines lawsuit'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what if i dont pass from the first time fail test unlimited attempts'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">What are the penalties for non-compliance with safety training?</span>
+                        <span class="mh-faq-question">What if I don't pass the first time?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
                     <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
                         <p class="mh-faq-text">
-                            Failure to comply with <strong>Manual Handling Ireland regulations</strong> can have severe consequences. Employers can face on-the-spot regulatory fines, legal prosecution, and massive personal injury claims. Furthermore, if an accident occurs and the employee was not properly trained, your <strong>Employer Liability Insurance</strong> may be voided, leaving the business financially responsible for legal costs and compensation payouts.
+                            Don't worry if you don't pass right away. You have <strong>unlimited attempts</strong> to retake and pass the test at no extra cost until you successfully complete the course.
                         </p>
                     </div>
                 </div>
@@ -575,14 +575,14 @@
                 </div>
 
                 <!-- FAQ 10 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'are your certificates  recognized? instructor level 6'.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can i do the course from mobile phone mobile device smartphone'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Are your Manual Handling certificates recognized across Ireland?</span>
+                        <span class="mh-faq-question">Can I complete the course from my mobile phone?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
                     <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
                         <p class="mh-faq-text">
-                            Absolutely. All our <strong>manual handling certificates</strong> are issued following training delivered by <strong>a experienced Instructor</strong>. Our course content strictly adheres to national regulatory guidelines and the 2007 General Application Regulations. This ensures your certification is recognized by employers, insurance companies, and safety inspectors across Ireland, including major construction sites and healthcare facilities.
+                            Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in <strong>5 different languages</strong>.
                         </p>
                     </div>
                 </div>
