@@ -154,9 +154,6 @@
                         <a href="{{ route('front.refund') }}" class="step-card-item nav-pill-item">
                             <h4>Refund Policy</h4>
                         </a>
-                        <a href="{{ route('front.accreditation') }}" class="step-card-item nav-pill-item">
-                            <h4>Accreditations</h4>
-                        </a>
                         <a href="{{ route('front.cookies') }}" class="step-card-item nav-pill-item">
                             <h4>Cookie Policy</h4>
                         </a>
