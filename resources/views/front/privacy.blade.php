@@ -176,7 +176,7 @@
                 <h1>Privacy Policy</h1>
                 <p>{{ config('global.business_name') }}</p>
             </div>
-            
+
             @if(session('success'))
                 <div style="background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 8px; margin: 1.5rem 2.5rem 0 2.5rem; border: 1px solid #a7f3d0;">
                     {{ session('success') }}
@@ -221,7 +221,6 @@
                         <li><strong>Identity Data:</strong> Full name and contact credentials.</li>
                         <li><strong>Contact Information:</strong> Email address and telephone number.</li>
                         <li><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</li>
-                        <li><strong>Technical Data:</strong> IP address, browser type, device information, and site interaction metrics gathered via analytics tools.</li>
                     </ul>
 
                     <h2>How We Use Your Information:</h2>
