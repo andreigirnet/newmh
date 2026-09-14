@@ -55,10 +55,6 @@
             <td align="left" style="width: 40%;">
                 <h3 class="address">{{$user[0]->name}}</h3>
                 <h3 class="address">{{$user[0]->email}}</h3>
-                <div class="address">{{$order['address']}}</div>
-                <div class="address">{{$order['city']}}</div>
-                <div class="address">{{$order['county']}}</div>
-                <div class="address">{{$order['country']}}</div>
                 <br /><br />
                 Date: {{date('Y-m-d', strtotime($order['created_at']))}}
                 Identifier: #{{$order['id']}}
