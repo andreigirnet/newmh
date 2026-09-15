@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataRemovalRequest;
 use Illuminate\Http\Request;
 
 class PrivacyController extends Controller
