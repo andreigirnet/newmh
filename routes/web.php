@@ -226,7 +226,7 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.manual.dublin')));
     $sitemap->add(Url::create(route('front.manual.certificate')));
     $sitemap->add(Url::create(route('front.manual.refresher')));
-    $sitemap->add(Url::create(route('front.manual.qqi')));
+//    $sitemap->add(Url::create(route('front.manual.qqi')));
     $sitemap->add(Url::create(route('front.manual.ireland')));
     $sitemap->add(Url::create(route('front.safe.lifting')));
     $sitemap->add(Url::create(route('front.what.handling')));
