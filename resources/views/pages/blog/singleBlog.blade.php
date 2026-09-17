@@ -102,7 +102,6 @@
                 <a href="{{route('front.manual.dublin')}}" class="topic-pill">Manual Handling Dublin</a>
                 <a href="{{route('front.manual.certificate')}}" class="topic-pill">Manual Handling Certificate</a>
                 <a href="{{route('front.manual.refresher')}}" class="topic-pill">Manual Handling Refresher</a>
-                <a href="{{route('front.manual.qqi')}}" class="topic-pill">Manual Handling QQI</a>
                 <a href="{{route('front.safe.lifting')}}" class="topic-pill">Safe Lifting Techniques</a>
                 <a href="{{route('front.what.handling')}}" class="topic-pill">What is Manual Handling?</a>
                 <a href="{{route('front.faq')}}" class="topic-pill">FAQ</a>
