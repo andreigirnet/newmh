@@ -29,7 +29,7 @@
                         <div class="fq-accordion-content" x-show="open" x-transition>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Manual Handling Ireland certification is available for immediate download once you complete the course successfully.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After finishing the theory modules of your manual handling training online Ireland, you can schedule a short virtual practical assessment with a qualified assessor.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total fee of €35 covers the full manual handling course Ireland, final assessment, and certification — no hidden charges.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total fee of €{{config('global.course_price')}} covers the full manual handling course Ireland, final assessment, and certification — no hidden charges.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is available 24/7 online, allowing you to complete your manual handling training Ireland at your own pace.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is fully compatible with smartphones, tablets, laptops, and desktop computers.</span></div>
                         </div>
@@ -91,7 +91,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            We offer a 15-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued.
+                            We offer a 14-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued.
                         </div>
                     </div>
 

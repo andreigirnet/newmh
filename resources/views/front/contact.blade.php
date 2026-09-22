@@ -24,8 +24,8 @@
 
                 <div class="ct-info-grid">
                     <div class="ct-detail-text">
-                        <strong>Company:</strong><br>
-                        PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED
+                        <strong>Sole Trader</strong><br>
+                        This website is owned and operated by Andrei Girnet (Sole Trader).
                     </div>
 
                     <div class="ct-detail-text">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="ct-address-box">
-                        51 Bracken Road, Dublin, D18 CV48, Ireland
+                        84A Church Street, Dunstable, United Kingdom, LU5 4HP
                     </div>
                 </div>
 

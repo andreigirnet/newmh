@@ -70,7 +70,7 @@
 
 
     <div class="title" data-aos="fade-up">
-        <div class="titleTextMain" >Manual Handling Ireland Online Manual Handling Training for employees</div>
+        <div class="titleTextMain" >This website is owned and operated by Andrei Girnet (Sole Trader).</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
@@ -141,7 +141,7 @@
 
     <div class="langTitle" data-aos="fade-up">
         <div class="languageText">
-            At Manual Handling Ireland, our Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training is designed to align with workplace safety concepts and provides an independent Certificate of Completion issued by Progressive Velocity Fast Solutions Limited to document your instructional hours. We also provide Manual Handling Refresher materials for individuals who need to renew or update their internal workplace knowledge.
+            At Manual Handling Ireland, our Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training is designed to align with workplace safety concepts and provides an independent Certificate of Completion to document your instructional hours. We also provide Manual Handling Refresher materials for individuals who need to renew or update their internal workplace knowledge.
         </div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
@@ -207,7 +207,7 @@
     <div class="cpdContainer">
         <div class="cpdInner">
             <div class="paddingCpd">
-                <h2 class="cpdTitle" >Get Your Manual Handling Certificate Online Today - Instant Downloand</h2>
+                <h2 class="cpdTitle" >Get Your Manual Handling Certificate Online Today - Instant DownLoad</h2>
                 <div class="cpdFlex">
                     <div class="cpdLeft">
                         <div class="cpdItems">
@@ -669,14 +669,14 @@
                 <div class="mh-steps-card" @mouseenter="activeStep = 3" :class="activeStep === 3 ? 'mh-steps-card--active' : ''">
                     <div class="mh-steps-number">03</div>
                     <h3>Submit Assessment</h3>
-                    <p>After finishing the theory, <strong>submit the assessment</strong> for review. Our instructors will evaluate your practical lifting technique via our secure video upload portal to ensure 100% compliance.</p>
+                    <p>After finishing the theory, <strong>submit the assessment</strong> for review. Our instructors will evaluate your practical lifting technique via our secure video that you will send to us 100% compliance.</p>
                 </div>
 
                 <!-- Step 4 -->
                 <div class="mh-steps-card" @mouseenter="activeStep = 4" :class="activeStep === 4 ? 'mh-steps-card--active' : ''">
                     <div class="mh-steps-number">04</div>
                     <h3>Download Certificate</h3>
-                    <p>Once approved, you can instantly <strong>Download your Manual Handling Certificate</strong>. Our certificates are fully compliant by the work requirments , and major employers across Ireland.</p>
+                    <p>Once approved, you can instantly <strong>Download your Manual Handling Certificate</strong>. Our certificates are fully compliant with the work requirements. , and major employers across Ireland.</p>
                 </div>
             </div>
 

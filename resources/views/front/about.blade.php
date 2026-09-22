@@ -32,16 +32,10 @@
                     <div class="credentials-flex-box">
                         <div class="cred-pill">
                             <span class="c-label">Legal Name</span>
-                            <span class="c-val">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                            <span class="c-val">This website is owned and operated by Andrei Girnet (Sole Trader).</span>
                         </div>
-                        <div class="cred-pill">
-                            <span class="c-label">Registration Office</span>
-                            <span class="c-val">CRO Ireland</span>
-                        </div>
-                        <div class="cred-pill">
-                            <span class="c-label">Company Number</span>
-                            <span class="c-val highlight-num">822301</span>
-                        </div>
+                
+                    
                         <div class="cred-pill">
                             <span class="c-label">Operational Scope</span>
                             <span class="c-val">Republic of Ireland</span>
@@ -60,10 +54,8 @@
                         Official administrative location for institutional paperwork, regulatory compliance notices, and management operations.
                     </p>
                     <div class="address-box-modern">
-                        <strong>PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</strong><br>
-                        51 Bracken Road,<br>
-                        Dublin, D18 CV48,<br>
-                        Ireland
+                        <strong>Andrei Girnet (Sole Trader).</strong><br>
+                        84A Church Street,<br> Dunstable, United Kingdom,<br> LU5 4HP
                     </div>
                 </div>
 
