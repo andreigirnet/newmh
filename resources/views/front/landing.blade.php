@@ -70,7 +70,7 @@
 
 
     <div class="title" data-aos="fade-up">
-        <div class="titleTextMain" >This website is owned and operated by Andrei Girnet (Sole Trader).</div>
+        <div class="titleTextMain" >Manual Handling Training For Employees. Manual Handling Ireland</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
