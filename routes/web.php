@@ -33,7 +33,6 @@ use Spatie\Sitemap\Tags\Url;
     Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
     ->name('users.send-reminder');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
-     Route::get('/compliance', function(){return view("front.compliance");})->name('front.compliance');
     Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');

@@ -101,7 +101,7 @@
         <a href="{{ route('home') }}" class="sticky-btn">Start now →</a>
     </div>
 
-    {{-- FAQ Schema Markup --}}
+{{-- FAQ Schema Markup --}}
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -112,7 +112,7 @@
               "name": "Is Manual Handling training a requirement in Ireland?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, under the Safety, Health and Welfare at Work (General Application) Regulations 2007, it is a requirement for Irish employers to provide manual handling training to staff at risk of injury."
+                "text": "Yes, promoting proper handling education is an important priority for organizations to ensure team members involved in physical tasks receive appropriate guidance and instruction."
               }
             },
             {
@@ -120,7 +120,7 @@
               "name": "How long is a Manual Handling certificate valid for in Ireland?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The industry standard and HSA best practice guideline is that a Manual Handling certificate remains valid for 3 years, though some high-risk sectors may require refreshers every 2 years."
+                "text": "The industry standard and recommended practice is that a Manual Handling completion certificate remains valid for 3 years, though some specialized environments may encourage refreshers every 2 years."
               }
             },
             {
@@ -128,7 +128,7 @@
               "name": "Can I complete my Manual Handling course fully online?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "To be HSA compliant in Ireland, training must include a practical assessment. We provide a blended learning solution: online theory followed by a practical demonstration assessed by a QQI Level 6 Instructor."
+                "text": "To meet high standards of comprehensive learning, training combines theoretical modules with practical demonstration awareness to ensure full professional readiness."
               }
             },
             {
@@ -136,7 +136,7 @@
               "name": "What is the TILE risk assessment framework?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TILE stands for Task, Individual, Load, and Environment. It is the core risk assessment tool taught in Ireland to help employees identify hazards before beginning any manual handling activity."
+                "text": "TILE stands for Task, Individual, Load, and Environment. It is a core evaluation tool taught to help employees identify and manage factors before beginning any physical handling activity."
               }
             },
             {
@@ -144,7 +144,7 @@
               "name": "Who is responsible for the cost of manual handling training?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Under the Safety, Health and Welfare at Work Act 2005, the employer is responsible for providing and paying for all health and safety training for their employees."
+                "text": "Organizations generally support professional development by providing and coordinating necessary training and educational resources for their team members."
               }
             },
             {
@@ -152,15 +152,15 @@
               "name": "Do office and retail workers require a Manual Handling certificate?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. If office or retail roles involve lifting boxes, moving equipment, or handling deliveries that could cause injury, the HSA requires a certified manual handling course."
+                "text": "Yes. If office or retail roles involve lifting boxes, moving equipment, or handling inventory, structured manual handling orientation helps ensure safe everyday practices."
               }
             },
             {
               "@type": "Question",
-              "name": "What are the penalties for non-compliance with HSA training?",
+              "name": "What are best practices regarding training standards?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Non-compliance can result in HSA prosecutions, heavy fines, and the potential voiding of Employer Liability Insurance in the event of an accident claim."
+                "text": "Maintaining up-to-date staff training ensures operational readiness, supports team well-being, and aligns with professional corporate standards."
               }
             },
             {
@@ -168,7 +168,7 @@
               "name": "Is there a maximum weight limit for lifting at work?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Irish law does not set a fixed weight limit. Instead, it requires a risk assessment based on the Task, Individual, Load, and Environment to determine safe lifting limits."
+                "text": "Guidelines emphasize evaluating each situation based on the Task, Individual, Load, and Environment rather than relying on a single fixed weight limit."
               }
             },
             {
@@ -176,15 +176,15 @@
               "name": "What is the difference between Manual Handling and People Handling?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Manual Handling applies to inanimate objects (boxes, tools). People Handling is a specialized healthcare course for moving patients and residents safely."
+                "text": "Manual Handling applies to inanimate objects, equipment, and general loads. People Handling is a specialized healthcare curriculum focused on patient and resident assistance."
               }
             },
             {
               "@type": "Question",
-              "name": "Are your Manual Handling certificates recognized by the HSA?",
+              "name": "How are Manual Handling certificates recognized?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. All certificates are issued following training by QQI Level 6 Certified Instructors, ensuring they are recognized by the HSA, insurers, and Irish employers."
+                "text": "All certificates are issued following comprehensive instruction guided by certified professionals, ensuring they are widely recognized by employers and industry standards."
               }
             }
           ]

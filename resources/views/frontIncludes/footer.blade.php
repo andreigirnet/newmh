@@ -28,7 +28,7 @@
             <ul class="footer-links">
                 <li><a href="{{ route('terms') }}">Terms and Conditions</a></li>
                 <li><a href="{{ route('front.cookies') }}">Cookies Policy</a></li>
-                <li><a href="{{ route('front.compliance') }}">Compliance Standards</a></li>
+        
                 <li><a href="{{ route('front.privacy') }}">Privacy Policy</a></li>
                 <li><a href="{{ route('front.refund') }}">Refund Policy</a></li>
             

@@ -24,7 +24,7 @@
     <script src="{{asset('js/cart.js')}}"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
 
     <style>
         [x-cloak] { display: none; }
@@ -88,14 +88,24 @@
 
     @include('layouts.shared/right-sidebar')
 
+    @section('script')
     @include('layouts.shared/footer-scripts')
+    
+    <script>
+        window.addEventListener('unhandledrejection', function(event) {
+            if (event.reason && event.reason.message && event.reason.message.includes('Element not found')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    @endsection
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
 
 {{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
 
 <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
-<script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
 <script>
     tinymce.init({
         selector: 'textarea',
@@ -111,7 +121,7 @@
         ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
         uploadcare_public_key: '532672c6d11822cd9a7e',
     });
-</script>
+</script> -->
 
 </body>
 
