@@ -103,92 +103,92 @@
 
 {{-- FAQ Schema Markup --}}
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is Manual Handling training a requirement in Ireland?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, promoting proper handling education is an important priority for organizations to ensure team members involved in physical tasks receive appropriate guidance and instruction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long is a Manual Handling certificate valid for in Ireland?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The industry standard and recommended practice is that a Manual Handling completion certificate remains valid for 3 years, though some specialized environments may encourage refreshers every 2 years."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I complete my Manual Handling course fully online?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "To meet high standards of comprehensive learning, training combines theoretical modules with practical demonstration awareness to ensure full professional readiness."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the TILE risk assessment framework?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "TILE stands for Task, Individual, Load, and Environment. It is a core evaluation tool taught to help employees identify and manage factors before beginning any physical handling activity."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Who is responsible for the cost of manual handling training?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Organizations generally support professional development by providing and coordinating necessary training and educational resources for their team members."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do office and retail workers require a Manual Handling certificate?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. If office or retail roles involve lifting boxes, moving equipment, or handling inventory, structured manual handling orientation helps ensure safe everyday practices."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are best practices regarding training standards?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Maintaining up-to-date staff training ensures operational readiness, supports team well-being, and aligns with professional corporate standards."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is there a maximum weight limit for lifting at work?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Guidelines emphasize evaluating each situation based on the Task, Individual, Load, and Environment rather than relying on a single fixed weight limit."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between Manual Handling and People Handling?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Manual Handling applies to inanimate objects, equipment, and general loads. People Handling is a specialized healthcare curriculum focused on patient and resident assistance."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How are Manual Handling certificates recognized?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All certificates are issued following comprehensive instruction guided by certified professionals, ensuring they are widely recognized by employers and industry standards."
-              }
-            }
-          ]
-        }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this manual handling course Theory + Practice",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after you purchase the course, you will be able to start it immediately and go through the theory slides. At the end, you will have to pass a theory test. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following proper manual handling techniques and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is a Manual Handling certificate valid for in Ireland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The manual handling certificate is proof that you have successfully completed the course with us and is valid for 3 years. You can check your manual handling certificate validity on our verification page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I complete my Manual Handling course fully online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our course is designed to be completed 100% online. The theory test and practical assessment can be completed from anywhere. For the practical assessment, you will need to send us a video via WhatsApp of yourself performing a lift while following proper manual handling techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When the certificate is issued?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The certificate is issued after you successfully submit the practical video assessment via WhatsApp. Once our instructor has reviewed and approved the video, your certificate will be issued."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the instructor review time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After you send us the video, please allow approximately 10 minutes for review during business hours. In rare cases, there may be a delay of a few hours during peak periods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expect around 25 minutes for manual handling theory part and theory test. And another 5 minutes to create the video and send it to us for review for manual handling practical part."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't pass the first time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't worry if you don't pass right away. You have unlimited attempts to retake and pass the test at no extra cost until you successfully complete the course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is issuing the certificate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The certificate is issued directly by our private company as official proof of course completion. It verifies that you have successfully completed our comprehensive training modules and met all necessary safety guidelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are this trainings accepted in ireland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our courses are designed to meet the Irish industry standards. We have got professionally trained instructors who are reviewing your practical skills."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I complete the course from my mobile phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in 5 different languages."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>
