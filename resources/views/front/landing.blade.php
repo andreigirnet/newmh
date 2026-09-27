@@ -130,7 +130,7 @@
 
                     <div class="info-item">
                         <span class="info-label">Certificate</span>
-                        <span class="info-value">Instant</span>
+                        <span class="info-value">Included</span>
                     </div>
                 </div>
 
