@@ -340,7 +340,7 @@
                     </div>
                     <h3 class="exclusive-title">REDUCE COSTS BY STUDYING DIGITALLY</h3>
                     <p class="exclusive-text">
-                        Our online <strong>Manual Handling Ireland training</strong> provides an affordable way to achieve your recognised <strong>Manual Handling Certification</strong>.
+                        Our online <strong>Manual Handling Ireland training</strong> provides an affordable way to achieve your private <strong>Manual Handling Certification</strong>.
                     </p>
                 </div>
             </div>
@@ -376,7 +376,7 @@
                     </div>
                     <h3 class="exclusive-title">AFFORDABLE TRAINING</h3>
                     <p class="exclusive-text">
-                        This online <strong>Manual Handling Course in Ireland</strong> offers a cost-effective way to gain a recognised <strong>Manual Handling Certification</strong>.
+                        This online <strong>Manual Handling Course in Ireland</strong> offers a cost-effective way to gain a private <strong>Manual Handling Certification</strong>.
                     </p>
                 </div>
             </div>
