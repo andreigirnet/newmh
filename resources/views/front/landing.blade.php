@@ -308,11 +308,7 @@
         </div>
     </section>
 
-    <div class="title">
-        <div class="titleText sizeTextMobile" >Get your Certificate</div>
-        <div class="borderTitle"></div>
-        <a href="{{route('register')}}"><div class="pulse-button" data-aos="fade-up">Pay / Register Here</div></a>
-    </div>
+
 
     <section class="exclusive-benefits-area">
         <div class="exclusive-benefits-grid">

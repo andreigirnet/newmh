@@ -23,10 +23,9 @@
             <h2>Work Compliance Standards Ireland: The Framework</h2>
             <p>In the Republic of Ireland, the safety of employees engaged in the movement of loads is governed by established workplace safety regulations. This legislation places a strict duty of care on employers to identify, evaluate, and mitigate risks associated with manual handling tasks.</p>
 
-            <p>Under standard safety regulations,  Manual Handling Online  training is recognized as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our  manual handling course Ireland  is meticulously updated for 2026, ensuring that every student receives the latest safety guidance and operational standards.</p>
+            <p>Under standard safety regulations,  Manual Handling Online  training is  as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our  manual handling course Ireland  is meticulously updated for 2026, ensuring that every student receives the latest safety guidance and operational standards.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Nationwide Recognition:</strong> Recognized by major insurers and workplace safety standards.</li>
                 <li><strong>Digital Verification:</strong> Every certificate includes a unique ID for instant safety audits.</li>
             </div>
         </article>

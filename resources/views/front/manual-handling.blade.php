@@ -101,7 +101,7 @@
                 <div class="mhc-cta-banner">
                     <div class="mhc-cta-content">
                         <h2>Get Your Manual Handling Certificate</h2>
-                        <p>Recognized by major insurers and workplace safety standards. Valid for 3 years from date of issue.</p>
+                    
                     </div>
                     <a href="{{route('register')}}" class="mhc-btn mhc-btn-white">Enroll in Course</a>
                 </div>
