@@ -258,7 +258,7 @@
         </div>
     </div>
 
-    <section class="imh-about-section" data-aos="fade-up">
+    <section class="imh-about-section mh-4" data-aos="fade-up">
         <div class="imh-container">
             <div class="imh-header">
                 <span class="imh-subtitle">Excellence in Safety</span>
