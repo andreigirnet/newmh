@@ -24,8 +24,8 @@
 
                 <div class="ct-info-grid">
                     <div class="ct-detail-text">
-                        <strong>Sole Trader</strong><br>
-                        This website is owned and operated by Andrei Girnet (Sole Trader).
+                        <strong>Business Website</strong><br>
+                        This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301 and operates as manualhandling-ireland.ie
                     </div>
 
                     <div class="ct-detail-text">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="ct-address-box">
-                        84A Church Street, Dunstable, United Kingdom, LU5 4HP
+                        51 Bracken Road, Dublin, D18 CV48 Ireland
                     </div>
                 </div>
 

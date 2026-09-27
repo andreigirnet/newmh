@@ -38,7 +38,6 @@ use Spatie\Sitemap\Tags\Url;
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
-    Route::get('/legal', function(){return view("front.legal");})->name('front.legal');
 
 Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
     Route::get('/manual-handling-cork', function(){return view("front.manual-handling-cork");})->name('front.manual.handling.cork');

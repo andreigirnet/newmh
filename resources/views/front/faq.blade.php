@@ -27,8 +27,8 @@
                         </button>
 
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Manual Handling Ireland certification is available for immediate download once you complete the course successfully.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After finishing the theory modules of your manual handling training online Ireland, you can schedule a short virtual practical assessment with a qualified assessor.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Manual Handling Ireland certification is available for immediate download once you complete the last part of the course practical video test, and it is approved by our instrutor.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After finishing the theory modules of your manual handling training online Ireland, you can send a video via whatsup, and our instructor will look over it.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total fee of €{{config('global.course_price')}} covers the full manual handling course Ireland, final assessment, and certification — no hidden charges.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is available 24/7 online, allowing you to complete your manual handling training Ireland at your own pace.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is fully compatible with smartphones, tablets, laptops, and desktop computers.</span></div>
@@ -43,20 +43,19 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Once you pass the theory exam, contact us via Online Chat to schedule your live practical session. This is included in your manual handling certification Ireland.
+                            Once you pass the theory exam, send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate.
                         </div>
                     </div>
 
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Accreditation & Standards</span>
+                            <span class="fq-question-text">Is this course accepted in Ireland?</span>
                             <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            This manual handling training in Ireland follows structured standards and meets work compliant safety requirements.
-                        </div>
+                        Our courses are designed to meet the <strong>Irish industry standards</strong>. We have got professionally trained instructors who are reviewing your practical skills.                        </div>
                     </div>
 
                     <div class="fq-accordion-item" x-data="{ open: false }">
@@ -103,7 +102,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Business accounts allow employers to assign manual handling training Ireland courses, monitor employee progress, and store certifications in one dashboard, ensuring a job compliant workforce.
+                            After you login, in your employer section, you will be able to manage your team. Add employees, assign courses, and view progress.
                         </div>
                     </div>
 
@@ -135,7 +134,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, all instructors hold recognized Manual Handling Ireland certification and deliver training in line with work compliant standards.
+                            Yes, all instructors hold recognized QQI Level 6 Manual Handling Instructor certification and deliver training in line with work compliant standards.
                         </div>
                     </div>
 
@@ -185,7 +184,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Theory content is available in multiple languages. The practical assessment is conducted in English.
+                            The content is available in multiple languages. 
                         </div>
                     </div>
 
@@ -207,7 +206,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Select your manual handling course Ireland, register online, and begin training immediately.
+                            Create an account or login, then complete the purchase, after you will be able to start the course in the courses section.
                         </div>
                     </div>
 
@@ -217,7 +216,8 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Add multiple licenses to your cart and assign courses to employees for complete operational standards.
+                            Add multiple courses to your cart and assign courses to employees. Discounts apply for larger orders.
+                            Follow this tutorial for clarification where it is shown step by step. <a href="https://www.youtube.com/watch?v=6QkYshqqdIo">Click Here</a>
                         </div>
                     </div>
 
@@ -247,7 +247,8 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, enter the learner’s name and email address during checkout for direct access.
+                            Yes, you can send the course to anyone in the <strong>Employers section</strong>. Add him as employee. After that in courses section you can send him the course.
+                            Follow this tutorial for clarification where it is shown step by step. <a href="https://www.youtube.com/watch?v=6QkYshqqdIo">Click Here</a>
                         </div>
                     </div>
 
@@ -269,7 +270,8 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Your account is activated immediately. You can start the manual handling training Ireland right away.
+                            Spot inside the navbar the <strong>My courses section</strong>, click it. There you will be able to start your course immediately.
+                            Follow this tutorial if you still have questions. <a href="https://www.youtube.com/watch?v=pvU81g1_IJM">Click Here</a>
                         </div>
                     </div>
 
@@ -289,7 +291,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            After passing the assessment, your Manual Handling Ireland certification is available in your dashboard for download or printing.
+                        After successfully passing the assessment, your Manual Handling Ireland Certificate will be available in your dashboard for download or printing. The certificate serves as proof of your successful course completion and the manual handling skills you have acquired through our training.
                         </div>
                     </div>
 
@@ -311,7 +313,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, you receive an official Manual Handling Ireland certification that meets job compliant requirements.
+                            Yes, you will receive a certificate. The certificate serves as proof of your successful course completion and the manual handling skills you have acquired through our training.
                         </div>
                     </div>
 
@@ -321,7 +323,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, the theory exam is fully online. The practical assessment can be done remotely via video call.
+                            Yes, the theory and practical exam is fully online. For theory you have a quiz at the end of the module. For practical test you have to send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate. 
                         </div>
                     </div>
 
@@ -331,7 +333,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Your Manual Handling Ireland certification is valid for 3 years from the date of issue.
+                            Your Certificate is valid for 3 years from the date of issue.
                         </div>
                     </div>
 

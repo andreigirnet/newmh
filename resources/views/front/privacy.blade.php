@@ -209,18 +209,31 @@
                         <h2 style="margin-top: 0;">Data Controller Contact:</h2>
                         <p class="privacy-text" style="margin-bottom: 0;">
                             <strong>{{ config('global.business_name') }}</strong><br>
-                            Support Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a>
+                            Support Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a> <br>
+                            {{ config('global.business_address') }}
                         </p>
                     </div>
 
                     <h2>Information We Collect:</h2>
                     <p class="privacy-text">
-                        We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, or contacting support. This includes:
+                        We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, submitting practical assessments, or contacting support. This includes:
                     </p>
                     <ul class="privacy-list">
                         <li><strong>Identity Data:</strong> Full name and contact credentials.</li>
-                        <li><strong>Contact Information:</strong> Email address and telephone number.</li>
+                        <li><strong>Contact Information:</strong> Email address and telephone/WhatsApp number.</li>
+                        <li><strong>Assessment Data:</strong> Practical video tests submitted via WhatsApp for grading and course completion.</li>
                         <li><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</li>
+                    </ul>
+
+                    <h2>WhatsApp Assessment Videos (Practical Tests):</h2>
+                    <p class="privacy-text">
+                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. 
+                    </p>
+                    <ul class="privacy-list">
+                        <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
+                        <li><strong>Who Accesses Them:</strong> Access is strictly restricted to our certified professional instructors and essential administrative personnel evaluating your test.</li>
+                        <li><strong>Data Retention:</strong> Assessment videos are retained only for as long as necessary to complete your grading, verify certification compliance, and maintain educational records, after which they are securely deleted from our active devices and communication archives.</li>
+                        <li><strong>Deletion Requests:</strong> If you wish to have your submitted assessment video deleted prior to standard retention cycles (note that certification status may be impacted if certification has not been awarded), you may request removal using the data removal form below or by contacting our support team.</li>
                     </ul>
 
                     <h2>How We Use Your Information:</h2>
@@ -228,25 +241,26 @@
                         The information we collect is utilized for lawful business and educational purposes, including:
                     </p>
                     <ul class="privacy-list">
-                        <li>Processing your course registration and issuing certificates of completion.</li>
-                        <li>Communicating updates, customer support replies, and operational announcements.</li>
-                        <li>Fulfilling legal, accounting, and regulatory tax obligations.</li>
+                        <li>Evaluating practical video assessments and issuing certificates of completion.</li>
+                        <li>Processing your course registration and communicating updates.</li>
+                        <li>Responding to customer support replies and operational announcements.</li>
+                        <li>Fulfilling accounting, compliance, and regulatory tax obligations.</li>
                         <li>Improving website performance and advertising relevance.</li>
                     </ul>
 
                     <h2>Data Sharing and Disclosure:</h2>
                     <p class="privacy-text">
-                        We do not sell, trade, or rent your personal identification information to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential.
+                        We do not sell, trade, or rent your personal identification information or assessment media to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential.
                     </p>
 
                     <h2>Your Data Protection Rights:</h2>
                     <p class="privacy-text">
-                        Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information stored on our systems. You can submit a request below.
+                        Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information and assessment records stored on our systems. You can submit a request below.
                     </p>
 
                     <h2>Policy Updates:</h2>
                     <p class="privacy-text">
-                        We may update this Privacy Policy from time to time to reflect operational changes or legal requirements. Any modifications will be posted directly on this page with a revised update date.
+                        We may update this Privacy Policy from time to time to reflect operational changes or requirements. Any modifications will be posted directly on this page with a revised update date.
                     </p>
 
                 </div>
@@ -255,7 +269,7 @@
                 <div class="privacy-section" style="margin-bottom: 0;">
                     <h2>Request Data Removal (Right to be Forgotten)</h2>
                     <p class="privacy-text">
-                        If you wish to request the deletion or removal of your personal data from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations.
+                        If you wish to request the deletion or removal of your personal data and assessment records from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations.
                     </p>
 
                     <div class="privacy-card">
@@ -273,7 +287,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="reason" class="form-label">Reason for Request / Specific Data to Remove</label>
+                                <label for="reason" class="form-label">Reason for Request / Specific Data to Remove (e.g., WhatsApp Assessment Video)</label>
                                 <textarea id="reason" name="reason" class="form-textarea" placeholder="Please specify the details or context regarding your data removal request...">{{ old('reason') }}</textarea>
                             </div>
 

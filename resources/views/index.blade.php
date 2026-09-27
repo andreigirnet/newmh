@@ -72,7 +72,7 @@
             🍀
         </div>
         <div class="trustBadge__text">
-            <div class="trustBadge__eyebrow">Top rated</div>
+            <div class="trustBadge__eyebrow">Safety course</div>
             <div class="trustBadge__label">Manual Handling Ireland</div>
         </div>
     </div>
@@ -166,7 +166,7 @@
                 <span class="gradient-text">{{env('APP_NAME')}}</span>
             </h2>
             <p class="brand-description">
-                Ireland’s <strong>Leader</strong> in accessible Online Manual Handling Training. We offer compliant online training and exceptional service to a global customers via our seamless digital platform. <strong>Best Price</strong> on market guarantee
+                Ireland’s <strong>Safety Training Provider</strong> in accessible Online Manual Handling Training. We offer compliant online training and exceptional service to a global customers via our seamless digital platform. <strong>Best Price</strong> on market guarantee
             </p>
         </div>
     </div>

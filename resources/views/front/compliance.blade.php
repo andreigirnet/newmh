@@ -209,7 +209,7 @@
                     </p>
                     <div class="compliance-grid">
                         <div class="compliance-grid-item">
-                            <div class="label">Legal Business Name</div>
+                            <div class="label"> Business Name</div>
                             <p class="value">{{ config('global.business_name') }}</p>
                         </div>
                         <div class="compliance-grid-item">
@@ -231,7 +231,7 @@
                 <section class="compliance-section" style="margin-bottom: 0;">
                     <h2>Consumer Policies & Disclaimers</h2>
                     <p class="compliance-text">
-                        For comprehensive information regarding user agreements, payment safety, and our customer satisfaction guarantees, please review our core legal documents:
+                        For comprehensive information regarding user agreements, payment safety, and our customer satisfaction guarantees, please review our core documents:
                     </p>
                     <div class="compliance-links">
                         <a href="/terms">Terms of Service</a>

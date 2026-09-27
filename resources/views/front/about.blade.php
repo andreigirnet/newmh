@@ -7,7 +7,7 @@
             <!-- Hero Banner Section -->
             <div class="enterprise-hero">
                 <div class="hero-badge">
-                    <span class="pulse-dot"></span> Authorized Corporate Entity
+                    <span class="pulse-dot"></span> Corporate Entity
                 </div>
                 <h1 class="enterprise-main-title">About Our Organization</h1>
                 <p class="enterprise-lead-text">
@@ -18,7 +18,7 @@
             <!-- Bento Grid Layout -->
             <div class="enterprise-bento-grid">
 
-                <!-- Card 1: Legal Entity & Registration (Featured Wide Card) -->
+            
                 <div class="bento-card span-two corporate-profile-card">
                     <div class="card-top-row">
                         <div class="icon-badge">🏛️</div>
@@ -26,13 +26,13 @@
                     </div>
                     <h3 class="bento-title">Official Identity & Statutory Credentials</h3>
                     <p class="bento-desc">
-                        Our digital instruction infrastructure is legally owned, operated, and maintained by our primary corporate entity, ensuring absolute transparency for institutional clients, automated safety reviewers, and participants nationwide.
+                        Our digital instruction infrastructure is owned, operated, and maintained by our primary corporate entity, ensuring absolute transparency for institutional clients, automated safety reviewers, and participants nationwide. {{ config('global.business_name') }} operates as manualhandling-ireland.ie
                     </p>
 
                     <div class="credentials-flex-box">
                         <div class="cred-pill">
-                            <span class="c-label">Legal Name</span>
-                            <span class="c-val">This website is owned and operated by Andrei Girnet (Sole Trader).</span>
+                            <span class="c-label">Business Name</span>
+                            <span class="c-val">This website is owned by {{ config('global.business_name') }} 822301</span>
                         </div>
                 
                     
@@ -54,8 +54,8 @@
                         Official administrative location for institutional paperwork, regulatory compliance notices, and management operations.
                     </p>
                     <div class="address-box-modern">
-                        <strong>Andrei Girnet (Sole Trader).</strong><br>
-                        84A Church Street,<br> Dunstable, United Kingdom,<br> LU5 4HP
+                        <strong>PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</strong><br>
+                        {{ config('global.business_address') }}
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@
                         <div class="step-card-item">
                             <div class="step-number-tag">01</div>
                             <h4>Secure Enrollment</h4>
-                            <p>Register your account and checkout securely to instantly activate automated portal access.</p>
+                            <p>Register or login to your account and checkout securely to instantly start your manual handling course</p>
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">02</div>
@@ -110,12 +110,12 @@
                         <div class="step-card-item">
                             <div class="step-number-tag">03</div>
                             <h4>Interactive Test</h4>
-                            <p>Pass integrated multi-choice evaluations designed to verify practical safety comprehension.</p>
+                            <p>Pass integrated multi-choice evaluations designed to verify your theoretical and practical skills.</p>
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">04</div>
-                            <h4>Instant Certificate</h4>
-                            <p>Download your verified digital certificate of completion immediately upon passing.</p>
+                            <h4>Get your Certificate</h4>
+                            <p>After you send the practical test to us via whatsup, our instructor approves it, and emmits a certificate to you</p>
                         </div>
                     </div>
                 </div>

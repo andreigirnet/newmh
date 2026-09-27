@@ -1,91 +1,232 @@
+
 @extends('front.app')
 
 @section('content')
     <div class="mh-leadership-page">
+
         <header class="mh-hero-corporate">
             <div class="mh-container">
                 <div class="mh-hero-content">
-                    <span class="mh-top-badge">Dublin's #1 Safety Provider</span>
+
+                    <span class="mh-top-badge">Online Manual Handling Training</span>
+
                     <h1>Manual Handling <br>Training Dublin</h1>
+
                     <p class="mh-lead-text">
-                        The premium choice for **Manual Handling Compliance Dublin**.
-                        Fast-track your **Manual Handling Ireland certification** with HSA-compliant training for individuals and teams across the capital.
+                        Convenient <strong>Manual Handling Training Dublin</strong>
+                        for individuals and teams. Complete your
+                        <strong>Manual Handling Ireland</strong> course online,
+                        study at your own pace, and complete the required
+                        theory and practical assessments.
                     </p>
+
                     <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Online Now — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Dublin Team Training</a>
+                        <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                            Start Online Now — €{{ config('global.course_price') }}
+                        </a>
+
+                        <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                            Dublin Team Training
+                        </a>
                     </div>
+
                 </div>
             </div>
         </header>
 
+
         <article class="mh-container-content">
-            <h2>Manual Handling Compliance Dublin: The Legal Standard</h2>
-            <p>In the fast-paced Dublin commercial sector, **Manual Handling Online** training has become the essential standard for legal adherence. Under the **Safety, Health and Welfare at Work Act 2005**, Dublin-based employers are strictly mandated to provide appropriate safety training to any staff involved in moving loads.</p>
 
-            <p>Whether you are operating in warehousing, healthcare, or retail, the **General Application Regulations 2007** apply to your workplace. Our **Manual Handling Course Dublin** is designed to satisfy these Irish Health and Safety Authority (HSA) requirements entirely through a digital format, ensuring your staff receives the highest quality training without the need for classroom travel.</p>
+            <h2>Manual Handling Training Dublin: What the Course Covers</h2>
 
-            <div class="mh-feature-list">
-                <li><strong>Nationwide Recognition:</strong> Our Dublin-issued certificates are valid across Ireland.</li>
-                <li><strong>HSA Audit Ready:</strong> Instant digital verification for workplace safety inspections.</li>
-            </div>
+            <p>
+                In Dublin workplaces, manual handling activities can involve
+                lifting, carrying, pushing, pulling, lowering, and moving loads.
+                Appropriate training can help workers understand the risks
+                associated with these activities and learn safer handling techniques.
+            </p>
+
+            <p>
+                Our <strong>Manual Handling Online</strong> course provides
+                training that can be completed remotely. The course covers
+                important manual handling principles, safe lifting techniques,
+                risk awareness, and practical considerations for handling loads.
+            </p>
+
+            <p>
+                The <strong>Manual Handling Course Dublin</strong> can be completed
+                online without travelling to a physical training location. After
+                completing the theory and practical assessment requirements,
+                participants can access their certificate through their dashboard.
+            </p>
+
+            <ul class="mh-feature-list">
+                <li>
+                    <strong>Online Access:</strong>
+                    Complete the training remotely from Dublin or anywhere else.
+                </li>
+
+                <li>
+                    <strong>Digital Certificate:</strong>
+                    Download your certificate after successfully completing the
+                    required assessments.
+                </li>
+
+                <li>
+                    <strong>Certificate Verification:</strong>
+                    Certificates include a unique verification ID that can be
+                    checked through our verification system.
+                </li>
+            </ul>
+
         </article>
+
 
         <section class="mh-pillar-section">
             <div class="mh-container">
+
                 <div class="mh-pillar-grid">
+
                     <div class="pillar-card">
                         <div class="pillar-icon">📍</div>
+
                         <h4>No Dublin Traffic</h4>
-                        <p>Avoid the commute to training centers. Complete your **Manual Handling Course Dublin** 100% online from any location.</p>
+
+                        <p>
+                            Avoid travelling to a training centre. Complete your
+                            <strong>Manual Handling Course Dublin</strong> online
+                            from a convenient location.
+                        </p>
                     </div>
+
+
                     <div class="pillar-card">
                         <div class="pillar-icon">⏱️</div>
-                        <h4>45-Min Certification</h4>
-                        <p>Get certified in under an hour. Our streamlined platform is the fastest path to **Manual Handling Ireland certification**.</p>
+
+                        <h4>Flexible Learning</h4>
+
+                        <p>
+                            Study the course material at your own pace and complete
+                            the required assessments when you are ready.
+                        </p>
                     </div>
+
+
                     <div class="pillar-card">
                         <div class="pillar-icon">🏗️</div>
-                        <h4>Sector Specific</h4>
-                        <p>Tailored modules for Dublin's construction, retail, and healthcare sectors to ensure **manual handling compliance Ireland**.</p>
+
+                        <h4>Practical Safety Skills</h4>
+
+                        <p>
+                            Learn practical principles for safer manual handling,
+                            including lifting techniques, risk awareness, and
+                            load assessment. Asses your skills with our online program.
+                        </p>
                     </div>
+
+
                     <div class="pillar-card">
                         <div class="pillar-icon">💳</div>
-                        <h4>Best Value</h4>
-                        <p>At just €{{ config('global.course_price') }}, we offer the most competitive rates for professional **manual handling training online Ireland**.</p>
+
+                        <h4>Affordable Training</h4>
+
+                        <p>
+                            At €{{ config('global.course_price') }}, our
+                            <strong>manual handling training online Ireland</strong>
+                            course provides a convenient way to complete your
+                            training remotely.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
+
         <article class="mh-container-content">
-            <h2>Protecting the Dublin Workforce: Spinal Biomechanics</h2>
-            <p>A core element of our **Manual Handling Training Dublin** is the scientific study of the spine. The human back is highly vulnerable to compression forces when lifting loads away from the center of gravity. Incorrect lifting techniques can lead to long-term Musculoskeletal Disorders (MSDs), which account for over 30% of workplace injuries in the Dublin region.</p>
 
+            <h2>Learning Safe Manual Handling Techniques</h2>
 
+            <p>
+                An important part of our <strong>Manual Handling Training Dublin</strong>
+                course is understanding how the body is positioned when lifting,
+                carrying, pushing, pulling, or moving loads. Using appropriate
+                techniques can help reduce unnecessary strain and the risk of
+                manual handling injuries.
+            </p>
 
-            <p>Our training focuses on the **8 Principles of Safe Lifting**, including maintaining a neutral spine and utilizing the powerful muscles of the legs. By visualizing these biomechanical forces through our HD video modules, learners gain a practical understanding of how to protect their health while meeting **manual handling compliance Dublin** standards.</p>
+            <p>
+                The training covers practical principles such as maintaining
+                appropriate posture, keeping loads close to the body where suitable,
+                assessing the load before lifting, and considering the surrounding
+                environment.
+            </p>
 
             <h3>Dynamic Risk Assessment (TILE)</h3>
-            <p>Before any physical movement occurs, we train Dublin workers to perform a TILE risk assessment:</p>
+
+            <p>
+                Before performing a manual handling task, workers can consider
+                the following factors:
+            </p>
 
             <ul class="mh-feature-list">
-                <li><strong>Task:</strong> Analyzing if the lift involves twisting or stooping.</li>
-                <li><strong>Individual:</strong> Assessing the worker's physical capacity and training history.</li>
-                <li><strong>Load:</strong> Identifying if the object is bulky, sharp, or unstable.</li>
-                <li><strong>Environment:</strong> Checking for slippery floors or restrictive spaces.</li>
+
+                <li>
+                    <strong>Task:</strong>
+                    Consider the type of movement required, including lifting,
+                    carrying, twisting, pushing, or pulling.
+                </li>
+
+                <li>
+                    <strong>Individual:</strong>
+                    Consider the person's ability, experience, and any relevant
+                    limitations before performing the task.
+                </li>
+
+                <li>
+                    <strong>Load:</strong>
+                    Consider the weight, size, shape, stability, and other
+                    characteristics of the load.
+                </li>
+
+                <li>
+                    <strong>Environment:</strong>
+                    Check the surrounding area for obstacles, uneven or slippery
+                    surfaces, restricted spaces, and other potential hazards.
+                </li>
+
             </ul>
+
         </article>
+
 
         <article class="mh-container-content">
-            <h2>Why 50,000+ Students Chose Our Online Training</h2>
-            <p>For Dublin HR managers and business owners, the logistics of traditional training are a nightmare. Our **Manual Handling Online** platform removes the cost of travel, venue hire, and lost productivity. With 24/7 access on smartphones and tablets, your team can get certified whenever it suits the work schedule.</p>
 
-            <p>Upon completion, your **Manual Handling Ireland certification** is available for instant download as a PDF. Join the thousands of Dublin professionals who have moved to a faster, safer, and more compliant training model.</p>
+            <h2>Convenient Online Manual Handling Training</h2>
+
+            <p>
+                For Dublin workers, HR managers, and business owners, online
+                <strong>Manual Handling Online</strong> training provides a
+                convenient alternative to travelling to a physical training
+                location. The course can be accessed using a computer, smartphone,
+                or tablet.
+            </p>
+
+            <p> After completing the theory assessment, you will need to record a video of yourself performing a manual handling lift and send it to us via WhatsApp {{ config('global.phone') }} for review. Once our instructor has reviewed and approved your practical assessment, your <strong>Manual Handling Ireland certificate</strong> will be available for download as a PDF through your dashboard. </p>
+
+            <p>
+                The certificate provides evidence that you have completed the
+                training course and the required assessment process through our
+                platform.
+            </p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>
+                <a href="{{ route('register') }}" class="btn-gold">
+                    Enrol Today — €{{ config('global.course_price') }}
+                </a>
             </div>
+
         </article>
+
     </div>
 @endsection

@@ -42,10 +42,9 @@
                             <h6 class="fs-14">Training Provider</h6>
                             <address>
 
-                                <b>Manual Hanlding Ireland</b><br>
-                                13 Kinahan StreetArbour <br>
-                                HillStoneybatter Dublin<br>
-                                Email: info@manualhandlingireland.com
+                                <b> PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</b><br>
+                                51 Bracken Road, <br> Dublin, <br> D18 CV48 Ireland
+                                Email: info@manualhandlingireland.ie
                             </address>
                         </div> </div>
                     <div class="row">
@@ -68,8 +67,8 @@
                                             Full Theory & Practical Online Session
                                         </td>
                                         <td>1</td>
-                                        <td>€25.55</td>
-                                        <td class="text-end">€25.55</td>
+                                        <td>€30</td>
+                                        <td class="text-end">€30</td>
                                     </tr>
                                     </tbody>
                                 </table>

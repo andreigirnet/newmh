@@ -105,6 +105,7 @@
                     <label class="form-check-label text-secondary ms-1" style="font-size: 12px;">
                         By submitting this form, you acknowledge our
                         <a href="{{ route('front.privacy') }}">Privacy Policy</a>.
+                         Also please review our <a href="{{ route('front.refund') }}">Refund policy</a>
                     </label>
                 <button type="submit" form="payment-form" id="submit" class="pay-button">
                     Complete Payment

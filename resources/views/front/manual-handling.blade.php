@@ -17,7 +17,7 @@
             </div>
         </header>
 
-        <!-- SEO Content Section: Legal & Compliance -->
+        <!-- SEO Content Section -->
         <section id="compliance" class="mhc-section">
             <div class="mhc-container-sm">
                 <div class="mhc-section-tag">Regulatory Standards</div>

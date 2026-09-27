@@ -8,8 +8,8 @@
                     <span class="mh-top-badge">Work Compliant Safety Standards</span>
                     <h1>Manual Handling <br>Ireland</h1>
                     <p class="mh-lead-text">
-                        The definitive resource for **work compliance standards in Ireland**.
-                        Over 349,500 professionals have secured their **Manual Handling Ireland certification** through our job compliant digital ecosystem.
+                        The definitive resource for  work compliance standards in Ireland .
+                        Over 349,500 professionals have secured their  Manual Handling Ireland certification  through our job compliant digital ecosystem.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Online Course — €{{ config('global.course_price') }}</a>
@@ -20,10 +20,10 @@
         </header>
 
         <article class="mh-container-content">
-            <h2>Work Compliance Standards Ireland: The Legal Framework</h2>
+            <h2>Work Compliance Standards Ireland: The Framework</h2>
             <p>In the Republic of Ireland, the safety of employees engaged in the movement of loads is governed by established workplace safety regulations. This legislation places a strict duty of care on employers to identify, evaluate, and mitigate risks associated with manual handling tasks.</p>
 
-            <p>Under standard safety regulations, **Manual Handling Online** training is recognized as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our **manual handling course Ireland** is meticulously updated for 2026, ensuring that every student receives the latest safety guidance and operational standards.</p>
+            <p>Under standard safety regulations,  Manual Handling Online  training is recognized as a valid method for providing employees with the theoretical and biomechanical knowledge required to perform their duties safely. Our  manual handling course Ireland  is meticulously updated for 2026, ensuring that every student receives the latest safety guidance and operational standards.</p>
 
             <div class="mh-feature-list">
                 <li><strong>Nationwide Recognition:</strong> Recognized by major insurers and workplace safety standards.</li>
@@ -37,7 +37,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">🏛️</div>
                         <h4>Fully Compliant</h4>
-                        <p>Our curriculum meets every standard set out by workplace regulators for **manual handling training Ireland**.</p>
+                        <p>Our curriculum meets every standard set out by workplace regulators for  manual handling training Ireland .</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">📈</div>
@@ -52,7 +52,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">💻</div>
                         <h4>24/7 Availability</h4>
-                        <p>The most flexible **manual handling training online Ireland** platform, accessible from any location.</p>
+                        <p>The most flexible  manual handling training online Ireland  platform, accessible from any location.</p>
                     </div>
                 </div>
             </div>
@@ -60,11 +60,11 @@
 
         <article class="mh-container-content">
             <h2>The Science of Safety: Biomechanics of the Spine</h2>
-            <p>A professional **manual handling course Ireland** must prioritize the anatomical safety of the individual. The human spine, specifically the intervertebral discs, acts as a complex shock-absorption system. When a load is lifted away from the center of gravity, the compression forces on the lumbar vertebrae (L5/S1) increase exponentially, often leading to acute or chronic injury.</p>
+            <p>A professional  manual handling course Ireland  must prioritize the anatomical safety of the individual. The human spine, specifically the intervertebral discs, acts as a complex shock-absorption system. When a load is lifted away from the center of gravity, the compression forces on the lumbar vertebrae (L5/S1) increase exponentially, often leading to acute or chronic injury.</p>
 
             https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
 
-            <p>Our training focuses on the **8 Principles of Safe Lifting**. We utilize high-fidelity video demonstrations to teach students how to maintain a neutral spine, secure a firm base of support, and utilize the powerful muscles of the legs to drive the lift. This educational rigor is essential for achieving true **work compliance**.</p>
+            <p>Our training focuses on the  8 Principles of Safe Lifting . We utilize high-fidelity video demonstrations to teach students how to maintain a neutral spine, secure a firm base of support, and utilize the powerful muscles of the legs to drive the lift. This educational rigor is essential for achieving true  work compliance .</p>
 
             <h3>Dynamic Risk Assessment (TILE)</h3>
             <p>Before any physical task is performed, we train workers to apply the TILE assessment methodology. This is the industry-standard tool for identifying hazards in real-time:</p>
@@ -79,9 +79,9 @@
 
         <article class="mh-container-content">
             <h2>Why Join 50,000+ Students Certified Online?</h2>
-            <p>For HR and Safety Managers across Ireland, the logistics of classroom training represent a significant operational hurdle. Our **Manual Handling Online** platform eliminates the need for travel, venue hire, and scheduling conflicts. By providing 24/7 access on any device, we ensure that your team gets certified on their terms, without compromising on quality or legal standing.</p>
+            <p>For HR and Safety Managers across Ireland, the logistics of classroom training represent a significant operational hurdle. Our  Manual Handling Online  platform eliminates the need for travel, venue hire, and scheduling conflicts. By providing 24/7 access on any device, we ensure that your team gets certified on their terms, without compromising on quality or standing.</p>
 
-            <p>Upon completion of the theory and assessment, your **Manual Handling Ireland certification** is instantly generated for download as a PDF. Join the modern workforce and move toward a safer, more efficient, and fully compliant future.</p>
+            <p>Upon completion of the theory and assessment, your  Manual Handling Ireland certification  is instantly generated for download as a PDF. Join the modern workforce and move toward a safer, more efficient, and fully compliant future.</p>
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="{{route('register')}}" class="btn-gold">Start Your Certification — €{{ config('global.course_price') }}</a>

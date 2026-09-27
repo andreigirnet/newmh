@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset("css/admin/adminMain.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/adminProfile.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/homePageAdmin.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/landing.css")}}">
+    <!-- <link rel="stylesheet" href="{{asset("css/front/landing.css")}}"> -->
     <link rel="stylesheet" href="{{asset("css/admin/consulting.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/employeeRegister.css")}}">
     <link rel="stylesheet" href="{{asset("css/admin/dashboard.css")}}">

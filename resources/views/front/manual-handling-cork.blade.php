@@ -1,105 +1,281 @@
 @extends('front.app')
 
-@section('content')
-    <div class="mh-leadership-page">
-        <header class="mh-hero-corporate">
-            <div class="mh-container">
-                <div class="mh-hero-content">
-                    <span class="mh-top-badge">Cork’s Leading Safety Training</span>
-                    <h1>Manual Handling <br>Training Cork</h1>
-                    <p class="mh-lead-text">
-                        Upgrade your workplace safety with trusted **Manual Handling Certification Cork**.
-                        Complete your **manual handling course online in Ireland** quickly and stay fully compliant with Irish workplace regulations.
-                        Designed for busy professionals, our platform delivers fast, flexible, and fully job compliant training across Cork and beyond.
+@section('content') <div class="mh-leadership-page">
+
+    <header class="mh-hero-corporate">
+        <div class="mh-container">
+            <div class="mh-hero-content">
+
+                <span class="mh-top-badge">Cork Online Manual Handling Training</span>
+
+                <h1>Manual Handling <br>Training Cork</h1>
+
+                <p class="mh-lead-text">
+                    Complete your <strong>Manual Handling Training Cork</strong>
+                    online with a flexible course designed for individuals,
+                    workers, and businesses. Learn practical manual handling
+                    techniques and complete the required theory and practical
+                    assessments without travelling to a physical training
+                    location.
+                </p>
+
+                <div class="mh-btn-row">
+                    <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                        Start Course — €{{ config('global.course_price') }}
+                    </a>
+
+                    <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                        Corporate Training Cork
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <article class="mh-container-content">
+
+        <h2>Manual Handling Training for Cork Workplaces</h2>
+
+        <p>
+            Cork has a wide range of workplaces, including logistics,
+            healthcare, construction, hospitality, retail, manufacturing,
+            and other service environments. Many roles can involve lifting,
+            carrying, pushing, pulling, or moving loads as part of everyday
+            work.
+        </p>
+
+        <p>
+            <strong>Manual Handling Training</strong> can help learners
+            understand the potential risks associated with these activities
+            and learn practical principles for safer handling.
+        </p>
+
+        <p>
+            Our <strong>Manual Handling Course Cork</strong> can be
+            completed online, allowing individuals and businesses to access
+            the theory training remotely and study at a convenient time.
+        </p>
+
+        <ul class="mh-feature-list">
+
+            <li>
+                <strong>Online Access:</strong>
+                Complete the theory component using a computer, tablet,
+                or smartphone from Cork or surrounding areas.
+            </li>
+
+            <li>
+                <strong>Practical Assessment:</strong>
+                Record a video of yourself performing a manual handling
+                lift and send it via WhatsApp for instructor review.
+            </li>
+
+            <li>
+                <strong>Digital Certificate:</strong>
+                Receive your certificate in your dashboard after successfully
+                completing the required assessments.
+            </li>
+
+        </ul>
+
+    </article>
+
+
+    <section class="mh-pillar-section">
+
+        <div class="mh-container">
+
+            <div class="mh-pillar-grid">
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Train Anywhere in Cork</h4>
+
+                    <p>
+                        Complete your <strong>manual handling training
+                        Cork</strong> from home, work, or another convenient
+                        location.
                     </p>
-                    <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Corporate Training Cork</a>
-                    </div>
+
                 </div>
-            </div>
-        </header>
 
-        <article class="mh-container-content">
-            <h2>Manual Handling Certification Cork: Stay Compliant</h2>
-            <p>Across Cork’s growing industries, **manual handling training online** is now a key requirement for workplace safety. According to national safety regulations, employers must ensure that staff involved in lifting or carrying tasks receive proper instruction.</p>
 
-            <p>Standard workplace guidelines further reinforce these obligations across sectors like logistics, healthcare, construction, and hospitality. Our **Manual Handling Course Cork** is designed to fully meet standard safety benchmarks while allowing participants to complete training remotely at their convenience.</p>
+                <div class="pillar-card">
 
-            <p>By choosing online certification, Cork businesses reduce downtime, eliminate travel costs, and ensure consistent training standards across teams. Whether you are an individual worker or managing a large workforce, our system simplifies compliance without sacrificing quality.</p>
+                    <div class="pillar-icon"></div>
 
-            <div class="mh-feature-list">
-                <li><strong>Recognised Nationwide:</strong> Certificates accepted throughout Ireland.</li>
-                <li><strong>Inspection Ready:</strong> Digital proof available instantly for compliance checks.</li>
-                <li><strong>Flexible Access:</strong> Train anytime on mobile, tablet, or desktop.</li>
-            </div>
-        </article>
+                    <h4>Flexible Learning</h4>
 
-        <section class="mh-pillar-section">
-            <div class="mh-container">
-                <div class="mh-pillar-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon">📍</div>
-                        <h4>Train Anywhere in Cork</h4>
-                        <p>No need to travel. Complete your **manual handling training Cork** from home, office, or job site anywhere in the county.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">⏱️</div>
-                        <h4>Quick Certification</h4>
-                        <p>Finish your course in under an hour and receive your **manual handling certificate Ireland** immediately after passing.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">🏗️</div>
-                        <h4>Industry Focused</h4>
-                        <p>Content adapted for Cork’s key sectors including construction, warehousing, healthcare, and retail environments.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">💳</div>
-                        <h4>Affordable Training</h4>
-                        <p>Professional certification at just €{{ config('global.course_price') }}, offering excellent value for **manual handling courses online Ireland**.</p>
-                    </div>
+                    <p>
+                        Study the course material online at your own pace
+                        and complete the required theory assessment through
+                        the training platform.
+                    </p>
+
                 </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Industry Relevant</h4>
+
+                    <p>
+                        The course covers manual handling principles that
+                        can be relevant to construction, warehousing,
+                        healthcare, retail, hospitality, and other workplaces.
+                    </p>
+
+                </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Affordable Training</h4>
+
+                    <p>
+                        Complete the course for €{{ config('global.course_price') }}
+                        with no additional training charges.
+                    </p>
+
+                </div>
+
             </div>
-        </section>
+        </div>
 
-        <article class="mh-container-content">
-            <h2>Understanding Safe Lifting Techniques</h2>
-            <p>Our **Manual Handling Training Cork** places strong emphasis on protecting the spine during lifting tasks. Poor handling techniques can lead to serious injuries, particularly affecting the lower back, shoulders, and joints.</p>
+    </section>
 
-            <p>Workplace injuries related to incorrect manual handling remain one of the most common causes of lost productivity in Ireland. That is why our course focuses not only on theory but also on practical, real-world application of safe lifting techniques.</p>
 
-            <p>Through clear demonstrations, learners understand how to apply correct posture, reduce strain, and handle loads safely. The course covers essential lifting practices that support long-term health and ensure **work compliance in Ireland**.</p>
+    <article class="mh-container-content">
 
-            <p>We also highlight how small adjustments—such as keeping loads close to the body or avoiding twisting movements—can significantly reduce injury risk. These techniques are simple but highly effective when applied consistently in daily work routines.</p>
+        <h2>Understanding Safe Lifting Techniques</h2>
 
-            <h3>Using the TILE Risk Assessment</h3>
-            <p>Before lifting any object, workers are trained to evaluate risks using the TILE method, a proven approach used across Irish workplaces:</p>
+        <p>
+            Manual handling activities can place physical demands on the
+            body, particularly when tasks involve awkward postures,
+            repetitive movements, difficult loads, or restricted working
+            areas.
+        </p>
 
-            <ul class="mh-feature-list">
-                <li><strong>Task:</strong> Consider the type of movement required and any awkward positions.</li>
-                <li><strong>Individual:</strong> Evaluate personal ability, experience, and limitations.</li>
-                <li><strong>Load:</strong> Check size, weight, and stability of the item.</li>
-                <li><strong>Environment:</strong> Identify hazards such as uneven surfaces, obstacles, or limited space.</li>
-            </ul>
+        <p>
+            Our <strong>Manual Handling Training Cork</strong> focuses on
+            practical principles that can help learners approach lifting
+            and handling activities with greater awareness. Learners review
+            body positioning, load assessment, controlled movement, and
+            practical risk awareness.
+        </p>
 
-            <p>Applying the TILE assessment helps prevent accidents before they happen, making it an essential part of daily operations in many Cork workplaces.</p>
-        </article>
+        <p>
+            The training introduces practical considerations such as
+            maintaining appropriate posture, positioning a load close to
+            the body where suitable, and avoiding unnecessary twisting or
+            awkward movements.
+        </p>
 
-        <article class="mh-container-content">
-            <h2>Trusted by Thousands Across Ireland</h2>
-            <p>Businesses in Cork are increasingly choosing online training to simplify compliance. Traditional courses often involve scheduling conflicts, travel expenses, and reduced productivity.</p>
+        <p>
+            Every manual handling task is different, so the appropriate
+            approach depends on the characteristics of the task, the load,
+            the individual, and the surrounding environment.
+        </p>
 
-            <p>Our **manual handling online Ireland** platform eliminates these challenges by offering a streamlined digital solution. Employees can complete training at their own pace, whether during work hours or from home.</p>
+        <h3>Using the TILE Risk Assessment</h3>
 
-            <p>For employers, this means easier staff management, consistent training records, and full adherence to workplace regulations. For individuals, it means faster certification and improved job opportunities.</p>
+        <p>
+            The TILE approach provides a practical framework for considering
+            the main factors involved before handling a load.
+        </p>
 
-            <p>Upon completion, certificates are issued instantly in PDF format, ready to download, print, or share with employers. This ensures you are always prepared for audits, job applications, or workplace requirements.</p>
+        <ul class="mh-feature-list">
 
-            <p>Join thousands of workers and companies across Cork who trust our platform for reliable, fast, and professional manual handling training.</p>
+            <li>
+                <strong>Task:</strong>
+                Consider the type of movement required, including lifting,
+                carrying, pushing, pulling, reaching, or twisting.
+            </li>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
-            </div>
-        </article>
-    </div>
+            <li>
+                <strong>Individual:</strong>
+                Consider the person's ability, experience, and any relevant
+                limitations before performing the task.
+            </li>
+
+            <li>
+                <strong>Load:</strong>
+                Consider the weight, size, shape, grip, and stability of
+                the load.
+            </li>
+
+            <li>
+                <strong>Environment:</strong>
+                Check for uneven surfaces, obstacles, restricted spaces,
+                lighting, and other potential hazards.
+            </li>
+
+        </ul>
+
+        <p>
+            Considering these factors before starting a manual handling
+            activity can help learners identify potential hazards and
+            prepare for the task.
+        </p>
+
+    </article>
+
+
+    <article class="mh-container-content">
+
+        <h2>A Flexible Way to Complete Manual Handling Training in Cork</h2>
+
+        <p>
+            Traditional classroom training may not always fit around busy
+            schedules, shift work, or business operations. Our online
+            platform provides a convenient way to access
+            <strong>manual handling online Ireland</strong> training without
+            travelling to a physical training location.
+        </p>
+
+        <p>
+            Individuals and businesses can access the course using a
+            computer, tablet, or smartphone and complete the theory
+            assessment at a convenient time.
+        </p>
+
+        <p>
+            After completing the theory assessment, you will need to record
+            a video of yourself performing a manual handling lift and send
+            it to us via WhatsApp for practical assessment.
+        </p>
+
+        <p>
+            Our instructor reviews the submitted video. Once the practical
+            assessment has been successfully approved, your
+            <strong>Manual Handling Ireland certificate</strong> will be
+            issued and made available in your dashboard as a PDF.
+        </p>
+
+        <p>
+            Certificates issued through our platform are valid for 3 years
+            and include a unique verification ID that can be checked through
+            our certificate verification system.
+        </p>
+
+        <div style="text-align: center; margin-top: 40px;">
+
+            <a href="{{ route('register') }}" class="btn-gold">
+                Start Your Training — €{{ config('global.course_price') }}
+            </a>
+
+        </div>
+
+    </article>
+
+</div>
+
 @endsection

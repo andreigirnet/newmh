@@ -52,7 +52,7 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">Volume Certification for Employers</h2>
                     <div class="tmt-section-description">
-                        Reduce costs while maintaining full work compliance in Ireland. Discounts apply automatically to bulk and mixed-course orders, with no expiration date on licenses. Save 10% on 10+ courses. For enterprise-level requirements (500+ staff), we offer tailored solutions including a dedicated account manager, licence reallocation for staff turnover, and detailed reporting through your corporate management dashboard. Contact our team via Online Chat to discuss custom pricing.
+                        Reduce costs while maintaining full work compliance in Ireland. Discounts apply automatically to bulk and mixed-course orders, with no expiration date on licenses. Save 10% on 10+ courses. For enterprise-level requirements (500+ staff), we offer tailored solutions including a dedicated account manager, course reallocation for staff turnover, and detailed reporting through your corporate management dashboard. Contact our team via Online Chat to discuss custom pricing.
                     </div>
                 </div>
                 <div class="tmt-column-image">

@@ -2,90 +2,230 @@
 
 @section('content')
     <div class="mh-leadership-page">
+
         <header class="mh-hero-corporate">
             <div class="mh-container">
                 <div class="mh-hero-content">
-                    <span class="mh-top-badge">Strategic Safety Leadership</span>
+
+                    <span class="mh-top-badge">Online Manual Handling Training</span>
+
                     <h1>Manual Handling <br>Training Online Ireland</h1>
+
                     <p class="mh-lead-text">
-                        Establish total **Manual Handling Compliance Ireland** with our 2026 enterprise solution.
-                         **Manual Handling Ireland certification** designed for risk mitigation and workforce longevity.
+                        Convenient <strong>Manual Handling Training Online Ireland</strong>
+                        for individuals, businesses, and teams. Complete your
+                        <strong>Manual Handling Ireland</strong> course online,
+                        study at your own pace, and complete the required theory
+                        and practical assessments.
                     </p>
+
                     <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Enrol Your Team — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Download Legal Whitepaper</a>
+                        <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                            Enrol Your Team — €{{ config('global.course_price') }}
+                        </a>
                     </div>
+
                 </div>
             </div>
         </header>
 
+
         <article class="mh-container-content">
-            <h2>Is Online Manual Handling Training Legally Allowed?</h2>
-            <p>The short answer is **yes**. **Manual Handling Online** training is a fully recognized and HSA-compliant method of instruction under current Irish Health and Safety law. Under the <strong>Safety, Health and Welfare at Work Act 2005</strong>, employers are strictly mandated to provide "appropriate" training to any staff member involved in the movement of loads.</p>
 
-            <p>The **General Application Regulations 2007** (Chapter 4) further define the requirements for **manual handling compliance Ireland**. While these regulations stipulate the *content* of the training—such as risk assessment and biomechanics—they do not mandate that such training must occur in a physical classroom. In fact, the HSA recognizes that digital delivery often provides more consistent quality control and auditability than traditional methods.</p>
+            <h2>Is Online Manual Handling Training Available?</h2>
 
-            <div class="mh-feature-list">
-                <li><strong>Verified Certification:</strong> Each certificate features a unique ID for HSA inspectors.</li>
-                <li><strong>Audit Readiness:</strong> Digital records are kept for 3 years to ensure compliance.</li>
-            </div>
+            <p>
+                <strong>Manual Handling Online</strong> training provides a
+                convenient way to study manual handling principles and safe
+                handling techniques remotely. Our course combines online
+                theory with a practical assessment completed through video
+                submission.
+            </p>
+
+            <p>
+                The course covers important topics such as manual handling
+                risks, safe lifting techniques, posture, load assessment,
+                and practical risk awareness. Learners can complete the
+                theory component online and then submit their practical
+                assessment for instructor review.
+            </p>
+
+            <p>
+                After completing the theory assessment, learners are required
+                to record a video of themselves performing a manual handling
+                lift and send it to us via WhatsApp. Our instructor reviews
+                the video before the certificate is issued.
+            </p>
+
+            <ul class="mh-feature-list">
+                <li>
+                    <strong>Certificate Verification:</strong>
+                    Each certificate includes a unique verification ID that
+                    can be checked through our online verification system.
+                </li>
+
+                <li>
+                    <strong>Digital Records:</strong>
+                    Course and certificate information can be accessed through
+                    the learner dashboard.
+                </li>
+
+                <li>
+                    <strong>3-Year Certificate Validity:</strong>
+                    Certificates issued through our platform are valid for
+                    3 years.
+                </li>
+            </ul>
+
         </article>
+
 
         <section class="mh-pillar-section">
             <div class="mh-container">
+
                 <div class="mh-pillar-grid">
+
                     <div class="pillar-card">
-                        <div class="pillar-icon">⚖️</div>
-                        <h4>Legal Safeguard</h4>
-                        <p>Shield your organization from litigation and HSA fines by ensuring every employee holds a valid **Manual Handling Ireland certification**.</p>
+                        <div class="pillar-icon">📚</div>
+
+                        <h4>Online Learning</h4>
+
+                        <p>
+                            Access your <strong>Manual Handling Ireland</strong>
+                            course online and study the theory material at
+                            your own pace.
+                        </p>
                     </div>
+
+
                     <div class="pillar-card">
-                        <div class="pillar-icon">📈</div>
-                        <h4>Reduced Liability</h4>
-                        <p>Lower your insurance premiums by demonstrating proactive risk management through our **manual handling course Ireland**.</p>
+                        <div class="pillar-icon">📋</div>
+
+                        <h4>Practical Assessment</h4>
+
+                        <p>
+                            Demonstrate your manual handling technique by
+                            recording a practical lifting video and sending
+                            it to us via WhatsApp for instructor review.
+                        </p>
                     </div>
+
+
                     <div class="pillar-card">
                         <div class="pillar-icon">🛡️</div>
-                        <h4>Workforce Protection</h4>
-                        <p>Prevent Musculoskeletal Disorders (MSDs), which currently account for 33% of all reported workplace injuries in Ireland.</p>
+
+                        <h4>Safety Skills</h4>
+                        <p>Practical skills assesed by a instructor online via Whats up. Video is sent after succesfull completion of theory test</p>
                     </div>
+
+
                     <div class="pillar-card">
                         <div class="pillar-icon">⚡</div>
-                        <h4>Operational Speed</h4>
-                        <p>Our **manual handling training online Ireland** takes only 45 minutes, minimizing downtime while maximizing safety.</p>
+
+                        <h4>Flexible Access</h4>
+
+                        <p>
+                            Our <strong>manual handling training online Ireland</strong>
+                            platform can be accessed from a computer, tablet,
+                            or smartphone.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
+
         <article class="mh-container-content">
-            <h2>The Science of Injury: Biomechanics of the Spine</h2>
-            <p>A central pillar of any professional **manual handling course Ireland** is the study of spinal biomechanics. The human spine is an intricate structure of vertebrae and intervertebral discs that act as shock absorbers. When a load is lifted incorrectly—specifically when bending from the waist—the force exerted on the lower back (L5/S1 region) increases exponentially.</p>
 
+            <h2>The Science of Safe Manual Handling</h2>
 
+            <p>
+                An important part of a professional
+                <strong>manual handling course Ireland</strong> is understanding
+                how body position, load characteristics, and movement can affect
+                physical strain during manual handling activities.
+            </p>
 
-            <p>Our training utilizes HD video and 3D animations to demonstrate how "shear force" and "compression" can lead to permanent disc herniation. By teaching the <strong>8 Principles of Safe Lifting</strong>, we ensure that your staff maintains a neutral spine and utilizes the powerful muscles of the legs to manage weight safely.</p>
+            <p>
+                Our training introduces learners to practical principles such
+                as maintaining appropriate posture, positioning loads safely,
+                avoiding unnecessary twisting where possible, and using suitable
+                lifting techniques.
+            </p>
 
             <h3>The TILE Principle of Risk Assessment</h3>
-            <p>Effective **Manual Handling Online** training must empower the individual to make split-second safety decisions. We teach the TILE method as the primary tool for dynamic risk assessment:</p>
+
+            <p>
+                <strong>Manual Handling Online</strong> training can help learners
+                consider the main factors involved in a manual handling task.
+                The TILE approach provides a useful framework for considering:
+            </p>
 
             <ul class="mh-feature-list">
-                <li><strong>Task:</strong> Does the movement involve twisting or stooping?</li>
-                <li><strong>Individual:</strong> Does the worker have the physical capacity for this specific lift?</li>
-                <li><strong>Load:</strong> Is the object bulky, hot, or unstable?</li>
-                <li><strong>Environment:</strong> Is the floor slippery or the lighting inadequate?</li>
+
+                <li>
+                    <strong>Task:</strong>
+                    Consider the type of movement required, including lifting,
+                    carrying, pushing, pulling, twisting, or reaching.
+                </li>
+
+                <li>
+                    <strong>Individual:</strong>
+                    Consider the person's ability, experience, and any relevant
+                    limitations before performing the task.
+                </li>
+
+                <li>
+                    <strong>Load:</strong>
+                    Consider the weight, size, shape, stability, and other
+                    characteristics of the object.
+                </li>
+
+                <li>
+                    <strong>Environment:</strong>
+                    Consider the surrounding area, including floors, lighting,
+                    obstacles, available space, and other potential hazards.
+                </li>
+
             </ul>
+
         </article>
+
 
         <article class="mh-container-content">
-            <h2>Why Enterprises Choose Our Manual Handling Training Ireland</h2>
-            <p>For HR and Safety Managers, the logistics of classroom training are a significant burden. Coordinating schedules, travel expenses, and lost productivity can double the actual cost of the training. Our **manual handling training online Ireland** platform removes these barriers entirely.</p>
 
-            <p>Learners can access the portal 24/7 on any device—smartphone, tablet, or desktop. This flexibility is particularly vital for shift workers or remote teams who cannot attend traditional 9-to-5 sessions. Furthermore, our platform allows for unlimited retries on the final assessment, ensuring that the **manual handling certification Ireland** is only issued when the student has truly mastered the material.</p>
+            <h2>Why Choose Our Manual Handling Training Online Ireland?</h2>
+
+            <p>
+                For HR managers, business owners, and individual learners,
+                online training can make the learning process more convenient.
+                There is no need to travel to a physical training location,
+                allowing learners to access the course from a suitable location.
+            </p>
+
+            <p>
+                Learners can access the portal on a smartphone, tablet, or
+                desktop computer. After completing the theory assessment,
+                learners submit their practical lifting video via WhatsApp
+                for review by our instructor.
+            </p>
+
+            <p>
+                Once the practical assessment has been successfully reviewed,
+                the <strong>Manual Handling Certificate Ireland</strong> is
+                issued and made available through the learner's dashboard
+                for download as a PDF.
+            </p>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('register')}}" class="btn-gold">Get Your Corporate Quote Today</a>
+                <a href="{{ route('register') }}" class="btn-gold">
+                    Get Your Corporate Quote Today
+                </a>
             </div>
+
         </article>
+
     </div>
 @endsection
+

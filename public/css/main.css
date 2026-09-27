@@ -161,8 +161,8 @@
     justify-content: center;
 }
 
-/* Accreditation Section Styles */
-.accreditation-section {
+/*  Section Styles */
+.handling-section {
     display: flex;
     align-items: center;
     gap: 12px;

@@ -1,102 +1,271 @@
 @extends('front.app')
 
-@section('content')
-    <div class="mh-leadership-page">
-        <header class="mh-hero-corporate">
-            <div class="mh-container">
-                <div class="mh-hero-content">
-                    <span class="mh-top-badge">Kilkenny Workplace Safety Training</span>
-                    <h1>Manual Handling <br>Training Kilkenny</h1>
-                    <p class="mh-lead-text">
-                        Get your **Manual Handling Certification Kilkenny** with a simple and flexible online course.
-                        Ideal for retail, hospitality, and local businesses, our training helps you stay compliant while working around your daily routine.
+@section('content') <div class="mh-leadership-page">
+
+    <header class="mh-hero-corporate">
+        <div class="mh-container">
+            <div class="mh-hero-content">
+
+                <span class="mh-top-badge">Kilkenny Online Manual Handling Training</span>
+
+                <h1>Manual Handling <br>Training Kilkenny</h1>
+
+                <p class="mh-lead-text">
+                    Complete your <strong>Manual Handling Training Kilkenny</strong>
+                    online with a simple and flexible course designed for
+                    individuals, workers, and local businesses. Learn practical
+                    manual handling techniques and complete the required
+                    theory and practical assessments.
+                </p>
+
+                <div class="mh-btn-row">
+                    <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                        Start Course — €{{ config('global.course_price') }}
+                    </a>
+
+                    <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                        Kilkenny Business Training
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <article class="mh-container-content">
+
+        <h2>Manual Handling Training for Kilkenny Workplaces</h2>
+
+        <p>
+            Kilkenny has a wide range of workplaces, including retail,
+            hospitality, tourism, logistics, services, and local businesses.
+            Many roles can involve lifting, carrying, pushing, pulling,
+            moving stock, or handling equipment as part of everyday work.
+        </p>
+
+        <p>
+            <strong>Manual Handling Training</strong> can help learners
+            understand the potential risks associated with these activities
+            and learn practical principles for safer handling.
+        </p>
+
+        <p>
+            Our <strong>Manual Handling Course Kilkenny</strong> can be
+            completed online, allowing individuals and businesses to access
+            the theory training without attending scheduled in-person
+            sessions.
+        </p>
+
+        <ul class="mh-feature-list">
+
+            <li>
+                <strong>Suitable for Local Businesses:</strong>
+                Useful for workers in retail, hospitality, tourism, services,
+                logistics, and other working environments.
+            </li>
+
+            <li>
+                <strong>Online Access:</strong>
+                Complete the theory component remotely using a computer,
+                tablet, or smartphone.
+            </li>
+
+            <li>
+                <strong>Practical Assessment:</strong>
+                Record a video of yourself performing a manual handling
+                lift and send it via WhatsApp for instructor review.
+            </li>
+
+        </ul>
+
+    </article>
+
+
+    <section class="mh-pillar-section">
+
+        <div class="mh-container">
+
+            <div class="mh-pillar-grid">
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Train Anywhere in Kilkenny</h4>
+
+                    <p>
+                        Complete your <strong>manual handling training
+                        Kilkenny</strong> from home, work, or another
+                        convenient location.
                     </p>
-                    <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Kilkenny Business Training</a>
-                    </div>
+
                 </div>
-            </div>
-        </header>
 
-        <article class="mh-container-content">
-            <h2>Manual Handling Training for Kilkenny Workplaces</h2>
-            <p>Kilkenny’s economy is built on a strong mix of retail, hospitality, tourism, and small to medium-sized businesses. From busy cafés and hotels to stockrooms and local shops, **manual handling** plays a key role in everyday work.</p>
 
-            <p>Under standard workplace guidelines, employers must ensure that staff are properly trained in safe handling techniques. This applies to both full-time employees and part-time or seasonal workers across Kilkenny.</p>
+                <div class="pillar-card">
 
-            <p>Our **Manual Handling Course Kilkenny** provides an easy way to meet these requirements. Delivered fully online, it allows you to complete training at your own pace without attending in-person sessions.</p>
+                    <div class="pillar-icon"></div>
 
-            <div class="mh-feature-list">
-                <li><strong>Perfect for Local Businesses:</strong> Designed for shops, cafés, and service roles.</li>
-                <li><strong>Recognised Across Ireland:</strong> Certification accepted nationwide.</li>
-                <li><strong>Instant Certificate:</strong> Download immediately after completion.</li>
-            </div>
-        </article>
+                    <h4>Quick and Simple</h4>
 
-        <section class="mh-pillar-section">
-            <div class="mh-container">
-                <div class="mh-pillar-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon">📍</div>
-                        <h4>Train Anywhere in Kilkenny</h4>
-                        <p>Complete your **manual handling training Kilkenny** from home, work, or on your mobile device.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">⏱️</div>
-                        <h4>Quick & Simple</h4>
-                        <p>Finish your certification in under an hour with a straightforward online process.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">🏨</div>
-                        <h4>Hospitality Focused</h4>
-                        <p>Relevant for hotels, restaurants, and tourism-based jobs across Kilkenny.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">💳</div>
-                        <h4>Affordable Option</h4>
-                        <p>Get certified for just €{{ config('global.course_price') }} with no hidden costs.</p>
-                    </div>
+                    <p>
+                        Study the course material online at your own pace
+                        and complete the required theory and practical
+                        assessment process.
+                    </p>
+
                 </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Hospitality and Retail</h4>
+
+                    <p>
+                        The training covers manual handling principles that
+                        can be relevant to hotels, restaurants, shops,
+                        tourism, and other service-based workplaces.
+                    </p>
+
+                </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Affordable Training</h4>
+
+                    <p>
+                        Complete the course for €{{ config('global.course_price') }}
+                        with no additional training charges.
+                    </p>
+
+                </div>
+
             </div>
-        </section>
+        </div>
 
-        <article class="mh-container-content">
-            <h2>Safe Handling in Everyday Roles</h2>
-            <p>In Kilkenny, many roles involve lifting deliveries, moving stock, or handling equipment throughout the day. Without proper training, these routine tasks can lead to injuries such as back strain or fatigue.</p>
+    </section>
 
-            <p>Our **Manual Handling Training Kilkenny** focuses on practical, easy-to-follow techniques that help reduce these risks. Learners are guided through safe lifting methods that can be applied immediately in real work situations.</p>
 
-            <p>Understanding how to position your body, control loads, and avoid unnecessary strain can make a significant difference in long-term health and workplace safety.</p>
+    <article class="mh-container-content">
 
-            <h3>Using TILE for Safer Work Decisions</h3>
-            <p>The TILE method is a simple way to assess risk before lifting:</p>
+        <h2>Safe Handling in Everyday Roles</h2>
 
-            <ul class="mh-feature-list">
-                <li><strong>Task:</strong> What movement is required and how often?</li>
-                <li><strong>Individual:</strong> Are you capable and prepared for the task?</li>
-                <li><strong>Load:</strong> Is it heavy, awkward, or unstable?</li>
-                <li><strong>Environment:</strong> Are there obstacles or tight spaces?</li>
-            </ul>
+        <p>
+            Many roles in Kilkenny can involve lifting deliveries, moving
+            stock, carrying materials, or handling equipment throughout
+            the working day. Awkward postures, unsuitable techniques, and
+            difficult working environments can increase physical strain.
+        </p>
 
-            <p>This approach helps workers across Kilkenny make safer decisions in busy, fast-paced environments.</p>
-        </article>
+        <p>
+            Our <strong>Manual Handling Training Kilkenny</strong> focuses
+            on practical, easy-to-follow principles that can help learners
+            approach these activities with greater awareness.
+        </p>
 
-        <article class="mh-container-content">
-            <h2>Flexible Training for Kilkenny Workers</h2>
-            <p>With many people in Kilkenny balancing work, family, and varying schedules, flexibility is key. Our online platform allows you to complete your **manual handling course online Ireland** whenever it suits you.</p>
+        <p>
+            Learners review body positioning, load assessment, controlled
+            movement, and practical ways of considering potential hazards
+            before beginning a manual handling task.
+        </p>
 
-            <p>Whether you are starting a new job, updating your certification, or training staff, this course provides a convenient and reliable solution.</p>
+        <h3>Using TILE for Safer Work Decisions</h3>
 
-            <p>Employers benefit from a simple way to ensure work compliance, while workers gain a recognised qualification that can support opportunities across retail, hospitality, and other sectors.</p>
+        <p>
+            The TILE approach provides a practical framework for considering
+            the main factors involved before handling a load.
+        </p>
 
-            <p>Your certificate is issued instantly upon completion, so you are ready for work without delays.</p>
+        <ul class="mh-feature-list">
 
-            <p>Join individuals and businesses across Kilkenny who are choosing a more efficient way to complete their manual handling training.</p>
+            <li>
+                <strong>Task:</strong>
+                Consider what movement is required, including lifting,
+                carrying, pushing, pulling, reaching, or twisting.
+            </li>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('register')}}" class="btn-gold">Start Your Certification — €{{ config('global.course_price') }}</a>
-            </div>
-        </article>
-    </div>
+            <li>
+                <strong>Individual:</strong>
+                Consider the person's ability, experience, and any relevant
+                limitations before performing the task.
+            </li>
+
+            <li>
+                <strong>Load:</strong>
+                Consider the weight, size, shape, grip, and stability of
+                the load.
+            </li>
+
+            <li>
+                <strong>Environment:</strong>
+                Check for obstacles, uneven surfaces, restricted spaces,
+                lighting, and other potential hazards.
+            </li>
+
+        </ul>
+
+        <p>
+            Considering these factors before starting a manual handling
+            activity can help learners prepare for the task and identify
+            potential hazards.
+        </p>
+
+    </article>
+
+
+    <article class="mh-container-content">
+
+        <h2>Flexible Training for Kilkenny Workers</h2>
+
+        <p>
+            With busy work schedules and different working patterns,
+            travelling to a training centre may not always be convenient.
+            Our online platform provides a flexible way to access manual
+            handling training without travelling to a physical location.
+        </p>
+
+        <p>
+            Whether you are starting a new role, reviewing your manual
+            handling knowledge, or arranging training for staff, you can
+            complete your <strong>manual handling course online Ireland</strong>
+            using a computer, tablet, or smartphone.
+        </p>
+
+        <p>
+            After completing the theory assessment, you will need to record
+            a video of yourself performing a manual handling lift and send
+            it to us via WhatsApp for practical assessment.
+        </p>
+
+        <p>
+            Our instructor reviews the submitted video. Once the practical
+            assessment has been successfully approved, your
+            <strong>Manual Handling Ireland certificate</strong> will be
+            issued and made available in your dashboard as a PDF.
+        </p>
+
+        <p>
+            Certificates issued through our platform are valid for 3 years
+            and include a unique verification ID that can be checked through
+            our certificate verification system.
+        </p>
+
+        <div style="text-align: center; margin-top: 40px;">
+
+            <a href="{{ route('register') }}" class="btn-gold">
+                Start Your Training — €{{ config('global.course_price') }}
+            </a>
+
+        </div>
+
+    </article>
+
+</div>
+
 @endsection

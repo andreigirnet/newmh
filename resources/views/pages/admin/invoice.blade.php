@@ -67,10 +67,9 @@
                 <h3 style="margin-left: 50px">Ireland</h3>
                 <h3 style="margin-left: 40px">Manual Handling Ireland</h3>
                 <pre>
-                    www.manualhandlingireland.com
-                    13 Kinahan StreetArbour HillStoneybatter
-                    Dublin 7D07
-                    E2N6
+                    <b>PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</b><br>
+                        51 Bracken Road, <br> Dublin, <br> D18 CV48 Ireland
+                        Email: info@manualhandlingireland.ie
                     Ireland
                 </pre>
             </td>

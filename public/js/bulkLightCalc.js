@@ -1,7 +1,9 @@
 function calculateBulkLight() {
     const qty = parseInt(document.getElementById('bulkSliderLight').value);
-    const basePrice = 25;
-    let rate = (qty >= 10) ? 22.50 : 25.00;
+    const basePrice = 30;
+
+    // 10% discount for orders of 10 or more
+    let rate = (qty >= 10) ? 27.00 : 30.00;
 
     const totalOld = (qty * basePrice).toFixed(2);
     const totalNew = (qty * rate).toFixed(2);
@@ -22,5 +24,6 @@ function calculateBulkLight() {
         alert.innerText = `€${totalSaved} Saved!`;
     }
 }
+
 // Run on load
 window.addEventListener('load', calculateBulkLight);

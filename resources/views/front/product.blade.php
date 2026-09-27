@@ -102,7 +102,7 @@
             {{--            <ul class="productList" data-aos="fade-right">--}}
             {{--                <li>Understand what is meant by manual handling.</li>--}}
             {{--                <li>Be able to explain the common causes of injury and potential long-term damages to health as a result of poor manual handling techniques.</li>--}}
-            {{--                <li>Understand the legal responsibilities and the duties placed upon employers and employees.</li>--}}
+            {{--                <li>Understand the responsibilities and the duties placed upon employers and employees.</li>--}}
             {{--                <li>Be able to identify manual handling hazards.</li>--}}
             {{--                <li>Understand how to carry out an effective manual handling risk assessment.</li>--}}
             {{--                <li>Understand the control measures that can be put in place to reduce the risk of harm.</li>--}}

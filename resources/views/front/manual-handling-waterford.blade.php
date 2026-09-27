@@ -1,102 +1,270 @@
 @extends('front.app')
 
-@section('content')
-    <div class="mh-leadership-page">
-        <header class="mh-hero-corporate">
-            <div class="mh-container">
-                <div class="mh-hero-content">
-                    <span class="mh-top-badge">Waterford Safety Training Experts</span>
-                    <h1>Manual Handling <br>Training Waterford</h1>
-                    <p class="mh-lead-text">
-                        Complete your **Manual Handling Certification Waterford** with a fast, reliable online course.
-                        Designed for workers across retail, manufacturing, and logistics, our training helps you stay compliant while fitting around your daily routine.
+@section('content') <div class="mh-leadership-page">
+
+    <header class="mh-hero-corporate">
+        <div class="mh-container">
+            <div class="mh-hero-content">
+
+                <span class="mh-top-badge">Online Manual Handling Training Waterford</span>
+
+                <h1>Manual Handling <br>Training Waterford</h1>
+
+                <p class="mh-lead-text">
+                    Complete your <strong>Manual Handling Training Waterford</strong>
+                    online with a convenient course designed for individuals,
+                    workers, and businesses. Study at your own pace and
+                    complete the required theory and practical assessments.
+                </p>
+
+                <div class="mh-btn-row">
+                    <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                        Start Course — €{{ config('global.course_price') }}
+                    </a>
+
+                    <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                        Waterford Staff Training
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <article class="mh-container-content">
+
+        <h2>Manual Handling Training Across Waterford Workplaces</h2>
+
+        <p>
+            Manual handling activities can be part of many different jobs
+            in Waterford, including retail, manufacturing, logistics,
+            warehousing, hospitality, and other working environments.
+            Activities may include lifting, carrying, pushing, pulling,
+            lowering, or moving loads.
+        </p>
+
+        <p>
+            <strong>Manual Handling Training</strong> can help learners
+            understand the risks associated with these activities and
+            learn practical principles for safer handling. Our course
+            covers safe lifting techniques, posture, load assessment,
+            and practical risk awareness.
+        </p>
+
+        <p>
+            Our <strong>Manual Handling Course Waterford</strong> can be
+            completed online, allowing individuals and teams to access
+            the training without travelling to a physical training
+            location.
+        </p>
+
+        <ul class="mh-feature-list">
+
+            <li>
+                <strong>Suitable for Different Workplaces:</strong>
+                Training covering common manual handling activities across
+                different sectors.
+            </li>
+
+            <li>
+                <strong>Online Access:</strong>
+                Complete the theory component remotely using a computer,
+                tablet, or smartphone.
+            </li>
+
+            <li>
+                <strong>Practical Assessment:</strong>
+                Submit a lifting video via WhatsApp for review by our
+                instructor after completing the theory assessment.
+            </li>
+
+        </ul>
+
+    </article>
+
+
+    <section class="mh-pillar-section">
+
+        <div class="mh-container">
+
+            <div class="mh-pillar-grid">
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Train Anywhere in Waterford</h4>
+
+                    <p>
+                        Complete your <strong>manual handling training
+                        Waterford</strong> course from home, your workplace,
+                        or another suitable location.
                     </p>
-                    <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Start Course — €{{ config('global.course_price') }}</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Waterford Staff Training</a>
-                    </div>
+
                 </div>
-            </div>
-        </header>
 
-        <article class="mh-container-content">
-            <h2>Manual Handling Training Across Waterford Workplaces</h2>
-            <p>Waterford has a strong mix of industries, including retail, pharmaceutical production, manufacturing, and port-related logistics. Many of these roles involve regular lifting and moving of goods, making **manual handling training** essential for safe daily operations.</p>
 
-            <p>Standard workplace safety guidelines require employers to provide proper training for staff engaged in manual handling tasks. This ensures both operational compliance and a safer working environment.</p>
+                <div class="pillar-card">
 
-            <p>Our **Manual Handling Course Waterford** provides a simple solution. Delivered entirely online, it allows individuals and businesses to complete training without travel, delays, or disruption to work schedules.</p>
+                    <div class="pillar-icon"></div>
 
-            <div class="mh-feature-list">
-                <li><strong>Suitable for All Sectors:</strong> From retail stores to industrial sites.</li>
-                <li><strong>Recognised Certification:</strong> Accepted by employers across Ireland.</li>
-                <li><strong>Immediate Access:</strong> Start and finish the course on your own schedule.</li>
-            </div>
-        </article>
+                    <h4>Flexible Learning</h4>
 
-        <section class="mh-pillar-section">
-            <div class="mh-container">
-                <div class="mh-pillar-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon">📍</div>
-                        <h4>Train Anywhere in Waterford</h4>
-                        <p>Complete your **manual handling training Waterford** from home, workplace, or on the go.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">⏱️</div>
-                        <h4>Quick & Convenient</h4>
-                        <p>Finish your certification in under an hour with no need for classroom sessions.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">🏭</div>
-                        <h4>Industry Relevant</h4>
-                        <p>Training designed for Waterford’s retail, pharma, and logistics environments.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">💳</div>
-                        <h4>Transparent Pricing</h4>
-                        <p>Only €{{ config('global.course_price') }} with no hidden fees or extra charges.</p>
-                    </div>
+                    <p>
+                        Study the online course material at your own pace
+                        and complete the required theory assessment through
+                        the platform.
+                    </p>
+
                 </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Practical Assessment</h4>
+
+                    <p>
+                        Record yourself performing a manual handling lift
+                        and send the video via WhatsApp for instructor
+                        review.
+                    </p>
+
+                </div>
+
+
+                <div class="pillar-card">
+
+                    <div class="pillar-icon"></div>
+
+                    <h4>Transparent Pricing</h4>
+
+                    <p>
+                        The course price is €{{ config('global.course_price') }}
+                        with no additional training charges.
+                    </p>
+
+                </div>
+
             </div>
-        </section>
+        </div>
 
-        <article class="mh-container-content">
-            <h2>Safe Lifting for Everyday Work in Waterford</h2>
-            <p>In many Waterford jobs, manual handling is part of daily routines—whether it’s stocking shelves, moving equipment, or handling deliveries. Without proper training, these tasks can lead to injuries such as back pain and muscle strain.</p>
+    </section>
 
-            <p>Our **Manual Handling Training Waterford** teaches practical techniques that reduce these risks. Learners are shown how to lift correctly, position loads safely, and move efficiently in real working conditions.</p>
 
-            <p>By applying these methods, workers can protect their health while maintaining productivity and confidence in their role.</p>
+    <article class="mh-container-content">
 
-            <h3>Understanding Risk with TILE</h3>
-            <p>The TILE approach is a key part of workplace safety, helping workers assess each situation before lifting:</p>
+        <h2>Safe Lifting for Everyday Work in Waterford</h2>
 
-            <ul class="mh-feature-list">
-                <li><strong>Task:</strong> Identify the type of movement and level of effort required.</li>
-                <li><strong>Individual:</strong> Consider your physical ability and experience.</li>
-                <li><strong>Load:</strong> Evaluate size, weight, and stability.</li>
-                <li><strong>Environment:</strong> Look for hazards such as obstacles or limited space.</li>
-            </ul>
+        <p>
+            Manual handling can be part of everyday work, whether you are
+            stocking shelves, moving equipment, handling deliveries,
+            working in a warehouse, or carrying materials.
+        </p>
 
-            <p>This method helps prevent accidents and ensures safer handling practices across all types of work environments in Waterford.</p>
-        </article>
+        <p>
+            Our <strong>Manual Handling Training Waterford</strong> course
+            introduces practical techniques for safer lifting and handling.
+            Learners review body positioning, load assessment, controlled
+            movement, and ways to consider potential hazards before
+            beginning a task.
+        </p>
 
-        <article class="mh-container-content">
-            <h2>A Flexible Training Option for Waterford Workers</h2>
-            <p>Traditional manual handling courses can be difficult to fit into busy schedules. Our online platform offers a more flexible solution that works around your time, not the other way around.</p>
+        <p>
+            The training is designed to help learners develop greater
+            awareness when performing manual handling activities in
+            different working environments.
+        </p>
 
-            <p>With full 24/7 access, you can complete your **manual handling course online Ireland** whenever it suits you—before work, after shifts, or during free time.</p>
+        <h3>Understanding Risk with TILE</h3>
 
-            <p>Employers benefit from an easy way to train teams without interrupting operations, while individuals gain a recognised qualification that can support career opportunities across multiple sectors.</p>
+        <p>
+            The TILE approach provides a practical framework for considering
+            the main factors involved in a manual handling task.
+        </p>
 
-            <p>Once completed, your certificate is available instantly, ensuring you always have proof of training when required.</p>
+        <ul class="mh-feature-list">
 
-            <p>Join workers and businesses across Waterford who are choosing a faster, simpler approach to manual handling certification.</p>
+            <li>
+                <strong>Task:</strong>
+                Consider the type of movement required and the effort
+                involved.
+            </li>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>
-            </div>
-        </article>
-    </div>
+            <li>
+                <strong>Individual:</strong>
+                Consider the person's ability, experience, and any relevant
+                limitations.
+            </li>
+
+            <li>
+                <strong>Load:</strong>
+                Consider the size, weight, shape, grip, and stability
+                of the load.
+            </li>
+
+            <li>
+                <strong>Environment:</strong>
+                Check for obstacles, uneven surfaces, restricted spaces,
+                lighting, and other potential hazards.
+            </li>
+
+        </ul>
+
+        <p>
+            Considering these factors before handling a load can help
+            learners approach manual handling activities with greater
+            awareness.
+        </p>
+
+    </article>
+
+
+    <article class="mh-container-content">
+
+        <h2>A Flexible Training Option for Waterford Workers</h2>
+
+        <p>
+            Online training provides a convenient way for Waterford workers
+            and businesses to access manual handling course material without
+            travelling to a physical training location.
+        </p>
+
+        <p>
+            With online access, you can complete your
+            <strong>manual handling course online Ireland</strong> using
+            a computer, tablet, or smartphone at a convenient time.
+        </p>
+
+        <p>
+            After completing the theory assessment, you will need to record
+            a video of yourself performing a manual handling lift and send
+            it to us via WhatsApp for practical assessment.
+        </p>
+
+        <p>
+            Our instructor will review the submitted video. Once the
+            practical assessment has been successfully approved, your
+            <strong>Manual Handling Ireland certificate</strong> will be
+            issued and made available in your dashboard as a PDF.
+        </p>
+
+        <p>
+            Certificates issued through our platform are valid for 3 years
+            and include a unique verification ID that can be checked through
+            our certificate verification system.
+        </p>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{{ route('register') }}" class="btn-gold">
+                Start Training — €{{ config('global.course_price') }}
+            </a>
+        </div>
+
+    </article>
+
+</div>
+
 @endsection

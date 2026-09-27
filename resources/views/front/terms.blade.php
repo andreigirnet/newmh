@@ -126,9 +126,10 @@
                     <div class="terms-card" style="margin-top: 1.5rem;">
                         <h2 style="margin-top: 0;">Company Information:</h2>
                         <p class="terms-text" style="margin-bottom: 0;">
-                            <strong>Online Manual Handling Ireland Training</strong><br>
+                            <strong>This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</strong><br>
                             Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a><br>
-                            Registered and licensed training provider.
+                            Registered and licensed training provider. <br>
+                            {{ config('global.business_address') }}
                         </p>
                     </div>
 

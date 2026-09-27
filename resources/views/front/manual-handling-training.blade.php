@@ -1,76 +1,189 @@
 @extends('front.app')
 
-@section('content')
-    <div class="mh-leadership-page">
-        <header class="mh-hero-corporate">
-            <div class="mh-container">
-                <div class="mh-hero-content">
-                    <span class="mh-top-badge">Strategic Safety Solutions</span>
-                    <h1>Manual Handling Training Ireland</h1>
-                    <p class="mh-lead-text">Reducing liability through expert-led <strong>work compliance standards in Ireland</strong>. We transform workplace safety into a competitive advantage for Irish enterprises.</p>
-                    <div class="mh-btn-row">
-                        <a href="{{route('register')}}" class="btn-exclusive-teal">Corporate Inquiry</a>
-                        <a href="{{route('register')}}" class="btn-exclusive-ghost">Download Safety Whitepaper</a>
-                    </div>
+@section('content') <div class="mh-leadership-page">
+    <header class="mh-hero-corporate">
+        <div class="mh-container">
+            <div class="mh-hero-content">
+
+                <span class="mh-top-badge">Manual Handling Training</span>
+
+                <h1>Manual Handling Training Ireland</h1>
+
+                <p class="mh-lead-text">
+                    Practical <strong>Manual Handling Training Ireland</strong>
+                    for individuals, businesses, and teams. Learn safer manual
+                    handling techniques online and complete the required theory
+                    and practical assessments.
+                </p>
+
+                <div class="mh-btn-row">
+                    <a href="{{ route('register') }}" class="btn-exclusive-teal">
+                        Start Training
+                    </a>
+
+                    <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                        Corporate Training
+                    </a>
                 </div>
+
             </div>
-        </header>
+        </div>
+    </header>
 
-        <article class="mh-content-wrap">
-            <div class="mh-container-content">
-                <h2>The Strategic Importance of Manual Handling Training Ireland</h2>
-                <p>For large-scale operations, <strong>manual handling training Ireland</strong> is more than a checklist item; it is a critical pillar of operational risk management. Improper movement techniques are the primary driver of high insurance premiums and long-term disability claims in the Irish industrial sector.</p>
 
-                <p>Our approach focuses on <strong>work compliance</strong> through the lens of ergonomics and behavioral change. By training staff to recognize hazards before a lift occurs, we help organizations move from a reactive "accident response" culture to a proactive "prevention-first" mindset.</p>
+    <article class="mh-content-wrap">
+        <div class="mh-container-content">
 
-                https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
+            <h2>The Importance of Manual Handling Training Ireland</h2>
 
-                <h3>Securing Your Manual Handling Ireland Certification</h3>
-                <p>While basic <strong>Manual Handling Ireland certification</strong> is the legal minimum, our training goes deeper into the mechanics of force and leverage. This ensures that once your team receives their <strong>manual handling course Ireland</strong> credentials, they possess the actual skill set to prevent chronic musculoskeletal fatigue.</p>
-            </div>
-        </article>
+            <p>
+                <strong>Manual Handling Training Ireland</strong> can help
+                learners understand the risks associated with lifting,
+                carrying, pushing, pulling, and moving loads. Appropriate
+                training can help workers develop safer handling habits
+                and improve their awareness of potential hazards.
+            </p>
 
-        <section class="mh-pillar-section">
-            <div class="mh-container">
-                <div class="mh-pillar-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon">⚖️</div>
-                        <h4>Regulatory Shield</h4>
-                        <p>Ensure 100% <strong>work compliance standards</strong> with fully aligned training documentation.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">📉</div>
-                        <h4>Cost Reduction</h4>
-                        <p>Directly lower the cost of workplace injuries and associated insurance escalations.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">🛡️</div>
-                        <h4>Employee Wellness</h4>
-                        <p>Demonstrate a commitment to the long-term health of your workforce.</p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon">⚡</div>
-                        <h4>Efficiency Boost</h4>
-                        <p>Correct lifting techniques lead to less physical burnout and higher daily output.</p>
-                    </div>
+            <p>
+                Our training focuses on practical principles such as safe
+                lifting techniques, posture, load assessment, risk awareness,
+                and the surrounding environment. The aim is to help learners
+                understand how to approach manual handling tasks more safely.
+            </p>
+
+            <h3>Completing Your Manual Handling Ireland Training</h3>
+
+            <p>
+                Our <strong>manual handling course Ireland</strong> combines
+                online theory with a practical assessment. After completing
+                the theory assessment, you will need to record a video of
+                yourself performing a manual handling lift and send it to us
+                via WhatsApp for review.
+            </p>
+
+            <p>
+                Our instructor will review the practical video. Once the
+                assessment has been successfully approved, your
+                <strong>Manual Handling Ireland certificate</strong> will
+                be issued and made available in your dashboard as a PDF.
+            </p>
+
+        </div>
+    </article>
+
+
+    <section class="mh-pillar-section">
+        <div class="mh-container">
+
+            <div class="mh-pillar-grid">
+
+                <div class="pillar-card">
+                    <div class="pillar-icon"></div>
+
+                    <h4>Practical Training</h4>
+
+                    <p>
+                        Learn practical principles for safer lifting,
+                        carrying, pushing, pulling, and moving of loads.
+                    </p>
                 </div>
+
+
+                <div class="pillar-card">
+                    <div class="pillar-icon"></div>
+
+                    <h4>WhatsApp Assessment</h4>
+
+                    <p>
+                        Complete the practical assessment by recording a
+                        lifting video and sending it to us via WhatsApp
+                        for instructor review.
+                    </p>
+                </div>
+
+
+                <div class="pillar-card">
+                    <div class="pillar-icon"></div>
+
+                    <h4>Digital Certificate</h4>
+
+                    <p>
+                        After successful completion of the required
+                        assessments, your certificate will be available
+                        in your dashboard for download as a PDF.
+                    </p>
+                </div>
+
+
+                <div class="pillar-card">
+                    <div class="pillar-icon"></div>
+
+                    <h4>Online Access</h4>
+
+                    <p>
+                        Access your <strong>manual handling training online
+                        Ireland</strong> course from a computer, tablet,
+                        or smartphone.
+                    </p>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <article class="mh-content-wrap">
-            <div class="mh-container-content">
-                <h2>Deep Dive: The Biomechanics of Injury</h2>
-                <p>The human spine is a masterpiece of engineering, but it is highly susceptible to "cumulative strain". During our <strong>manual handling course Ireland</strong>, we provide a detailed analysis of disc pressure.</p>
 
-                <p>A simple act like lifting a 20kg box incorrectly can place up to 500kg of pressure on the L5/S1 vertebrae. Our <strong>manual handling training online Ireland</strong> utilizes high-definition video analysis to show employees exactly how their posture dictates the internal forces within their bodies.</p>
+    <article class="mh-content-wrap">
+        <div class="mh-container-content">
 
-                <ul class="mh-feature-list">
-                    <li><strong>Fulcrum Effect:</strong> How the distance of the load from the spine increases torque exponentially.</li>
-                    <li><strong>Center of Gravity:</strong> Maintaining the base of support for maximum stability.</li>
-                    <li><strong>Static Loading:</strong> The dangers of holding a load for extended periods.</li>
-                </ul>
-            </div>
-        </article>
+            <h2>Understanding Safe Manual Handling Techniques</h2>
 
-    </div>
+            <p>
+                The human body can experience physical strain when loads
+                are handled in awkward positions or without appropriate
+                technique. Our <strong>manual handling course Ireland</strong>
+                introduces learners to practical principles that can help
+                reduce unnecessary physical strain during manual handling
+                activities.
+            </p>
+
+            <p>
+                Learners review factors such as body position, load
+                characteristics, movement, and the surrounding environment.
+                The training also covers the importance of considering the
+                task before beginning a manual handling activity.
+            </p>
+
+            <ul class="mh-feature-list">
+
+                <li>
+                    <strong>Load Positioning:</strong>
+                    Understand how positioning a load appropriately can help
+                    reduce unnecessary strain.
+                </li>
+
+                <li>
+                    <strong>Body Position:</strong>
+                    Learn practical principles for maintaining appropriate
+                    posture while handling loads.
+                </li>
+
+                <li>
+                    <strong>Movement:</strong>
+                    Understand how lifting, carrying, pushing, and pulling
+                    techniques can affect physical strain.
+                </li>
+
+                <li>
+                    <strong>Risk Awareness:</strong>
+                    Consider the task, individual, load, and environment
+                    before performing a manual handling activity.
+                </li>
+
+            </ul>
+
+        </div>
+    </article>
+
+</div>
+
 @endsection
