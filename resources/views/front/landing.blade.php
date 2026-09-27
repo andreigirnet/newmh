@@ -184,7 +184,7 @@
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
                         </div>
-                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment and online practical test and get your certificate</p>
+                        <p class="premium-step-text" >Complete the course and theory test, then submit your practical video for instructor review. Your certificate will be issued after approval.</p>
                     </div>
 
                     <div class="premium-step-card">
@@ -258,7 +258,7 @@
         </div>
     </div>
 
-    <section class="imh-about-section mh-4" data-aos="fade-up">
+    <section class="imh-about-section" data-aos="fade-up">
         <div class="imh-container">
             <div class="imh-header">
                 <span class="imh-subtitle">Excellence in Safety</span>
