@@ -21,8 +21,8 @@
                     <div class="trust-badge">
                         <span class="badge-icon">🛡️</span>
                         <div class="badge-text">
-                            <strong>100% Refund</strong>
-                            <span>Guarantee</span>
+                            <strong>Full Online</strong>
+                            <span>Training</span>
                         </div>
                     </div>
                     <div class="trust-badge">
