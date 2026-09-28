@@ -43,7 +43,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Once you pass the theory exam, send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate.
+                            Once you pass the theory exam, send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and you will get the certificate.                                 If your practical assessment is not approved, our instructor will provide feedback explaining what needs to be improved. You can then send a new video to whatsup addressing the feedback for another review, at no additional cost.
                         </div>
                     </div>
 
@@ -90,7 +90,7 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            We offer a 14-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued.
+                            We offer a 14-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued. Get more details in the <a href="{{route('front.refund')}}">refunds page </a>.
                         </div>
                     </div>
 

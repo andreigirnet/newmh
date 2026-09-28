@@ -72,7 +72,6 @@
     <div class="title" data-aos="fade-up">
         <div class="titleTextMain" >Manual Handling Training For Employees. Manual Handling Ireland</div>
         <div class="borderTitle"></div>
-        <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
     <div class="productSection">
         {{-- code for manual handling card --}}
@@ -120,7 +119,7 @@
 
                     <div class="info-item">
                         <span class="info-label">Duration</span>
-                        <span class="info-value">30 Minutes</span>
+                        <span class="info-value">30 Minutes + Instructor Review</span>
                     </div>
 
                     <div class="info-item">
@@ -141,7 +140,7 @@
 
     <div class="langTitle" data-aos="fade-up">
         <div class="languageText">
-            At Manual Handling Ireland, our Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training is designed to align with workplace safety concepts and provides an independent Certificate of Completion to confirm your instructional hours. We also provide Manual Handling Refresher materials for individuals who need to renew or update their internal workplace knowledge.
+            At Manual Handling Ireland, our Manual Handling Course is created to be clear, welcoming, and simple for everyone to follow. The Manual Handling Training features straightforward explanations, helpful videos, and easy-to-read materials so learners can feel confident throughout the course. Our training covers workplace safety principles. After successfully completing the theory test and receiving instructor approval of your practical assessment, you will receive our independent Certificate of Completion.
         </div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
@@ -448,7 +447,7 @@
         <div class="mh-faq-wrapper">
 
             <header class="mh-faq-header">
-                <span class="mh-faq-badge">Training Compliance</span>
+                <span class="mh-faq-badge">Online Training</span>
                 <h2 class="mh-faq-title">Manual Handling Ireland: Expert FAQs</h2>
             </header>
 
@@ -525,7 +524,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open"   x-cloak>
                         <p class="mh-faq-text">
-                            Expect around 25 minutes for manual handling theory part and theory test. And another 5 minutes to create the video and send it to us for review for manual handling practical part.
+                            Expect around 25 minutes for manual handling theory part and theory test. And another 5 minutes to create the video and send it to us for review for manual handling practical part. Additionally you will have to wait for instructor review after you send the practical test video.
                         </p>
                     </div>
                 </div>
@@ -551,7 +550,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open"   x-cloak>
                         <p class="mh-faq-text">
-                            The certificate is issued directly by our private company as official proof of course completion. It verifies that you have successfully completed our comprehensive training modules and met all necessary safety guidelines.
+                            The certificate is issued by {{config('global.business_name')}} (trading as Manual Handling Ireland) after you successfully submit the practical video assessment via WhatsApp on +353899735295. Once our instructor has reviewed and approved the video, your certificate will be issued.
                         </p>
                     </div>
                 </div>
@@ -559,12 +558,12 @@
                 <!-- FAQ 9 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'manual handling vs people handling patient care'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Are this trainings accepted in ireland?</span>
+                        <span class="mh-faq-question">What if I fail the practical assesment?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
                     <div class="mh-faq-content" x-show="open"   x-cloak>
                         <p class="mh-faq-text">
-                            Our courses are designed to meet the <strong>Irish industry standards</strong>. We have got professionally trained instructors who are reviewing your practical skills.
+                                If your practical assessment is not approved, our instructor will provide feedback explaining what needs to be improved. You can then send a new video to whatsup addressing the feedback for another review, at no additional cost.
                         </p>
                     </div>
                 </div>

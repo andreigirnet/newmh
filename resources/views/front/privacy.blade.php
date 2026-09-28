@@ -232,7 +232,7 @@
                     <ul class="privacy-list">
                         <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
                         <li><strong>Who Accesses Them:</strong> Access is strictly restricted to our certified professional instructors and essential administrative personnel evaluating your test.</li>
-                        <li><strong>Data Retention:</strong> Assessment videos are retained only for as long as necessary to complete your grading, verify certification compliance, and maintain educational records, after which they are securely deleted from our active devices and communication archives.</li>
+                        <li><strong>Data Retention:</strong> The video is retained only until the practical assessment has been reviewed and completed. After the assessment is completed, the video will be deleted from our devices and systems where it is under our control. We retain the assessment result and certification records separately where necessary.</li>
                         <li><strong>Deletion Requests:</strong> If you wish to have your submitted assessment video deleted prior to standard retention cycles (note that certification status may be impacted if certification has not been awarded), you may request removal using the data removal form below or by contacting our support team.</li>
                     </ul>
 

@@ -59,7 +59,7 @@
 
         <article class="mh-container-content">
             <h2>The Science of Safety: Biomechanics of the Spine</h2>
-            <p>A professional  manual handling course Ireland  must prioritize the anatomical safety of the individual. The human spine, specifically the intervertebral discs, acts as a complex shock-absorption system. When a load is lifted away from the center of gravity, the compression forces on the lumbar vertebrae (L5/S1) increase exponentially, often leading to acute or chronic injury.</p>
+            <p>A professional  manual handling course Ireland  must prioritize the anatomical safety of the individual. The human spine, specifically the intervertebral discs, acts as a complex shock-absorption system. When a load is lifted away from the center of gravity, the compression forces on the lumbar vertebrae (L5/S1) increase exponentially, often cause to acute or chronic injury.</p>
 
             https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS6WHpy0eoeRQcydUm5HdlSi_ckYkSsRp08lC3Bdq0c73_Pv-fdSqpj9qdLPDuJ2juNhatPDCo1it6WEOw
 

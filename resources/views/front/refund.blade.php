@@ -167,11 +167,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, s
             </p>
 
             <p class="refund-text">
-                Because our courses provide access to digital learning
-                materials and assessments, refund eligibility depends on
-                the circumstances of the purchase and the stage of the
-                course. This policy does not limit or exclude any
-                mandatory consumer rights.
+             You may be eligible for a refund under the following conditions, in accordance with applicable consumer protection laws.
             </p>
 
             <div class="refund-card" style="margin-top: 1.5rem;">
@@ -224,14 +220,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, s
                     certificate has not been issued.
                 </li>
 
-                <li>
-                    <strong>Completed Courses:</strong>
-                    Once the training module has been completed and a
-                    certificate has been generated, the course is
-                    considered delivered. Refund requests after
-                    completion will therefore generally not be accepted,
-                    except the employer no accepting certificate conditions
-                </li>
+            
 
                 <li>
                     <strong>Duplicate Charges:</strong>

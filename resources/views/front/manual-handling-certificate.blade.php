@@ -23,7 +23,7 @@
                             Get Your Certificate — €{{ config('global.course_price') }}
                         </a>
 
-                        <a href="{{ route('register') }}" class="btn-exclusive-ghost">
+                        <a href="{{ route('front.verify') }}" class="btn-exclusive-ghost">
                             Verify a Certificate
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                         <p>
                             A structured <strong>manual handling course Ireland</strong>
                             covering important manual handling principles, safe
-                            lifting techniques, and practical safety considerations.
+                            lifting techniques, and practical safety considerations. At the end you will have to pass a theory test in form of a quiz.
                         </p>
                     </div>
 
@@ -103,7 +103,7 @@
                         <p>
                             The course combines online theory with a practical
                             assessment designed to demonstrate the application of
-                            safe manual handling techniques.
+                            safe manual handling techniques. The practical test is preformed online, by recording a video of yourself lifting correctly an object and sending video to whatsup {{config('global.phone')}} for intructor review.
                         </p>
                     </div>
 

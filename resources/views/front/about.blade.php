@@ -80,7 +80,7 @@
                         </div>
                         <div class="c-row">
                             <span>Hours:</span>
-                            <strong>Mon – Fri, 9:00 AM – 10:00 PM</strong>
+                            <strong>Mon – Sun, 9:00 AM – 10:00 PM</strong>
                         </div>
                     </div>
                 </div>
@@ -104,13 +104,13 @@
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">02</div>
-                            <h4>Interactive Modules</h4>
-                            <p>Learn at your own pace through structured instructional course optimized for all devices 24/7.</p>
+                            <h4>Complete the purchase</h4>
+                            <p>Add the course in your basket and complete the payment.</p>
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">03</div>
-                            <h4>Interactive Test</h4>
-                            <p>Pass integrated multi-choice evaluations designed to verify your theoretical and practical skills.</p>
+                            <h4>Complete the course</h4>
+                            <p>Carefully go through the course slides and complete the theory quiz at the end of modules. Send a video of yourself lifting an object to our WhatsApp for instructor review.</p>
                         </div>
                         <div class="step-card-item">
                             <div class="step-number-tag">04</div>
