@@ -206,8 +206,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, s
                     <strong>Unaccessed Courses:</strong>
                     If you have purchased a course by mistake or no
                     longer require the course, you may request a refund
-                    within 14 days of purchase, provided the training
-                    module has not been launched or completed.
+                    within 14 days of purchase.
                 </li>
 
                 <li>
