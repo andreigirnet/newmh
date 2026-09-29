@@ -227,12 +227,12 @@
 
                     <h2>WhatsApp Assessment Videos (Practical Tests):</h2>
                     <p class="privacy-text">
-                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. 
+                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. When you submit your practical assessment through our assessment messaging service, we receive your video, telephone number, any visible profile information and accompanying messages. We use this information to identify your submission, assess your practical skills and communicate the outcome. The messaging provider also processes information under its own privacy policy.
                     </p>
                     <ul class="privacy-list">
-                        <li><strong>Purpose:</strong> When you submit your practical assessment through our assessment messaging service, we receive your video, telephone number, any visible profile information and accompanying messages. We use this information to identify your submission, assess your practical skills and communicate the outcome. The messaging provider also processes information under its own privacy policy. <a href="https://www.whatsapp.com/legal/privacy-policy">Whatsup privacy policy</a></li>
+                        <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
                         <li><strong>Who Accesses Them:</strong> Access is strictly restricted to our certified professional instructors and essential administrative personnel evaluating your test.</li>
-                        <li><strong>Data Retention:</strong>Practical assessment videos are submitted via WhatsApp, a service provided by Meta. Meta's own handling of messages is governed by WhatsApp's privacy policy. We delete the video from our devices and systems once your assessment has been reviewed. A copy may remain in your own chat history, which you can delete yourself.</li>
+                        <li><strong>Data Retention:</strong>We retain your practical assessment video until the assessment has been reviewed and completed, then delete copies under our control. Assessment results and certification records are retained separately. Deletion from our systems does not necessarily delete copies held on your device or information retained by the messaging provider under its own policy.</li>
                         <li><strong>Deletion Requests:</strong> If you wish to have your submitted assessment video deleted prior to standard retention cycles (note that certification status may be impacted if certification has not been awarded), you may request removal using the data removal form below or by contacting our support team.</li>
                     </ul>
 
@@ -250,7 +250,7 @@
 
                     <h2>Data Sharing and Disclosure:</h2>
                     <p class="privacy-text">
-                        We do not sell, trade, or rent your personal identification information or assessment media to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential. We use a third-party messaging service to receive practical assessment videos and communicate assessment feedback. When you submit a video through this service, the provider processes information in accordance with its own privacy policy. Our deletion of a video from devices and systems under our control does not necessarily delete information retained by the provider or copies on your device.
+                        We do not sell, trade or rent your personal information or assessment videos. We use service providers for payment processing, website hosting and assessment communications. We use whts up to receive practical assessment videos and communicate assessment feedback. When you submit a video, we receive your video, telephone number, any visible profile information and accompanying messages. The messaging provider also processes information in accordance with its own privacy policy. Deleting a video from devices and systems under our control does not necessarily delete information retained by the messaging provider or copies stored on your device
                     </p>
 
                     <h2>Your Data Protection Rights:</h2>
