@@ -39,8 +39,7 @@
         <h2>Manual Handling Training for Cork Workplaces</h2>
 
         <p>
-            Cork has a wide range of workplaces, including logistics,
-            healthcare, construction, hospitality, retail, manufacturing,
+            Cork has a wide range of workplaces, including logistics, construction, hospitality, retail, manufacturing,
             and other service environments. Many roles can involve lifting,
             carrying, pushing, pulling, or moving loads as part of everyday
             work.
@@ -128,7 +127,7 @@
                     <p>
                         The course covers manual handling principles that
                         can be relevant to construction, warehousing,
-                        healthcare, retail, hospitality, and other workplaces.
+                        retail, hospitality, and other workplaces.
                     </p>
 
                 </div>

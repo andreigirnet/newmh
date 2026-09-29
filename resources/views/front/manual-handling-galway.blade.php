@@ -39,7 +39,7 @@
 
         <p>
             Galway has a diverse range of workplaces, including tourism,
-            hospitality, healthcare, retail, logistics, manufacturing,
+            hospitality, retail, logistics, manufacturing,
             and other service environments. Many roles can involve lifting,
             carrying, pushing, pulling, or moving loads as part of everyday
             work.
@@ -127,7 +127,7 @@
 
                     <p>
                         The course covers manual handling principles that
-                        can be relevant to retail, healthcare, hospitality,
+                        can be relevant to retail, hospitality,
                         logistics, manufacturing, and other workplaces.
                     </p>
 

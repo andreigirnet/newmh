@@ -41,7 +41,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">📈</div>
                         <h4>Industry Standard</h4>
-                        <p>The preferred certification for Ireland's healthcare, construction, retail, and logistics sectors.</p>
+                        <p>The preferred certification for Ireland's, construction, retail, and logistics sectors.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🛡️</div>
