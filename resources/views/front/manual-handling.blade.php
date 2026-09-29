@@ -56,7 +56,7 @@
                     <div class="mhc-card">
                         <div class="mhc-card-icon">03</div>
                         <h3>Practical Assessment</h3>
-                        <p>After passing the theory test, submit a video demonstrating the required manual handling technique to our assessment number, {{config('global.phone')}}, using whts up. An instructor will review your submission. Your certificate will be issued only after your practical assessment has been approved.</p>
+                        <p>After passing the theory test, submit a video demonstrating the required manual handling technique to our assessment number, {{config('global.phone')}}, using whats up. An instructor will review your submission. Your certificate will be issued only after your practical assessment has been approved.</p>
                     </div>
                 </div>
             </div>

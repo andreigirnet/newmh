@@ -284,8 +284,8 @@
                     <div class="imh-badge-item">
                         <div class="imh-icon">🌍</div>
                         <div>
-                            <strong>Working Compliant</strong>
-                            <p>Compliant training skills</p>
+                            <strong>Workplace Safety Awareness</strong>
+                            <p>Learn general manual handling principles</p>
                         </div>
                     </div>
                     <div class="imh-badge-item">
