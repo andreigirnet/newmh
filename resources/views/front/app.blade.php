@@ -184,7 +184,7 @@
       "name": "Can I complete the course from my mobile phone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in 5 different languages."
+        "text": "Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in 6 different languages."
       }
     }
   ]

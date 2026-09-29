@@ -115,7 +115,7 @@
                         <div class="step-card-item">
                             <div class="step-number-tag">04</div>
                             <h4>Get your Certificate</h4>
-                            <p>After you send the practical test to us via whatsup, our instructor approves it, and emmits a certificate to you</p>
+                            <p>Your instructor will review your practical assessment video. Once you have passed the theory test and your practical assessment has been approved, your Certificate of Completion will be available to download.</p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <div>
                             <h3 class="bento-title text-dark">Transparency & Trust Assurance</h3>
                             <p class="bento-desc text-muted">
-                                For Transparency & Trust Assurance section: Manual Handling Ireland is operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED, registered in Ireland under company number 822301. Information about our services, assessment process, payments and data handling is available in our FAQs, Terms and Conditions, Refund Policy and Privacy Policy.
+                                Manual Handling Ireland is operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED, registered in Ireland under company number 822301. Information about our services, assessment process, payments and data handling is available in our <a href="{{route('front.faq')}}">FAQs</a>, <a href="{{route('terms')}}">Terms and Conditions</a>, <a href="{{route('front.refund')}}">Refund Policy</a> and <a href="{{route('front.privacy')}}">Privacy Policy</a>.
                             </p>
                         </div>
                     </div>

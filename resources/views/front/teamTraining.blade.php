@@ -67,7 +67,7 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">Corporate Invoicing & 30-Day Terms</h2>
                     <div class="tmt-section-description">
-                        We support B2B invoicing for companies requiring structured payment processes. Benefits include 30-day payment terms, PO number integration, and immediate access to online training modules*. This allows your team to begin their manual handling certification without delay. <span class="tmt-footnote">*Certificates are released once payment has been confirmed.</span>
+                        Payment is required before training access is activated. Certificates are issued after successful completion of the theory test and instructor approval of the practical assessment.
                     </div>
                 </div>
                 <div class="tmt-column-image">
