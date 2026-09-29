@@ -227,7 +227,7 @@
 
                     <h2>WhatsApp Assessment Videos (Practical Tests):</h2>
                     <p class="privacy-text">
-                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. When you submit your practical assessment through our assessment messaging service, we receive your video, telephone number, any visible profile information and accompanying messages. We use this information to identify your submission, assess your practical skills and communicate the outcome. The messaging provider also processes information under its own privacy policy.
+                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. When you submit your practical assessment through our assessment messaging service, we receive your video, telephone number, any visible profile information and accompanying messages. We use this information to identify your submission, assess your practical skills and communicate the outcome. The messaging provider also processes information under its own privacy policy <a href="https://www.whatsapp.com/legal/privacy-policy">Whatsup privacy policy</a>
                     </p>
                     <ul class="privacy-list">
                         <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
