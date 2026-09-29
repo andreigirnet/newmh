@@ -8,8 +8,8 @@
     <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €30</title>
     
     {{-- Meta description --}}
-    <meta name="description" content="Manual Handling Ireland - Manual Handling course online with certification. Get your Manual Handling training in 30 mins and get your certificate immediately.">
-    <meta name="keywords" content="Manual Handling Courses Online, Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
+    <meta name="description" content="Manual Handling Ireland - Manual Handling Course Online. Get your Manual Handling Training in 30 Mins Online">
+    <meta name="keywords" content="Manual Handling Courses Online, Manual Handling Training Ireland, Manual HandlingOnline Courses, Expert Manual Handling Assessment, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Manual Handling Practices in Ireland, Manual Handling Guidelines, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Training in Ireland, Professional Manual Handling Courses">
     
     {{-- Canonical & Localization --}}
     <link rel="canonical" href="{{ url()->current() }}">
@@ -21,8 +21,8 @@
     {{-- Open Graph / Facebook --}}
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Online Safety Courses Ireland | Instant Certificate - {{ config('app.name') }}">
-    <meta property="og:description" content="Complete your online safety modules in 1 hour. Includes theory, practical alignment, and an independent certificate of completion.">
+    <meta property="og:title" content="Online Manual Handling Ireland | Manual Handling Course - {{ config('app.name') }}">
+    <meta property="og:description" content="Complete your online safety modules in 30 minutes. Includes theory, practical assesment, and an independent certificate of completion.">
     <meta property="og:image" content="{{ asset('images/metaImage.png') }}">
     <meta property="og:image:alt" content="Manual Handling Ireland - Safety Online Training">
 
@@ -43,7 +43,7 @@
     <!-- <script src="{{ asset('js/bulkCalculator.js') }}" defer></script> -->
 
     {{-- Google tag (gtag.js) --}}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND836HRGN2" type="text/plain" data-cookie-category="analytics"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -98,7 +98,7 @@
             <span class="sticky-title">Manual Handling</span>
             <span class="sticky-sub">€{{ config('global.course_price') }} • Certificate included</span>
         </div>
-        <a href="{{ route('home') }}" class="sticky-btn">Start now →</a>
+        <a href="{{ route('register') }}" class="sticky-btn">Start now →</a>
     </div>
 
 {{-- FAQ Schema Markup --}}

@@ -232,7 +232,7 @@
                     <ul class="privacy-list">
                         <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
                         <li><strong>Who Accesses Them:</strong> Access is strictly restricted to our certified professional instructors and essential administrative personnel evaluating your test.</li>
-                        <li><strong>Data Retention:</strong> The video is retained only until the practical assessment has been reviewed and completed. After the assessment is completed, the video will be deleted from our devices and systems where it is under our control. We retain the assessment result and certification records separately where necessary.</li>
+                        <li><strong>Data Retention:</strong>Practical assessment videos are submitted via WhatsApp, a service provided by Meta. Meta's own handling of messages is governed by WhatsApp's privacy policy. We delete the video from our devices and systems once your assessment has been reviewed. A copy may remain in your own chat history, which you can delete yourself.</li>
                         <li><strong>Deletion Requests:</strong> If you wish to have your submitted assessment video deleted prior to standard retention cycles (note that certification status may be impacted if certification has not been awarded), you may request removal using the data removal form below or by contacting our support team.</li>
                     </ul>
 
@@ -250,7 +250,7 @@
 
                     <h2>Data Sharing and Disclosure:</h2>
                     <p class="privacy-text">
-                        We do not sell, trade, or rent your personal identification information or assessment media to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential.
+                        We do not sell, trade, or rent your personal identification information or assessment media to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential. We use a third-party messaging service to receive practical assessment videos and communicate assessment feedback. When you submit a video through this service, the provider processes information in accordance with its own privacy policy. Our deletion of a video from devices and systems under our control does not necessarily delete information retained by the provider or copies on your device.
                     </p>
 
                     <h2>Your Data Protection Rights:</h2>

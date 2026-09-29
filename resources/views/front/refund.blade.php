@@ -203,20 +203,13 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, s
             <ul class="refund-list">
 
                 <li>
-                    <strong>Unaccessed Courses:</strong>
-                    If you have purchased a course by mistake or no
-                    longer require the course, you may request a refund
-                    within 14 days of purchase.
+                    <strong>Change-of-mind refunds:</strong>
+                    You may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. Your statutory consumer rights remain unaffected.
                 </li>
 
                 <li>
                     <strong>Employer Non-Acceptance:</strong>
-                    If your employer does not accept the certificate
-                    issued through our platform for their particular
-                    workplace or employment requirement, you may
-                    request a refund within 14 days of purchase,
-                    provided the course has not been completed and the
-                    certificate has not been issued.
+                    Please confirm your employer’s training requirements before purchasing. If your employer confirms that our course will not meet their requirements, you may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. This refund option does not apply after course completion or certificate issuance. Your statutory consumer rights remain unaffected.
                 </li>
 
             

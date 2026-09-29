@@ -55,7 +55,8 @@
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                        Our courses are designed to meet the <strong>Irish industry standards</strong>. We have got professionally trained instructors who are reviewing your practical skills.                        </div>
+                            Our certificate confirms successful completion of our training and assessments. Acceptance depends on your employer’s specific training requirements. Please confirm with your employer before purchasing, as we cannot guarantee acceptance by every employer or organisation.
+                     </div>
                     </div>
 
                     <div class="fq-accordion-item" x-data="{ open: false }">
@@ -84,13 +85,13 @@
 
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Satisfaction Guarantee</span>
+                            <span class="fq-question-text">Change-of-mind refunds</span>
                             <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            We offer a 14-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued. Get more details in the <a href="{{route('front.refund')}}">refunds page </a>.
+                            You may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. Your statutory consumer rights remain unaffected
                         </div>
                     </div>
 
@@ -313,7 +314,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, you will receive a certificate. The certificate serves as proof of your successful course completion and the manual handling skills you have acquired through our training.
+                            Yes. The theory test is an online quiz completed after the course modules. For the practical assessment, record a video demonstrating the required manual handling techniques and send it to our assessment number. Your certificate will be issued once our instructor reviews and approves your video. If improvements are needed, we’ll provide feedback so you can resubmit at no additional cost.
                         </div>
                     </div>
 

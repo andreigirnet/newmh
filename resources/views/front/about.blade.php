@@ -93,7 +93,7 @@
                     </div>
                     <h3 class="bento-title">The Complete Digital Learning & Certification Pathway</h3>
                     <p class="bento-desc">
-                        Our automated portal delivers a frictionless pathway from initial enrollment to instant certification download.  The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
+                        Create an account, purchase your course, complete the theory modules and pass the theory test. Then submit your practical assessment video for instructor review. Your certificate will be available to download once your practical assessment has been approved.
                     </p>
 
                     <div class="modern-steps-grid">
@@ -127,7 +127,7 @@
                         <div>
                             <h3 class="bento-title text-dark">Transparency & Trust Assurance</h3>
                             <p class="bento-desc text-muted">
-                                This platform functions strictly as a compliant educational network. All billing operations, data safety frameworks, and course completions are backed by verifiable Ireland corporate records.
+                                For Transparency & Trust Assurance section: Manual Handling Ireland is operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED, registered in Ireland under company number 822301. Information about our services, assessment process, payments and data handling is available in our FAQs, Terms and Conditions, Refund Policy and Privacy Policy.
                             </p>
                         </div>
                     </div>
