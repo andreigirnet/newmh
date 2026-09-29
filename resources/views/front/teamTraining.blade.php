@@ -11,7 +11,7 @@
         <!-- INTRO SECTION -->
         <div class="tmt-intro-section">
             <div class="tmt-intro-text">
-                At Manual Handling Ireland, we deliver scalable manual handling training in Ireland designed specifically for employers. Our 100% online system allows your staff to complete certified training at their own pace, ensuring work compliance without interrupting daily operations. Whether you are onboarding new hires or renewing certifications, our platform supports fast, flexible deployment across your organisation.
+                We provide online manual handling training for teams. Each learner completes the theory modules, passes the theory test and submits a practical assessment video for instructor review. A Certificate of Completion is issued after successful practical assessment approval. Employers should confirm that the course meets their workplace requirements before purchasing.
             </div>
         </div>
         <div class="light-calc-wrapper">
@@ -52,7 +52,7 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">Volume Certification for Employers</h2>
                     <div class="tmt-section-description">
-                        Reduce costs while maintaining full work compliance in Ireland. Discounts apply automatically to bulk and mixed-course orders, with no expiration date on licenses. Save 10% on 10+ courses. For enterprise-level requirements (500+ staff), we offer tailored solutions including a dedicated account manager, course reallocation for staff turnover, and detailed reporting through your corporate management dashboard. Contact our team via Online Chat to discuss custom pricing.
+                        Save 10% when purchasing 10 or more courses. Each learner must complete the theory and practical assessment requirements before receiving a certificate. Contact us to discuss larger team bookings. Contact our team via Online Chat to discuss custom pricing.
                     </div>
                 </div>
                 <div class="tmt-column-image">
@@ -80,9 +80,9 @@
             <!-- URGENT CERTIFICATION -->
             <div class="tmt-feature-row">
                 <div class="tmt-column-text">
-                    <h2 class="tmt-section-title">Need Fast Certification for Your Team?</h2>
+                    <h2 class="tmt-section-title">Need Manual Handling Training for Your Team?</h2>
                     <div class="tmt-section-description">
-                        Our automated learning portal and instant certificate generation are built for speed. Employees can begin their training within minutes and complete required certification in hours—not days. This is ideal for audits, contract compliance, site access requirements, or urgent onboarding situations.
+                        Learners can begin after course access is activated. Certificate availability depends on successful completion of the theory test and instructor approval of the practical assessment. Submission does not guarantee approval.
                     </div>
                 </div>
                 <div class="tmt-column-image">

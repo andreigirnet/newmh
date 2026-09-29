@@ -576,7 +576,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open"   x-cloak>
                         <p class="mh-faq-text">
-                            Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in <strong>5 different languages</strong>.
+                            Yes, absolutely. Our course is fully optimized for mobile phones and tablets, allowing you to complete your training conveniently on any device. Additionally, the course is available in <strong>6 different languages</strong>.
                         </p>
                     </div>
                 </div>
