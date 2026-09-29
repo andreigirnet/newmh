@@ -204,7 +204,59 @@
 
 
 
-    
+    <div class="cpdContainer">
+        <div class="cpdInner">
+            <div class="paddingCpd">
+                <h2 class="cpdTitle" >Get Your Manual Handling Certificate Online Today</h2>
+                <div class="cpdFlex">
+                    <div class="cpdLeft">
+                        <div class="cpdItems">
+                            <div class="cpdItem">
+                                <div class="cpdImg">
+                                    <img src="{{asset('images/icons/1.png')}}" alt="">
+                                </div>
+                                <div class="cpdContent">
+                                    <div class="cpdItemTitle"  >Professional Training</div>
+                                    <div class="cpdItemContent"  >Professional Course to obtain your  Manual Handling Training!</div>
+                                </div>
+                            </div>
+                            <div class="cpdItem">
+                                <div class="cpdImg">
+                                    <img src="{{asset('images/icons/2.png')}}" alt="">
+                                </div>
+                                <div class="cpdContent">
+                                    <div class="cpdItemTitle"  >Get your certificate</div>
+                                    <div class="cpdItemContent"  >An Manual Handling Ireland Training, validates the skills you have acquired.</div>
+                                </div>
+                            </div>
+                            <div class="cpdItem">
+                                <div class="cpdImg">
+                                    <img src="{{asset('images/icons/3.png')}}" alt="">
+                                </div>
+                                <div class="cpdContent">
+                                    <div class="cpdItemTitle"  >Stand Out From the Crowd</div>
+                                    <div class="cpdItemContent"  >Include your Manual Handling Ireland Certification on your resume to outshine competitors.</div>
+                                </div>
+                            </div>
+                            <div class="cpdItem">
+                                <div class="cpdImg">
+                                    <img src="{{asset('images/icons/4.png')}}" alt="">
+                                </div>
+                                <div class="cpdContent">
+                                    <div class="cpdItemTitle"  >Advance in Your Career</div>
+                                    <div class="cpdItemContent"  >Showcase your Manual Handling Ireland Certification to prospective employers, highlighting your skills and capabilities.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cpdRight">
+                        <img src="{{asset('images/certExample.webp')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="imh-about-section" data-aos="fade-up">
         <div class="imh-container">
             <div class="imh-header">
