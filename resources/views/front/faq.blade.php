@@ -324,7 +324,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, the theory and practical exam is fully online. For theory you have a quiz at the end of the module. For practical test you have to send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate. 
+                            Yes, the theory and practical exam is fully online. For theory you have a quiz at the end of the module. For practical test you have to send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it you will get the certificate. 
                         </div>
                     </div>
 
