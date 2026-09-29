@@ -80,7 +80,7 @@
                         </div>
                         <div class="c-row">
                             <span>Hours:</span>
-                            <strong>Mon – Sun, 9:00 AM – 10:00 PM</strong>
+                            <strong>Monday–Sunday, 9:00 AM–10:00 PM (Ireland time)</strong>
                         </div>
                     </div>
                 </div>

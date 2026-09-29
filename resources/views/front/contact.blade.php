@@ -30,7 +30,7 @@
 
                     <div class="ct-detail-text">
                         <strong>Operating Hours:</strong><br>
-                        Monday to Sunday: 9am – 10pm<br>
+                        Monday–Sunday, 9:00 AM–10:00 PM (Ireland time)<br>
                         
                     </div>
 
