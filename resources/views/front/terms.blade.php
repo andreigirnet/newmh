@@ -118,7 +118,7 @@
                     <h1 class="main-title">Terms and Conditions</h1>
 
                     <p class="terms-text">
-                        Welcome to Online Ireland Safety Training! These terms and conditions outline the rules and regulations for using our website at
+                        Welcome to Online Manual Handling Ireland! These terms and conditions outline the rules and regulations for using our website at
                         <a href="https://www.manualhandling-ireland.ie/" target="_blank">https://www.manualhandling-ireland.ie/</a>.
                         By accessing this platform, you agree to comply with these terms. If you do not agree with any part of these terms, please discontinue use of our website immediately.
                     </p>
