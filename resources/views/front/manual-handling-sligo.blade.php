@@ -38,7 +38,7 @@
         <h2>Manual Handling Training for Sligo Workplaces</h2>
 
         <p>
-            Sligo has a wide range of workplaces, including healthcare,
+            Sligo has a wide range of workplaces, including
             retail, hospitality, tourism, logistics, and other service
             environments. Many roles can involve lifting, carrying,
             pushing, pulling, or moving loads as part of everyday work.
@@ -122,12 +122,10 @@
 
                     <div class="pillar-icon"></div>
 
-                    <h4>Healthcare and Retail</h4>
+                    <h4>General manual handling</h4>
 
                     <p>
-                        The course covers manual handling principles that
-                        can be relevant to healthcare, retail, hospitality,
-                        logistics, and other working environments.
+                        General manual handling principles for healthcare staff who lift or move objects and supplies. This course does not provide specialist patient moving and handling training. Please confirm your employer’s training requirements before purchasing
                     </p>
 
                 </div>

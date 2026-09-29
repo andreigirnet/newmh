@@ -51,12 +51,12 @@
                     <div class="mhc-card">
                         <div class="mhc-card-icon">02</div>
                         <h3>TILE Risk Assessment</h3>
-                        <p>Our <strong>online manual handling</strong> theory covers the TILE principle: Task, Individual, Load, and Environment—a widely used approach to assessing lifting risks. At the end of the modules you will pass a theory test in form of a quiz.</p>
+                        <p> Our <strong>online manual handling</strong> theory covers the TILE principle: Task, Individual, Load and Environment—a framework for assessing manual handling risks. At the end of the theory modules, you will take a multiple-choice test. You must pass this test before proceeding to the practical assessment.</p>
                     </div>
                     <div class="mhc-card">
                         <div class="mhc-card-icon">03</div>
                         <h3>Practical Assessment</h3>
-                        <p>You will send a video to our whats up {{config('global.phone')}}, our instructor will review it, and will issue a certificate</p>
+                        <p>After passing the theory test, submit a video demonstrating the required manual handling technique to our assessment number, {{config('global.phone')}}, using whts up. An instructor will review your submission. Your certificate will be issued only after your practical assessment has been approved.</p>
                     </div>
                 </div>
             </div>
@@ -68,8 +68,8 @@
                 <h2 class="mhc-section-title" style="text-align:center;">Who Can Benefit From Manual Handling Training?</h2>
                 <div class="mhc-grid">
                     <div class="mhc-industry-box">
-                        <h4>Healthcare & Nursing</h4>
-                        <p>Patient handling and ergonomics for <strong>healthcare assistants (HCA)</strong> and nursing staff.</p>
+                        <h4>Warehouse</h4>
+                        <p>General object handling and avoiding injuries in warehouses environment</p>
                     </div>
                     <div class="mhc-industry-box">
                         <h4>Construction & Trades</h4>
