@@ -9,8 +9,6 @@
     
     {{-- Meta description --}}
     <meta name="description" content="Manual Handling Ireland - Manual Handling Course Online. Get your Manual Handling Training in 30 Mins Online">
-    <meta name="keywords" content="Manual Handling Courses Online, Manual Handling Training Ireland, Manual HandlingOnline Courses, Expert Manual Handling Assessment, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Manual Handling Practices in Ireland, Manual Handling Guidelines, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Training in Ireland, Professional Manual Handling Courses">
-    
     {{-- Canonical & Localization --}}
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
