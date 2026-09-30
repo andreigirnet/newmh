@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://manualhandling-ireland.com/sitemap.xml
+Sitemap: https://manualhandling-ireland.ie/sitemap.xml

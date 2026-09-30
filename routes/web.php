@@ -229,7 +229,7 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.what.handling')));
 
     // Example external product link
-    $sitemap->add(Url::create('https://www.manualhandling-ireland.com/product/manual-handling'));
+    $sitemap->add(Url::create('https://www.manualhandling-ireland.ie/product/manual-handling'));
 
     // Blogs (dynamic)
     Blog::all()->each(function ($blog) use ($sitemap) {
