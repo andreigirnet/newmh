@@ -8,9 +8,11 @@
     <title>{{ config('app.name', 'Laravel') }}: Manual Handling Training Ireland For Just €30</title>
     
     {{-- Meta description --}}
+
     <meta name="description" content="Manual Handling Ireland - Manual Handling Course Online. Get your Manual Handling Training in 30 Mins Online">
     {{-- Canonical & Localization --}}
-    <link rel="canonical" href="{{ url()->current() }}">
+
+    <link rel="canonical" href="{{ config('app.url') }}{{ request()->getRequestUri() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
