@@ -9,19 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
     {{-- Css --}}
     <link rel = "icon" href ="{{asset('images/logo/flavicons.ico')}}" type = "image/x-icon">
-    <link rel="stylesheet" href="{{asset("css/main.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/registerInclude.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/footer.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/brandSwiper.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/landing.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/products.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/product.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/teamTraining.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/faq.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/contact.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/blog.css")}}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -111,12 +98,7 @@
     </section>
 </article>
 
-<script>
-window.replainSettings = { id: '9f43da79-85c0-4dd0-9467-72fe6bdf1bff' };
-(function(u){var s=document.createElement('script');s.async=true;s.src=u;
-var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
-</script>
+ <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
 @include("frontIncludes/registerInclude")
 @include("frontIncludes/footer")
 @include("frontIncludes/brandSwiper")
