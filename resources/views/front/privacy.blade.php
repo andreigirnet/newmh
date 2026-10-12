@@ -1,192 +1,37 @@
 @extends('front.app')
 
 @section('content')
-    <style>
-        .privacy-wrapper {
-            background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
-            min-height: 100vh;
-            padding: 4rem 1rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-        .privacy-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-        .privacy-header {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 3rem 2.5rem;
-            position: relative;
-        }
-        .privacy-header h1 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin: 0 0 0.5rem 0;
-            line-height: 1.2;
-        }
-        .privacy-header p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            margin: 0;
-        }
-        .privacy-body {
-            padding: 2.5rem;
-        }
-        .privacy-section {
-            margin-bottom: 2.5rem;
-        }
-        .privacy-section h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-        }
-        .privacy-section h2::before {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 20px;
-            background: #3b82f6;
-            margin-right: 10px;
-            border-radius: 3px;
-        }
-        .privacy-section h1.main-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #1e293b;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        .privacy-text {
-            color: #475569;
-            line-height: 1.7;
-            font-size: 1.05rem;
-            margin-bottom: 1rem;
-        }
-        .privacy-text a {
-            color: #2563eb;
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        .privacy-text a:hover {
-            color: #1d4ed8;
-        }
-        .privacy-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 1.75rem;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-            margin-bottom: 1.5rem;
-        }
-        .privacy-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 1rem 0;
-        }
-        .privacy-list li {
-            position: relative;
-            padding-left: 1.75rem;
-            margin-bottom: 0.75rem;
-            color: #475569;
-            line-height: 1.6;
-        }
-        .privacy-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0.5rem;
-            color: #2563eb;
-            font-weight: 900;
-            font-size: 1.25rem;
-        }
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-        .form-label {
-            display: block;
-            font-weight: 600;
-            color: #1e293b;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-        .form-input, .form-textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #ffffff;
-            box-sizing: border-box;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-        .form-input:focus, .form-textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-        }
-        .form-textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        .form-submit-btn {
-            background: #0f172a;
-            color: #ffffff;
-            font-weight: 600;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .form-submit-btn:hover {
-            background: #1e293b;
-        }
-        @media (max-width: 768px) {
-            .privacy-wrapper {
-                padding: 1.5rem 0.5rem;
-            }
-            .privacy-header {
-                padding: 2rem 1.5rem;
-            }
-            .privacy-header h1 {
-                font-size: 1.75rem;
-            }
-            .privacy-body {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <div class="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
 
-    <div class="privacy-wrapper" data-aos="fade-up">
-        <div class="privacy-container">
-
-            <!-- Header -->
-            <div class="privacy-header">
-                <h1>Privacy Policy</h1>
-                <p>{{ config('global.business_name') }}</p>
+            {{-- Header --}}
+            <div class="bg-blue-900 text-white p-8 sm:p-12 relative overflow-hidden">
+                <div class="relative z-10">
+                    <span class="bg-blue-600 text-white font-bold text-xs uppercase px-3 py-1 rounded-full mb-3 inline-block">Data Protection</span>
+                    <h1 class="text-3xl sm:text-4xl font-heading font-extrabold tracking-tight mb-2">Privacy Policy & Data Protection</h1>
+                    <p class="text-blue-200 text-sm sm:text-base">{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }}</p>
+                </div>
+                <div class="absolute right-0 bottom-0 opacity-10 transform translate-x-8 translate-y-8">
+                    <svg class="w-64 h-64 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                </div>
             </div>
 
+            {{-- Flash Success Message --}}
             @if(session('success'))
-                <div style="background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 8px; margin: 1.5rem 2.5rem 0 2.5rem; border: 1px solid #a7f3d0;">
-                    {{ session('success') }}
+                <div class="mx-8 mt-8 bg-emerald-50 text-emerald-800 p-4 rounded-2xl border border-emerald-200 text-sm font-medium flex items-center gap-3">
+                    <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span>{{ session('success') }}</span>
                 </div>
             @endif
 
-            <!-- Validation Error Messages -->
+            {{-- Validation Error Messages --}}
             @if($errors->any())
-                <div style="background: #fee2e2; color: #991b1b; padding: 1rem; border-radius: 8px; margin: 1.5rem 2.5rem 0 2.5rem; border: 1px solid #fecaca;">
-                    <ul style="margin: 0; padding-left: 1.25rem;">
+                <div class="mx-8 mt-8 bg-red-50 text-red-800 p-4 rounded-2xl border border-red-200 text-sm font-medium">
+                    <div class="flex items-center gap-2 mb-2 font-semibold">
+                        <svg class="w-5 h-5 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        <span>Please fix the following errors:</span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-1 text-xs">
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
@@ -194,110 +39,138 @@
                 </div>
             @endif
 
-            <div class="privacy-body">
-                <div class="privacy-section">
+            {{-- Body Content --}}
+            <div class="p-8 sm:p-12 space-y-10">
 
-                    <h1 class="main-title">Privacy Policy & Data Protection</h1>
-
-                    <p class="privacy-text">
-                        At <strong>{{ config('global.business_name') }}</strong> ("we," "our," or "us"), we are committed to safeguarding your privacy and ensuring that your personal data is protected. This Privacy Policy outlines how we collect, use, disclose, and protect information when you visit our website
-                        <a href="https://www.manualhandling-ireland.ie/" target="_blank">https://www.manualhandling-ireland.ie/</a>
-                        and utilize our online training services.
+                {{-- Intro --}}
+                <div>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">
+                        At <strong>{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }}</strong> ("we," "our," or "us"), we are committed to safeguarding your privacy and ensuring that your personal data is protected. This Privacy Policy outlines how we collect, use, disclose, and protect information when you visit our website and utilize our online manual handling training services.
                     </p>
 
-                    <div class="privacy-card" style="margin-top: 1.5rem;">
-                        <h2 style="margin-top: 0;">Data Controller Contact:</h2>
-                        <p class="privacy-text" style="margin-bottom: 0;">
-                            <strong>{{ config('global.business_name') }}</strong><br>
-                            Support Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a> <br>
-                            {{ config('global.business_address') }}
-                        </p>
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+                        <h2 class="font-heading font-bold text-lg text-slate-900 mb-3 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                            Data Controller Contact Details:
+                        </h2>
+                        <div class="text-sm text-slate-600 space-y-1">
+                            <p class="font-semibold text-slate-900">{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }}</p>
+                            <p>Company Registration Number: <span class="font-medium text-slate-800">{{ config('global.business_number', '822301') }}</span></p>
+                            <p>Registered Address: <span class="font-medium text-slate-800">{{ config('global.business_address', '51 Bracken Road, Dublin, D18 CV48 Ireland') }}</span></p>
+                            <p>Support Phone: <a href="tel:{{ config('global.phone', '+353899735295') }}" class="text-blue-600 hover:underline font-medium">{{ config('global.phone', '+353 89 973 5295') }}</a></p>
+                            <p>Support Email: <a href="mailto:info@manualhandling-ireland.ie" class="text-blue-600 hover:underline font-medium">info@manualhandling-ireland.ie</a></p>
+                        </div>
                     </div>
-
-                    <h2>Information We Collect:</h2>
-                    <p class="privacy-text">
-                        We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, submitting practical assessments, or contacting support. This includes:
-                    </p>
-                    <ul class="privacy-list">
-                        <li><strong>Identity Data:</strong> Full name and contact credentials.</li>
-                        <li><strong>Contact Information:</strong> Email address and telephone/WhatsApp number.</li>
-                        <li><strong>Assessment Data:</strong> Practical video tests submitted via WhatsApp for grading and course completion.</li>
-                        <li><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</li>
-                    </ul>
-
-                    <h2>WhatsApp Assessment Videos (Practical Tests):</h2>
-                    <p class="privacy-text">
-                        As part of our practical certification process, learners are required to submit a practical video test via WhatsApp to demonstrate manual handling techniques. When you submit your practical assessment through our assessment messaging service, we receive your video, telephone number, any visible profile information and accompanying messages. We use this information to identify your submission, assess your practical skills and communicate the outcome. The messaging provider also processes information under its own privacy policy <a href="https://www.whatsapp.com/legal/privacy-policy">Whatsup privacy policy</a>
-                    </p>
-                    <ul class="privacy-list">
-                        <li><strong>Purpose:</strong> These videos are collected exclusively to evaluate your practical competency, grade your performance, and fulfill certification requirements.</li>
-                        <li><strong>Who Accesses Them:</strong> Access is strictly restricted to our certified professional instructors and essential administrative personnel evaluating your test.</li>
-                        <li><strong>Data Retention:</strong>We retain your practical assessment video until the assessment has been reviewed and completed, then delete copies under our control. Assessment results and certification records are retained separately. Deletion from our systems does not necessarily delete copies held on your device or information retained by the messaging provider under its own policy.</li>
-                        <li><strong>Deletion Requests:</strong> If you wish to have your submitted assessment video deleted prior to standard retention cycles (note that certification status may be impacted if certification has not been awarded), you may request removal using the data removal form below or by contacting our support team.</li>
-                    </ul>
-
-                    <h2>How We Use Your Information:</h2>
-                    <p class="privacy-text">
-                        The information we collect is utilized for lawful business and educational purposes, including:
-                    </p>
-                    <ul class="privacy-list">
-                        <li>Evaluating practical video assessments and issuing certificates of completion.</li>
-                        <li>Processing your course registration and communicating updates.</li>
-                        <li>Responding to customer support replies and operational announcements.</li>
-                        <li>Fulfilling accounting, compliance, and regulatory tax obligations.</li>
-                        <li>Improving website performance and advertising relevance.</li>
-                    </ul>
-
-                    <h2>Data Sharing and Disclosure:</h2>
-                    <p class="privacy-text">
-                        We do not sell, trade or rent your personal information or assessment videos. We use service providers for payment processing, website hosting and assessment communications. We use whats up to receive practical assessment videos and communicate assessment feedback. When you submit a video, we receive your video, telephone number, any visible profile information and accompanying messages. The messaging provider also processes information in accordance with its own privacy policy. Deleting a video from devices and systems under our control does not necessarily delete information retained by the messaging provider or copies stored on your device
-                    </p>
-
-                    <h2>Your Data Protection Rights:</h2>
-                    <p class="privacy-text">
-                        Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information and assessment records stored on our systems. You can submit a request below.
-                    </p>
-
-                    <h2>Policy Updates:</h2>
-                    <p class="privacy-text">
-                        We may update this Privacy Policy from time to time to reflect operational changes or requirements. Any modifications will be posted directly on this page with a revised update date.
-                    </p>
-
                 </div>
 
-                <!-- Data Removal Request Form Section -->
-                <div class="privacy-section" style="margin-bottom: 0;">
-                    <h2>Request Data Removal (Right to be Forgotten)</h2>
-                    <p class="privacy-text">
-                        If you wish to request the deletion or removal of your personal data and assessment records from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations.
+                {{-- Information We Collect --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        Information We Collect
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                        We may collect personal information that you voluntarily provide when registering for a course, purchasing training, submitting practical assessments, or contacting support:
                     </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Identity Data:</strong> Full name and user account credentials.</div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Contact Information:</strong> Email address and WhatsApp telephone number.</div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Assessment Data:</strong> Practical video tests submitted via WhatsApp for instructor review and certificate issuance.</div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Transaction & Payment Data:</strong> Details regarding course purchases processed securely through encrypted payment gateways (flat €30 fee).</div>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="privacy-card">
-                        <form action="{{ route('privacy.data-removal.submit') }}" method="POST">
+                {{-- WhatsApp Assessment Videos --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        WhatsApp Assessment Videos (Practical Tests)
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                        As part of our practical certification process, learners submit a practical video test via WhatsApp to demonstrate manual handling techniques. When you submit your practical assessment through our messaging service, we receive your video, telephone number, profile information, and accompanying messages. The messaging provider also processes information under its own privacy policy (<a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" class="text-blue-600 hover:underline font-medium">WhatsApp Privacy Policy</a>).
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Purpose:</strong> Evaluated exclusively by qualified instructors to grade your practical lifting technique.</div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50/50 p-3.5 rounded-xl border border-slate-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                            <div><strong class="text-slate-900 font-semibold">Data Retention:</strong> We retain your practical assessment video until reviewed and completed, then delete copies under our control. Certification records are retained separately.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                {{-- How We Use Your Information --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        How We Use Your Information
+                    </h2>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Evaluating practical video assessments and issuing certificates of completion upon instructor approval.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Processing course registration and communicating training updates.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Fulfilling accounting, tax compliance, and legal record-keeping obligations.
+                        </li>
+                    </ul>
+                </div>
+
+                {{-- Data Removal Request Form Section --}}
+                <div class="border-t border-slate-200 pt-10" id="data-removal">
+                    <div class="bg-blue-50/60 border border-blue-100 rounded-3xl p-8 sm:p-10">
+                        <div class="mb-6">
+                            <h2 class="font-heading font-bold text-2xl text-blue-950 mb-2">Request Data Removal (Right to be Forgotten)</h2>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                If you wish to request the deletion or removal of your personal data and assessment records from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations.
+                            </p>
+                        </div>
+
+                        <form action="{{ route('privacy.data-removal.submit') }}" method="POST" class="space-y-5">
                             @csrf
 
-                            <div class="form-group">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" id="name" name="name" class="form-input" required placeholder="Enter your full name" value="{{ old('name') }}">
+                            <div>
+                                <label for="name" class="block font-semibold text-slate-900 text-sm mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name" value="{{ old('name') }}" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all">
                             </div>
 
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" id="email" name="email" class="form-input" required placeholder="Enter your registered email" value="{{ old('email') }}">
+                            <div>
+                                <label for="email" class="block font-semibold text-slate-900 text-sm mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your registered email" value="{{ old('email') }}" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all">
                             </div>
 
-                            <div class="form-group">
-                                <label for="reason" class="form-label">Reason for Request / Specific Data to Remove (e.g., WhatsApp Assessment Video)</label>
-                                <textarea id="reason" name="reason" class="form-textarea" placeholder="Please specify the details or context regarding your data removal request...">{{ old('reason') }}</textarea>
+                            <div>
+                                <label for="reason" class="block font-semibold text-slate-900 text-sm mb-2">Reason for Request / Specific Data to Remove (e.g., WhatsApp Assessment Video)</label>
+                                <textarea id="reason" name="reason" rows="4" placeholder="Please specify details regarding your data removal request..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-y">{{ old('reason') }}</textarea>
                             </div>
 
-                            <button type="submit" class="form-submit-btn">Submit Removal Request</button>
+                            <button type="submit" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-blue-600/20 transition-all text-sm">
+                                Submit Removal Request
+                            </button>
                         </form>
                     </div>
                 </div>
 
             </div>
-
         </div>
     </div>
 @endsection

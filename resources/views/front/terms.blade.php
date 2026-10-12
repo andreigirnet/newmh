@@ -1,162 +1,87 @@
 @extends('front.app')
 
 @section('content')
-    <style>
-        .terms-wrapper {
-            background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
-            min-height: 100vh;
-            padding: 4rem 1rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-        .terms-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-        .terms-header {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 3rem 2.5rem;
-            position: relative;
-        }
-        .terms-header h1 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin: 0 0 0.5rem 0;
-            line-height: 1.2;
-        }
-        .terms-header p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            margin: 0;
-        }
-        .terms-body {
-            padding: 2.5rem;
-        }
-        .terms-section {
-            margin-bottom: 2.5rem;
-        }
-        .terms-section h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-        }
-        .terms-section h2::before {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 20px;
-            background: #3b82f6;
-            margin-right: 10px;
-            border-radius: 3px;
-        }
-        .terms-section h1.main-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #1e293b;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        .terms-text {
-            color: #475569;
-            line-height: 1.7;
-            font-size: 1.05rem;
-            margin-bottom: 1rem;
-        }
-        .terms-text a {
-            color: #2563eb;
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        .terms-text a:hover {
-            color: #1d4ed8;
-        }
-        .terms-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 1.75rem;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-            margin-bottom: 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .terms-wrapper {
-                padding: 1.5rem 0.5rem;
-            }
-            .terms-header {
-                padding: 2rem 1.5rem;
-            }
-            .terms-header h1 {
-                font-size: 1.75rem;
-            }
-            .terms-body {
-                padding: 1.5rem;
-            }
-        }
-    </style>
-
-    <div class="terms-wrapper" data-aos="fade-up">
-        <div class="terms-container">
-
-            <div class="terms-header">
-                <h1>Terms & Conditions</h1>
-                <p>{{ config('global.business_name') }}</p>
-            </div>
-
-            <div class="terms-body">
-                <div class="terms-section" style="margin-bottom: 0;">
-
-                    <h1 class="main-title">Terms and Conditions</h1>
-
-                    <p class="terms-text">
-                        Welcome to Online Manual Handling Ireland! These terms and conditions outline the rules and regulations for using our website at
-                        <a href="https://www.manualhandling-ireland.ie/" target="_blank">https://www.manualhandling-ireland.ie/</a>.
-                        By accessing this platform, you agree to comply with these terms. If you do not agree with any part of these terms, please discontinue use of our website immediately.
-                    </p>
-
-                    <div class="terms-card" style="margin-top: 1.5rem;">
-                        <h2 style="margin-top: 0;">Company Information:</h2>
-                        <p class="terms-text" style="margin-bottom: 0;">
-                            <strong>This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</strong><br>
-                            Email: <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a><br>
-                            Registered company <br>
-                            {{ config('global.business_address') }}
-                        </p>
-                    </div>
-
-                    <h2>Services & Access:</h2>
-                    <p class="terms-text">
-                        We provide professional, online manual handling training modules designed for individuals and businesses. Purchasing a course grants you personal access to complete your training online through our secure browser platform.
-                    </p>
-
-                    <h2>Intellectual Property & Content Protection:</h2>
-                    <p class="terms-text">
-                        All course content, training videos, graphics, text, and logos hosted on this website are the exclusive intellectual property of {{ config('global.business_name') }}. None of our training materials, videos, or course contents may be copied, redistributed, resold, or shared publicly under any circumstances.
-                    </p>
-
-                    <h2>User Responsibilities:</h2>
-                    <p class="terms-text">
-                        Users agree to provide accurate information during registration and to complete their training courses individually. Account sharing or allowing unauthorized individuals to access training modules under another user's profile is strictly prohibited.
-                    </p>
-
-                    <h2>Contact Us:</h2>
-                    <p class="terms-text" style="margin-bottom: 0;">
-                        If you have any questions or require support regarding these terms and conditions, please reach out to our team at
-                        <a href="mailto:info@manualhandling-ireland.ie">info@manualhandling-ireland.ie</a>.
-                    </p>
-
+    <div class="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+            
+            {{-- Header --}}
+            <div class="bg-blue-900 text-white p-8 sm:p-12 relative overflow-hidden">
+                <div class="relative z-10">
+                    <span class="bg-blue-600 text-white font-bold text-xs uppercase px-3 py-1 rounded-full mb-3 inline-block">Legal Agreement</span>
+                    <h1 class="text-3xl sm:text-4xl font-heading font-extrabold tracking-tight mb-2">Terms & Conditions</h1>
+                    <p class="text-blue-200 text-sm sm:text-base">{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }}</p>
+                </div>
+                <div class="absolute right-0 bottom-0 opacity-10 transform translate-x-8 translate-y-8">
+                    <svg class="w-64 h-64 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
                 </div>
             </div>
 
+            <div class="p-8 sm:p-12 space-y-10">
+
+                {{-- Intro & Company Info Card --}}
+                <div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Welcome to Online Manual Handling Ireland! These terms and conditions outline the rules and regulations for using our website at <a href="https://www.manualhandling-ireland.ie/" target="_blank" class="text-blue-600 hover:underline font-medium">https://www.manualhandling-ireland.ie/</a>. By accessing this platform, you agree to comply with these terms. If you do not agree with any part of these terms, please discontinue use of our website immediately.
+                    </p>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+                        <h2 class="font-heading font-bold text-lg text-slate-900 mb-3 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                            Company Information:
+                        </h2>
+                        <div class="text-sm text-slate-600 space-y-1">
+                            <p class="font-semibold text-slate-900">{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }} (Reg. No. {{ config('global.business_number', '822301') }})</p>
+                            <p>Email: <a href="mailto:info@manualhandling-ireland.ie" class="text-blue-600 hover:underline font-medium">info@manualhandling-ireland.ie</a></p>
+                            <p>Registered Address: <span class="font-medium text-slate-800">{{ config('global.business_address', '51 Bracken Road, Dublin, D18 CV48 Ireland') }}</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Services & Access --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-xl sm:text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        Services & Access
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        We provide professional, online manual handling training modules designed for individuals and businesses across Ireland. Purchasing a course grants you personal access to complete your training online through our secure browser platform.
+                    </p>
+                </div>
+
+                {{-- Intellectual Property & Content Protection --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-xl sm:text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        Intellectual Property & Content Protection
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        All course content, training videos, graphics, text, and logos hosted on this website are the exclusive intellectual property of <strong>{{ config('global.business_name', 'PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED') }}</strong>. None of our training materials, videos, or course contents may be copied, redistributed, resold, or shared publicly under any circumstances.
+                    </p>
+                </div>
+
+                {{-- User Responsibilities --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-xl sm:text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        User Responsibilities
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Users agree to provide accurate information during registration and to complete their training courses individually. Account sharing or allowing unauthorized individuals to access training modules under another user's profile is strictly prohibited.
+                    </p>
+                </div>
+
+                {{-- Contact Us --}}
+                <div class="border-t border-slate-100 pt-8">
+                    <h2 class="font-heading font-bold text-xl sm:text-2xl text-slate-900 mb-4 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                        Contact Us
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        If you have any questions or require support regarding these terms and conditions, please reach out to our team at <a href="mailto:info@manualhandling-ireland.ie" class="text-blue-600 hover:underline font-medium">info@manualhandling-ireland.ie</a> or call us at <a href="tel:{{ config('global.phone', '+353899735295') }}" class="text-blue-600 hover:underline font-medium">{{ config('global.phone', '+353 89 973 5295') }}</a>.
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
 @endsection

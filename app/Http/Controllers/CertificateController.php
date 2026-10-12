@@ -229,21 +229,22 @@ class CertificateController extends Controller
     {
         //
     }
-    public function verify(Request $request)
-    {
-        $request->validate([
-            'unique_id' => 'required|string',
-        ]);
+   public function verify(Request $request)
+{
+    $request->validate([
+        'unique_id' => 'required|string',
+    ]);
 
-        // Search the database for the unique_id
-        $certificate = Certificate::where('unique_id', $request->unique_id)->first();
-        $user = User::find($certificate->user_id);
-        if ($certificate) {
-            return back()->with('success', "Valid Certificate! Issued to: " . $user->name);
-        }
+    // Search the database for the unique_id and eager load the user relationship if it exists
+    $certificate = Certificate::with('user')->where('unique_id', $request->unique_id)->first();
 
-        return back()->with('fail', "Invalid Certificate. This ID does not exist in our records.");
+    // Check if the certificate exists first
+    if ($certificate && $certificate->user) {
+        return back()->with('success', "Valid Certificate! Issued to: " . $certificate->user->name);
     }
+
+    return back()->with('fail', "Invalid Certificate. This ID does not exist in our records.");
+}
 
     /**
      * Remove the specified resource from storage.

@@ -1,81 +1,86 @@
-<footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3 class="footer-heading">MANUAL HANDLING</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('front.manual.handling') }}">Manual Handling Course</a></li>
-                <li><a href="{{ route('front.manual.training') }}">Manual Handling Training</a></li>
-                <li><a href="{{ route('front.manual.certificate') }}">Manual Handling Certificate</a></li>
-                <li><a href="{{ route('front.manual.online') }}">Manual Handling Online</a></li>
-                <li><a href="{{ route('front.safe.lifting') }}">Manual Handling Techniques</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 1: CUSTOMER SUPPORT -->
-        <div class="footer-column">
-            <h3 class="footer-heading">CUSTOMER SUPPORT</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('front.faq') }}">FAQs</a></li>
-                <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
-                <li><a href="{{ route('front.team') }}">Team Training</a></li>
-                <li><a href="{{ route('front.verify') }}">Verify Certificate</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 2: COMPANY -->
-        <div class="footer-column">
-            <h3 class="footer-heading">COMPANY</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('terms') }}">Terms and Conditions</a></li>
-                <li><a href="{{ route('front.cookies') }}">Cookies Policy</a></li>
-        
-                <li><a href="{{ route('front.privacy') }}">Privacy Policy</a></li>
-                <li><a href="{{ route('front.refund') }}">Refund Policy</a></li>
+{{-- Footer --}}
+<footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             
-            </ul>
-        </div>
-
-
-        <!-- COLUMN 4: LOCATIONS -->
-        <div class="footer-column">
-            <h3 class="footer-heading">LOCATIONS</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('front.manual.dublin') }}">Manual Handling Dublin</a></li>
-                <li><a href="{{ route('front.manual.handling.cork') }}">Manual Handling Cork</a></li>
-                <li><a href="{{ route('front.manual.handling.galway') }}">Manual Handling Galway</a></li>
-                <li><a href="{{ route('front.manual.handling.limerick') }}">Manual Handling Limerick</a></li>
-                <li><a href="{{ route('front.manual.handling.waterford') }}">Manual Handling Waterford</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 5: BUYER PROTECTION -->
-        <div class="footer-column protection">
-            <h3 class="footer-heading">BUYER PROTECTION</h3>
-            <p class="protection-subtext">Fast, encrypted payments</p>
-
-            <div class="stripe-badge">
-                Powered by <strong>stripe</strong>
-            </div>
-
-            <p class="payment-title">Accepted payment methods</p>
-            <div class="payment-icons">
-                <!-- Large Icons for Visibility -->
-                <img src="https://img.icons8.com/color/96/visa.png" class="footerImg" alt="Visa">
-                <img src="https://img.icons8.com/color/96/mastercard.png" class="footerImg" alt="Mastercard">
-                <img src="https://img.icons8.com/ios-filled/96/000000/apple-pay.png" class="footerImg" alt="Apple Pay">
-                <img src="https://img.icons8.com/color/96/google-pay.png" class="footerImg" alt="Google Pay">
-            </div>
-            <!-- Corporate Identity &  Footer Information -->
-            <div class="footer-legal-info mt-4 pt-3 border-top" style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 1.5rem; padding-top: 1rem;">
-                <p class="footer-company-name mb-1" style="font-size: 0.9rem; font-weight: 700; color: #130303;">This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</p>
-                <p class="footer-address mb-2" style="font-size: 0.85rem; color: #94a3b8; line-height: 1.4;">51 Bracken Road, Dublin, D18 CV48 Ireland</p>
-                <p class="footer-contact mb-0" style="font-size: 0.85rem; color: #94a3b8;">
-                    Support: <a href="mailto:info@manualhandlning-ireland.ie" style="color: #60a5fa; text-decoration: none;">info@manualhandling-ireland.ie</a>
+            {{-- Column 1: Brand & Info --}}
+            <div>
+                <div class="flex items-center gap-2.5 mb-4">
+                    <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                        P
+                    </div>
+                    <span class="font-heading font-bold text-white text-base">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    Providing accessible online workplace safety education and manual handling training across Ireland.
                 </p>
-                <p class="footer-address mb-2" style="font-size: 0.85rem; color: #94a3b8; line-height: 1.4;">+353899735295</p>
+                <p class="text-sm text-slate-300 font-medium">
+                    Phone: <a href="tel:{{ config('services.company.phone', '+353899735295') }}" class="text-blue-400 hover:underline">{{ config('services.company.phone', '+353 89 973 5295') }}</a>
+                </p>
             </div>
+
+            {{-- Column 2: Quick Links & Policies --}}
+            <div>
+                <h4 class="font-heading font-semibold text-white mb-4">Useful Links</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li>
+                        <a href="{{ route('terms') }}" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('front.privacy') }}" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            Privacy Policy & Data Removal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('front.refund') }}" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            Refund & Cancellation Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('front.about') }}" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            About Our Organization
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('front.contact') }}" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {{-- Column 3: Company Details --}}
+            <div>
+                <h4 class="font-heading font-semibold text-white mb-4">Company Details</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><strong class="text-slate-300">Name:</strong> PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</li>
+                    <li><strong class="text-slate-300">Registration Number:</strong> 822301</li>
+                    <li><strong class="text-slate-300">Registered Address:</strong> 51 Bracken Road, Dublin, D18 CV48 Ireland</li>
+                </ul>
+            </div>
+
+            {{-- Column 4: Course Pricing & CTA --}}
+            <div>
+                <h4 class="font-heading font-semibold text-white mb-4">Course Pricing & Terms</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    Course price: €30 flat fee. Includes online theory modules, theory test, and practical video review. Certificate of completion issued upon instructor approval.
+                </p>
+                <a href="{{ route('register') }}" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-colors">
+                    Register Now (€30)
+                </a>
+            </div>
+
         </div>
 
+        <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; {{ date('Y') }} PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (Reg. 822301). All rights reserved.
+        </div>
     </div>
-
 </footer>

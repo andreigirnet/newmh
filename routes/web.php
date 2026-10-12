@@ -22,54 +22,32 @@ use Spatie\Sitemap\Tags\Url;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+    
 
-    Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
-    Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
-    //Front end routes, User experience
     Route::get('/', function(){
         $products = Product::orderBy('id', 'asc')->get();
         return view("front.landing", compact('products'));
     })->name('frontHome');
-    Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
-    ->name('users.send-reminder');
+
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
     Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
 
-Route::get('/manual-handling-course', function(){return view("front.manual-handling");})->name('front.manual.handling');
-    Route::get('/manual-handling-cork', function(){return view("front.manual-handling-cork");})->name('front.manual.handling.cork');
-    Route::get('/manual-handling-galway', function(){return view("front.manual-handling-galway");})->name('front.manual.handling.galway');
-    Route::get('/manual-handling-limerick', function(){return view("front.manual-handling-limerick");})->name('front.manual.handling.limerick');
-    Route::get('/manual-handling-waterford', function(){return view("front.manual-handling-waterford");})->name('front.manual.handling.waterford');
-    Route::get('/manual-handling-kilkenny', function(){return view("front.manual-handling-kilkenny");})->name('front.manual.handling.kilkenny');
-    Route::get('/manual-handling-sligo', function(){return view("front.manual-handling-sligo");})->name('front.manual.handling.sligo');
-    Route::get('/manual-handling-training', function(){return view("front.manual-handling-training");})->name('front.manual.training');
-    Route::get('/manual-handling-online', function(){return view("front.manual-handling-online");})->name('front.manual.online');
-    Route::get('/manual-handling-dublin', function(){return view("front.manual-handling-dublin");})->name('front.manual.dublin');
-    Route::get('/manual-handling-certificate', function(){return view("front.manual-handling-certificate");})->name('front.manual.certificate');
-    Route::get('/manual-handling-refresher', function(){return view("front.manual-handling-refresher");})->name('front.manual.refresher');
-    Route::get('/manual-handling-ireland', function(){return view("front.manual-handling-ireland");})->name('front.manual.ireland');
-    Route::get('/safe-lifting-techniques', function(){return view("front.safe-lifting-techniques");})->name('front.safe.lifting');
-    Route::get('/what-is-manual-handling', function(){return view("front.what-manual-handling");})->name('front.what.handling');
-    Route::get('/products', function(){return view("front.products");})->name('front.products');
-    Route::get('/team', function(){return view("front.teamTraining");})->name('front.team');
+    
     Route::get('/contact', function(){return view("front.contact");})->name('front.contact');
-    Route::get('/faq', function(){return view("front.faq");})->name('front.faq');
-    Route::get('/consulting', function(){return view("front.consulting");})->name('front.consulting');
     Route::get('/verify/certificate', function(){return view("front.verify");})->name('front.verify');
     Route::get('/cookies', function(){return view("front.cookies");})->name('front.cookies');
     Route::get('/product/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('front.product');
-    Route::get('/infoPdf', function(){
-      $path = "pdf/info.pdf";
-      return response()->download($path, 'info.pdf');
-    })->name('infoPdf');
 
 
-    Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('front.blog');
-    Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])->name('front.show.blog');
-    Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify');
+     Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify');
+
+
+
+
+
 
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
@@ -190,15 +168,11 @@ Route::group(['middleware'=>'auth'], function () {
 
 });
 
-Route::get('/inv', function(){return view("pages.invoice");});
-Route::get('/buttons', function(){return view("ui.grid");});
-
 use App\Http\Controllers\SocialiteController;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\SitemapGenerator;
 
-Route::get('/login/google', [SocialiteController::class, 'redirectToGoogle'])->name('google');
-Route::get('/login/google/callback', [SocialiteController::class, 'handleGoogleCallback']);
+
 
 
 Route::get('/generate-sitemap', function () {
@@ -217,16 +191,6 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.cookies')));
     $sitemap->add(Url::create(route('front.blog')));
 
-    // Manual Handling Pages
-    $sitemap->add(Url::create(route('front.manual.handling')));
-    $sitemap->add(Url::create(route('front.manual.training')));
-    $sitemap->add(Url::create(route('front.manual.online')));
-    $sitemap->add(Url::create(route('front.manual.dublin')));
-    $sitemap->add(Url::create(route('front.manual.certificate')));
-    $sitemap->add(Url::create(route('front.manual.refresher')));
-    $sitemap->add(Url::create(route('front.manual.ireland')));
-    $sitemap->add(Url::create(route('front.safe.lifting')));
-    $sitemap->add(Url::create(route('front.what.handling')));
 
     // Example external product link
     $sitemap->add(Url::create('https://www.manualhandling-ireland.ie/product/manual-handling'));

@@ -17,7 +17,7 @@
                 <!-- Logo Dark -->
                 <span class="logo-dark" id="showNavPanel" style="display:flex;">
                     <span class="logo-lg" >
-                        <img src="{{asset('images/logo/smallLogo.webp')}}" style="width: 60px; height: 60px" alt="dark logo">
+                        <img src="{{asset('images/logo/smallLogo.webp')}}" style="width: 50px; height: 60px" alt="dark logo">
                     </span>
                     <span class="logo-sm">
                         <img src="{{asset('images/logo/smallLogo.webp')}}"  style="width: 50px; height: 50px" alt="small logo">
