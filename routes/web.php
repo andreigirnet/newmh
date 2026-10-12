@@ -35,7 +35,8 @@ use Spatie\Sitemap\Tags\Url;
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
 
-    
+    Route::post('/send-course-reminder/{user}', [UserController::class, 'sendReminder'])
+    ->name('users.send-reminder');
     Route::get('/contact', function(){return view("front.contact");})->name('front.contact');
     Route::get('/verify/certificate', function(){return view("front.verify");})->name('front.verify');
     Route::get('/cookies', function(){return view("front.cookies");})->name('front.cookies');
